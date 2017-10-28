@@ -1,0 +1,24 @@
+.navbar{
+    background-image: url(assets/images/home/nav-tab.png);
+   background-size:100% 62px;
+    background-repeat: no-repeat;
+    align-items: center; 
+    justify-content: center;
+    object-position: center;
+}
+
+.navbar-start{
+    padding-left: 5%;
+}
+
+.hamburger{
+    padding-left: 30px;
+}
+
+.logo{
+padding-left: 230px;
+}
+
+.headtext{
+    padding-top: 10px;
+}
