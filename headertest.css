@@ -43,7 +43,7 @@ padding-left: 210px;
 }
 
 .head2{
-    height: 40px;
+    height: flex;
     width: 15%;
     background-color: transparent;
     padding-top: 8px;
@@ -51,7 +51,7 @@ padding-left: 210px;
 }
 
 .head3{
-    height: 40px;
+    height: flex;
     width: 50%;
     background-color: transparent;
     margin: auto;
@@ -59,9 +59,9 @@ padding-left: 210px;
 }
 
 .head4{
-    /*height: 40px;
-    width: 25%;
-    background-color: transparent;*/
+    height: flex;
+    width: flex;
+    background-color: transparent;
 }
 
 .logo{
