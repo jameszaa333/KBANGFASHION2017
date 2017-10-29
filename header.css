@@ -63,9 +63,9 @@ padding-left: 210px;
 }
 
 .head4{
-    height: 40px;
+    height: flex;
     width: 25%;
-    background-color: transparent;
+    /*background-color: transparent;*/
 }
 
 .logo{

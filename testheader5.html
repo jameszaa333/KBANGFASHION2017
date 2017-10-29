@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Header</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+    <link rel="stylesheet" href="header.css">
+    <script>document.addEventListener('DOMContentLoaded', function () {
+
+  // Get all "navbar-burger" elements
+  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach(function ($el) {
+      $el.addEventListener('click', function () {
+
+        // Get the target from the "data-target" attribute
+        var target = $el.dataset.target;
+        var $target = document.getElementById(target);
+
+        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+        $el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+});</script>
+</head>
+    <body>
+        <!-- background -->
+    	<main>
+		<style>
+			html {
+			   background: url(/assets/images/home/BG.png) no-repeat center center fixed;
+			   -webkit-background-size: cover;
+			   -moz-background-size: cover;
+			   -o-background-size: cover;
+			   background-size: cover;
+			}
+		</style>
+	</main>
+ 
+        <div class="head" style="">
+            <div class="head1" style="display: flex;">
+<!--
+                    <div class="navbar-burger burger is-active" data-target="looqnav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+                    					<nav class="navbar-menu is-active" id="looqnav">
+                              <div class="navbar-end" style="padding-right: 10px">
+      						<div class="navbar-item has-dropdown is-hoverable">
+                                <a class="navbar-link is-active" href="#">
+                                </a>
+        						<img class="ham" src="/assets/images/home/Hamburger1.png" alt="" width="40" height="auto"> 
+        							<div class="navbar-dropdown" style="background-color: transparent">
+          								<a class="navbar-item" href="#" style="font-family: Chonburi;color: black">
+            								LOOQ
+          								</a>
+								        <a class="navbar-item " href="#" style="font-family: Chonburi;color: black">
+								            Album
+								        </a>
+								        <a class="navbar-item " href="#" style="font-family: Chonburi;color: black">
+								            Clothes
+								        </a>
+								        <a class="navbar-item " href="#" style="font-family: Chonburi;color: black">
+								            Contact Us
+								        </a>
+
+        							</div>
+      						</div>
+                        </div>
+    				</nav>
+-->
+            <div class="dropdown is-hoverable" style="padding-left: 5px; padding-top: 9px;height:auto;width: auto">
+  <div class="dropdown-trigger">
+    <!-- <button class="button" aria-haspopup="true" aria-controls="dropdown-menu2"> -->
+      <span><img src="assets/images/home/Hamburger1.png"></span>
+
+      <span class="icon is-small">
+        <i class="fa fa-angle-down" aria-hidden="true"></i>
+      </span>
+
+  </div>
+  <div class="dropdown-menu" id="dropdown-menu2" role="menu">
+    <div class="dropdown-content" style="background-color: #ccbbb9">
+      <a href="#" class="dropdown-item">
+          LOOQ</a>
+      <a href="#" class="dropdown-item">
+          Album</a>
+      <a href="#" class="dropdown-item">
+          Clothes</a>
+      <a href="#" class="dropdown-item">
+          Contact Us</a>
+    </div>
+  </div>
+</div>
+            </div>
+            <div class="head2" style="">
+                <a href="#"><img src="assets/images/home/closet.png" height="20px" width="25px" style="padding-left: 4px"></a>
+            </div>
+            <div class="head3" style="">
+                <a href="index.html"><img class="logo" src="assets/images/home/Logo2.png" height="40px" width="215px"></a>
+            </div>
+            <div class="head4" style="">
+              <nav class="breadcrumb is-small is-right" aria-label="breadcrumbs" style="font-size: .7rem">
+                <ul>
+                  <li><a href="#" style="color: #976f6c">Sign in</a></li>
+                  <li class="is-active"><a href="#" aria-current="page">Sign up</a></li>
+                </ul>
+            </nav>
+            </div>
+        </div>
+        
+        
+        
+<!--
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+     navbar items, navbar burger... 
+  </div>
+<div class="navbar-menu is-active">
+    <div class="navbar-start">
+        
+       <div class="navbar-item has-dropdown is-hoverable" >
+           <a class="hamburger" href="#"> <img src="assets/images/home/Hamburger1.png" vspace=15px> </a>
+                <div class="navbar-dropdown" style="background-color: #ccbbb9">
+          		<a class="navbar-item" href="#" style="font-family: Chonburi;color: #ffffff">
+                        LOOQ
+          		</a>
+				<a class="navbar-item " href="#" style="font-family: Chonburi;color: #ffffff">
+				        Album
+				</a>
+				<a class="navbar-item " href="#" style="font-family: Chonburi;color: #ffffff">
+				        Clothes
+                </a>
+                <a class="navbar-item " href="#" style="font-family: Chonburi;color: #ffffff">
+                        Contact Us
+				</a>
+
+        </div>
+        </div>
+        
+        <a class="closet" href="/documentation/overview/start/">
+          <img src="assets/images/home/closet.png" width="30px" height="30px" hspace=15px vspace=10px>
+        </a>
+           
+        <a class="logo" href="/index.html">
+          <img src="assets/images/home/Logo2.png" vspace=5px height="55%" width="55%">
+        </a>
+        <a class="headtext" href="register.html" style="font-family: Futurist Fixed-Width;color: grey;font-size: 10%">REGISTER</a>
+        <a class="headtext" href="#" style="font-family: Futurist Fixed-Width;color: grey;font-size: 10%"> /</a>
+        <a class="headtext" href="login.html" style="font-family: Futurist Fixed-Width;color: grey;font-size: 10%"> LOGIN</a>
+    </div>
+</div>
+        </nav>
+-->
+        
+
+        <p>...</p>
+        <p>...</p>
+        <p>...</p>
+        <p>...</p>
+        <p>...</p>
+        <p>...</p>
+        <p>...</p>
+        <p>...</p>
+        <p>...</p>
+        <p>...</p>
+        <p>...</p>
+        <p>...</p>
+        <p>...</p>
+        <p>...</p>
+        <p>...</p>
+        <p>...</p>
+        <p>...</p>
+        <p>...</p>
+        <p>...</p>
+   
+        
+        
+        <footer class="footer" style="background-image: url(assets/images/home/%E0%B8%A5%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%87.png)">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Bulma</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+      </p>
+    </div>
+  </div>
+</footer>
+        
+    </body>
+</html>
