@@ -29,7 +29,7 @@ padding-left: 210px;
 .head{
     margin: auto;
     background-image: url(assets/images/home/nav-tab.png);
-    background-size: 100% auto;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     align-content: center;
     align-items: center;
@@ -47,13 +47,13 @@ padding-left: 210px;
     height: 40px;
     width: 17%;
     background-color: transparent;
-    padding-top: 7px;
+    padding-top: 0px;
     padding-left: 2px;
 }
 
 .head3{
     height: 40px;
-    width: 50%;
+    width: 50%px;
     background-color: transparent;
     margin: auto;
     padding-top: 3px;
