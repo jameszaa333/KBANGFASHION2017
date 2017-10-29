@@ -39,7 +39,7 @@ padding-left: 210px;
     height: 40px;
     width: 4%;
     padding-right: 0px;
-    padding-left: 25px;
+    padding-left: 0px;
     background-color: transparent;
     display: flex;
 }
@@ -59,6 +59,7 @@ padding-left: 210px;
     background-color: transparent;
     margin: auto;
     padding-top: 3px;
+    
 }
 
 .head4{
