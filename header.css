@@ -57,7 +57,8 @@ padding-left: 210px;
     height: 40px;
     width: 46%;
     background-color: transparent;
-    margin: auto;
+    
+    align-self: center;
     padding-top: 3px;
     
 }
