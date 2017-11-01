@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> LOOQ & STYLE </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+  <link rel="stylesheet" href="header.css">
+  <script>document.addEventListener('DOMContentLoaded', function () {
+
+  // Get all "navbar-burger" elements
+  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach(function ($el) {
+      $el.addEventListener('click', function () {
+
+        // Get the target from the "data-target" attribute
+        var target = $el.dataset.target;
+        var $target = document.getElementById(target);
+
+        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+        $el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+        });
+      });
+    }
+  });
+  </script>
+</head>
+
+<body>
+  <!-- background -->
+  <main>
+      <style>
+        html {
+           background: url(/assets/images/home/BG.png) no-repeat center center fixed;
+           -webkit-background-size: cover;
+           -moz-background-size: cover;
+           -o-background-size: cover;
+           background-size: cover;
+        }
+      </style>
+  </main>
+    
+    <!-- header -->
+  <header>
+    <div class="head" style="">
+      <div class="head1" style="display: flex;">
+        <div class="dropdown is-hoverable" style="padding-left: 5px; padding-top: 6px; height:auto; width: auto">
+          <div class="dropdown-trigger">
+      <!-- <button class="button" aria-haspopup="true" aria-controls="dropdown-menu2"> -->
+           <span><img src="assets/images/home/Hamburger1.png"></span>
+           <span class="icon is-small">
+              <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </div>
+          <div class="dropdown-menu" id="dropdown-menu2" role="menu">
+            <div class="dropdown-content" style="background-color: ">
+              <a href="#" class="dropdown-item" style="color: ">LOOQ</a>
+              <hr style="margin: 0">
+              <a href="#" class="dropdown-item" style="color: ">Album</a>
+              <hr style="margin: 0">
+              <a href="#" class="dropdown-item" style="color: ">Clothes</a>
+              <hr style="margin: 0">
+              <a href="#" class="dropdown-item" style="color: ;font-style: italic;color: #f2c2bc">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="head2" style="">
+        <a href="#"><img src="assets/images/home/closet.png" height="20px" width="25px" style="padding-left: 4px"></a>
+      </div>
+      <div class="head3" style="">
+        <a href="index.html"><img class="logo" src="assets/images/home/Logo2.png" height="40px" width="215px"></a>
+      </div>
+      <div class="head4" style="width: flex; height: flex;">
+        <nav class="breadcrumb is-small is-right" aria-label="breadcrumbs" style="font-size: .7rem">
+          <ul>
+            <li><a href="#" style="color: #976f6c">Log in</a></li>
+            <li><a href="#">Sign up</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+    <section class="content">
+      <div class="model">
+        <div class="columns">
+          <dd><h1 class="finishlook" style="font-family: Chonburi; padding-top:70px;">FINISH A LOOQ</h1>
+          <img src="/assets/images/clothes/mock up.png" alt="" width="auto" height="100px">
+          <div class="title is-size-5 has-text-weight-light has-text-centered" style="font-family: Chonburi">
+            <p>OUTFIT DESCRIPTION</p>
+            <p>TOPS : <a href="#">url 1</a></p>
+            <p>BOTTOMS : <a href="#">url 2</a></p>
+            <p>SHOES : <a href="#">url 3</a></p>
+            <p>ACCESSORIES : <a href="#">url 4</a></p>
+            <p>TOTAL PRICE : .....(Price)</p>
+            <br>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <footer class="footer" style="background-image: url(/assets/images/home/ล่างง.png);">
+    <div class="container">
+      <div class="content has-text-centered">
+        <a href="#" style="color: #976f6c">OUR WEBSITE</a>
+        <a href="#" style="color: #976f6c">CUSTOMER CARE</a>
+        <a href="#" style="color: #976f6c">CONTACT US</a>
+      </div>
+      <div class="has-text-centered">
+        <a href="#" style="font-family: Chonburi; font-size: 1rem; color: #000000"> 2017 LOOQ &amp; STYLE all rights reserved </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

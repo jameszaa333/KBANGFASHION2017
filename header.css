@@ -1,6 +1,6 @@
-.navbar{
+/*.navbar{
     background-image: url(assets/images/home/nav-tab.png);
-   background-size:100% auto;
+    background-size:100% auto;
     background-repeat: no-repeat;
     align-items: center; 
     justify-content: center;
@@ -10,7 +10,7 @@
 .navbar-menu{
     padding-left: 0px;
     padding-top: 12px;
-}
+}*/
 /*
 
 .hamburger{
@@ -32,6 +32,9 @@ padding-left: 210px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 
@@ -57,10 +60,8 @@ padding-left: 210px;
     height: 40px;
     width: 46%;
     background-color: transparent;
-    
     align-self: center;
     padding-top: 3px;
-    
 }
 
 .head4{
