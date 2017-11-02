@@ -1,4 +1,4 @@
-<!--มันไม่เต็มง่ะ-->
+<!--เต็มแล้วแต่looqไม่กลางงือ-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,28 +11,48 @@
   <link rel="stylesheet" href="/randompage1.html">
 
 </head>
+
+  <style>
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height: : 100%;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 100%) {
+    .carousel-caption {
+      display: none;
+      max-height: 100%;
+    }
+  }
+  </style>
 <body>
 
-<div class="container"> 
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+<!--carousel-->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner" style="height: 100%;width: 100%;">
+    <div class="carousel-inner" style="height: 73.3rem" role="listbox">
       <div class="item active">
-        <img src="/assets/images/randompage/bg-6.png" style="width:100%; height:100%">
+        <img src="/assets/images/randompage/bg-6.png" width="100%">
       </div>
 
       <div class="item">
-        <img src="/assets/images/randompage/bg-2.png" style="width:100%; height:100%">
+        <img src="/assets/images/randompage/bg-2.png" width="460" height="auto">
       </div>
     
       <div class="item">
-        <img src="/assets/images/randompage/bg-4.png" style="width:100%; height:100%">
+        <img src="/assets/images/randompage/bg-1.png" width="460" height="auto">
+      </div>
+
+      <div class="item">
+        <img src="/assets/images/randompage/bg-4.png" width="460" height="auto">
       </div>
     </div>
 
-  </div>
 </div>
+
 
 </body>
 </html>
