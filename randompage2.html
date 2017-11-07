@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Looq and Style</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+</head>
+
+<style type="text/css">
+
+   body {
+       margin:0;
+       padding:0;
+   }
+
+   html, body, #bg {
+       height:100%;
+       width:100%;
+   }
+   #bg {
+       position:absolute;
+       left:0;
+       right:0;
+       bottom:0;
+       top:0;
+       overflow:hidden;
+       z-index:0;
+   }
+   #bg img {
+       width:30%;
+       min-width:30%;
+       min-height:20%;
+   }
+   #content {
+
+      z-index:1;
+   }
+
+
+</style>
+
+<body>
+
+	<meta http-equiv=refresh content=2;URL=index.html>
+
+  <div id="bg" align="middle">
+   <img style="display:block;" src="/assets/images/randompage/logo.png">
+  </div>
+
+
+	<script language="JavaScript">
+ function random_imglink(){
+ var myimages=new Array()
+ //specify random images below. You can have as many as you wish
+ myimages[1]="assets/images/randompage/bg-1.jpg"
+ myimages[2]="assets/images/randompage/bg-2.jpg"
+ myimages[3]="assets/images/randompage/bg-3.jpg"
+ myimages[4]="assets/images/randompage/bg-4.jpg"
+ myimages[5]="assets/images/randompage/bg-5.jpg"
+ myimages[6]="assets/images/randompage/bg-6.jpg"
+
+ var ry=Math.floor(Math.random()*myimages.length)
+ if (ry==0)
+ ry=1
+ document.write('<img src="'+myimages[ry]+'" border=0>')
+ }
+ random_imglink()
+ </script>
+
+
+</body>
+</html>
