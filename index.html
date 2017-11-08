@@ -7,7 +7,32 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chonburi">
     <link rel="stylesheet" href="header.css">
+    <script>document.addEventListener('DOMContentLoaded', function () {
+
+    // Get all "navbar-burger" elements
+    var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+    // Check if there are any navbar burgers
+    if ($navbarBurgers.length > 0) {
+
+      // Add a click event on each of them
+      $navbarBurgers.forEach(function ($el) {
+        $el.addEventListener('click', function () {
+
+          // Get the target from the "data-target" attribute
+          var target = $el.dataset.target;
+          var $target = document.getElementById(target);
+
+          // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+          $el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+          });
+        });
+      }
+    });
+  </script>
 </head>
+
 <body>
 	<main>
 		<style>
@@ -25,15 +50,54 @@
 		</style>
 	</main>
 
+	<header>
+      <div class="head" style="">
+        <div class="head1" style="display: flex;">
+          <div class="dropdown is-hoverable" style="padding-left: 5px; padding-top: 6px;height:auto;width: auto">
+            <div class="dropdown-trigger">
+              <span><img src="assets/images/home/Hamburger1.png"></span>
+              <span class="icon is-small">
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+              </span>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu2" role="menu">
+              <div class="dropdown-content" style="background-color: ">
+                <a href="#" class="dropdown-item">LOOQ</a>
+                <hr style="margin: 0">
+                <a href="#" class="dropdown-item">Album</a>
+                <hr style="margin: 0">
+                <a href="#" class="dropdown-item">Clothes</a>
+                <hr style="margin: 0">
+                <a href="#" class="dropdown-item">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="head2" style="">
+            <a href="#"><img src="assets/images/home/closet.png" height="20px" width="25px" style="padding-left: 4px"></a>
+        </div>
+        <div class="head3" style="">
+            <a href="index.html"><img class="logo" src="assets/images/home/Logo2.png" height="40px" width="215px"></a>
+        </div>
+        <div class="head4" style="width: flex; height: flex">
+            <nav class="breadcrumb is-small is-right" aria-label="breadcrumbs" style="font-size: .7rem">
+              <ul>
+                <li><a href="#">Log in</a></li>
+                <li><a href="#">Sign up</a></li>
+              </ul>
+            </nav>
+        </div>
+      </div>
+    </header>
+
 	<content>
-		<p>หน้าแรกที่ยังไม่มีอะไรเลย เอาไว้ลิงค์กับหน้าอื่น</p>
+		<p style="padding-top: 4rem;">หน้าแรกที่เริ่มมีอะไร เอาไว้ลิงค์กับหน้าอื่น</p>
 		<a href="/model.html">model</a> by mintju<br>
 		<a href="/register.html">register</a> by minnie+Porku<br>
 		<a href="/looq.html">looq</a> by minttin<br>
 		<a href="/login.html">login</a> by minttin (edit CJ 8/11)<br>
 		<a href="/content.html">content</a> by CJ<br>
-        <a href="/testheader.html">ทดลอง header (ยังมี Bug) </a> by Jameszaa333<br>
-        <a href="/testheader2.html">ทดลอง header2 (ยังมี Bug) </a> by Minnieเองจ้า<br>
         <a href="/testheader3.html">ทดลอง header3 (ยังมี Bug) </a> by Jameszaa333<br>
 		<a href="/finishlooq.html">finish looq </a> by ออยเอง (edit CJ 8/11)<br>
 		<a href="/randompage1.html">randompage1 ขยับได้แล้วจ้า แต่โลโก้ไม่กลางนะแจ้ะ </a>ไม่เอาแบบนี้! by ปอสวย เฮ้อม <br>
@@ -41,8 +105,8 @@
 		<a href="/randompage2.html">randompage ลองเล่นหลายๆ รอบนาจา เรากำหนดเวลาไว้ล้าว</a> by ออยเอง (ยังไม่ responsive)<br>
 		<a href="/randompage.html">randompage</a> เอาโค้ดหน่องออยมาแก้นิดหน่อย responsive แล้ว by CJ<br><br>
 
-		<b><u>คู่มือการเขียนเว็บ</u></b>
-		<p>โค้ดที่ทุกหน้าต้องมี (ที่นึกออกตอนนี้) ก็อปไปได้เลย<br>
+		<b><u>ไกด์เขียนเว็บ</u></b>
+		<p>โค้ดสำคัญๆ ก็อปไปได้เลย<br>
 				&lt;!DOCTYPE html> <br>
 				&lt;html lang="en"> //ภาษาอังกฤษ <br>
 				&lt;head> <br>
