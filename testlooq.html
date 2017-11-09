@@ -1,32 +1,58 @@
 <!DOCTYPE html>
-<html lang="en-TH">
-<html>
-<title>testlooq</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
-<style>
-.w3-sidebar a {font-family: "Roboto", sans-serif}
-body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
-</style>
-<body class="w3-content" style="max-width:1200px">
-<main>
-    <style>
-      html {
-         background: url(/assets/images/home/BG.png) no-repeat center center fixed;
-         -webkit-background-size: cover;
-         -moz-background-size: cover;
-         -o-background-size: cover;
-         background-size: cover;
-      }
-    </style>
-  </main>
-  <div class="head" style="">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Header</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+    <link rel="stylesheet" href="header.css">
+    <script>document.addEventListener('DOMContentLoaded', function () {
+
+  // Get all "navbar-burger" elements
+  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach(function ($el) {
+      $el.addEventListener('click', function () {
+
+        // Get the target from the "data-target" attribute
+        var target = $el.dataset.target;
+        var $target = document.getElementById(target);
+
+        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+        $el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+});</script>
+</head>
+    <body>
+        <!-- background -->
+      <main>
+        <style>
+          html {
+             background: url(/assets/images/home/BG.png) no-repeat center center fixed;
+             -webkit-background-size: cover;
+             -moz-background-size: cover;
+             -o-background-size: cover;
+             background-size: cover;
+          }
+
+          body {color: #000000;}
+          a:link {color: #f09488;}
+          a:hover {color: #ed7263;}
+        </style>
+      </main>
+ 
+        <div class="head" style="z-index: 1;">
             <div class="head1" style="display: flex;">
+
             <div class="dropdown is-hoverable" style="padding-left: 5px; padding-top: 6px;height:auto;width: auto">
   <div class="dropdown-trigger">
     <!-- <button class="button" aria-haspopup="true" aria-controls="dropdown-menu2"> -->
@@ -39,19 +65,13 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   </div>
   <div class="dropdown-menu" id="dropdown-menu2" role="menu">
     <div class="dropdown-content" style="background-color: ">
-       
-      <a href="#" class="dropdown-item" style="color: ">
-          LOOQ</a>
+        <a href="#" class="dropdown-item">LOOQ</a>
         <hr style="margin: 0">
-      <a href="#" class="dropdown-item" style="color: ">
-          Album</a>
+        <a href="#" class="dropdown-item">Album</a>
         <hr style="margin: 0">
-      <a href="#" class="dropdown-item" style="color: ">
-          Clothes</a>
+        <a href="#" class="dropdown-item">Clothes</a>
         <hr style="margin: 0">
-      <a href="#" class="dropdown-item" style="color: ;font-style: italic;color: #f2c2bc">
-          Contact Us</a>
-        
+        <a href="#" class="dropdown-item">Contact Us</a>        
     </div>
   </div>
 </div>
@@ -65,237 +85,47 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
             <div class="head4" style="width: flex; height: flex">
               <nav class="breadcrumb is-small is-right" aria-label="breadcrumbs" style="font-size: .7rem">
                 <ul>
-                  <li><a href="#" style="color: #976f6c">Log in</a></li>
-                  <li><a href="#">Sign up</a></li>
+                  <li><a href="#">Log in</a></li>
+                  <li><a href="register.html">Sign up</a></li>
                 </ul>
             </nav>
             </div>
         </div>
-  <div class="columns">
-     <nav class="navbar" role="navigation" aria-label="dropdown navigation">
-      <div class="navbar-menu">
-    <div class="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd">
-    
-  <div class="navbar-item has-dropdown is-hoverable">
-    <a class="navbar-link">
-      Tops
-    </a>
 
-    <div class="navbar-dropdown">
-      <a class="navbar-item">
-        All tops
-      </a>
-       <hr class="navbar-divider">
-      <a class="navbar-item">
-        Blouses
-      </a>
-       <hr class="navbar-divider">
-      <a class="navbar-item">
-        Tanks
-      </a>
-    </div>
+        
+<!--ในส่วนของ CONTENT นั้น-->
+       
+   
+        
+<!--ในส่วนของ CONTENT นั้น-->
+   
+       <style>
+      a:link {color: #ffffff;}
+      a:hover {color: #ed7263;}
+    </style> 
+        <footer class="footer" style="background-image: url(assets/images/home/%E0%B8%A5%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%87.png);background-repeat: round;width: 100%;height: 328px" >
+<div class="columns has-text-centered" style="height: 84px">
+  <div class="column" style="font-family: Arial">
+      <a href="#" style="color: white"><strong>OUR WEBSITE</strong></a>
+      
+  </div>
+  <div class="column" style="font-family: Arial">
+      <a href="#" style="color: white"><strong>CUSTOMER CARE</strong></a>
+  </div>
+  <div class="column" style="font-family: Arial">
+       <a href="#" style="color: white"><strong>ACCOUNTS</strong></a>
+  </div>
+  <div class="column" style="font-family: Arial">
+      <a href="#" style="color: white"><strong>CONTACT US</strong></a>
   </div>
 
 </div>
-<div class="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd">
-
-  <div class="navbar-item has-dropdown is-hoverable">
-    <a class="navbar-link">
-      Bottoms
-    </a>
-
-    <div class="navbar-dropdown">
-      <a class="navbar-item">
-        All Bottoms
-      </a>
-       <hr class="navbar-divider">
-      <a class="navbar-item">
-        Pants
-      </a>
-       <hr class="navbar-divider">
-      <a class="navbar-item">
-        Shorts
-      </a>
-      <hr class="navbar-divider">
-      <a class="navbar-item">
-        Skirts
-      </a>
-    </div>
+<div class="columns has-text-centered" style="height: 30px; padding-top: 110px">
+  <div class="column">
+      <p style="font-family: Chonburi;color: #444444;font-size: 13px">2017 LOOQ & STYLE all rights reserved</p>
   </div>
-
-</div>
-<div class="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd">
-
-<a class="navbar-item">
-      Dresses
-    </a>
-
-</div>
-  <div class="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd">
-
-<a class="navbar-item">
-      Shoes
-    </a>
-
-</div>
-<div class="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd">
-
-  <div class="navbar-item has-dropdown is-hoverable">
-    <a class="navbar-link">
-      Accessories
-    </a>
-
-    <div class="navbar-dropdown">
-      <a class="navbar-item">
-        All accessories
-      </a>
-       <hr class="navbar-divider">
-      <a class="navbar-item">
-        Earrings
-      </a>
-       <hr class="navbar-divider">
-      <a class="navbar-item">
-        Bags
-      </a>
-       <hr class="navbar-divider">
-      <a class="navbar-item">
-        Socks
-      </a>
-    </div>
-  </div>
-  </div>
-</nav>
-</div>
-</div>
-<div class="w3-row-padding w3-center w3-margin-top">
-<div class="w3-third">
-  <figure class="image is-1by2"></figure>
-  <div class="w3-card-2 w3-padding-top " style="min-height:400px; background-color: #ffffff">
-<img src="assets/images/looq/top1.jpg"alt"image-1" style="height: 400px">
-  <p><a href="https://milin.com/shop/fauna-top/" target="_blank">Milin FAUNA</a></p>
-  <p>5,057 <i class="fa fa-btc" aria-hidden="true"></i></p>
-  </div>
-</div>
-
-<div class="w3-third">
-  <div class="w3-card-2 w3-padding-top" style="min-height:400px; background-color: #ffffff">
-    <figure class="image is-1by2"></figure>
-  <img src="assets/images/looq/top2.jpg"alt"image-1" style="height: 400px">
- <p><a href="https://milin.com/shop/fortuna-dress/" target="_blank">Milin FAUNA DRESS</a></p>
-  <p>2,450 <i class="fa fa-btc" aria-hidden="true"></i></p>
-  </div>
-</div>
-
-<div class="w3-third">
-  <div class="w3-card-2 w3-padding-top" style="min-height:400px; background-color: #ffffff">
-  <figure class="image is-1by2"></figure>
-<img src="assets/images/looq/aecc3.png"alt"image-1" style="height: 400px">
-<p><a href="https://www.pomelofashion.com/global/sunglasses/15502-jamiya-tinted-lens-aviator-sunglasses.html" target="_blank">Jamiyo Tinted Lens Aviotor Sungiasses</a></p>
-<p>340 <i class="fa fa-btc" aria-hidden="true"></i></p>
-  </div>
-</div>
-
-<div class="w3-third"><br>
-  <div class="w3-card-2 w3-padding-top" style="min-height:400px; background-color: #ffffff">
- <figure class="image is-1by2"></figure>
-  <img src="assets/images/looq/bottom1.jpg"alt"image-1" style="height: 400px">
-<p><a href="https://milin.com/shop/one-night-shorts/" target="_blank">Milin ONE NIGHT SHORTS</a></p>
-  <p>1,190 <i class="fa fa-btc" aria-hidden="true"></i></p>
-  </div>
-</div>
-
-<div class="w3-third"><br>
-  <div class="w3-card-2 w3-padding-top" style="min-height:400px; background-color: #ffffff">
-  <figure class="image is-1by2"></figure>
-<img src="assets/images/looq/aecc1.png"alt"image-1" style="height: 400px">
-<p><a href="https://www.pomelofashion.com/th/th/jewelry/13868-goya-circular-collar-necklace---gold.html" target="_blank">Goya Circular Collar Necklace - Gold</a></p>
-<p>240 <i class="fa fa-btc" aria-hidden="true"></i></p>
-  </div>
-</div>
-
-<div class="w3-third"><br>
-  <div class="w3-card-2 w3-padding-top" style="min-height:400px; background-color: #ffffff">
-  <figure class="image is-1by2"></figure>
-<img src="assets/images/looq/aecc2.jpg"alt"image-1" style="height: 400px">
-<p><a href="https://www.pomelofashion.com/global/jewelry/15533-tori-star-hoop-earrings.html" target="_blank">Tori Star Hoop Earrings</a></p>
-  <p>240 <i class="fa fa-btc" aria-hidden="true"></i></p>
-  </div>
-</div>
-
-<div class="w3-third"><br>
-  <div class="w3-card-2 w3-padding-top" style="min-height:400px; background-color: #ffffff">
-  <figure class="image is-1by2"></figure>
-  <img src="assets/images/looq/shoes1.jpg"alt"image-1" style="height: 400px">
-<p><a href="https://www.pomelofashion.com/th/th/shoes/15551-serenity-high-heels---beige.html" target="_blank">Serenity High Heels Beige</a></p>
-  <p>2,790 <i class="fa fa-btc" aria-hidden="true"></i></p>
-  </div>
-</div>
-
-<div class="w3-third"><br>
-  <div class="w3-card-2 w3-padding-top" style="min-height:400px; background-color: #ffffff">
-  <figure class="image is-1by2"></figure>
-<img src="assets/images/looq/bottom2.png"alt"image-1" style="height: 400px">
-<p><a href="https://milin.com/shop/polgara-pants/" target="_blank">POLGARA PANTS</a></p>
-<p>3,380 <i class="fa fa-btc" aria-hidden="true"></i></p>
-  </div>
-</div>
-
-<div class="w3-third"><br>
-  <div class="w3-card-2 w3-padding-top" style="min-height:400px; background-color: #ffffff">
-  <figure class="image is-1by2"></figure>
-  <img src="assets/images/looq/sock1.jpg"alt"image-1" style="height: 400px">
-<p><a href="https://www.pomelofashion.com/th/en/misc/15483-vera-knee-length-socks---pink.html" target="_blank">Vera Knee Length Socks - Pink</a></p>
-  <p>190 <i class="fa fa-btc" aria-hidden="true"></i></p>
-  </div>
-</div>
-
-
-  <div class="w3-container w3-text-grey" id="jeans"><br>
-    <p>9 items</p>
-  </div>
-
-
-
-
-<!-- Pagination -->
-  <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-    </div>
-  </div>
-
-  
-<!-- <script>
-// Accordion 
-function myAccFunc() {
-    var x = document.getElementById("demoAcc");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-
-// Click on the "Jeans" link on page load to open the accordion for demo purposes
-document.getElementById("myBtn").click();
-
-
-// Script to open and close sidebar
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
-</script> -->
-</body>
-</html> 
-
+            </div>
+</footer>
+        
+    </body>
+</html>
