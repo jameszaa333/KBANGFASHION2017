@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>LOOQ & STYLE Register</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+    <link rel="stylesheet" href="header.css">
 </head>
 <body>
 	<!-- background -->
@@ -20,86 +21,54 @@
 	</main>
 
 <!--หัว-->
-		<div class="level">
-				
-			<nav class="navbar is-transparent">
-  					<div id="navMenuTransparentExample" class="navbar-menu" style="background-image: url('/assets/images/home/nav-tab.png'); width: 95rem; height: auto;">
+	<header>
+      <div class="head" style="z-index: 1;">
+        <div class="head1" style="display: flex;">
+          <div class="dropdown is-hoverable" style="padding-left: 5px; padding-top: 6px; height:auto; width: auto">
+            <div class="dropdown-trigger" style="padding-top: .5rem;">
+              <span><img src="assets/images/home/Hamburger1.png"></span>
+              <span class="icon is-small">
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+              </span>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu2" role="menu">
+              <div class="dropdown-content" style="background-color: ">
+                <a href="#" class="dropdown-item">LOOQ</a>
+                <hr style="margin: 0">
+                <a href="#" class="dropdown-item">Album</a>
+                <hr style="margin: 0">
+                <a href="#" class="dropdown-item">Clothes</a>
+                <hr style="margin: 0">
+                <a href="#" class="dropdown-item">Contact Us</a>
+              </div>
+            </div>
+            <a href="#"><img src="assets/images/home/closet.png" width="35px" height="40px"></a>
+          </div>
+        </div>
 
-    					<div class="navbar-start">
-    						<div class="level-left">
-    							<div class="level-item">
-      						<div class="navbar-item has-dropdown is-hoverable has-text-left">
-        						<img src="/assets/images/home/Hamburger1.png" alt="" width="40" height="auto"> 
-        							<div class="navbar-dropdown" style="background-color: #ccbbb9">
-          								<a class="navbar-item" href="#" style="font-family: Chonburi;color: #ffffff">
-            								LOOQ
-          								</a>
-								        <a class="navbar-item " href="#" style="font-family: Chonburi;color: #ffffff">
-								            Album
-								        </a>
-								        <a class="navbar-item " href="#" style="font-family: Chonburi;color: #ffffff">
-								            Clothes
-								        </a>
-								        <a class="navbar-item " href="#" style="font-family: Chonburi;color: #ffffff">
-								            Contact Us
-								        </a>
-
-        							</div>
-      						</div>
-    					</div>
-    				
-  					</div>
-  					<div class="level-item">
-  						
-						<a href="#">
-							<img src="/assets/images/home/closet.png" width="40" height="auto">
-					</a>
-					
-				</div>
-				</div>
-
-				<div class="container has-text-centered">
-				<div class="level-item">
-					<a href="#">
-						<img src="/assets/images/home/Logo2.png" width="250" height="auto">
-					</a>
-				</div>
-			</div>
-
-					
-				<div class="level-right">
-
-					<div class="level-item has-text-right">
-
-						<!-- <a href="#">TH</a> / <a href="#">EN</a>  | -->
-						<nav class="breadcrumb is-medium" aria-label="breadcrumbs">
-  							<ul>
-    							<li><a href="#">Sign in</a></li>
-    							<li class="is-active"><a href="#" aria-current="page">Sign up</a></li>
-  							</ul>
-						</nav>
-						<!-- <a href="#">Sign in</a> / <a href="#">Sign up</a> -->
-					</div>
-				</div>
-			</div>
-		</nav>
-	
-		
-	</div>	
-				</div>
-
-			</nav>	
-		</div>
+        <div class="head3" style="padding-top: 5.5px;">
+            <a href="index.html"><img class="logo" src="assets/images/home/Logo2.png" height="60px" width="235px"></a>
+        </div>
+        <div class="head4">
+            <nav class="breadcrumb is-small is-right" aria-label="breadcrumbs" style="font-size: .8rem">
+              <ul>
+                <li><a href="#">Log in</a></li>
+                <li><a href="register.html">Sign up</a></li>
+              </ul>
+            </nav>
+        </div>
+      </div>
+    </header>
 	
 
 	<!--Register-->
-	<div class="container has-text-centered">
-		<a class="Register" href="#" style="font-family: Chonburi;font-size: 3rem; color: #000000"> Register </a>
+	<div class="container has-text-centered" style="margin-top: 200px;margin-bottom: 20px">
+		<a class="Register" href="#" style="font-family: Chonburi;font-size: 2rem; color: #000000"> Register </a>
 	</div>
 
 		<!--email-->
 			<div class="field has-addons has-addons-centered">
-				<div class="control">
+			     <div class="control" style="width: 300px">
 					<input class="input is-normal" type="text" placeholder="U S E R N A M E">
 				</div>
 			</div>
@@ -108,8 +77,14 @@
 		<!--username-->
 		
 			<div class="field has-addons has-addons-centered">
-				<div class="control">
+			     <div class="control" style="width: 300px">
 					<input class="input is-normal" type="text" placeholder="P A S S W O R D">
+				</div>
+			</div>
+    
+    			<div class="field has-addons has-addons-centered">
+			     <div class="control" style="width: 300px">
+					<input class="input is-normal" type="text" placeholder="C O N F I R M   P A S S W O R D">
 				</div>
 			</div>
 		
@@ -117,7 +92,7 @@
 		<!--password-->
 
 			<div class="field has-addons has-addons-centered">
-				<div class="control">
+				<div class="control" style="width: 300px">
 					<input class="input is-normal" type="text" placeholder="E M A I L">
 				</div>
 			</div>
@@ -125,16 +100,16 @@
 		<!--con-->
 
 			<div class="field has-addons has-addons-centered">
-				<div class="control">
+                <div class="control" style="width: 300px">
 					<input class="input is-normal" type="text" placeholder="C O N F I R M   E M A I L">
 				</div>
 			</div>
 		
 
 			<!--sign-->
-			<div class="column has-text-centered">
-			<a class="button is-light" href="#" style="color: #976f6c">SIGN UP</a>
-				<h1>By clicking on 'Sign Up' above, you confirm that you</h1>
+			<div class="column has-text-centered" style="padding-bottom: 200px">
+			<a class="button is-light" href="#" style="color: #ffffff;width: 300px;background-color: #976f6c">SIGN UP</a>
+				<h1 style="padding-top: 10px">By clicking on 'Sign Up' above, you confirm that you</h1>
 				<p> accept the <a href="#" style="color: #976f6c"> Terms of Use</a> </p>
 
 		</div>
