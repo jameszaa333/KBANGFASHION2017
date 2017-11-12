@@ -32,6 +32,32 @@
       }
     });
   </script>
+    <style>
+* {
+  padding: 0;
+  margin: 0;
+}
+.fit {
+  max-width: 70%;
+  max-height: 70%;
+}
+.center {
+  display: block;
+  margin: auto;
+}
+</style>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" language="JavaScript">
+function set_body_height()
+{
+    var wh = $(window).height();
+    $('body').attr('style', 'height:' + wh + 'px;');
+}
+$(document).ready(function() {
+    set_body_height();
+    $(window).bind('resize', function() { set_body_height(); });
+});
+</script>
 </head>
 
 <header> <!--BG-->
@@ -59,7 +85,7 @@
       <div class="head" style="z-index: 5;">
         <div class="head1" style="display: flex;">
           <div class="dropdown is-hoverable" style="padding-left: 5px; padding-top: 6px; height:auto; width: auto">
-            <div class="dropdown-trigger" style="padding-top: .5rem;">
+            <div class="dropdown-trigger" style="padding-top: .5rem;padding-left: 10px">
               <span><img src="assets/images/home/Hamburger1.png"></span>
               <span class="icon is-small">
                 <i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -84,7 +110,7 @@
             <a href="index.html"><img class="logo" src="assets/images/home/Logo2.png" height="60px" width="235px"></a>
         </div>
         <div class="head4">
-            <nav class="breadcrumb is-small is-right" aria-label="breadcrumbs" style="font-size: .8rem">
+            <nav class="breadcrumb is-small is-right" aria-label="breadcrumbs" style="font-size: 1vw">
               <ul>
                 <li><a href="#">Log in</a></li>
                 <li><a href="register.html">Sign up</a></li>
@@ -96,24 +122,26 @@
 
 
   <!-- เนื้อหา -->
-    <section class="content">
-      <h1 class="finishlooq" style="font-family: Chonburi; padding-top: 5rem;">FINISH A LOOQ</h1>
+    <section class="content"><img id="the_pic" class="center fit" src="pic.jpg" > 
+      <h1 class="finishlooq" style="font-family: Chonburi; padding-top: 4rem;padding-left: 45px;font-size: 2.5vw">FINISH A LOOQ</h1>
       <div class="model" style="text-align: center;">
-          <img src="/assets/images/clothes/mock up.png" alt="Finsh LOOQ" style="width: auto; height: 60rem;">
-          <div class="description" style="font-family: Chonburi; font-size: 1.25rem; padding-bottom: 1.25rem;">
+          <img id="the_pic" class="center fit" src="/assets/images/clothes/mock up.png" alt="Finsh LOOQ" >
+<!--               style="width: auto; height: 60rem;">-->
+          <div class="description" style="font-family: Mitr; font-size: 1.3vw; padding-bottom: 1.25rem;">
               <p>OUTFIT DESCRIPTION</p>
               <p>TOPS : <a href="#">url 1</a></p>
               <p>BOTTOMS : <a href="#">url 2</a></p>
               <p>SHOES : <a href="#" >url 3</a></p>
               <p>ACCESSORIES : <a href="#">url 4</a></p>
-              <p>TOTAL PRICE : .....(Price)</p>
+              <p style="color: #976f6c">TOTAL PRICE : .....(Price)</p>
           </div>
+          <div style="padding-top: 65px;padding-bottom: 30px">	<a class="button is-light" href="#" style="color: #ffffff;width: 120px;background-color: #976f6c;margin-right: 20px">DONE</a>	<a class="button is-light" href="#" style="color: #ffffff;width: 150px;background-color: #976f6c">SAVE & DONE</a></div>
       </div>
     </section>
 
   <!-- ท้าย -->
         <footer class="footer" style="background-image: url(assets/images/home/%E0%B8%A5%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%87.png);background-repeat: round;width: 100%;height: 328px" >
-<div class="columns has-text-centered" style="height: 84px;padding-top: 25px">
+<div class="columns has-text-centered" style="height: 84px;padding-top: 25px;font-size: 1.4vw">
   <div class="column" style="font-family: Arial">
       <a href="#" style="color: white"><strong>OUR WEBSITE</strong></a>
       
@@ -131,7 +159,7 @@
 </div>
 <div class="columns has-text-centered" style="height: 30px; padding-top: 110px">
   <div class="column">
-      <p style="font-family: Chonburi;color: #ffffff;font-size: 16px">2017 LOOQ & STYLE all rights reserved</p>
+      <p style="font-family: Chonburi;color: #ffffff;font-size: 1vw">2017 LOOQ & STYLE all rights reserved</p>
   </div>
             </div>
 </footer>
