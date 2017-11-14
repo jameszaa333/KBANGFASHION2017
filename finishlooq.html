@@ -32,39 +32,67 @@
       }
     });
   </script>
+    <style>
+* {
+  padding: 0;
+  margin: 0;
+}
+.fit {
+  max-width: 70%;
+  max-height: 70%;
+}
+.center {
+  display: block;
+  margin: auto;
+}
+</style>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" language="JavaScript">
+function set_body_height()
+{
+    var wh = $(window).height();
+    $('body').attr('style', 'height:' + wh + 'px;');
+}
+$(document).ready(function() {
+    set_body_height();
+    $(window).bind('resize', function() { set_body_height(); });
+});
+</script>
 </head>
 
-<body>
-  <!-- พื้นหลัง -->
-    <main>
-      <style>
-          html {
-            background: url(/assets/images/home/BG.png) no-repeat center center fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-          }
-          
-          body {color: #000000;}
-          a:link {color: #f09488;}
-          a:hover {color: #ed7263;}
-      </style>
-    </main>
+<header> <!--BG-->
+<style type="text/css">
+    html {
+      background: url(/assets/images/home/BG.png) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
 
-  <!--หัว-->
-    <header>
-      <div class="head" style="z-index: 1;">
+    body {color: #000000;}
+    a:link {color: #f09488;}
+    a:hover {color: #ed7263;}
+
+    dummydeclaration { padding-left: 4em; } /* Firefox ignores first declaration for some reason */
+            tab1 { padding-left: 26em; }
+
+</style>
+</header>
+
+<body>
+ 	<header>
+      <div class="head" style="z-index: 5;">
         <div class="head1" style="display: flex;">
-          <div class="dropdown is-hoverable" style="padding-left: 5px; padding-top: 6px;height:auto;width: auto">
-            <div class="dropdown-trigger">
+          <div class="dropdown is-hoverable" style="padding-left: 5px; padding-top: 6px; height:auto; width: auto">
+            <div class="dropdown-trigger" style="padding-top: .5rem;padding-left: 10px">
               <span><img src="assets/images/home/Hamburger1.png"></span>
               <span class="icon is-small">
                 <i class="fa fa-angle-down" aria-hidden="true"></i>
               </span>
             </div>
             <div class="dropdown-menu" id="dropdown-menu2" role="menu">
-              <div class="dropdown-content" style="background-color: ">
+              <div class="dropdown-content">
                 <a href="#" class="dropdown-item">LOOQ</a>
                 <hr style="margin: 0">
                 <a href="#" class="dropdown-item">Album</a>
@@ -75,16 +103,14 @@
               </div>
             </div>
           </div>
+          <a href="#"><img src="assets/images/home/closet.png" width="35px" height="40px" style="padding-top: .4rem"></a>
         </div>
 
-        <div class="head2" style="">
-            <a href="#"><img src="assets/images/home/closet.png" height="20px" width="25px" style="padding-left: 4px"></a>
+        <div class="head3" style="padding-top: 5.5px;">
+            <a href="index.html"><img class="logo" src="assets/images/home/Logo2.png" height="60px" width="235px"></a>
         </div>
-        <div class="head3" style="">
-            <a href="index.html"><img class="logo" src="assets/images/home/Logo2.png" height="40px" width="215px"></a>
-        </div>
-        <div class="head4" style="width: flex; height: flex">
-            <nav class="breadcrumb is-small is-right" aria-label="breadcrumbs" style="font-size: .7rem">
+        <div class="head4">
+            <nav class="breadcrumb is-small is-right" aria-label="breadcrumbs" style="font-size: 1vw">
               <ul>
                 <li><a href="#">Log in</a></li>
                 <li><a href="register.html">Sign up</a></li>
@@ -94,35 +120,49 @@
       </div>
     </header>
 
+
   <!-- เนื้อหา -->
-    <section class="content">
-      <dd><h1 class="finishlooq" style="font-family: Chonburi; padding-top: 5rem;">FINISH A LOOQ</h1></dd>
+    <section class="content"><img id="the_pic" class="center fit" src="pic.jpg" > 
+      <h1 class="finishlooq" style="font-family: Chonburi; padding-top: 4rem;padding-left: 45px;font-size: 2.5vw">FINISH A LOOQ</h1>
       <div class="model" style="text-align: center;">
-          <img src="/assets/images/clothes/mock up.png" alt="Finsh LOOQ" style="width: auto; height: 60rem;">
-          <div class="description" style="font-family: Chonburi; font-size: 1.25rem; padding-bottom: 1.25rem;">
+          <img id="the_pic" class="center fit" src="/assets/images/clothes/mock up.png" alt="Finsh LOOQ" >
+<!--               style="width: auto; height: 60rem;">-->
+          <div class="description" style="font-family: Mitr; font-size: 1.3vw; padding-bottom: 1.25rem;">
               <p>OUTFIT DESCRIPTION</p>
               <p>TOPS : <a href="#">url 1</a></p>
               <p>BOTTOMS : <a href="#">url 2</a></p>
               <p>SHOES : <a href="#" >url 3</a></p>
               <p>ACCESSORIES : <a href="#">url 4</a></p>
-              <p>TOTAL PRICE : .....(Price)</p>
+              <p style="color: #976f6c">TOTAL PRICE : .....(Price)</p>
           </div>
+          <div style="padding-top: 65px;padding-bottom: 30px">	<a class="button is-light" href="#" style="color: #ffffff;width: 120px;background-color: #976f6c;margin-right: 20px">DONE</a>	<a class="button is-light" href="#" style="color: #ffffff;width: 150px;background-color: #976f6c">SAVE & DONE</a></div>
       </div>
     </section>
 
   <!-- ท้าย -->
-      <footer class="footer" style="background-image: url(/assets/images/home/ล่างง.png);">
-        <div class="container">
-          <div class="content has-text-centered">
-            <a href="#" style="color: #976f6c">OUR WEBSITE</a>
-            <a href="#" style="color: #976f6c">CUSTOMER CARE</a>
-            <a href="#" style="color: #976f6c">CONTACT US</a>
-          </div>
-          <div class="has-text-centered">
-            <a href="#" style="font-family: Chonburi;font-size: 1rem; color: #000000"> 2017 LOOQ &amp; STYLE all rights reserved </a>
-          </div>
-        </div>
-      </footer>
+        <footer class="footer" style="background-image: url(assets/images/home/%E0%B8%A5%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%87.png);background-repeat: round;width: 100%;height: 328px" >
+<div class="columns has-text-centered" style="height: 84px;padding-top: 25px;font-size: 1.4vw">
+  <div class="column" style="font-family: Arial">
+      <a href="#" style="color: white"><strong>OUR WEBSITE</strong></a>
+      
+  </div>
+  <div class="column" style="font-family: Arial">
+      <a href="#" style="color: white"><strong>CUSTOMER CARE</strong></a>
+  </div>
+  <div class="column" style="font-family: Arial">
+       <a href="#" style="color: white"><strong>ACCOUNTS</strong></a>
+  </div>
+  <div class="column" style="font-family: Arial">
+      <a href="#" style="color: white"><strong>CONTACT US</strong></a>
+  </div>
+
+</div>
+<div class="columns has-text-centered" style="height: 30px; padding-top: 110px">
+  <div class="column">
+      <p style="font-family: Chonburi;color: #ffffff;font-size: 1vw">2017 LOOQ & STYLE all rights reserved</p>
+  </div>
+            </div>
+</footer>
 
 </body>
 </html>
