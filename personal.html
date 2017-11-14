@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Personal profile</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chonburi">
+  <link rel="stylesheet" href="header.css">
+  <script>document.addEventListener('DOMContentLoaded', function () {
+
+  // Get all "navbar-burger" elements
+  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach(function ($el) {
+      $el.addEventListener('click', function () {
+
+        // Get the target from the "data-target" attribute
+        var target = $el.dataset.target;
+        var $target = document.getElementById(target);
+
+        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+        $el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+});</script>
+</head>
+    <body>
+        <!-- background -->
+    	<main>
+    		<style>
+    			html {
+    			   background: url(/assets/images/home/BG.png) no-repeat center center fixed;
+    			   -webkit-background-size: cover;
+    			   -moz-background-size: cover;
+    			   -o-background-size: cover;
+    			   background-size: cover;
+    			}
+
+          body {color: #000000;}
+          a:link {color: #f09488;}
+          a:hover {color: #ed7263;}
+    		</style>
+    	</main>
+ 	<header>
+      <div class="head" style="z-index: 5;">
+        <div class="head1" style="display: flex;">
+          <div class="dropdown is-hoverable" style="padding-left: 5px; padding-top: 6px; height:auto; width: auto">
+            <div class="dropdown-trigger" style="padding-top: .5rem;">
+              <span><img src="assets/images/home/Hamburger1.png"></span>
+              <span class="icon is-small">
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+              </span>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu2" role="menu">
+              <div class="dropdown-content">
+                <a href="#" class="dropdown-item">LOOQ</a>
+                <hr style="margin: 0">
+                <a href="#" class="dropdown-item">Album</a>
+                <hr style="margin: 0">
+                <a href="#" class="dropdown-item">Clothes</a>
+                <hr style="margin: 0">
+                <a href="#" class="dropdown-item">Contact Us</a>
+              </div>
+            </div>
+          </div>
+          <a href="#"><img src="assets/images/home/closet.png" width="35px" height="40px" style="padding-top: .4rem"></a>
+        </div>
+
+        <div class="head3" style="padding-top: 5.5px;">
+            <a href="index.html"><img class="logo" src="assets/images/home/Logo2.png" height="60px" width="235px"></a>
+        </div>
+        <div class="head4">
+            <nav class="breadcrumb is-small is-right" aria-label="breadcrumbs" style="font-size: .8rem">
+              <ul>
+                <li><a href="#">Log in</a></li>
+                <li><a href="register.html">Sign up</a></li>
+              </ul>
+            </nav>
+        </div>
+      </div>
+    </header>
+        
+
+        
+<!--ในส่วนของ CONTENT นั้น-->
+     <!--tabsด้านบน-->
+       <br>
+       <br>
+
+       <div class="container">
+        
+    <div class="tabs is-boxed is-medium">
+    <ul>
+      <li class="is-active">
+        <a>
+        <span class="icon is-small"><i class="fa fa-image"></i></span>
+        <span>Pictures</span>
+      </a>
+    </li>
+    <li>
+      <a>
+        <span class="icon is-small"><i class="fa fa-music"></i></span>
+        <span>Music</span>
+      </a>
+    </li>
+  </ul>
+</div>
+  <!--ช่วงที่ถูกใจ-->
+
+    <div class="columns is-multiline">
+      <div class="column is-one-third">
+
+      
+    <div class="card">
+      <div class="card-image">
+                <figure class="image"><!--ratio ภาพเป็น2:3-->
+                  <img src="/assets/images/model/modelN0.png" alt="looq1"><!--alt : อยากให้เวลาภาพไม่ขึ้น จะให้ขึ้นว่าอะไร-->
+                </figure>
+              </div>
+            </div>
+            </div>
+            <div class="column is-one-third">
+            <div class="card">
+        <div class="card-image">
+                <figure class="image"><!--ratio ภาพเป็น2:3-->
+                  <img src="/assets/images/model/modelN0.png" alt="looq2"><!--alt : อยากให้เวลาภาพไม่ขึ้น จะให้ขึ้นว่าอะไร-->
+                </figure>
+              </div>
+              </div>
+              </div>
+              <div class="column is-one-third">
+              <div class="card">
+              <div class="card-image">
+                <figure class="image"><!--ratio ภาพเป็น2:3-->
+                  <img src="/assets/images/model/modelN0.png" alt="looq3"><!--alt : อยากให้เวลาภาพไม่ขึ้น จะให้ขึ้นว่าอะไร-->
+                </figure>
+              </div>
+              </div>
+              </div>
+              <div class="column is-one-third">
+              <div class="card">
+              <div class="card-image">
+                <figure class="image"><!--ratio ภาพเป็น2:3-->
+                  <img src="/assets/images/model/modelN0.png" alt="looq4"><!--alt : อยากให้เวลาภาพไม่ขึ้น จะให้ขึ้นว่าอะไร-->
+                </figure>
+              </div>
+              </div>
+              </div>
+              <div class="column is-one-third">
+              <div class="card">
+              <div class="card-image">
+                <figure class="image"><!--ratio ภาพเป็น2:3-->
+                  <img src="/assets/images/model/modelN0.png" alt="looq5"><!--alt : อยากให้เวลาภาพไม่ขึ้น จะให้ขึ้นว่าอะไร-->
+                </figure>
+              </div>
+              </div>
+              </div>
+              <div class="column is-one-third">
+              <div class="card">
+              <div class="card-image">
+                <figure class="image"><!--ratio ภาพเป็น2:3-->
+                  <img src="/assets/images/model/modelN0.png" alt="looq6"><!--alt : อยากให้เวลาภาพไม่ขึ้น จะให้ขึ้นว่าอะไร-->
+                </figure>
+              </div>
+              </div>
+              </div>
+              <div class="column is-one-third">
+              <div class="card">
+              <div class="card-image">
+                <figure class="image"><!--ratio ภาพเป็น2:3-->
+                  <img src="/assets/images/model/modelN0.png" alt="looq7"><!--alt : อยากให้เวลาภาพไม่ขึ้น จะให้ขึ้นว่าอะไร-->
+                </figure>
+                </div>
+              </div>
+              </div>
+              <div class="column is-one-third">
+              <div class="card">
+              <div class="card-image">
+                <figure class="image"><!--ratio ภาพเป็น2:3-->
+                  <img src="/assets/images/model/modelN0.png" alt="looq8"><!--alt : อยากให้เวลาภาพไม่ขึ้น จะให้ขึ้นว่าอะไร-->
+                </figure>
+                </div>
+              </div>
+              </div>
+              <div class="column is-one-third">
+              <div class="card">
+              <div class="card-image">
+                <figure class="image"><!--ratio ภาพเป็น2:3-->
+                  <img src="/assets/images/model/modelN0.png" alt="looq9"><!--alt : อยากให้เวลาภาพไม่ขึ้น จะให้ขึ้นว่าอะไร-->
+                </figure>
+              </div>
+              </div>
+              </div>
+
+    </div>
+    </div>
+
+</div>
+        
+<!--ในส่วนของ CONTENT นั้น-->
+   
+
+        <footer class="footer" style="background-image: url(assets/images/home/%E0%B8%A5%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%87.png);background-repeat: round;width: 100%;height: 328px" >
+<div class="columns has-text-centered" style="height: 84px">
+  <div class="column" style="font-family: Arial">
+      <a href="#" style="color: white"><strong>OUR WEBSITE</strong></a>
+      
+  </div>
+  <div class="column" style="font-family: Arial">
+      <a href="#" style="color: white"><strong>CUSTOMER CARE</strong></a>
+  </div>
+  <div class="column" style="font-family: Arial">
+       <a href="#" style="color: white"><strong>ACCOUNTS</strong></a>
+  </div>
+  <div class="column" style="font-family: Arial">
+      <a href="#" style="color: white"><strong>CONTACT US</strong></a>
+  </div>
+
+</div>
+<div class="columns has-text-centered" style="height: 30px; padding-top: 110px">
+  <div class="column">
+      <p style="font-family: Chonburi;color: #444444;font-size: 13px">2017 LOOQ & STYLE all rights reserved</p>
+  </div>
+            </div>
+</footer>
+        
+    </body>
+</html>
