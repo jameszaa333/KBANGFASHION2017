@@ -109,20 +109,134 @@
           </div>
         </div>
       </div>
-        <br>
+        
+        <!--tabs-->
+        <style>
+        
+            .tabs a {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom-color: #ffffff;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  color: #caa7a7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: -1px;
+  padding: 0.5em 1em;
+  vertical-align: top;
+}
+
+.tabs a:hover {
+  border-bottom-color: #ffffff;
+  color: #916d6d;
+}
+
+.tabs li {
+  display: block;
+}
+
+.tabs li.is-active a {
+  border-bottom-color: #ffffff;
+  color: #ffffff;
+}
+
+.tabs ul {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom-color: #916d6d;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.tabs ul.is-left {
+  padding-right: 0.75em;
+}
+
+.tabs ul.is-center {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+}
+
+.tabs ul.is-right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-left: 0.75em;
+}
+
+.tabs .icon:first-child {
+  margin-right: 0.5em;
+}
+
+.tabs .icon:last-child {
+  margin-left: 0.5em;
+}
+
+.tabs.is-centered ul {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tabs.is-right ul {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.tabs.is-boxed a {
+  border: 1px solid rgba(207, 81, 81, 0);
+  border-radius: 3px 3px 0 0;
+}
+
+.tabs.is-boxed a:hover {
+  background-color: #ffe8e8;
+  border-bottom-color: #ffffff;
+}
+
+.tabs.is-boxed li.is-active a {
+  background-color: #916d6d;
+  border-color: #ffffff;
+  border-bottom-color: transparent !important;
+}
+            </style>
+
+
         <div class="container">
     <div class="tabs is-boxed is-medium">
     <ul>
       <li class="is-active">
         <a>
-        <span class="icon is-small"><i class="fa fa-image"></i></span>
-        <span>Pictures</span>
+        <span>Liked</span>
       </a>
     </li>
     <li>
       <a>
-        <span class="icon is-small"><i class="fa fa-music"></i></span>
-        <span>Music</span>
+        <span>My Looq</span>
       </a>
     </li>
   </ul>
