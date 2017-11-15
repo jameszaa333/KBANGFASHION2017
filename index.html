@@ -18,11 +18,30 @@
 			   -moz-background-size: cover;
 			   -o-background-size: cover;
 			   background-size: cover;
+         height: 100%;
 			}
 
 			body {color: #000000;}
 			a:link {color: #f09488;}
 			a:hover {color: #ed7263;}
+
+
+      body.loading {
+        overflow: hidden;
+        max-height: 100%;
+      }
+
+      .preloading {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        height: 100%;
+      }
 		</style>
 	</main>
 
@@ -144,7 +163,16 @@
             </div>
 </footer>
 
-    <script>document.addEventListener('DOMContentLoaded', function () {
+    <script>
+      // before loading
+      var loading = document.createElement('div')
+      loading.id = 'loading'
+      loading.classList.add('preloading')
+
+      document.body.appendChild(loading)
+      document.body.classList.add('loading')
+
+      document.addEventListener('DOMContentLoaded', function () {
 
     // Get all "navbar-burger" elements
     var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
@@ -166,6 +194,15 @@
           });
         });
       }
+
+      var random = function(min, max) {
+        return min + Math.floor(Math.random() * (max + 1))
+      };
+
+      setTimeout(function() {
+        loading.remove()
+        document.body.classList.add('remove')
+      }, random(1, 3) * 1000)
     });
   </script>
 </body>
