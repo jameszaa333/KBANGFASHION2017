@@ -46,7 +46,30 @@
   display: block;
   margin: auto;
 }
+
+.btn {
+    border: none; /* Remove borders */
+    color: white; /* Add a text color */
+    padding: 14px 28px; /* Add some padding */
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+}
+/* Button model */
+.N0 {background-image: url(assets/images/model/N0.png) ;} 
+.N0:hover {background-image: url(assets/images/model/N0.png);}
+
+.N1 {background-image: url(assets/images/model/N1.png) ;} 
+.N1:hover {background-image: url(assets/images/model/N1.png);}
+
+.N2 {background-image: url(assets/images/model/N2.png) ;}
+.N2:hover {background-image: url(assets/images/model/N2.png);}
+
+.N3 {background-image: url(assets/images/model/N3.png) ;}
+.N3:hover {background-image: url(assets/images/model/N3.png);}
+
+.N4 {background-image: url(assets/images/model/N4.png) ;}
+.N4:hover {background-image: url(assets/images/model/N4.png);}
 </style>
+
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script type="text/javascript" language="JavaScript">
 function set_body_height()
@@ -113,7 +136,7 @@ $(document).ready(function() {
         <div class="head4">
             <nav class="breadcrumb is-small is-right" aria-label="breadcrumbs" style="font-size: 1vw">
               <ul>
-                <li><a href="#">Log in</a></li>
+                <li><a href="login.html">Log in</a></li>
                 <li><a href="register.html">Sign up</a></li>
               </ul>
             </nav>
@@ -124,9 +147,20 @@ $(document).ready(function() {
 
   <!-- เนื้อหา -->
     <section class="content"><img id="the_pic" class="center fit" src="pic.jpg" > 
-      <h1 class="finishlooq" style="font-family: Chonburi; padding-top: 4rem;padding-left: 45px;font-size: 2.5vw">CREATE MODEL</h1>
+      <h1 class="model color" style="font-family: Chonburi; padding-top: 4rem;padding-left: 45px;font-size: 2.5vw">CREATE MODEL </h1>
+     <h1 class="model color" style="font-family: Chonburi; padding-left:263px; font-size: 1.5vw">COLOR </h1> 
       <div class="model" style="text-align: center;">
-          <img id="the_pic" class="center fit" src="/assets/images/model/modelN0.png" alt="Finsh LOOQ" >
+
+          <img id="the_pic" class="center fit" src="/assets/images/model/modelN0.png" alt="CREATE MODEL" >
+          <img id="the_pic" class="center fit" src="/assets/images/model/shadow.png" alt="CREATE MODEL" >
+        
+          <button class="btn N0"></button>
+          <button class="btn N1"></button>
+          <button class="btn N2"></button>
+          <button class="btn N3"></button>
+          <button class="btn N4"></button>
+
+
 <!--               style="width: auto; height: 60rem;">-->
           
           <div style="padding-top: 65px;padding-bottom: 30px">  
