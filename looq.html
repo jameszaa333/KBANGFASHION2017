@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-TH">
 <html>
-<title>page</title>
+<head>
+<title>looq</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -9,122 +10,99 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+<!-- css ทำตรงนี้-->
 <style>
-.w3-sidebar a {font-family: "Roboto", sans-serif}
-body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
-</style>
-<body class="w3-content" style="max-width:1200px">
+          html {
+             background: url(/assets/images/home/BG.png) no-repeat center center fixed;
+             -webkit-background-size: cover;
+             -moz-background-size: cover;
+             -o-background-size: cover;
+             background-size: cover;
+          }
 
+          body {color: #000000;}
+          a:link {color: #f09488;}
+          a:hover {color: #ed7263;}
+        </style>
+  <header>
+    <style>
+      .w3-sidebar a {font-family: "Roboto", sans-serif}
+      body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
-<!-- Sidebar/menu -->
-<!--nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
-  <div class="w3-container w3-display-container w3-padding-16">
-    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-     <img src="/assets/image/Logo2.jpg" style="width:100%">
-  </div>
-  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
-    <a href="#" class="w3-bar-item w3-button">Shirts</a>
-    <a href="#" class="w3-bar-item w3-button">Dresses</a>
-    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
-      Jeans <i class="fa fa-caret-down"></i>
-    </a>
-    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-      <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
-      <a href="#" class="w3-bar-item w3-button">Relaxed</a>
-      <a href="#" class="w3-bar-item w3-button">Bootcut</a>
-      <a href="#" class="w3-bar-item w3-button">Straight</a>
-    </div>
-    <a href="#" class="w3-bar-item w3-button">Jackets</a>
-    <a href="#" class="w3-bar-item w3-button">Gymwear</a>
-    <a href="#" class="w3-bar-item w3-button">Blazers</a>
-    <a href="#" class="w3-bar-item w3-button">Shoes</a>
-  </div>
-  <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a>
-  <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a>
-</nav>
+/*ส่วนนี้สำหรับใส่โค้ดสีก่อนคลิก*/
+    a:link {
+      color: #d1aba6;
+    }
 
-<!-- Top menu on small screens -->
-<!--header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-  <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-</header>
+/*ส่วนนี้สำหรับ link จะเปลี่ยนเป็นอีกสีหนึ่งเมื่อเอาเมาส์ไปวาง*/
+    a:hover {
+      color: #d1aba6;
+    }
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<!--div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+/*ส่วนนี้สำหรับ เมื่อคลิกแล้วจะเปลี่ยนเป็นอีกสีหนึ่ง*/
+    a:visited {
+      color: #d1aba6;
+    }
 
-<!-- !PAGE CONTENT! -->
-<!--div class="w3-main" style="margin-left:250px">
+      </style>
 
-  <!-- Push down content on small screens -->
-  <div class="w3-hide-large" style="margin-top:83px"></div>
-
-  <!-- Top header -->
-  <!--header class="w3-container w3-xlarge">
-    <p class="w3-left">Jeans</p>
-    <p class="w3-right">
-      <div class="w3-container">
-  <button onclick="document.getElementById('id01').style.display='block'" class="w3-button  w3-large w3-right">Login</button>
-      <i class="fa fa-search"></i>
-    </p>
   </header>
 
-  <!-- Image header -->
+  <body class="w3-content" style="max-width:1200px">
 
-  <div class="w3-padding-32">
-    <div class="w3-container">
-<div class="w3-border">
-<li class="w3-dropdown-hover">
-    <div class="w3-bar w3-border">
-      <button class="w3-button w3-black w3-card-4">
-        <a href="looq.html">ALL</a>
-      </button></li></ul>
+    <div class="w3-padding-32">
+      <div class="w3-container">
+        <div class="w3-border">
+<!--แก้ตรงนี้ ทำให้อยู่บรรทัดเดียวกัน-->
+          <button class="w3-button w3-black w3-card-4">
+            <a href="/looq.html">ALL</a>
+          </button>
+<!--ถึงตรงนี้-->
+          <li class="w3-dropdown-hover">
+            <button class="w3-button w3-white  ">
+              <a href="/all tops.html">Tops <i class="fa fa-caret-down w3-margin-left"></i></a>
+                <div class="w3-dropdown-content w3-white w3-card-4">
+                  <a href="/all tops.html">All Tops</a><br>
+                  <a href="/blouse.html">Blouses</a><br>
+                  <a href="/tanks.html">Tanks</a><br>
+                </div>
+            </button>
+          </li></ul>
 
-        <li class="w3-dropdown-hover">
-    <button class="w3-button w3-white  "><a href="/all tops.html">Tops<i class="fa fa-caret-down w3-margin-left"></i></a>
-    <div class="w3-dropdown-content w3-white w3-card-4">
-      <a href="/all tops.html">All Tops</a><br>
-      <a href="/blouse.html">Blouses</a><br>
-      <a href="/tanks.html">Tanks</a><br>
+          <li class="w3-dropdown-hover">
+            <button class="w3-button w3-white  ">
+              <a href="/all bottoms.html">Bottoms <i class="fa fa-caret-down w3-margin-left"></i></a>
+                <div class="w3-dropdown-content w3-white w3-card-4">
+                  <a href="/all bottoms.html">All Bottoms</a><br>
+                  <a href="/pants.html">Pants</a><br>
+                  <a href="/shorts.html">Shorts</a><br>
+                  <a href="/skirts.html">Skirts</a><br>
+              </div>
+            </button>
+          </li></ul>
+
+          <button class="w3-button w3-white w3-hide-small">
+            <a href="Dresses.html">Dresses</a>
+          </button>
+
+          <button class="w3-button w3-white w3-hide-small">
+            <a href="Shoes.html">Shoes</a>
+          </button>
+
+          <li class="w3-dropdown-hover">
+            <button class="w3-button w3-white"><a href="#">Accessories <i class="fa fa-caret-down w3-margin-left"></i></a>
+              <div class="w3-dropdown-content w3-white w3-card-4">
+                <a href="#">All Aeccessories</a><br>
+                <a href="#">Earrings</a><br>
+                <a href="/Bags.html">Bags</a><br>
+                <a href="/socks.html">Socks</a><br>
+              </div>
+            </button>
+        </li></ul>
+
+        </div>
+      </div>
     </div>
-  </li>
-  </ul>
-
-    </a></button>
-    <li class="w3-dropdown-hover">
-    <button class="w3-button w3-white"><a href="/all bottoms.html">Bottoms <i class="fa fa-caret-down w3-margin-left"></i></a>
-    <div class="w3-dropdown-content w3-white w3-card-4">
-      <a href="/all bottoms.html">All Bottoms</a><br>
-      <a href="/pants.html">Pants</a><br>
-      <a href="/shorts.html">Shorts</a><br>
-      <a href="/skirts.html">Skirts</a><br>
-    </div>
-  </li>
-  </ul>
-
-    <button class="w3-button w3-white w3-hide-small">
-      <a href ="/Dresses.html">Dresses</a>
-    </button>
-
-    <button class="w3-button w3-white w3-hide-small">
-      <a href ="Shoes.html">Shoes</a>
-    </button>
-
-    <li class="w3-dropdown-hover">
-    <button class="w3-button w3-white"><a href="#">Accessories <i class="fa fa-caret-down w3-margin-left"></i></a>
-    <div class="w3-dropdown-content w3-white w3-card-4">
-      <a href="#">All Aeccessories</a><br>
-      <a href="#">Earrings</a><br>
-      <a href="/Bags.html">Bags</a><br>
-      <a href="/socks.html">Socks</a><br>
-    </div>
-  </li>
-</ul></i></a></button>
-    </div>
-    </div>
-
-
-
   </header>
 
 
@@ -134,7 +112,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 <div class="w3-row-padding w3-center w3-margin-top">
 <div class="w3-third">
   <figure class="image is-1by2"></figure>
-  <div class="w3-card-2 w3-padding-top " style="min-height:400px">
+  <div class="w3-card-2 w3-padding-top " style="min-height:400px; background-color: #ffffff;">
 <img src="assets/images/looq/top1.jpg"alt"image-1" style="height: 400px">
   <p><a href="https://milin.com/shop/fauna-top/" target="_blank">Milin FAUNA</a></p>
   <p>5,057 <i class="fa fa-btc" aria-hidden="true"></i></p>
@@ -142,7 +120,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 </div>
 
 <div class="w3-third">
-  <div class="w3-card-2 w3-padding-top" style="min-height:400px">
+  <div class="w3-card-2 w3-padding-top" style="min-height:400px; background-color: #ffffff;">
     <figure class="image is-1by2"></figure>
   <img src="assets/images/looq/top2.jpg"alt"image-1" style="height: 400px">
  <p><a href="https://milin.com/shop/fortuna-dress/" target="_blank">Milin FAUNA DRESS</a></p>
@@ -151,7 +129,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 </div>
 
 <div class="w3-third">
-  <div class="w3-card-2 w3-padding-top" style="min-height:400px">
+  <div class="w3-card-2 w3-padding-top" style="min-height:400px; background-color: #ffffff;">
   <figure class="image is-1by2"></figure>
 <img src="assets/images/looq/aecc3.png"alt"image-1" style="height: 400px">
 <p><a href="https://www.pomelofashion.com/global/sunglasses/15502-jamiya-tinted-lens-aviator-sunglasses.html" target="_blank">Jamiyo Tinted Lens Aviotor Sungiasses</a></p>
@@ -160,7 +138,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 </div>
 
 <div class="w3-third"><br>
-  <div class="w3-card-2 w3-padding-top" style="min-height:400px">
+  <div class="w3-card-2 w3-padding-top" style="min-height:400px; background-color: #ffffff;">
  <figure class="image is-1by2"></figure>
   <img src="assets/images/looq/bottom1.jpg"alt"image-1" style="height: 400px">
 <p><a href="https://milin.com/shop/one-night-shorts/" target="_blank">Milin ONE NIGHT SHORTS</a></p>
@@ -169,7 +147,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 </div>
 
 <div class="w3-third"><br>
-  <div class="w3-card-2 w3-padding-top" style="min-height:400px">
+  <div class="w3-card-2 w3-padding-top" style="min-height:400px; background-color: #ffffff;">
   <figure class="image is-1by2"></figure>
 <img src="assets/images/looq/aecc1.png"alt"image-1" style="height: 400px">
 <p><a href="https://www.pomelofashion.com/th/th/jewelry/13868-goya-circular-collar-necklace---gold.html" target="_blank">Goya Circular Collar Necklace - Gold</a></p>
@@ -178,7 +156,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 </div>
 
 <div class="w3-third"><br>
-  <div class="w3-card-2 w3-padding-top" style="min-height:400px">
+  <div class="w3-card-2 w3-padding-top" style="min-height:400px; background-color: #ffffff;">
   <figure class="image is-1by2"></figure>
 <img src="assets/images/looq/aecc2.jpg"alt"image-1" style="height: 400px">
 <p><a href="https://www.pomelofashion.com/global/jewelry/15533-tori-star-hoop-earrings.html" target="_blank">Tori Star Hoop Earrings</a></p>
@@ -187,7 +165,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 </div>
 
 <div class="w3-third"><br>
-  <div class="w3-card-2 w3-padding-top" style="min-height:400px">
+  <div class="w3-card-2 w3-padding-top" style="min-height:400px; background-color: #ffffff;">
   <figure class="image is-1by2"></figure>
   <img src="assets/images/looq/shoes1.jpg"alt"image-1" style="height: 400px">
 <p><a href="https://www.pomelofashion.com/th/th/shoes/15551-serenity-high-heels---beige.html" target="_blank">Serenity High Heels Beige</a></p>
@@ -196,7 +174,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 </div>
 
 <div class="w3-third"><br>
-  <div class="w3-card-2 w3-padding-top" style="min-height:400px">
+  <div class="w3-card-2 w3-padding-top" style="min-height:400px; background-color: #ffffff;">
   <figure class="image is-1by2"></figure>
 <img src="assets/images/looq/bottom2.png"alt"image-1" style="height: 400px">
 <p><a href="https://milin.com/shop/polgara-pants/" target="_blank">POLGARA PANTS</a></p>
@@ -205,7 +183,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 </div>
 
 <div class="w3-third"><br>
-  <div class="w3-card-2 w3-padding-top" style="min-height:400px">
+  <div class="w3-card-2 w3-padding-top" style="min-height:400px; background-color: #ffffff;">
   <figure class="image is-1by2"></figure>
   <img src="assets/images/looq/sock1.jpg"alt"image-1" style="height: 400px">
 <p><a href="https://www.pomelofashion.com/th/en/misc/15483-vera-knee-length-socks---pink.html" target="_blank">Vera Knee Length Socks - Pink</a></p>

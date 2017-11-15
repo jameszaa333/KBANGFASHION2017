@@ -1,75 +1,190 @@
 <!DOCTYPE html>
-<html lang="en-TH">
-<html>
-<title>All Tops</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
-<link rel="stylesheet" type="text/css" href="/all tops">
+<html lang="en">
 
-<style>
-.w3-sidebar a {font-family: "Roboto", sans-serif}
-body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
-</style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>looqs</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chonburi">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<!-- css ทำตรงนี้-->
 
-<body class="w3-content" style="max-width:1200px">
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
 
-	<div class="w3-padding-32">
-    <div class="w3-container">
-<div class="w3-border">
-<li class="w3-dropdown-hover">
-    <div class="w3-bar w3-border">
-      <button class="w3-button w3-black w3-card-4">
-				<a href="/looq.html">ALL</a>
-			</button></li></ul>
+  // Get all "navbar-burger" elements
+      var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
-    <li class="w3-dropdown-hover">
-    <button class="w3-button w3-white  "><a href="/all tops.html">Tops<i class="fa fa-caret-down w3-margin-left"></i></a>
-    <div class="w3-dropdown-content w3-white w3-card-4">
-      <a href="/all tops.html">All Tops</a><br>
-      <a href="/blouse.html">Blouses</a><br>
-      <a href="/tanks.html">Tanks</a><br>
+  // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach(function ($el) {
+    $el.addEventListener('click', function () {
+
+        // Get the target from the "data-target" attribute
+      var target = $el.dataset.target;
+      var $target = document.getElementById(target);
+
+        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+    $el.classList.toggle('is-active');
+    $target.classList.toggle('is-active');
+
+        });
+      });
+    }
+  });
+  </script>
+
+</head>
+
+  
+    <main>
+
+      <style>
+
+        html {
+           background: url(/assets/images/home/BG.png) no-repeat center center fixed;
+           -webkit-background-size: cover;
+           -moz-background-size: cover;
+           -o-background-size: cover;
+           background-size: cover;
+        }
+
+        body {color: #000000;}
+        a:link {color: #f09488;}
+        a:hover {color: #ed7263;}
+
+        .w3-sidebar a {font-family: "Roboto", sans-serif}
+        body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+        /*ส่วนนี้สำหรับใส่โค้ดสีก่อนคลิก*/
+      a:link {
+        color: #d1aba6;
+      }
+
+  /*ส่วนนี้สำหรับ link จะเปลี่ยนเป็นอีกสีหนึ่งเมื่อเอาเมาส์ไปวาง*/
+      a:hover {
+        color: #d1aba6;
+      }
+
+  /*ส่วนนี้สำหรับ เมื่อคลิกแล้วจะเปลี่ยนเป็นอีกสีหนึ่ง*/
+      a:visited {
+        color: #d1aba6;
+      }
+      </style>
+
+    </main>
+
+    <header>
+      <div class="head" style="z-index: 5;">
+        <div class="head1" style="display: flex;">
+
+          <div class="dropdown is-hoverable" style="padding-left: 5px; padding-top: 6px; height:auto; width: auto">
+
+            <div class="dropdown-trigger" style="padding-top: .5rem;padding-left: 10px">
+              <span><img src="assets/images/home/Hamburger1.png"></span>
+              <span class="icon is-small">
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+              </span>
+            </div>
+
+            <div class="dropdown-menu" id="dropdown-menu2" role="menu">
+              <div class="dropdown-content">
+                <a href="#" class="dropdown-item">LOOQ</a>
+                <hr style="margin: 0">
+                <a href="#" class="dropdown-item">Album</a>
+                <hr style="margin: 0">
+                <a href="#" class="dropdown-item">Clothes</a>
+                <hr style="margin: 0">
+                <a href="#" class="dropdown-item">Contact Us</a>
+              </div>
+            </div>
+
+          </div>
+
+          <a href="#"><img src="assets/images/home/closet.png" width="35px" height="40px" style="padding-top: .4rem"></a>
+
+        </div>
+
+        <div class="head3" style="padding-top: 5.5px;">
+            <a href="index.html"><img class="logo" src="assets/images/home/Logo2.png" height="60px" width="235px"></a>
+        </div>
+
+          <div class="head4">
+            <nav class="breadcrumb is-small is-right" aria-label="breadcrumbs" style="font-size: 1vw">
+              <ul>
+                <li><a href="#">Log in</a></li>
+                <li><a href="register.html">Sign up</a></li>
+              </ul>
+            </nav>
+          </div>
+
+      </div>
+    </header>
+
+  <body class="w3-content" style="max-width:1200px">
+
+    <div class="w3-padding-32">
+      <div class="w3-container">
+        <div class="w3-border">
+<!--แก้ตรงนี้ ทำให้อยู่บรรทัดเดียวกัน-->
+          <button class="w3-button w3-black w3-card-4">
+            <a href="/looq.html">ALL</a>
+          </button>
+<!--ถึงตรงนี้-->
+          <li class="w3-dropdown-hover">
+            <button class="w3-button w3-white  ">
+              <a href="/all tops.html">Tops <i class="fa fa-caret-down w3-margin-left"></i></a>
+                <div class="w3-dropdown-content w3-white w3-card-4">
+                  <a href="/all tops.html">All Tops</a><br>
+                  <a href="/blouse.html">Blouses</a><br>
+                  <a href="/tanks.html">Tanks</a><br>
+                </div>
+            </button>
+          </li></ul>
+
+          <li class="w3-dropdown-hover">
+            <button class="w3-button w3-white  ">
+              <a href="/all bottoms.html">Bottoms <i class="fa fa-caret-down w3-margin-left"></i></a>
+                <div class="w3-dropdown-content w3-white w3-card-4">
+                  <a href="/all bottoms.html">All Bottoms</a><br>
+                  <a href="/pants.html">Pants</a><br>
+                  <a href="/shorts.html">Shorts</a><br>
+                  <a href="/skirts.html">Skirts</a><br>
+              </div>
+            </button>
+          </li></ul>
+
+          <button class="w3-button w3-white w3-hide-small">
+            <a href="Dresses.html">Dresses</a>
+          </button>
+
+          <button class="w3-button w3-white w3-hide-small">
+            <a href="Shoes.html">Shoes</a>
+          </button>
+
+          <li class="w3-dropdown-hover">
+            <button class="w3-button w3-white"><a href="#">Accessories <i class="fa fa-caret-down w3-margin-left"></i></a>
+              <div class="w3-dropdown-content w3-white w3-card-4">
+                <a href="#">All Aeccessories</a><br>
+                <a href="#">Earrings</a><br>
+                <a href="/Bags.html">Bags</a><br>
+                <a href="/socks.html">Socks</a><br>
+              </div>
+            </button>
+        </li></ul>
+
+        </div>
+      </div>
     </div>
-  </li>
-  </ul>
+  </header>
 
-    </a></button>
-    <li class="w3-dropdown-hover">
-    <button class="w3-button w3-white  "><a href="/all bottoms.html">Bottoms <i class="fa fa-caret-down w3-margin-left"></i></a>
-    <div class="w3-dropdown-content w3-white w3-card-4">
-      <a href="/all bottoms.html">All Bottoms</a><br>
-      <a href="/pants.html">Pants</a><br>
-      <a href="/shorts.html">Shorts</a><br>
-      <a href="/skirts.html">Skirts</a><br>
+
     </div>
-  </li>
-  </ul>
-
-    <button class="w3-button w3-white w3-hide-small">
-			<a href="/Dresses.html">Dresses</a>
-		</button>
-
-		<button class="w3-button w3-white w3-hide-small">
-			<a href="/Shoes.html">Shoes</a>
-		</button>
-
-		<li class="w3-dropdown-hover">
-    <button class="w3-button w3-white"><a href="#">Accessories <i class="fa fa-caret-down w3-margin-left"></i></a>
-    <div class="w3-dropdown-content w3-white w3-card-4">
-       <a href="#">All Aeccessories</a><br>
-      <a href="#">Earrings</a><br>
-      <a href="/Bags.html">Bags</a><br>
-      <a href="/socks.html">Socks</a><br>
-    </div>
-  </li>
-</ul></i></a></button>
-    </div>
-    </div>
-
+  </div>
 
 
   </header>
