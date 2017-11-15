@@ -7,30 +7,6 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chonburi">
     <link rel="stylesheet" href="header.css">
-    <script>document.addEventListener('DOMContentLoaded', function () {
-
-    // Get all "navbar-burger" elements
-    var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-    // Check if there are any navbar burgers
-    if ($navbarBurgers.length > 0) {
-
-      // Add a click event on each of them
-      $navbarBurgers.forEach(function ($el) {
-        $el.addEventListener('click', function () {
-
-          // Get the target from the "data-target" attribute
-          var target = $el.dataset.target;
-          var $target = document.getElementById(target);
-
-          // Toggle the class on both the "navbar-burger" and the "navbar-menu"
-          $el.classList.toggle('is-active');
-          $target.classList.toggle('is-active');
-          });
-        });
-      }
-    });
-  </script>
 </head>
 
 <body>
@@ -42,11 +18,30 @@
 			   -moz-background-size: cover;
 			   -o-background-size: cover;
 			   background-size: cover;
+         height: 100%;
 			}
 
 			body {color: #000000;}
 			a:link {color: #f09488;}
 			a:hover {color: #ed7263;}
+
+
+      body.loading {
+        overflow: hidden;
+        max-height: 100%;
+      }
+
+      .preloading {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        height: 100%;
+      }
 		</style>
 	</main>
 
@@ -105,8 +100,6 @@
 		<a href="/randompage2.html">randompage ลองเล่นหลายๆ รอบนาจา เรากำหนดเวลาไว้ล้าว</a> by ออยเอง (ยังไม่ responsive)<br>
 		<a href="/randompage.html">randompage</a> เอาโค้ดหน่องออยมาแก้นิดหน่อย responsive แล้ว by CJ<br>
 		<a href="/personal.html">personal profile</a> by minnie<br>
-<<<<<<< HEAD
-<<<<<<< HEAD
 		<a href="/register.html">register</a> แก้ยิบย่อย by CJ , เพิ่มตรงคลิกTermsofUseจ้า แต่บางข้อเขียว นี่ก็งง TT by คนสวย<br><br>
 		<a href="/tag.html">tag album</a> ปอเอง ปรับสีนิดนึง<br>
 		<br>
@@ -115,32 +108,34 @@
 
 		<b><u>ไกด์เขียนเว็บ</u></b>
 		<p>โค้ดสำคัญๆ ก็อปไปได้เลย<br>
-				&lt;!DOCTYPE html> <br>
-				&lt;html lang="en"> //ภาษาอังกฤษ <br>
-				&lt;head> <br>
-					&lt;meta charset="UTF-8"> //ภาษาไทย <br>
-					&lt;meta name="viewport" content="width=device-width, initial-scale=1"> //ทำให้เป็น responsive<br>
-					&lt;title>LOOQ & STYLE&lt;/title> //แล้วแต่หน้าเลย <br>
-					&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css"> //ลิงค์ฟอนท์ของ bulma กับเว็บ <br>
-					&lt;link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chonburi"> //ลิงค์ฟอนท์ชลบุรีกับเว็บ <br>
-				    &lt;link rel="stylesheet" href="header.css"> //css ของ header เฉพาะแค่หน้าที่มี header<br>
-				&lt;/head> <br>
-				&lt;body> <br>
-				&lt;main> <br>
-					&lt;style> <br>
-						html { <br>
-						   background: url(/assets/images/home/BG.png) no-repeat center center fixed; //พื้นหลัง รูปอะไรเปลี่ยนลิงค์เองได้เลย<br>
-						   -webkit-background-size: cover; <br>
-						   -moz-background-size: cover; <br>
-						   -o-background-size: cover; <br>
-						   background-size: cover; <br>
-						} <br>
-						body {color: #000000;} //สีข้อความทั้งหมดในเว็บ <br>
-						a:link {color: #f09488;} //สีลิงค์ทั้งหมดในเว็บ <br>
-						a:hover {color: #ed7263;} //สีลิงค์เวลาเอาเม้าท์ไปชี้ทั้งหมดในเว็บ <br>
-					&lt;/style> <br>
-				&lt;/main> <br>
-				&lt;/body> <br>
+      <xmp>
+				<!DOCTYPE html>
+				<html lang="en"> //ภาษาอังกฤษ
+				<head>
+					<meta charset="UTF-8"> //ภาษาไทย
+					<meta name="viewport" content="width=device-width, initial-scale=1"> //ทำให้เป็น responsive
+					<title>LOOQ & STYLE</title> //แล้วแต่หน้าเลย
+					<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css"> //ลิงค์ฟอนท์ของ bulma กับเว็บ
+					<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chonburi"> //ลิงค์ฟอนท์ชลบุรีกับเว็บ
+				    <link rel="stylesheet" href="header.css"> //css ของ header เฉพาะแค่หน้าที่มี header
+				</head>
+				<body>
+				<main>
+					<style>
+						html {
+						   background: url(/assets/images/home/BG.png) no-repeat center center fixed; //พื้นหลัง รูปอะไรเปลี่ยนลิงค์เองได้เลย
+						   -webkit-background-size: cover;
+						   -moz-background-size: cover;
+						   -o-background-size: cover;
+						   background-size: cover;
+						}
+						body {color: #000000;} //สีข้อความทั้งหมดในเว็บ
+						a:link {color: #f09488;} //สีลิงค์ทั้งหมดในเว็บ
+						a:hover {color: #ed7263;} //สีลิงค์เวลาเอาเม้าท์ไปชี้ทั้งหมดในเว็บ
+					</style>
+				</main>
+				</body>
+      </xmp>
 		</p>
 		<br><br>
 	</content>
@@ -167,5 +162,48 @@
   </div>
             </div>
 </footer>
+
+    <script>
+      // before loading
+      var loading = document.createElement('div')
+      loading.id = 'loading'
+      loading.classList.add('preloading')
+
+      document.body.appendChild(loading)
+      document.body.classList.add('loading')
+
+      document.addEventListener('DOMContentLoaded', function () {
+
+    // Get all "navbar-burger" elements
+    var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+    // Check if there are any navbar burgers
+    if ($navbarBurgers.length > 0) {
+
+      // Add a click event on each of them
+      $navbarBurgers.forEach(function ($el) {
+        $el.addEventListener('click', function () {
+
+          // Get the target from the "data-target" attribute
+          var target = $el.dataset.target;
+          var $target = document.getElementById(target);
+
+          // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+          $el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+          });
+        });
+      }
+
+      var random = function(min, max) {
+        return min + Math.floor(Math.random() * (max + 1))
+      };
+
+      setTimeout(function() {
+        loading.remove()
+        document.body.classList.add('remove')
+      }, random(1, 3) * 1000)
+    });
+  </script>
 </body>
 </html>
