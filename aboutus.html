@@ -24,6 +24,20 @@
           body {color: #000000;}
           a:link {color: #f09488;}
           a:hover {color: #ed7263;}
+        .img-container { position: relative; }
+
+        .img-container .tops {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 3;
+        }
+        .img-container .bottoms {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 2;
+        }    
     		</style>
     	</main>
  	<header>
@@ -64,26 +78,33 @@
         </div>
       </div>
     </header>
-		<img src="assets/images/home/Logo1.png" style="width: 14%;height: auto;margin-top: 100px;margin-left: 50px;margin-bottom: 50px">
-	<div style="width: 100% ;height: 100%;display: flex">
- <div style="width: 40%;height: 500PX; "> 
-        <div style="width: 100%;height: 50%;"></div>
-        <div style="width: 100%;height: 50%;"></div>
-        </div>
-      				<div style="width: 60%;height: auto;background-color: transparent;margin-right: 50px">
 
-          				<strong class="Introduction" style="color: #976f6c">About Us</strong>
+	<div style="width: 100% ;height: 100%;display: flex;margin-top: 150PX">
+
+        
+            <div class="img-container" style="width: 30%;height: 400px;margin-left: 55px">
+              
+    <!--เสื้อ กางเกง ตัวหุ่น อยู่นี่ละจ้าา-->
+              
+              <img class="tops" src="assets/images/content/pic2.jpg" style="width: 80%;left: 30%;top: 20%;" alt="">
+              <img class="bottoms" src="assets/images/content/pic1.jpg" style="width: 80%" alt="">
+            
+          </div>
+        
+      				<div style="width: 60%;height: auto;background-color: transparent;margin-right: 50px;padding-left: 40px">
+
+          				<strong class="Introduction" style="color: #976f6c;padding-left: 45px">About Us</strong>
           				<br>
-                        <br><p style="font-size: 12px;color: #424242">
+                        <br><p style="font-size: 12px;color: #424242;padding-left: 45px">
                                    LOOQ & STYLE เว็บไซต์ห้องเเต่งตัวจําลองที่จะช่วยให้การเลือกสรรเสื้อผ้าของสาวๆเป็นเรื่อง
                         ง่ายขึ้น ช่วยในการตัดสินใจซื้อเสื้อผ้าหรือเเม้เเต่ลดเวลาในการเเต่งตัวของสาวๆลงได้ ช่วยในการวางเเผนการเเต่งตัวในโอกาสต่างๆปฏิเสธไม่ได้เลยว่าในยุคปัจจุบัน การสั่งซื้อออนไลน์ได้รับความนิยมเป็นอย่างมากในหมู่สาวๆนักช้อปทั้งหลาย ซึ่งในเเอพลิเคชั่นหรือเว็บสั่งซื้อออนไลน์ต่างๆก็มีของมากมายให้เลือกจับจ่าย ทั้งของใช้ต่างๆ เครื่องสําอาง เครื่องประดับโดยเฉพาะเสื้อผ้า เพราะความสะดวกเเละรวดเร็วในการสั่งซื้อ ไม่จําเป็นจะต้องขับรถไปเองให้เปลืองน้ํามันหรือนั่งรถโดยสารไปให้เสียเวลา เเค่กดเข้าเเอพเลือกสินค้าที่ชอบเเล้วสั่งซื้อ นอนรอสวยๆไม่นานของที่ต้องการก็ถูกส่งมาให้ถึงมือเเต่ข้อเสียที่นับว่าเป็นปัญหาใหญ่ที่ทําให้สาวๆต้องคิดเเล้วคิดอีกตัดสินใจซื้อไม่ได้สักที ก็คือพวกเธอไม่สามารถลองสวมใส่เสื้อผ้าได้ ซื้อมาก็กลัวใส่เเล้วไม่สวยเหมือนนางเเบบ กลัวเสียเงินเปล่าสุดท้ายกลายเป็นว่านั่งเลือกเป็นชั่วโมงก็ยังตัดสินใจไม่ได้สักทีเว็บไซต์ LOOQ & STYLE ห้องเเต่งตัวจําลองที่จะช่วยลดปัญหาด้านการตัดสินใจซื้อเสื้อผ้า เครื่องประดับออนไลน์ เพราะเราเล็งเห็นถึงปัญหาชวนหนักใจข้อนี้ เว็บไซต์ของเราจึงมีฟังก์ชั่นเลือกสีหุ่นเพื่อให้สามารถเลือกเสื้อผ้าที่เหมาะกับสีผิว สามารถเเมทซ์เสื้อผ้าได้ตามความต้องการ พร้อมเเฮชเเท็กต่างๆที่จะเเบ่งการเเต่งตัวสไตล์ต่างๆไว้เพื่อให้ง่ายต่อการค้นหา อีกทั้งผู้ใช้สามารถเข้าไปยังหน้าหลักของเว็บไซต์เพื่อดูสไตล์การเเต่งตัวของยูสเซอร์(User)อื่นได้ พร้อมทั้งอัพเดตเทรนด์ใหม่ตลอดเวลา เพื่อไม่ให้ตกเทรนด์ </p>
           				<br>
                         <br>
                   
-          				<strong class="Introduction" style="color: #976f6c">Developers</strong>
+          				<strong class="Introduction" style="color: #976f6c;padding-left: 45px">Developers</strong>
           				<br>
                 
-                        <br><p style="font-size: 12px;color: #424242;margin-bottom: 200px">
+                        <br><p style="font-size: 12px;color: #424242;margin-bottom: 200px;padding-left: 45px">
                         กานต์ทิตา รัดรอดกิจ 59080500202 <br>
                         ชุติมา ใจรักมิตรแท้ 59080500214 <br>
                         พิชชาพร เลิศอริยศักดิ์ชัย 59080500242 <br>
