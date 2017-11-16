@@ -26,6 +26,27 @@
       body {color: #000000;}
       a:link {color: #f09488;}
       a:hover {color: #ed7263;}
+      .model { position: relative; }
+
+        .model .skin {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 3;
+        }
+        .model .shadow {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 2;
+        }                
+        .img-container .modelbg {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 1;
+        }
+
     </style>
   </main>
 
@@ -74,20 +95,18 @@
       <h1 class="model color" style="font-family: Chonburi; padding-top: 5rem;padding-left: 45px;font-size: 2.5vw">CREATE MODEL</h1>
       <h1 class="model color" style="font-family: Chonburi; padding-left:263px; font-size: 20px; color: #a3837f;">COLOR</h1> 
       <div class="model" style="text-align: center;margin-left: 35%;width: 30%;">
-        <img id="model" class="center fit" src="/assets/images/model/modelN0.png" alt="Create Model">
+        <img id="model skin" class="skin" src="/assets/images/model/modelN0.png" alt="Create Model">
+        <img id="model shadow" class="shadow" src="assets/images/model/shadow1.png" alt="Shadow Model">
       </div>
-      <!-- <div class="shadow" style="text-align: center; z-index: 2;">
-        <img id="the_pic" class="center fit" src="/assets/images/model/shadow.png" alt="CREATE MODEL" >
-      </div> -->
+      
       <div class="model color" style="font-family: Chonburi; font-size: 20px; color: #a3837f; ">SKIN COLOR </div>
    
-      <div style="text-align: center;"> 
-
-          <button onclick="document.getElementById('model').src='assets/images/model/modelN0.png'" style="height: 2rem; width: 2rem; background-color: #f6f6f6; border-radius: 50px;"></button>
-          <button onclick="document.getElementById('model').src='assets/images/model/modelN1.png'" style="height: 2rem; width: 2rem; background-color: #ffdbac; border-radius: 50px;" ></button>
-          <button onclick="document.getElementById('model').src='assets/images/model/modelN2.png'" style="height: 2rem; width: 2rem; background-color: #e0ac69; border-radius: 50px;" ></button>
-          <button onclick="document.getElementById('model').src='assets/images/model/modelN3.png'" style="height: 2rem; width: 2rem; background-color: #c68642; border-radius: 50px;" ></button>
-          <button onclick="document.getElementById('model').src='assets/images/model/modelN4.png'" style="height: 2rem; width: 2rem; background-color: #8d5524; border-radius: 50px;" ></button>
+       <div style="text-align: center;padding-top: 62%;">
+          <button onclick="document.getElementById('model skin').src='assets/images/model/modelN0.png'" style="height: 2rem; width: 2rem; background-color: #f6f6f6; border-radius: 50%; border:none;"></button>
+          <button onclick="document.getElementById('model skin').src='assets/images/model/modelN1.png'" style="height: 2rem; width: 2rem; background-color: #ffdbac; border-radius: 50%; border:none;" ></button>
+          <button onclick="document.getElementById('model skin').src='assets/images/model/modelN2.png'" style="height: 2rem; width: 2rem; background-color: #e0ac69; border-radius: 50%; border:none;" ></button>
+          <button onclick="document.getElementById('model skin').src='assets/images/model/modelN3.png'" style="height: 2rem; width: 2rem; background-color: #c68642; border-radius: 50%; border:none;" ></button>
+          <button onclick="document.getElementById('model skin').src='assets/images/model/modelN4.png'" style="height: 2rem; width: 2rem; background-color: #8d5524; border-radius: 50%; border:none;" ></button>
       </div>
     
 
