@@ -6,51 +6,79 @@
 	<title>LOOQ & STYLE</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chonburi">
-    <link rel="stylesheet" href="header.css">
-    <script>document.addEventListener('DOMContentLoaded', function () {
-
-    // Get all "navbar-burger" elements
-    var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-    // Check if there are any navbar burgers
-    if ($navbarBurgers.length > 0) {
-
-      // Add a click event on each of them
-      $navbarBurgers.forEach(function ($el) {
-        $el.addEventListener('click', function () {
-
-          // Get the target from the "data-target" attribute
-          var target = $el.dataset.target;
-          var $target = document.getElementById(target);
-
-          // Toggle the class on both the "navbar-burger" and the "navbar-menu"
-          $el.classList.toggle('is-active');
-          $target.classList.toggle('is-active');
-          });
-        });
-      }
-    });
-  </script>
+  <link rel="stylesheet" href="header.css">
 </head>
 
-<body>
+<body onload="myFunction()">
 	<main>
 		<style>
 			html {
-			   background: url(/assets/images/home/BG.png) no-repeat center center fixed;
+			   background: no-repeat center center fixed;
 			   -webkit-background-size: cover;
 			   -moz-background-size: cover;
 			   -o-background-size: cover;
 			   background-size: cover;
+         height: 100%;
 			}
 
 			body {color: #000000;}
 			a:link {color: #f09488;}
 			a:hover {color: #ed7263;}
+
+      /* ล็อคไม่ให้เลื่อนหน้าจอได้ */
+      body.loading {
+        overflow: hidden;
+        max-height: 100%;
+      }
+      /* overlay */
+      .preloading {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        width: 100%;
+        height: 100%;
+        background: no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        /*-webkit-animation-duration: 20s;
+        animation-duration: 20s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;*/
+      }
+
+      /*@-webkit-keyframes fadeOut {
+        0% {opacity: 1;}
+        100% {opacity: 0;}
+      }
+
+      @keyframes fadeOut {
+        0% {opacity: 1;}
+        100% {opacity: 0;}
+      }
+
+      .fadeOut {
+        -webkit-animation-name: fadeOut;
+        animation-name: fadeOut;
+      }*/
+
+      .middle {
+        float: left;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 		</style>
 	</main>
 
- 	<header>
+ 	<div id="header" style="display: none;">
       <div class="head" style="z-index: 5;">
         <div class="head1" style="display: flex;">
           <div class="dropdown is-hoverable" style="padding-left: 5px; padding-top: 6px; height:auto; width: auto">
@@ -87,8 +115,9 @@
             </nav>
         </div>
       </div>
-    </header>
-	<content>
+  </div>
+
+	<div id="content" style="display: none;">
 		<p style="padding-top: 4rem;"><b><u>คิดว่า Final</u></b></p>
 		*รอ header กับ footer เสร็จแล้วค่อยใส่ทีเดียว*<br>
 		<a href="/TermsofUse.html">Term of Use</a><br>
@@ -96,76 +125,93 @@
 
 		<p><b><u>ยังไม่ Final</u></b></p>
 		<a href="/model.html">model</a> by mintju<br>
+    <a href="/model2.html">model2</a> เอาของมิ้นท์จูมาแก้ ยังไม่เสร็จ by CJ<br>
 		<a href="/looq.html">looq</a> by minttin (ใส่ลิ้งค์ by ออยเอง)<br>
 		<a href="/login.html">login</a> by minttin (edit CJ 8/11)<br>
-        <a href="/testheader3.html">ทดลอง header3</a> เกือบไฟนอล by Jameszaa333<br>
+    <a href="/testheader3.html">ทดลอง header3</a> เกือบไฟนอล by Jameszaa333<br>
 		<a href="/finishlooq.html">finish looq </a> by ออยเอง (edit CJ 8/11)<br>
 		<a href="/randompage1.html">randompage1 ขยับได้แล้วจ้า แต่โลโก้ไม่กลางนะแจ้ะ </a>ไม่เอาแบบนี้! by ปอสวย เฮ้อม <br>
 		<a href="/carouselinweb.html">carousel in web เหลือหัวอ่ะจ้าT_T</a> by ปอสวย1 เฮ้อม<br>
 		<a href="/randompage2.html">randompage ลองเล่นหลายๆ รอบนาจา เรากำหนดเวลาไว้ล้าว</a> by ออยเอง (ยังไม่ responsive)<br>
 		<a href="/randompage.html">randompage</a> เอาโค้ดหน่องออยมาแก้นิดหน่อย responsive แล้ว by CJ<br>
 		<a href="/personal.html">personal profile</a> by minnie<br>
-<<<<<<< HEAD
-<<<<<<< HEAD
-		<a href="/register.html">register</a> แก้ยิบย่อย by CJ , เพิ่มตรงคลิกTermsofUseจ้า แต่บางข้อเขียว นี่ก็งง TT by คนสวย<br><br>
+		<a href="/register.html">register</a> แก้ยิบย่อย by CJ , เพิ่มตรงคลิก TermsofUse จ้า แต่บางข้อเขียว นี่ก็งง TT by คนสวย<br>
 		<a href="/tag.html">tag album</a> ปอเอง ปรับสีนิดนึง<br>
-		<br>
-		<a href="/Carousel000.html">Carousel</a>ม้าหมุน  by กิ๊ก <br><br><br>
+		<a href="/Carousel000.html">Carousel</a> ม้าหมุน  by กิ๊ก <br>
     <a href="/tagsum.html">carousel in web wow</a> ม้าหมุนมาพร้อบกับเว็บสุดมหัศจรรย์ by กิ๊กและปอคนสวย <br>
+		<a href="/chooseclothes.html">เลือกชุด ยังไม่เสร็จเด้อออ</a> by ออยเอง <br><br><br>
 
 		<b><u>ไกด์เขียนเว็บ</u></b>
-		<p>โค้ดสำคัญๆ ก็อปไปได้เลย<br>
-				&lt;!DOCTYPE html> <br>
-				&lt;html lang="en"> //ภาษาอังกฤษ <br>
-				&lt;head> <br>
-					&lt;meta charset="UTF-8"> //ภาษาไทย <br>
-					&lt;meta name="viewport" content="width=device-width, initial-scale=1"> //ทำให้เป็น responsive<br>
-					&lt;title>LOOQ & STYLE&lt;/title> //แล้วแต่หน้าเลย <br>
-					&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css"> //ลิงค์ฟอนท์ของ bulma กับเว็บ <br>
-					&lt;link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chonburi"> //ลิงค์ฟอนท์ชลบุรีกับเว็บ <br>
-				    &lt;link rel="stylesheet" href="header.css"> //css ของ header เฉพาะแค่หน้าที่มี header<br>
-				&lt;/head> <br>
-				&lt;body> <br>
-				&lt;main> <br>
-					&lt;style> <br>
-						html { <br>
-						   background: url(/assets/images/home/BG.png) no-repeat center center fixed; //พื้นหลัง รูปอะไรเปลี่ยนลิงค์เองได้เลย<br>
-						   -webkit-background-size: cover; <br>
-						   -moz-background-size: cover; <br>
-						   -o-background-size: cover; <br>
-						   background-size: cover; <br>
-						} <br>
-						body {color: #000000;} //สีข้อความทั้งหมดในเว็บ <br>
-						a:link {color: #f09488;} //สีลิงค์ทั้งหมดในเว็บ <br>
-						a:hover {color: #ed7263;} //สีลิงค์เวลาเอาเม้าท์ไปชี้ทั้งหมดในเว็บ <br>
-					&lt;/style> <br>
-				&lt;/main> <br>
-				&lt;/body> <br>
-		</p>
-		<br><br>
-	</content>
-        <footer class="footer" style="background-image: url(assets/images/home/%E0%B8%A5%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%87.png);background-repeat: round;width: 100%;height: 328px" >
-<div class="columns has-text-centered" style="height: 84px;padding-top: 25px">
-  <div class="column" style="font-family: Arial">
-      <a href="#" style="color: white"><strong>OUR WEBSITE</strong></a>
+		<p>โค้ดสำคัญๆ ก็อปไปได้เลย</p>
+    <xmp>
+    <!DOCTYPE html>
+    <html lang="en"> //ภาษาอังกฤษ
+    <head>
+    <meta charset="UTF-8"> //ภาษาไทย
+    <meta name="viewport" content="width=device-width, initial-scale=1"> //ทำให้เป็น responsive
+    <title>LOOQ & STYLE</title> //แล้วแต่หน้าเลย
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css"> //ลิงค์ฟอนท์ของ bulma กับเว็บ
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chonburi"> //ลิงค์ฟอนท์ชลบุรีกับเว็บ
+    <link rel="stylesheet" href="header.css"> //css ของ header เฉพาะแค่หน้าที่มี header
+    </head>
+    <body>
+    <main>
+    	<style>
+    		html {
+    			background: url(/assets/images/home/BG.png) no-repeat center center fixed; //พื้นหลัง รูปอะไรเปลี่ยนลิงค์เองได้เลย
+    			-webkit-background-size: cover;
+    			-moz-background-size: cover;
+    			-o-background-size: cover;
+    			background-size: cover;
+    		} <br>
+    		body {color: #000000;} //สีข้อความทั้งหมดในเว็บ
+    		a:link {color: #f09488;} //สีลิงค์ทั้งหมดในเว็บ
+    		a:hover {color: #ed7263;} //สีลิงค์เวลาเอาเม้าท์ไปชี้ทั้งหมดในเว็บ
+    	</style>
+    </main>
+    </body>
+    </xmp>
+	</div>
 
-  </div>
-  <div class="column" style="font-family: Arial">
-      <a href="#" style="color: white"><strong>CUSTOMER CARE</strong></a>
-  </div>
-  <div class="column" style="font-family: Arial">
-       <a href="#" style="color: white"><strong>ACCOUNTS</strong></a>
-  </div>
-  <div class="column" style="font-family: Arial">
-      <a href="#" style="color: white"><strong>CONTACT US</strong></a>
+  <div id="loading" class="preloading fadeOut">
+    <div class="middle">
+      <img src="/assets/images/randompage/logo.png" width="45%" height="auto">
+    </div>
   </div>
 
-</div>
-<div class="columns has-text-centered" style="height: 30px; padding-top: 110px">
-  <div class="column">
-      <p style="font-family: Chonburi;color: #ffffff;font-size: 16px">2017 LOOQ & STYLE all rights reserved</p>
-  </div>
-            </div>
-</footer>
+  <script>
+      /*แรนด้อมภาพ*/
+      function random_imglink(){
+      var myimages=new Array()
+      //specify random images below. You can have as many as you wish
+      myimages[1]="assets/images/randompage/bg-1.jpg"
+      myimages[2]="assets/images/randompage/bg-2.jpg"
+      myimages[3]="assets/images/randompage/bg-3.jpg"
+      myimages[4]="assets/images/randompage/bg-4.jpg"
+      myimages[5]="assets/images/randompage/bg-5.jpg"
+      myimages[6]="assets/images/randompage/bg-6.jpg"
+
+      var ry=Math.floor(Math.random()*myimages.length)
+      if (ry==0) {
+        ry=1
+      }
+      document.getElementById('loading').style.backgroundImage = "url("+ myimages[ry] + ")";
+    }
+    random_imglink()
+
+    var myVar;
+
+    function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+    }
+
+    function showPage() {
+      document.getElementById("loading").style.display = "none";
+      document.getElementById("header").style.display = "block";
+      document.getElementById("content").style.display = "block";
+      document.body.style.backgroundImage = "url(/assets/images/home/BG.png)"
+    }
+
+  </script>
 </body>
 </html>
