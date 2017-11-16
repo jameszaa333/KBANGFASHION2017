@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Personal profile</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chonburi">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <body>
+        <!-- background -->
+    	<main>
+    		<style>
+    			html {
+    			   background: url(/assets/images/home/BG.png) no-repeat center center fixed;
+    			   -webkit-background-size: cover;
+    			   -moz-background-size: cover;
+    			   -o-background-size: cover;
+    			   background-size: cover;
+    			}
+
+          body {color: #000000;}
+          a:link {color: #f09488;}
+          a:hover {color: #ed7263;}
+
+
+    		</style>
+    	</main>
+ 	<header>
+      <div class="head" style="z-index: 5;">
+        <div class="head1" style="display: flex;">
+          <div class="dropdown is-hoverable" style="padding-left: 5px; padding-top: 6px; height:auto; width: auto">
+            <div class="dropdown-trigger" style="padding-top: .5rem;">
+              <span><img src="assets/images/home/Hamburger1.png"></span>
+              <span class="icon is-small">
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+              </span>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu2" role="menu">
+              <div class="dropdown-content">
+                <a href="#" class="dropdown-item">LOOQ</a>
+                <hr style="margin: 0">
+                <a href="#" class="dropdown-item">Album</a>
+                <hr style="margin: 0">
+                <a href="#" class="dropdown-item">Clothes</a>
+                <hr style="margin: 0">
+                <a href="#" class="dropdown-item">Contact Us</a>
+              </div>
+            </div>
+          </div>
+          <a href="#"><img src="assets/images/home/closet.png" width="35px" height="40px" style="padding-top: .4rem"></a>
+        </div>
+
+        <div class="head3" style="padding-top: 5.5px;">
+            <a href="index.html"><img class="logo" src="assets/images/home/Logo2.png" height="60px" width="235px"></a>
+        </div>
+        <div class="head4">
+            <nav class="breadcrumb is-small is-right" aria-label="breadcrumbs" style="font-size: .8rem">
+              <ul>
+                <li><a href="#">Log in</a></li>
+                <li><a href="register.html">Sign up</a></li>
+              </ul>
+            </nav>
+        </div>
+      </div>
+    </header>
+        
+
+        
+<!--ในส่วนของ CONTENT นั้น-->
+     <!--tabsด้านบน-->
+
+       <div class="container" style="margin-top: 100px;">
+       <div class="columns">
+        <div class="column">
+              
+        <img class="" src="/assets/images/profile/Minnie.jpg" alt="profile-picture" width="75%">
+        
+          <div style="position:absolute;top:8px;left:16px;font-size:18px">
+            <a>
+          <i class="large material-icons" style="color: #caa7a7;">camera_alt</i>
+          </a>
+          </div>
+        
+        
+       
+        </div>
+         
+          <div class="column has-text-left is-10" style="padding-top: 70px; font-family: Mitr; color: #976f6c;font-size: 1.5rem;">
+          PERSONAL INFO
+          </div>
+        </div>
+      </div>
+        
+        <!--tabs-->
+        <style>
+        
+            .tabs a {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom-color: #ffffff;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  color: #caa7a7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: -1px;
+  padding: 0.5em 1em;
+  vertical-align: top;
+}
+
+.tabs a:hover {
+  border-bottom-color: #ffffff;
+  color: #976f6c;
+}
+
+.tabs li {
+  display: block;
+}
+
+.tabs li.is-active a {
+  border-bottom-color: #ffffff;
+  color: #ffffff;
+}
+
+.tabs ul {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom-color: #976f6c;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.tabs ul.is-left {
+  padding-right: 0.75em;
+}
+
+.tabs ul.is-center {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+}
+
+.tabs ul.is-right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-left: 0.75em;
+}
+
+.tabs .icon:first-child {
+  margin-right: 0.5em;
+}
+
+.tabs .icon:last-child {
+  margin-left: 0.5em;
+}
+
+.tabs.is-centered ul {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tabs.is-right ul {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.tabs.is-boxed a {
+  border: 1px solid rgba(207, 81, 81, 0);
+  border-radius: 3px 3px 0 0;
+}
+
+.tabs.is-boxed a:hover {
+  background-color: #ffe8e8;
+  border-bottom-color: #ffffff;
+}
+
+.tabs.is-boxed li.is-active a {
+  background-color: #976f6c;
+  border-color: #ffffff;
+  border-bottom-color: transparent !important;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.image-popup {
+  white-space: nowrap; 
+  position: absolute;
+  overflow: hidden;
+  width:100%;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 1.2rem;
+  font-family: chonburi;
+  position: absolute;
+  overflow: hidden;
+  top: 90%;
+  left: 70%;
+  transform: translate(-30%, -30%);
+  -ms-transform: translate(-30%, -30%);
+}
+
+.container:hover .overlay {
+  height: 100%;
+}
+            </style>
+
+
+        <div class="container">
+    <div class="tabs is-boxed is-medium" style="font-family: Chonburi">
+    <ul>
+      <li class="is-active">
+        <a>
+        <span>Liked</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <span>My Looq</span>
+      </a>
+    </li>
+  </ul>
+  </div>
+</div>
+</div>
+  <!--ช่วงที่ถูกใจ-->
+  <div class="w3-panel" style="padding-top: 20px;padding-bottom: 60px;">
+<div class="container" style="">
+    <div class="columns is-multiline"> 
+
+    <div class="column is-one-third">     
+                  <div class="card">
+                      <div class="card-image">
+                          <a href="#">
+                              <figure class="image"><!--ratio ภาพเป็น2:3-->
+                                <img src="/assets/images/model/modelN0.png" alt="looq1"><!--alt : อยากให้เวลาภาพไม่ขึ้น จะให้ขึ้นว่าอะไร-->
+                              </figure>
+                                <div class="overlay">
+                                    <div class="image-popup">
+                                        <img src="/assets/images/profile/bar.png" alt="" width="100%">
+                                    </div>
+                                      <div class="text">
+                                      STYLE / ...........
+                                      </div>
+                                    </div>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+
+            <div class="column is-one-third">     
+                  <div class="card">
+                      <div class="card-image">
+                          <a href="#">
+                              <figure class="image"><!--ratio ภาพเป็น2:3-->
+                                <img src="/assets/images/model/modelN0.png" alt="looq1"><!--alt : อยากให้เวลาภาพไม่ขึ้น จะให้ขึ้นว่าอะไร-->
+                              </figure>
+                                <div class="overlay">
+                                    <div class="image-popup">
+                                        <img src="/assets/images/profile/bar.png" alt="" width="100%">
+                                    </div>
+                                      <div class="text">
+                                      STYLE / ...........
+                                      </div>
+                                    </div>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="column is-one-third">     
+                  <div class="card">
+                      <div class="card-image">
+                          <a href="#">
+                              <figure class="image"><!--ratio ภาพเป็น2:3-->
+                                <img src="/assets/images/model/modelN0.png" alt="looq1"><!--alt : อยากให้เวลาภาพไม่ขึ้น จะให้ขึ้นว่าอะไร-->
+                              </figure>
+                                <div class="overlay">
+                                    <div class="image-popup">
+                                        <img src="/assets/images/profile/bar.png" alt="" width="100%">
+                                    </div>
+                                      <div class="text">
+                                      STYLE / ...........
+                                      </div>
+                                    </div>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="column is-one-third">     
+                  <div class="card">
+                      <div class="card-image">
+                          <a href="#">
+                              <figure class="image"><!--ratio ภาพเป็น2:3-->
+                                <img src="/assets/images/model/modelN0.png" alt="looq1"><!--alt : อยากให้เวลาภาพไม่ขึ้น จะให้ขึ้นว่าอะไร-->
+                              </figure>
+                                <div class="overlay">
+                                    <div class="image-popup">
+                                        <img src="/assets/images/profile/bar.png" alt="" width="100%">
+                                    </div>
+                                      <div class="text">
+                                      STYLE / ...........
+                                      </div>
+                                    </div>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+
+                           <div class="column is-one-third">     
+                  <div class="card">
+                      <div class="card-image">
+                          <a href="#">
+                              <figure class="image"><!--ratio ภาพเป็น2:3-->
+                                <img src="/assets/images/model/modelN0.png" alt="looq1"><!--alt : อยากให้เวลาภาพไม่ขึ้น จะให้ขึ้นว่าอะไร-->
+                              </figure>
+                                <div class="overlay">
+                                    <div class="image-popup">
+                                        <img src="/assets/images/profile/bar.png" alt="" width="100%">
+                                    </div>
+                                      <div class="text">
+                                      STYLE / ...........
+                                      </div>
+                                    </div>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+
+                            <div class="column is-one-third">     
+                  <div class="card">
+                      <div class="card-image">
+                          <a href="#">
+                              <figure class="image"><!--ratio ภาพเป็น2:3-->
+                                <img src="/assets/images/model/modelN0.png" alt="looq1"><!--alt : อยากให้เวลาภาพไม่ขึ้น จะให้ขึ้นว่าอะไร-->
+                              </figure>
+                                <div class="overlay">
+                                    <div class="image-popup">
+                                        <img src="/assets/images/profile/bar.png" alt="" width="100%">
+                                    </div>
+                                      <div class="text">
+                                      STYLE / ...........
+                                      </div>
+                                    </div>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+
+                            <div class="column is-one-third">     
+                  <div class="card">
+                      <div class="card-image">
+                          <a href="#">
+                              <figure class="image"><!--ratio ภาพเป็น2:3-->
+                                <img src="/assets/images/model/modelN0.png" alt="looq1"><!--alt : อยากให้เวลาภาพไม่ขึ้น จะให้ขึ้นว่าอะไร-->
+                              </figure>
+                                <div class="overlay">
+                                    <div class="image-popup">
+                                        <img src="/assets/images/profile/bar.png" alt="" width="100%">
+                                    </div>
+                                      <div class="text">
+                                      STYLE / ...........
+                                      </div>
+                                    </div>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+
+                            <div class="column is-one-third">     
+                  <div class="card">
+                      <div class="card-image">
+                          <a href="#">
+                              <figure class="image"><!--ratio ภาพเป็น2:3-->
+                                <img src="/assets/images/model/modelN0.png" alt="looq1"><!--alt : อยากให้เวลาภาพไม่ขึ้น จะให้ขึ้นว่าอะไร-->
+                              </figure>
+                                <div class="overlay">
+                                    <div class="image-popup">
+                                        <img src="/assets/images/profile/bar.png" alt="" width="100%">
+                                    </div>
+                                      <div class="text">
+                                      STYLE / ...........
+                                      </div>
+                                    </div>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+
+                            <div class="column is-one-third">     
+                  <div class="card">
+                      <div class="card-image">
+                          <a href="#">
+                              <figure class="image"><!--ratio ภาพเป็น2:3-->
+                                <img src="/assets/images/model/modelN0.png" alt="looq1"><!--alt : อยากให้เวลาภาพไม่ขึ้น จะให้ขึ้นว่าอะไร-->
+                              </figure>
+                                <div class="overlay">
+                                    <div class="image-popup">
+                                        <img src="/assets/images/profile/bar.png" alt="" width="100%">
+                                    </div>
+                                      <div class="text">
+                                      STYLE / ...........
+                                      </div>
+                                    </div>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+
+
+              </a>
+              </div>
+              </div>
+              </div>
+              </div>
+
+    </div>
+    </div>
+<!--upup-->    
+<form action="#">
+    <div class="file-field input-field">
+      <div class="btn">
+        <input type="file" multiple>
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text" placeholder="Upload one or more files">
+      </div>
+    </div>
+  </form>
+
+<!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+      
+<!--ในส่วนของ CONTENT นั้น-->
+   
+
+        <footer class="footer" style="background-image: url(assets/images/home/%E0%B8%A5%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%87.png);background-repeat: round;width: 100%;height: 328px" >
+<div class="columns has-text-centered" style="height: 84px">
+  <div class="column" style="font-family: Arial">
+      <a href="#" style="color: white"><strong>OUR WEBSITE</strong></a>
+      
+  </div>
+  <div class="column" style="font-family: Arial">
+      <a href="#" style="color: white"><strong>CUSTOMER CARE</strong></a>
+  </div>
+  <div class="column" style="font-family: Arial">
+       <a href="#" style="color: white"><strong>ACCOUNTS</strong></a>
+  </div>
+  <div class="column" style="font-family: Arial">
+      <a href="#" style="color: white"><strong>CONTACT US</strong></a>
+  </div>
+
+</div>
+<div class="columns has-text-centered" style="height: 30px; padding-top: 110px">
+  <div class="column">
+      <p style="font-family: Chonburi;color: #444444;font-size: 13px">2017 LOOQ & STYLE all rights reserved</p>
+  </div>
+            </div>
+</footer>
+        
+    </body>
+</html>
