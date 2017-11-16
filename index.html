@@ -45,13 +45,13 @@
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        /*-webkit-animation-duration: 20s;
-        animation-duration: 20s;
+        -webkit-animation-duration: 17s;
+        animation-duration: 17s;
         -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;*/
+        animation-fill-mode: both;
       }
 
-      /*@-webkit-keyframes fadeOut {
+      @-webkit-keyframes fadeOut {
         0% {opacity: 1;}
         100% {opacity: 0;}
       }
@@ -64,7 +64,7 @@
       .fadeOut {
         -webkit-animation-name: fadeOut;
         animation-name: fadeOut;
-      }*/
+      }
 
       .middle {
         float: left;
@@ -75,10 +75,32 @@
         align-items: center;
         justify-content: center;
       }
+
+      .page {
+        -webkit-animation-duration: 2s;
+        animation-duration: 2s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+      }
+
+      @-webkit-keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+      }
+         
+      @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+      }
+         
+      .fadeIn {
+        -webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
+      }
 		</style>
 	</main>
 
- 	<div id="header" style="display: none;">
+ 	<header id="header" class="page fadeIn" style="display: none;">
       <div class="head" style="z-index: 5;">
         <div class="head1" style="display: flex;">
           <div class="dropdown is-hoverable" style="padding-left: 5px; padding-top: 6px; height:auto; width: auto">
@@ -115,9 +137,9 @@
             </nav>
         </div>
       </div>
-  </div>
+  </header>
 
-	<div id="content" style="display: none;">
+	<content id="content" class="page fadeIn" style="display: none;">
 		<p style="padding-top: 4rem;"><b><u>คิดว่า Final</u></b></p>
 		*รอ header กับ footer เสร็จแล้วค่อยใส่ทีเดียว*<br>
 		<a href="/TermsofUse.html">Term of Use</a><br>
@@ -130,9 +152,7 @@
 		<a href="/login.html">login</a> by minttin (edit CJ 8/11)<br>
     <a href="/testheader3.html">ทดลอง header3</a> เกือบไฟนอล by Jameszaa333<br>
 		<a href="/finishlooq.html">finish looq </a> by ออยเอง (edit CJ 8/11)<br>
-		<a href="/randompage1.html">randompage1 ขยับได้แล้วจ้า แต่โลโก้ไม่กลางนะแจ้ะ </a>ไม่เอาแบบนี้! by ปอสวย เฮ้อม <br>
 		<a href="/carouselinweb.html">carousel in web เหลือหัวอ่ะจ้าT_T</a> by ปอสวย1 เฮ้อม<br>
-		<a href="/randompage2.html">randompage ลองเล่นหลายๆ รอบนาจา เรากำหนดเวลาไว้ล้าว</a> by ออยเอง (ยังไม่ responsive)<br>
 		<a href="/randompage.html">randompage</a> เอาโค้ดหน่องออยมาแก้นิดหน่อย responsive แล้ว by CJ<br>
 		<a href="/personal.html">personal profile</a> by minnie<br>
 		<a href="/register.html">register</a> แก้ยิบย่อย by CJ , เพิ่มตรงคลิก TermsofUse จ้า แต่บางข้อเขียว นี่ก็งง TT by คนสวย<br>
@@ -171,7 +191,7 @@
     </main>
     </body>
     </xmp>
-	</div>
+	</content>
 
   <div id="loading" class="preloading fadeOut">
     <div class="middle">
@@ -202,14 +222,18 @@
     var myVar;
 
     function myFunction() {
-        myVar = setTimeout(showPage, 3000);
+        myVar = setTimeout(showPage, 2000);
+        myVar = setTimeout(endPage, 3000);
     }
 
     function showPage() {
-      document.getElementById("loading").style.display = "none";
       document.getElementById("header").style.display = "block";
       document.getElementById("content").style.display = "block";
       document.body.style.backgroundImage = "url(/assets/images/home/BG.png)"
+    }
+
+    function endPage() {
+      document.getElementById("loading").style.display = "none";
     }
 
   </script>
