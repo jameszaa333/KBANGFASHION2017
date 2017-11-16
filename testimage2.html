@@ -7,76 +7,48 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chonburi">
   <link rel="stylesheet" href="header.css">
-  <script>document.addEventListener('DOMContentLoaded', function () {
-
-  // Get all "navbar-burger" elements
-  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-  // Check if there are any navbar burgers
-  if ($navbarBurgers.length > 0) {
-
-    // Add a click event on each of them
-    $navbarBurgers.forEach(function ($el) {
-      $el.addEventListener('click', function () {
-
-        // Get the target from the "data-target" attribute
-        var target = $el.dataset.target;
-        var $target = document.getElementById(target);
-
-        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
-        $el.classList.toggle('is-active');
-        $target.classList.toggle('is-active');
-
-      });
-    });
-  }
-
-});</script>
 </head>
-    <body>
-        <!-- background -->
-    	<main>
-    		<style>
-    			html {
-    			   background: url(/assets/images/home/BG.png) no-repeat center center fixed;
-    			   -webkit-background-size: cover;
-    			   -moz-background-size: cover;
-    			   -o-background-size: cover;
-    			   background-size: cover;
-    			}
 
-          body {color: #000000;}
-          a:link {color: #f09488;}
-          a:hover {color: #ed7263;}
-    		</style>
-            
-            
-            <style>
-.img-container { position: relative; }
+<body>
+  <!-- background -->
+    <main>
+    	<style>
+    		html {
+    			background: url(/assets/images/home/BG.png) no-repeat center center fixed;
+    			-webkit-background-size: cover;
+    			-moz-background-size: cover;
+    			-o-background-size: cover;
+    			background-size: cover;
+        }
 
-.img-container .tops {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 3;
-}
-.img-container .bottoms {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-}                
-.img-container .modelbg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-            </style>
-            
-            
-    	</main>
- 	<header>
+        body {color: #000000;}
+        a:link {color: #f09488;}
+        a:hover {color: #ed7263;}
+
+        .img-container { position: relative; }
+
+        .img-container .tops {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 3;
+        }
+        .img-container .bottoms {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 2;
+        }                
+        .img-container .modelbg {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 1;
+        }
+      </style>
+    </main>
+ 	  
+    <header>
       <div class="head" style="z-index: 5;">
         <div class="head1" style="display: flex;">
           <div class="dropdown is-hoverable" style="padding-left: 5px; padding-top: 6px; height:auto; width: auto">
@@ -113,12 +85,10 @@
             </nav>
         </div>
       </div>
-        </header>
+    </header>
 
-      <h1 class="model color" style="font-family: Chonburi; padding-top: 5rem;padding-left: 45px;font-size: 2.5vw;padding-bottom: 1px">DESIGN LOOQ</h1>
-        
-        
-          <div class="img-container" style="width: 30%;margin-left: 55px">
+    <h1 class="model color" style="font-family: Chonburi; padding-top: 5rem;padding-left: 45px;font-size: 2.5vw;padding-bottom: 1px">DESIGN LOOQ</h1>
+    <div class="img-container" style="width: 30%;margin-left: 55px">
               
     <!--เสื้อ กางเกง ตัวหุ่น อยู่นี่ละจ้าา-->
               
