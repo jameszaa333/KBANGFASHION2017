@@ -152,6 +152,11 @@ a:hover {color: #ed7263;} /*สีลิงค์เวลาเอาเม้�
         .jssora051:hover {opacity:.8;}
         .jssora051.jssora051dn {opacity:.5;}
         .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+        
+            .button.is-danger.is-active {
+              -webkit-box-shadow: 0 0 0 0.125em rgba(160, 112, 112, 0.8);
+              box-shadow: 0 0 0 0.125em rgba(160, 112, 112, 0.8);
+              }
     </style>
 
     <div id="jssor_1" style="position:relative;margin:0 auto;top:100px;left:0px;width:1600.5px;height:850px;visibility:hidden;">
@@ -194,15 +199,43 @@ a:hover {color: #ed7263;} /*สีลิงค์เวลาเอาเม้�
             </svg>
         </div>
     </div>
+    
+    
+    <div style="width: 100%;height: auto;margin-top: 150px; display: flex">
+        <p style="margin-left: 60px;font-family: Chonburi;font-size: 30px"><a style="color: #424242" href="looq.html">LOOQ</a> / <a href="tagfinal.html" style="color: gray">Albums </a> </p> 
+        
+               <div class="dropdown is-right is-hoverable" style="padding-left: 5px; padding-top: 6px; height:auto; width: auto;margin-left: 750PX">
+         <div class="dropdown-trigger" style="padding-top: .5rem;">
+            <button class="button is-danger" aria-haspopup="true" aria-controls="dropdown-menu2" style="background-color: white;color: darkgray;width: 140px">
+           <span>Most Popular</span>
+           <span class="icon is-small">
+             <i class="fa fa-angle-down" aria-hidden="true"></i>
+           </span>
+             </button>
+         </div>
+         <div class="dropdown-menu" id="dropdown-menu2" role="menu">
+           <div class="dropdown-content">
+             <a href="#" class="dropdown-item">Latest</a>
+             <hr style="margin: 0">
+             <a href="#" class="dropdown-item">We picked</a>
+
+           </div>
+         </div>
+       </div>
+
+</div>
+    
     <!-- #endregion Jssor Slider End -->
-    <div class="container"  style=" margin-bottom: 500px;top:200px;" > <!--ต้องปรับเพิ่มbottomเพื่อเพิ่มระยะห่างระหว่างกรอบกับฟูดเตอร์-->
+    <div class="container"  style=" margin-bottom: 500px;top:50px;" > <!--ต้องปรับเพิ่มbottomเพื่อเพิ่มระยะห่างระหว่างกรอบกับฟูดเตอร์-->
 
       <div class="columns is-multiline" >
         <a href="#" class="column is-one-third">
             <div class="card">
             <div class="card-image">
-                <figure class="image is-1by1">
-                <img src="assets/images/clothes/mock%20up.png" alt="image-1">
+                <figure class="image is-1by1" style="position: relative">
+                    
+                <img src="assets/images/clothes/mock%20up.png" alt="image-1" style="">
+
                 </figure>
                     </div>
 <!--
