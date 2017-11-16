@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,103 +7,50 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chonburi"> 
   <link rel="stylesheet" href="header.css">
-   <script>document.addEventListener('DOMContentLoaded', function () {
-
-    // Get all "navbar-burger" elements
-    var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-    // Check if there are any navbar burgers
-    if ($navbarBurgers.length > 0) {
-
-      // Add a click event on each of them
-      $navbarBurgers.forEach(function ($el) {
-        $el.addEventListener('click', function () {
-
-          // Get the target from the "data-target" attribute
-          var target = $el.dataset.target;
-          var $target = document.getElementById(target);
-
-          // Toggle the class on both the "navbar-burger" and the "navbar-menu"
-          $el.classList.toggle('is-active');
-          $target.classList.toggle('is-active');
-          });
-        });
-      }
-    });
-  </script>
-    <style>
-* {
-  padding: 0;
-  margin: 0;
-}
-.fit {
-  max-width: 70%;
-  max-height: 70%;
-}
-.center {
-  display: block;
-  margin: auto;
-}
-
-.btn {
-    border: none; /* Remove borders */
-    color: white; /* Add a text color */
-    padding: 14px 28px; /* Add some padding */
-    cursor: pointer; /* Add a pointer cursor on mouse-over */
-}
-/* Button model */
-.N0 {background-image: url(assets/images/model/N0.png) ;} 
-.N0:hover {background-image: url(assets/images/model/N0.png);}
-
-.N1 {background-image: url(assets/images/model/N1.png) ;} 
-.N1:hover {background-image: url(assets/images/model/N1.png);}
-
-.N2 {background-image: url(assets/images/model/N2.png) ;}
-.N2:hover {background-image: url(assets/images/model/N2.png);}
-
-.N3 {background-image: url(assets/images/model/N3.png) ;}
-.N3:hover {background-image: url(assets/images/model/N3.png);}
-
-.N4 {background-image: url(assets/images/model/N4.png) ;}
-.N4:hover {background-image: url(assets/images/model/N4.png);}
-</style>
-
-<script src="http://code.jquery.com/jquery-latest.js"></script>
-<script type="text/javascript" language="JavaScript">
-function set_body_height()
-{
-    var wh = $(window).height();
-    $('body').attr('style', 'height:' + wh + 'px;');
-}
-$(document).ready(function() {
-    set_body_height();
-    $(window).bind('resize', function() { set_body_height(); });
-});
-</script>
 </head>
 
-<header> <!--BG-->
-<style type="text/css">
-    html {
-      background: url(/assets/images/home/BG.png) no-repeat center center fixed;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-    }
-
-    body {color: #000000;}
-    a:link {color: #f09488;}
-    a:hover {color: #ed7263;}
-
-    dummydeclaration { padding-left: 4em; } /* Firefox ignores first declaration for some reason */
-            tab1 { padding-left: 26em; }
-
-</style>
-</header>
 
 <body>
-  <header>
+  <main>
+    <style>
+      html {
+         background: url(/assets/images/home/BG.png) no-repeat center center fixed;
+         -webkit-background-size: cover;
+         -moz-background-size: cover;
+         -o-background-size: cover;
+         background-size: cover;
+      }
+
+      body {color: #000000;}
+      a:link {color: #f09488;}
+      a:hover {color: #ed7263;}
+        
+        .model { position: relative; }
+
+        .model .skin {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 3;
+        }
+        .model .shadow {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 2;
+        }                
+        .img-container .modelbg {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 1;
+        }
+        .pull-left {float:left;}
+
+    </style>
+  </main>
+
+  <div id="header">
       <div class="head" style="z-index: 5;">
         <div class="head1" style="display: flex;">
           <div class="dropdown is-hoverable" style="padding-left: 5px; padding-top: 6px; height:auto; width: auto">
@@ -142,31 +87,49 @@ $(document).ready(function() {
             </nav>
         </div>
       </div>
-    </header>
+    </div>
 
 
   <!-- เนื้อหา -->
-    <section class="content"><img id="the_pic" class="center fit" src="pic.jpg" > 
-      <h1 class="model color" style="font-family: Chonburi; padding-top: 4rem;padding-left: 45px;font-size: 2.5vw">CREATE MODEL </h1>
-     <h1 class="model color" style="font-family: Chonburi; padding-left:263px; font-size: 1.5vw">COLOR </h1> 
-      <div class="model" style="text-align: center;">
+    <section class="content"> 
+      <h1 class="modelcolor" style="font-family: Chonburi; padding-top: 5rem;padding-left: 45px;font-size: 2.5vw">CREATE MODEL</h1>
+      <h1 class="modelcolor" style="font-family: Chonburi; padding-left:20%; font-size: 20px; color: #a3837f;">COLOR</h1> 
+      <div class="model" style="text-align: center;margin-left: 35%;width: 30%;">
+        <img id="model skin" class="skin" src="/assets/images/model/modelN0.png" alt="Create Model">
+        <img id="model shadow" class="shadow" src="assets/images/model/shadow1.png" alt="Shadow Model">
+      </div>
+      <!-- <div class="shadow" style="text-align: center; z-index: 2;">
+        <img id="the_pic" class="center fit" src="/assets/images/model/shadow.png" alt="CREATE MODEL" >
+      </div> -->
 
-          <img id="the_pic" class="center fit" src="/assets/images/model/modelN0.png" alt="CREATE MODEL" >
-          <img id="the_pic" class="center fit" src="/assets/images/model/shadow.png" alt="CREATE MODEL" >
-        
-          <button class="btn N0"></button>
-          <button class="btn N1"></button>
-          <button class="btn N2"></button>
-          <button class="btn N3"></button>
-          <button class="btn N4"></button>
+<<<<<<< HEAD
+      <div class="pull-left" style="font-family: Chonburi; font-size: 20px; color: #a3837f; padding-left: 280px; padding-top: 62%;">SKIN COLOR </div>
+      <div style="text-align: center;padding-top: 62%;">
+=======
+      <div class="pull-left" style="font-family: Chonburi; font-size: 20px; color: #a3837f; padding-left: 360px; padding-top: 62%;">SKIN COLOR </div>
+      <div style="text-align: center;padding-top: 62%; padding-right: 500px;">
+>>>>>>> 66f47ff21aff9053d90e63a8fa5c4121f4bff7f7
+          <button onclick="document.getElementById('model skin').src='assets/images/model/modelN0.png'" style="height: 2rem; width: 2rem; background-color: #f6f6f6; border: none; border-radius:50%" ></button>
+          <button onclick="document.getElementById('model skin').src='assets/images/model/modelN1.png'" style="height: 2rem; width: 2rem; background-color: #ffdbac; border: none; border-radius:50%" ></button>
+          <button onclick="document.getElementById('model skin').src='assets/images/model/modelN2.png'" style="height: 2rem; width: 2rem; background-color: #e0ac69; border: none; border-radius:50%" ></button>
+          <button onclick="document.getElementById('model skin').src='assets/images/model/modelN3.png'" style="height: 2rem; width: 2rem; background-color: #c68642; border: none; border-radius:50%" ></button>
+          <button onclick="document.getElementById('model skin').src='assets/images/model/modelN4.png'" style="height: 2rem; width: 2rem; background-color: #8d5524; border: none; border-radius:50%" ></button>
+
+          <!-- กดเลือกสีเหมือนกันแต่เป็นรูป -->
+          <!-- <a onclick="document.getElementById('model skin').src='assets/images/model/modelN0.png'"><img src="assets/images/model/N0.png" style="height: 45px;"></a>
+          <a onclick="document.getElementById('model skin').src='assets/images/model/modelN1.png'"><img src="assets/images/model/N1.png" style="height: 45px;"></a>
+          <a onclick="document.getElementById('model skin').src='assets/images/model/modelN2.png'"><img src="assets/images/model/N2.png" style="height: 45px;"></a>
+          <a onclick="document.getElementById('model skin').src='assets/images/model/modelN3.png'"><img src="assets/images/model/N3.png" style="height: 45px;"></a>
+          <a onclick="document.getElementById('model skin').src='assets/images/model/modelN4.png'"><img src="assets/images/model/N4.png" style="height: 45px;"></a> -->
+      </div>
 
 
-<!--               style="width: auto; height: 60rem;">-->
-          
-          <div style="padding-top: 65px;padding-bottom: 30px">  
+<!-- style="width: auto; height: 60rem;">-->
+          <center>
+          <div style="padding-top: 35px;padding-bottom: 30px">  
             <a class="button is-light" href="#" style="color: #ffffff;width: 120px;background-color: #976f6c; : 20px">NEXT</a> 
           </div>
-      </div>
+        </center>
     </section>
 
   <!-- ท้าย -->
