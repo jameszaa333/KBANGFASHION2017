@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chonburi"> 
   <link rel="stylesheet" href="header.css">
-  
 </head>
 
 
@@ -15,18 +14,18 @@
   <main>
     <style>
       html {
-         background: no-repeat center center fixed;
+         background: url(/assets/images/home/BG.png) no-repeat center center fixed;
          -webkit-background-size: cover;
          -moz-background-size: cover;
          -o-background-size: cover;
          background-size: cover;
-         height: 100%;
       }
 
       body {color: #000000;}
       a:link {color: #f09488;}
       a:hover {color: #ed7263;}
-      .model { position: relative; }
+        
+        .model { position: relative; }
 
         .model .skin {
           position: absolute;
@@ -46,6 +45,7 @@
           left: 0;
           z-index: 1;
         }
+        .pull-left {float:left;}
 
     </style>
   </main>
@@ -92,30 +92,39 @@
 
   <!-- เนื้อหา -->
     <section class="content"> 
-      <h1 class="model color" style="font-family: Chonburi; padding-top: 5rem;padding-left: 45px;font-size: 2.5vw">CREATE MODEL</h1>
-      <h1 class="model color" style="font-family: Chonburi; padding-left:263px; font-size: 20px; color: #a3837f;">COLOR</h1> 
+      <h1 class="modelcolor" style="font-family: Chonburi; padding-top: 5rem;padding-left: 45px;font-size: 2.5vw">CREATE MODEL</h1>
+      <h1 class="modelcolor" style="font-family: Chonburi; padding-left:20%; font-size: 20px; color: #a3837f;">COLOR</h1> 
       <div class="model" style="text-align: center;margin-left: 35%;width: 30%;">
         <img id="model skin" class="skin" src="/assets/images/model/modelN0.png" alt="Create Model">
         <img id="model shadow" class="shadow" src="assets/images/model/shadow1.png" alt="Shadow Model">
       </div>
-   
-       <div style="text-align: center;padding-top: 62%;">
-          <div class="model color" style="font-family: Chonburi; font-size: 20px; color: #a3837f; ">SKIN COLOR </div>
-          <button onclick="document.getElementById('model skin').src='assets/images/model/modelN0.png'" style="height: 2rem; width: 2rem; background-color: #f6f6f6; border-radius: 50%; border:none;"></button>
-          <button onclick="document.getElementById('model skin').src='assets/images/model/modelN1.png'" style="height: 2rem; width: 2rem; background-color: #ffdbac; border-radius: 50%; border:none;" ></button>
-          <button onclick="document.getElementById('model skin').src='assets/images/model/modelN2.png'" style="height: 2rem; width: 2rem; background-color: #e0ac69; border-radius: 50%; border:none;" ></button>
-          <button onclick="document.getElementById('model skin').src='assets/images/model/modelN3.png'" style="height: 2rem; width: 2rem; background-color: #c68642; border-radius: 50%; border:none;" ></button>
-          <button onclick="document.getElementById('model skin').src='assets/images/model/modelN4.png'" style="height: 2rem; width: 2rem; background-color: #8d5524; border-radius: 50%; border:none;" ></button>
+      <!-- <div class="shadow" style="text-align: center; z-index: 2;">
+        <img id="the_pic" class="center fit" src="/assets/images/model/shadow.png" alt="CREATE MODEL" >
+      </div> -->
+
+      <div class="pull-left" style="font-family: Chonburi; font-size: 20px; color: #a3837f; padding-left: 280px; padding-top: 62%;">SKIN COLOR </div>
+      <div style="text-align: center;padding-top: 62%;">
+          <button onclick="document.getElementById('model skin').src='assets/images/model/modelN0.png'" style="height: 2rem; width: 2rem; background-color: #f6f6f6; border: none; border-radius:50%" ></button>
+          <button onclick="document.getElementById('model skin').src='assets/images/model/modelN1.png'" style="height: 2rem; width: 2rem; background-color: #ffdbac; border: none; border-radius:50%" ></button>
+          <button onclick="document.getElementById('model skin').src='assets/images/model/modelN2.png'" style="height: 2rem; width: 2rem; background-color: #e0ac69; border: none; border-radius:50%" ></button>
+          <button onclick="document.getElementById('model skin').src='assets/images/model/modelN3.png'" style="height: 2rem; width: 2rem; background-color: #c68642; border: none; border-radius:50%" ></button>
+          <button onclick="document.getElementById('model skin').src='assets/images/model/modelN4.png'" style="height: 2rem; width: 2rem; background-color: #8d5524; border: none; border-radius:50%" ></button>
+
+          <!-- กดเลือกสีเหมือนกันแต่เป็นรูป -->
+          <!-- <a onclick="document.getElementById('model skin').src='assets/images/model/modelN0.png'"><img src="assets/images/model/N0.png" style="height: 45px;"></a>
+          <a onclick="document.getElementById('model skin').src='assets/images/model/modelN1.png'"><img src="assets/images/model/N1.png" style="height: 45px;"></a>
+          <a onclick="document.getElementById('model skin').src='assets/images/model/modelN2.png'"><img src="assets/images/model/N2.png" style="height: 45px;"></a>
+          <a onclick="document.getElementById('model skin').src='assets/images/model/modelN3.png'"><img src="assets/images/model/N3.png" style="height: 45px;"></a>
+          <a onclick="document.getElementById('model skin').src='assets/images/model/modelN4.png'"><img src="assets/images/model/N4.png" style="height: 45px;"></a> -->
       </div>
-    
 
 
 <!-- style="width: auto; height: 60rem;">-->
           <center>
-          <div style="padding-top: 65px;padding-bottom: 30px">  
+          <div style="padding-top: 35px;padding-bottom: 30px">  
             <a class="button is-light" href="#" style="color: #ffffff;width: 120px;background-color: #976f6c; : 20px">NEXT</a> 
           </div>
-          </center>
+        </center>
     </section>
 
   <!-- ท้าย -->
