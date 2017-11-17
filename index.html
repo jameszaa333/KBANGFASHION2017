@@ -25,45 +25,51 @@ a:hover {color: #ed7263;} /*สีลิงค์เวลาเอาเม้�
 </style>
 
 <header>
-   <div class="head" style="z-index: 5;">
-     <div class="head1" style="display: flex;">
-       <div class="dropdown is-hoverable" style="padding-left: 5px; padding-top: 6px; height:auto; width: auto">
-         <div class="dropdown-trigger" style="padding-top: .5rem;">
-           <span><img src="assets/images/home/Hamburger1.png"></span>
-           <span class="icon is-small">
-             <i class="fa fa-angle-down" aria-hidden="true"></i>
-           </span>
-         </div>
-         <div class="dropdown-menu" id="dropdown-menu2" role="menu">
-           <div class="dropdown-content">
-             <a href="#" class="dropdown-item">LOOQ</a>
-             <hr style="margin: 0">
-             <a href="tagfinal.html" class="dropdown-item">Album</a>
-             <hr style="margin: 0">
-             <a href="looq.html" class="dropdown-item">Clothes</a>
-             <hr style="margin: 0">
-             <a href="contact-us.html" class="dropdown-item">Contact Us</a>
-           </div>
-         </div>
-       </div>
-       <a href="model.html"><img src="assets/images/home/closet.png" width="35px" height="40px" style="padding-top: .4rem"></a>
-     </div>
+    <div class="head" style="z-index: 999;">
+      <div class="head1" style="display: flex;">
+        <div class="dropdown is-hoverable" style="padding-left: 5px; padding-top: 6px; height:auto; width: auto">
+          <div class="dropdown-trigger" style="padding-top: .3rem; padding-left: 5px">
+            <img src="assets/images/home/Hamburger1.png" style="width: 3rem; height: auto;">
+            <!-- <span class="icon is-small">
+              <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </span> -->
+          </div>
+          <div class="dropdown-menu" id="dropdown-menu2" role="menu">
+            <div class="dropdown-content">
+              <a href="#" class="dropdown-item">LOOQ</a>
+              <hr style="margin: 0">
+              <a href="tagfinal.html" class="dropdown-item">Album</a>
+              <hr style="margin: 0">
+              <a href="looq.html" class="dropdown-item">Clothes</a>
+              <hr style="margin: 0">
+              <a href="contact-us.html" class="dropdown-item">Contact Us</a>
+            </div>
+          </div>
+        </div>
+        <a href="model.html"><img src="assets/images/home/closet1.png" style="width: 3rem; height: auto; padding-top: .4rem; padding-left: 5px;" 
+          onmouseover="this.src='assets/images/home/closet2.png';"
+          onmouseout="this.src='assets/images/home/closet1.png';"></a>
+      </div>
 
-     <div class="head3" style="padding-top: 5.5px;">
-         <a href="index.html"><img class="logo" src="assets/images/home/Logo2.png" height="60px" width="235px"></a>
-     </div>
-     <div class="head4">
-         <nav class="breadcrumb is-small is-right" aria-label="breadcrumbs" style="font-size: .8rem">
-           <ul>
-             <li><a href="#" onclick="document.getElementById('id01').style.display='block'" >Log in</a></li>
-             <li><a href="register.html">Sign up</a></li>
-           </ul>
-         </nav>
-     </div>
-   </div>
- </header>
+      <!-- เพิ่มช่องว่างให้ logo อยู่กลาง -->
+      <div class="head2"></div>
 
-    <div id="id01" class="w3-modal">
+      <div class="head3" style="padding-top: 5.5px;">
+        <a href="index.html"><img class="logo" src="assets/images/home/Logo2.png" height="60px" width="235px"></a>
+      </div>
+      <div class="head4">
+        <nav class="breadcrumb is-small is-right" aria-label="breadcrumbs" style="font-size: 1vw">
+          <ul>
+            <li><a onclick="document.getElementById('id01').style.display='block'" >Log in</a></li>
+            <li><a href="register.html">Sign up</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- pop up log in -->
+      <div id="id01" class="w3-modal">
         <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:500px; background-image: url(assets/images/home/BG.png); background-size: 100% 100%">
         <div class="w3-card-4">
           <div class="w3-container w3-block w3-theme-l3 w3-xxlarge w3-card" style="background-image: url(assets/images/home/nav-tab.png); background-size: 100% 100%">
@@ -95,7 +101,6 @@ a:hover {color: #ed7263;} /*สีลิงค์เวลาเอาเม้�
         </div>
         </div>
       </div>
-
     
 <body style="padding:0px; margin:0px;font-family:arial,helvetica,sans-serif,verdana,'Open Sans'">
 
