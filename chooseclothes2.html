@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>LOOQ & STYLE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+    <script type="text/javascript">
+        function openCity(evt, cityName) {
+  // Declare all variables
+        var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+/* Set the width of the side navigation to 0 */
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += "active";
+      }
+
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+</head>
+  <body>
+    <main>
+      <style media="screen">
+
+/*header*/
+        html {
+          background: url(/assets/images/home/BG.png) no-repeat center center fixed;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+        }
+/*content*/
+        body {color: #000000;}
+        a:link {color: #f09488;}
+        a:hover {color: #ed7263;}
+
+
+/*button out*/
+        div.tabout {
+          float: right;
+          background-color: none; /*สีพื้นหลังปุ่ม*/
+        }
+
+        /* Style the buttons inside the tab// text*/
+        div.tabout button {
+          display: block;
+          background-color: inherit;
+          color: none;
+          width: 100%;
+          border: none;
+          outline: none;
+          text-align: left;
+          cursor: pointer;
+          transition: 0.3s;
+          font-size: 18px;
+        }
+/*button in*/
+        /* Change background color of buttons on hover */
+        div.tabin button:hover {
+          background-color: #976f6c; /*สีตอนวาง*/
+        }
+
+        /* Create an active/current "tab button" class */
+        div.tabin button.active {
+          background-color: #d1ada9; /*สีก่อนคลิก*/
+        }
+
+        div.tabin {
+          float: right;
+          background-color: none; /*สีพื้นหลังปุ่ม*/
+        }
+
+        /* Style the buttons inside the tab// text*/
+        div.tabin button {
+          display: block;
+          background-color: inherit;
+          color:black;
+          width: 100%;
+          border: none;
+          outline: none;
+          text-align: left;
+          cursor: pointer;
+          transition: 0.3s;
+          font-size: 18px;
+        }
+
+/*content*/
+        /* Style the tab content */
+        .tabcontent {
+          float: right;
+          padding: 0px 12px;
+          border: 1px solid #d1ada9;
+          width: 70%;
+          border-left: none;
+          height: 300px;
+        }
+          /* Style the tab content */
+        .tabcontent {
+          display: none;
+          border: 1px solid #976f6c;
+          border-top: none;
+        }
+        /*ปรับขนาด bg content*/
+        .tabcontent {
+          background-image: url('/assets/images/buttons/content 2.png');
+          width: 500px;
+          height: 796px;
+        }
+
+        @-webkit-keyframes fadeEffect {
+          from {opacity: 0;}
+          to {opacity: 1;}
+        }
+
+        @keyframes fadeEffect {
+          from {opacity: 0;}
+          to {opacity: 1;}
+        }
+
+        .main {
+          margin-left: 200px; /* Same as the width of the sidenav */
+        }
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+        #main {
+          transition: margin-left .5s;
+          padding: 20px;
+        }
+
+        .sidenav {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          right: 0;
+          background-color: #111;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+          float: right;
+        }
+/*in tab*/
+      .sidenav a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 18px;
+          color: #818181;
+          display: block;
+          transition: 0.3s;
+      }
+
+      .sidenav a:hover {
+          color: #f1f1f1;
+      }
+
+      .sidenav .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 18px;
+          margin-left: 50px;
+      }
+
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 18px;}
+        .sidenav a {font-size: 18px;}
+      }
+
+
+      </style>
+    </main>
+
+    <div class="tabout">
+
+      <button class="tablinks" onclick="openCity(openNav, event, 'alltops')">
+        <img src="/assets/images/buttons/shirt.png" alt=""><br>
+      </button>
+
+      <button class="tablinks" onclick="openCity(openNav, event, 'allbottoms')">
+        <img src="/assets/images/buttons/pants.png" alt=""><br>
+      </button>
+
+      <button class="tablinks" onclick="openCity(openNav, event, 'allshoes')">
+        <img src="/assets/images/buttons/shoes.png" alt=""><br>
+      </button>
+
+      <button class="tablinks" onclick="openCity(openNav, event, 'allass')">
+        <img src="/assets/images/buttons/ass.png" alt=""><br>
+      </button>
+
+    </div>
+
+    <div class="tabin">
+      <button class="tablinks" onclick="openCity(openNav, event, 'alltops')">
+        <div align="center" font-size="18px">
+          <h6>A</h6>
+          <h6>L</h6>
+          <h6>L</h6>
+        </div>
+        <!--<img src="/assets/images/buttons/button 2.png">-->
+      </button>
+
+      <button class="tablinks" onclick="openCity(openNav, event, 'blouses')">
+        <div align="center">
+          <h6>B</h6>
+          <h6>L</h6>
+          <h6>O</h6>
+          <h6>U</h6>
+          <h6>S</h6>
+          <h6>E</h6>
+          <h6>S</h6>
+        </div>
+        <!--<img src="/assets/images/buttons/button 2.png">-->
+      </button>
+
+      <button class="tablinks" onclick="openCity(openNav, event, 'tanks')">
+        <div align="center">
+          <h6>T</h6>
+          <h6>A</h6>
+          <h6>N</h6>
+          <h6>K</h6>
+          <h6>S</h6>
+        </div>
+        <!--<img src="/assets/images/buttons/button 2.png">-->
+      </button>
+
+      <button class="tablinks" onclick="openCity(openNav, event, 'dresses')">
+        <div align="center">
+          <h6>D</h6>
+          <h6>R</h6>
+          <h6>E</h6>
+          <h6>S</h6>
+          <h6>S</h6>
+          <h6>E</h6>
+          <h6>S</h6>
+        </div>
+        <!--<img src="/assets/images/buttons/button 2.png">-->
+      </button>
+    </div>
+
+    <div id="alltops" class="tabcontent">
+    </div>
+
+
+  </body>
+
+</html>
