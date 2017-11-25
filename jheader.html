@@ -43,7 +43,7 @@
 <!--<div id="loader"></div>-->
 <!--<div class="w3-animate-bottom" id="Content">-->
 <!-- Side Navigation -->
-<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
+<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none;z-index: 6" id="mySidebar">
   <h1 class="w3-xxxlarge w3-text-theme">Menu</h1>
   <a href="#" class="w3-bar-item w3-button">Link 1</a>
   <a href="#" class="w3-bar-item w3-button">Link 2</a>
@@ -54,7 +54,11 @@
 
 <!-- Header -->
 <header class="w3-container w3-padding" id="myHeader" style="background-image: url(assets/images/home/nav-tab.png);background-repeat: no-repeat;background-size: 100% 100%;position: fixed;z-index: 5;width: 100%;">
-  <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-transparent"></i> 
+<div style="width: 25%">  
+<i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-transparent"></i> 
+  <a href="looq.html"><img class="fa w3-xlarge w3-button w3-transparent" src="assets/images/home/closet1.png" style="width: 62px;height: 45px"></a>
+            </div>
+
 </header>
 
 <!-- Modal -->
