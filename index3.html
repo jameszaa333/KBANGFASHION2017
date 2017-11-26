@@ -14,8 +14,8 @@
 		<link rel="stylesheet" type="text/css" href="css/effect1.css" />
 		<script src="js/modernizr.custom.js"></script>
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 	</head>
     <style>
         #Content {
@@ -130,16 +130,32 @@ c-24 -65 -68 -169 -98 -231 -88 -182 -198 -277 -379 -329 -50 -14 -120 -17
 <!-- Side Navigation -->
 <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
   <h1 class="w3-xxxlarge w3-text-theme">Menu</h1>
-  <a href="#" class="w3-bar-item w3-button">Link 1</a>
-  <a href="#" class="w3-bar-item w3-button">Link 2</a>
-  <a href="#" class="w3-bar-item w3-button">Link 3</a>
-  <a href="#" class="w3-bar-item w3-button">Link 4</a>
+  <a href="#" class="w3-bar-item w3-button" style="font-size: ">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button" style="font-size: ">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button" style="font-size: ">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button" style="font-size: ">Link 4</a>
   <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
 </nav>
 
 <!-- Header -->
-<header class="w3-container w3-padding" id="myHeader" style="background-image: url(assets/images/home/nav-tab.png);background-repeat: no-repeat;background-size: 100% 100%;position: fixed;z-index: 5;width: 100%;">
-  <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-transparent"></i> 
+<header class="w3-container w3-padding" id="myHeader" style="background-image: url(assets/images/home/nav-tab.png);background-repeat: no-repeat;background-size: 100% 100%;position: fixed;z-index: 5;width: 100%;display: flex;">
+<div style="width: 21%;">  
+<a href="#" onclick="w3_open()" class="fa fa-bars w3-xlarge w3-transparent" style="margin-left: 8px;margin-right: 6px;text-decoration: none"></a> 
+  <a class="w3-hide-small" href="model.html"><img class="fa w3-xlarge w3-transparent" src="assets/images/home/closet1.png" style="width: 32px;height: 29px;margin-top: 2px;" onmouseover="this.src='assets/images/home/closet2.png';"
+          onmouseout="this.src='assets/images/home/closet1.png';"></a>
+            </div>
+    <div style="width: 54%;text-align: center;"><a class="w3-xlarge w3-transparent"><img style="height: 30px;width: auto;" src="assets/images/home/Logo2.png"></a></div>
+    <div style="width: 25%;height: 30px;text-align: right">
+      <div class="w3-dropdown-hover w3-transparent" >
+        <img style="width: 15px;height: 15PX;" src="assets/images/home/arrowdown.png"> 
+    <div class="w3-dropdown-content w3-bar-block w3-border w3-animate-opacity" style="right:0;margin-top: 22px;">
+      <a href="#" class="w3-bar-item w3-button">Link 1</a>
+      <a href="#" class="w3-bar-item w3-button">Link 2</a>
+      <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+  </div>
+    
+    </div>
 </header>
 
 <!-- Modal -->
@@ -161,7 +177,6 @@ c-24 -65 -68 -169 -98 -231 -88 -182 -198 -277 -379 -329 -50 -14 -120 -17
     </div>
 </div>
 
-<!--
 <div class="w3-row-padding w3-center" style="padding-top: 80px">
 <div class="w3-third" >
   <div class="w3-card w3-container" style="min-height:460px">
@@ -605,10 +620,9 @@ c-24 -65 -68 -169 -98 -231 -88 -182 -198 -277 -379 -329 -50 -14 -120 -17
 </div>
 
 </div>
--->
 
 <hr>
-<div class="w3-center" style="padding-top: 150px">
+<div class="w3-center">
   <h2>Pagination</h2>
   <!-- Pagination -->
   <div class="w3-center w3-padding-32">
@@ -728,6 +742,7 @@ function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("Content").style.display = "block";
 }
+ 
 </script>
         </div>
 	</body>

@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+
     
 <style>
 #loader {
@@ -39,12 +40,13 @@
   display: none;
 }
 </style>
-<body onload="myFunction()">
+<body onload="myFunction()" class="demo-1">
 <!--<div id="loader"></div>-->
 <!--<div class="w3-animate-bottom" id="Content">-->
 <!-- Side Navigation -->
 <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none;z-index: 6" id="mySidebar">
   <h1 class="w3-xxxlarge w3-text-theme">Menu</h1>
+  <a href="looq.html" class="w3-bar-item w3-button w3-hide-large w3-hide-medium">Create LOOQ</a>
   <a href="#" class="w3-bar-item w3-button">Link 1</a>
   <a href="#" class="w3-bar-item w3-button">Link 2</a>
   <a href="#" class="w3-bar-item w3-button">Link 3</a>
@@ -53,11 +55,13 @@
 </nav>
 
 <!-- Header -->
-<header class="w3-container w3-padding" id="myHeader" style="background-image: url(assets/images/home/nav-tab.png);background-repeat: no-repeat;background-size: 100% 100%;position: fixed;z-index: 5;width: 100%;">
-<div style="width: 25%">  
-<i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-transparent"></i> 
-  <a href="looq.html"><img class="fa w3-xlarge w3-button w3-transparent" src="assets/images/home/closet1.png" style="width: 62px;height: 45px"></a>
+<header class="w3-container w3-padding" id="myHeader" style="background-image: url(assets/images/home/nav-tab.png);background-repeat: no-repeat;background-size: 100% 100%;position: fixed;z-index: 5;width: 100%;display: flex;">
+<div style="width: 25%;">  
+<a href="#" onclick="w3_open()" class="fa fa-bars w3-xlarge w3-transparent" style="margin-left: 8px;margin-right: 6px;text-decoration: none"></a> 
+  <a class="w3-hide-small" href="looq.html"><img class="fa w3-xlarge w3-transparent" src="assets/images/home/closet1.png" style="width: 32px;height: 29px;margin-top: 2px"></a>
             </div>
+    <div style="width: 50%;text-align: center;"><a class="w3-xlarge w3-transparent"><img style="height: 30px;width: auto;" src="assets/images/home/Logo2.png"></a></div>
+    <div style="width: 25%;text-align: right"><a class="w3-xlarge w3-transparent"></a><img style="width: 15px;height: 15PX;margin-bottom: 4px;margin-left: 15px;margin-right: 8px" src="assets/images/home/arrowdown.png"></div>
 
 </header>
 
