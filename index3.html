@@ -20,13 +20,11 @@
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chonburi">
         
 	</head>
     <style>
-        #Content {
-        display: none;
-        }
 /*
         .headerr .scrolled {
             background-image: url(assets/images/home/nav-tab.png)!important;
@@ -166,9 +164,9 @@ c-24 -65 -68 -169 -98 -231 -88 -182 -198 -277 -379 -329 -50 -14 -120 -17
     <div style="width: 25%;height: 30px;text-align: right">
       <div class="w3-dropdown-hover w3-transparent" >
         <img style="width: 15px;height: 15PX;" src="assets/images/home/arrowdown.png"> 
-    <div class="w3-dropdown-content w3-bar-block w3-border jshadow" style="right:0;margin-top: 0px;">
-      <a href="#" class="w3-bar-item w3-button">Login</a>
-      <a href="#" class="w3-bar-item w3-button">Register</a>
+    <div class="w3-dropdown-content w3-bar-block w3-border jshadow" style="right:0;margin-top: 0px;color: gray">
+      <a href="#" class="w3-bar-item w3-button"><i class="material-icons">person</i>   Login</a>
+      <a href="#" class="w3-bar-item w3-button"><i class="material-icons">person</i>   Register</a>
     </div>
   </div>
     
@@ -194,14 +192,15 @@ c-24 -65 -68 -169 -98 -231 -88 -182 -198 -277 -379 -329 -50 -14 -120 -17
     </div>
 </div>
 
-<div class="w3-hide-small" style="width: 100%;height: 500px;background-color: aquamarine;padding-top: 100px;background-image: url(assets/images/home/head1.png);position: fixed;z-index: -1"></div>
+<div class="w3-hide-small" style="width: 100%;height: 500px;background-color: gray;padding-top: 100px;background-image: url(assets/images/home/head1.png);position: fixed;z-index: -1"></div>
 
-<div class="w3-hide-large w3-hide-medium" style="width: 100%;height: 250px;background-color: aquamarine;padding-top: 100px;background-image: url(assets/images/home/head1mobile.png);position: fixed;z-index: -1;text-align: center">
+<div class="w3-hide-large w3-hide-medium" style="width: 100%;height: 250px;background-color: gray;padding-top: 100px;background-image: url(assets/images/home/head1mobile.png);position: fixed;z-index: -1;text-align: center">
     </div>    
 
 <div class="w3-hide-small" style="background-color: transparent;width: 100%;height: 500px;" ></div>
-<div class="w3-hide-large w3-hide-medium" style="background-color: transparent;width: 100%;height: 250px;" ></div>   
-<div class="" style="background-image:url(assets/images/home/BG2.png);background-color: white;">
+<div class="w3-hide-large w3-hide-medium" style="background-color: transparent;width: 100%;height: 250px;" ></div>  
+    
+<div class="" style="background-image:url();background-color: #f0f0f0;">
 <div class="w3-row-padding w3-center w3-content" id="card" style="padding-top: 30px">
 <div class="w3-third" >
   <div class="w3-card w3-container" style="min-height:460px;background-color: white">
@@ -255,10 +254,28 @@ c-24 -65 -68 -169 -98 -231 -88 -182 -198 -277 -379 -329 -50 -14 -120 -17
 </div>
 <br>
 
+    
+    
+    
+    
+    
 <!-- Footer -->
-<footer class="w3-container w3-padding-16" style="background-color: whitesmoke">
-  <h3>Footer</h3>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+<footer class="w3-container w3-padding-16" style="background-color: #f5f5f5;color: grey;font-size: 11px;padding-left: 30px">
+    <div class="w3-row">
+<div class="w3-third w3-container ">
+    <p><b>Powered by KBANG</b></p>
+    <p>© 2017 LOOQ & STYLE All rights reserved &nbsp;&nbsp;<a href="#">Term of Use</a></p>
+</div>
+<div class="w3-third w3-container ">
+  
+</div>
+<div class="w3-third w3-container w3-hide-small" style="text-align: right"><br><br>
+  <a href="#">Our Website</a>&nbsp;&nbsp;<a href="#">Customer Care</a>&nbsp;&nbsp;<a href="#">Contact Us</a>
+</div>
+<div class="w3-third w3-container w3-hide-large w3-hide-medium" style="">
+  <a href="#">Our Website</a>&nbsp;&nbsp;<a href="#">Customer Care</a>&nbsp;&nbsp;<a href="#">Contact Us</a>
+</div>
+</div>
 
 </footer>
             </div>
@@ -280,21 +297,9 @@ function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
 }
 
-// Tabs
-function openCity(evt, cityName) {
-  var i;
-  var x = document.getElementsByClassName("city");
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  var activebtn = document.getElementsByClassName("testbtn");
-  for (i = 0; i < x.length; i++) {
-      activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " w3-dark-grey";
-}
 
+            
+            
 var mybtn = document.getElementsByClassName("testbtn")[0];
 mybtn.click();
 
@@ -308,46 +313,11 @@ function myAccFunc(id) {
     }
 }
 
-// Slideshows
-var slideIndex = 1;
-
-function plusDivs(n) {
-slideIndex = slideIndex + n;
-showDivs(slideIndex);
-}
-
-function showDivs(n) {
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-
-showDivs(1);
-
-// Progress Bars
-function move() {
-  var elem = document.getElementById("myBar");   
-  var width = 5;
-  var id = setInterval(frame, 10);
-  function frame() {
-    if (width == 100) {
-      clearInterval(id);
-    } else {
-      width++; 
-      elem.style.width = width + '%'; 
-      elem.innerHTML = width * 1  + '%';
-    }
-  }
-}
     
 var myVar;
 
 function myFunction() {
-    myVar = setTimeout(showPage, 3200);
+    myVar = setTimeout(showPage, 3500);
 }
 
 function showPage() {
