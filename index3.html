@@ -5,18 +5,21 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<title>LOOQ & STYLE</title>
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/effect1.css" />
+
 		<script src="js/modernizr.custom.js"></script>
         <link rel="stylesheet" type="text/css" href="css/w3.css">
-        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+        
         <link rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        
         <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+        
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chonburi">
         
 	</head>
@@ -165,7 +168,7 @@ c-24 -65 -68 -169 -98 -231 -88 -182 -198 -277 -379 -329 -50 -14 -120 -17
       <div class="w3-dropdown-hover w3-transparent" >
         <img style="width: 15px;height: 15PX;" src="assets/images/home/arrowdown.png"> 
     <div class="w3-dropdown-content w3-bar-block w3-border jshadow" style="right:0;margin-top: 0px;color: gray">
-      <a href="#" class="w3-bar-item w3-button"><i class="material-icons">person</i>   Login</a>
+      <a href="#" class="w3-bar-item w3-button" onclick="document.getElementById('id01').style.display='block'"><i class="material-icons">person</i>   Login</a>
       <a href="#" class="w3-bar-item w3-button"><i class="material-icons">person</i>   Register</a>
     </div>
   </div>
@@ -173,7 +176,41 @@ c-24 -65 -68 -169 -98 -231 -88 -182 -198 -277 -379 -329 -50 -14 -120 -17
     </div>
 </header>
 
+<!--LOG-IN MODAL    -->
+      <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:500px; background-image: url(assets/images/home/BG.png); background-size: 100% 100%">
+        <div class="w3-card-4">
+          <div class="w3-container w3-block w3-theme-l3 w3-xxlarge w3-card" style="background-image: url(assets/images/home/nav-tab.png); background-size: 100% 100%">
+            <h1 style="font-family: Chonburi; font-size: 2rem;">Log in</h1>
+          </div>
 
+          <div class="w3-center">
+            <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close">×</span>
+          </div>
+
+          <form class="w3-container" action="/action_page.php">
+            <div class="w3-section">
+              <label><b>Username</b></label>
+              <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usename" required>
+                <label><b>Password</b></label>
+              <input class="w3-input w3-border" type="text" placeholder="Enter Password" name="psw" required>
+              <span class="w3-left w3-padding w3-large"><a href="#" style="font-size: 12px">Help! I forgot my password </a></span>
+            </div>
+            <button class="w3-button w3-block w3-section w3-padding" type="submit" style="background-color: #e7c6c2;color: white">Login</button>
+
+            <div class="w3-center">
+              <label>or just</label>
+            </div>
+
+            <button class="w3-button w3-block w3-indigo w3-section w3-padding" type="submit">Login with Facebook</button>
+            <span class="w3-modal-content w3-padding w3-transparent style="font-size: 10px>Don't have an account? <a href="#">Sign up</a></span>
+          </form>
+          <br>
+        </div>
+        </div>
+      </div>
+<!--LOG-IN MODAL-->
+    
 <!--
 CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT
 CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT
@@ -193,9 +230,9 @@ CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT
 <div class="w3-hide-large w3-hide-medium" style="background-color: transparent;width: 100%;height: 250px;" ></div>  
     
 <div class="" style="background-image:url();background-color: #f0f0f0;">
-<div class="w3-row-padding w3-center w3-content" id="card" style="padding-top: 30px">
-<div class="w3-third">
-  <div class="w3-card w3-container" style="min-height:460px;background-color: white">
+<div class="w3-row-padding w3-center w3-content" id="card" style="padding-top: 30px;color: black">
+<div class="w3-third w3-padding-16">
+  <div class="w3-card w3-container" style="min-height:460px;background-color: white;">
   <h3>Responsive</h3><br>
   <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
   <p>Built-in responsiveness</p>
@@ -205,7 +242,7 @@ CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT
   </div>
 </div>
 
-<div class="w3-third ">
+<div class="w3-third w3-padding-16">
   <div class="w3-card w3-container" style="min-height:460px;background-color: white">
   <h3>Standard CSS</h3><br>
   <i class="fa fa-css3 w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
@@ -216,7 +253,7 @@ CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT
   </div>
 </div>
 
-<div class="w3-third">
+<div class="w3-third w3-padding-16">
   <div class="w3-card w3-container" style="min-height:460px;background-color: white">
   <h3>Design</h3><br>
   <i class="fa fa-diamond w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
@@ -230,7 +267,6 @@ CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT
     
 <hr>
 <div class="w3-center">
-  <h2>Pagination</h2>
   <!-- Pagination -->
   <div class="w3-center w3-padding-32">
     <div class="w3-bar">
