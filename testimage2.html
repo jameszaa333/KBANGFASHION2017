@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Design LOOQ</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chonburi">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="header.css">
 </head>
@@ -336,31 +337,31 @@
 
   <script type="text/javascript">
       function openCity(evt, cityName) {
-      // Declare all variables
+        // Declare all variables
         var i, tabcontent, tablinks;
 
-      // Get all elements with class="tabcontent" and hide them
+        // Get all elements with class="tabcontent" and hide them
         tabcontent = document.getElementsByClassName("tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
           tabcontent[i].style.display = "none";
         }
 
-      // Get all elements with class="tablinks" and remove the class "active"
+        // Get all elements with class="tablinks" and remove the class "active"
         tablinks = document.getElementsByClassName("tablinks");
         for (i = 0; i < tablinks.length; i++) {
             tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
+        }
 
-      function openNav() {
+        function openNav() {
         document.getElementById("mySidenav").style.width = "250px";
-      }
+        }
 
-      /* Set the width of the side navigation to 0 */
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-      }
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
 
-      // Show the current tab, and add an "active" class to the button that opened the tab
+        // Show the current tab, and add an "active" class to the button that opened the tab
         document.getElementById(cityName).style.display = "block";
         evt.currentTarget.className += " active";
       }
@@ -369,7 +370,7 @@
           document.getElementById("mySidenav").style.width = "250px";
       }
 
-      function closeNav() {
+        function closeNav() {
           document.getElementById("mySidenav").style.width = "0";
       }
   </script>
