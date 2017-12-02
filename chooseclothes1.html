@@ -2,10 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>LOOQ & STYLE</title>
+    <title>LOOQ AND STYLE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
 
     <script type="text/javascript">
         function openCity(evt, cityName) {
@@ -51,23 +52,16 @@
   <body>
     <main>
       <style>
-/*header*/
-            html {
-                background: url(/assets/images/home/BG.png) no-repeat center center fixed;
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-              }
-/*content*/
-              body {color: #000000;}
-              a:link {color: #f09488;}
-              a:hover {color: #ed7263;}
 /*tab*/
 /* Style the tab */
               div.tab {
                 float: right;
                 background-color: #976f6c; /*สีพื้นหลังปุ่ม*/
+                position:fixed;
+                top:25%;
+                left:57%;
+                margin-left:-100px;
+                margin-top:-50px;
               }
 /*button*/
 /* Style the buttons inside the tab// text*/
@@ -84,26 +78,52 @@
                 transition: 0.3s;
                 font-size: 18px;
               }
-
 /* Change background color of buttons on hover */
               div.tab button:hover {
-                background-color: #976f6c; /*สีตอนวาง*/
+                background-color: #d1ada9; /*สีตอนวาง*/
               }
-
 /* Create an active/current "tab button" class */
               div.tab button.active {
-                background-color: #d1ada9; /*สีก่อนคลิก*/
+                background-color: #d1ada9; /*สีหลังคลิก*/
               }
-
+              div.tabout {
+                background-color: none; /*สีพื้นหลังปุ่ม*/
+                position:fixed;
+                top:25%;
+                left:85%;
+                margin-left:-100px;
+                margin-top:-50px;
+              }
+/*button*/
+/* Style the buttons inside the tab// text*/
+              div.tabout button {
+                display: block;
+                background-color: inherit;
+                color:none;
+                /*padding: 22px 16px*/
+                width: 100%;
+                border: none;
+                outline: none;
+                text-align: left;
+                cursor: pointer;
+                transition: 0.3s;
+                font-size: 18px;
+              }
 /*content*/
 /* Style the tab content */
                 .tabcontent {
-                  float: right;
+                  position:fixed;
+                  margin-left:-100px;
+                  margin-top:-50px;
                   padding: 0px 12px;
                   border: 1px solid #d1ada9;
                   width: 70%;
                   border-left: none;
                   height: 300px;
+                  top:25%;
+                  left:58%;
+                  margin-left:-100px;
+                  margin-top:-50px;
                 }
   /* Style the tab content */
                 .tabcontent {
@@ -121,8 +141,6 @@
                 .w3-sidebar a {
                   font-family: "Roboto", sans-serif, 18px;
                 }
-
-                /*body,h1,h2, h3,h4,h5,h6,*/
 
                 .w3-wide {
                   font-family: "Montserrat", sans-serif, 18px;
@@ -201,123 +219,116 @@
                 .sidenav a {font-size: 18px;}
               }
 
+              input[type=text] {
+                width: 130px;
+                -webkit-transition: width 0.4s ease-in-out;
+                transition: width 0.4s ease-in-out;
+                float: right;
+              }
+
+/* When the input field gets focus, change its width to 100% */
+            input[type=text]:focus {
+              width: 130px;
+            }
+
       </style>
     </main>
 
 
-    <!--<div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
-    </div>-->
 
-    <div class="tab">
 
-    <button class="tablinks" onclick="openCity(event, 'alltops')">
-      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;
+    <div class="tabout">
+
+    <button class="tablinks" onclick="openCity(event, 'alltops'), openNav()">
         <img src="/assets/images/buttons/shirt.png" alt=""><br>
-      </span>
     </button>
 
-    <button class="tablinks" onclick="openCity(event, 'allbuttoms')">
-      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;
+    <button class="tablinks" onclick="openCity(event, 'allbuttoms'), openNav()">
         <img src="/assets/images/buttons/pants.png" alt=""><br>
-      </span>
     </button>
 
-    <button class="tablinks" onclick="openCity(event, 'allshoes')">
-      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;
+    <button class="tablinks" onclick="openCity(event, 'allshoes'), openNav()">
         <img src="/assets/images/buttons/shoes.png" alt=""><br>
-      </span>
     </button>
 
-    <button class="tablinks" onclick="openCity(event, 'allass')">
-      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;
+    <button class="tablinks" onclick="openCity(event, 'allass'), openNav()">
         <img src="/assets/images/buttons/ass.png" alt=""><br>
-      </span>
     </button>
 
     </div>
-
-
-
 <!--shirt-->
 
-
-        <div class="tab">
-          <button class="tablinks" onclick="openCity(event, 'alltops')">
-            <div align="center" font-size="18px">
-              <h6>A</h6>
-              <h6>L</h6>
-              <h6>L</h6>
-            </div>
-            <!--<img src="/assets/images/buttons/button 2.png">-->
-          </button>
-
-          <button class="tablinks" onclick="openCity(event, 'blouses')">
-            <div align="center">
-              <h6>B</h6>
-              <h6>L</h6>
-              <h6>O</h6>
-              <h6>U</h6>
-              <h6>S</h6>
-              <h6>E</h6>
-              <h6>S</h6>
-            </div>
-            <!--<img src="/assets/images/buttons/button 2.png">-->
-          </button>
-
-          <button class="tablinks" onclick="openCity(event, 'tanks')">
-            <div align="center">
-              <h6>T</h6>
-              <h6>A</h6>
-              <h6>N</h6>
-              <h6>K</h6>
-              <h6>S</h6>
-            </div>
-            <!--<img src="/assets/images/buttons/button 2.png">-->
-          </button>
-
-          <button class="tablinks" onclick="openCity(event, 'dresses')">
-            <div align="center">
-              <h6>D</h6>
-              <h6>R</h6>
-              <h6>E</h6>
-              <h6>S</h6>
-              <h6>S</h6>
-              <h6>E</h6>
-              <h6>S</h6>
-            </div>
-            <!--<img src="/assets/images/buttons/button 2.png">-->
-          </button>
-        </div>
-
     <!--all tops-->
-          <div id="alltops" class="tabcontent">
+          <div id="alltops" class="tabcontent"><br>
+
+            <input type="text" name="search" placeholder="Search..">
 
             <div class="w3-row-padding w3-center w3-margin-top">
 
-              <div class="w3-third">
+              <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'alltops')">
+                  <div align="center" font-size="18px">
+                    <h6>A</h6>
+                    <h6>L</h6>
+                    <h6>L</h6>
+                  </div>
+                </button>
+
+                <button class="tablinks" onclick="openCity(event, 'blouses')">
+                  <div align="center">
+                    <h6>B</h6>
+                    <h6>L</h6>
+                    <h6>O</h6>
+                    <h6>U</h6>
+                    <h6>S</h6>
+                    <h6>E</h6>
+                    <h6>S</h6>
+                  </div>
+                </button>
+
+                <button class="tablinks" onclick="openCity(event, 'tanks')">
+                  <div align="center">
+                    <h6>T</h6>
+                    <h6>A</h6>
+                    <h6>N</h6>
+                    <h6>K</h6>
+                    <h6>S</h6>
+                  </div>
+                </button>
+
+                <button class="tablinks" onclick="openCity(event, 'dresses')">
+                  <div align="center">
+                    <h6>D</h6>
+                    <h6>R</h6>
+                    <h6>E</h6>
+                    <h6>S</h6>
+                    <h6>S</h6>
+                    <h6>E</h6>
+                    <h6>S</h6>
+                  </div>
+                </button>
+
+              </div>
+
+              <div class="w3-third"><br>
                 <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
                   <figure class="image is-1by2"></figure>
                   <a onclick="document.getElementById('tops').src='assets/images/clothes/model/model01.png'">
-                    <img src="assets/images/looq/menu01.png" alt="image-1" style="height: 150px">
+                    <img src="assets/images/clothes/menu/menu01.png" alt="image-1" style="height: 150px">
                   </a>
                 </div>
               </div>
 
-              <div class="w3-third">
+              <div class="w3-third"><br>
                 <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
                   <figure class="image is-1by2"></figure>
                   <a onclick="document.getElementById('tops').src='assets/images/clothes/model/model02.png'">
-                    <img src="assets/images/looq/menu02.png" alt="image-1" style="height: 150px">
+                    <img src="assets/images/clothes/menu/menu02.png" alt="image-1" style="height: 150px">
                   </a>
                 </div>
               </div>
 
-              <div class="w3-third">
+              <div class="w3-third"><br>
                 <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
                   <figure class="image is-1by2"></figure>
                   <img src="assets/images/looq/tank1.jpg" alt="image-1" style="height: 150px">
@@ -365,8 +376,7 @@
                   <img src="assets/images/looq/tank5.png" alt="image-1" style="height: 150px">
                 </div>
               </div>
-
-            <!-- Pagination -->
+        <!-- Pagination -->
               <div class="w3-center w3-padding-32">
                 <div class="w3-bar">
                   <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
@@ -381,26 +391,73 @@
             </div> <!--เพิ่มบรรทัดนี้มาด้วย-->
           </div> <!--ที่เปิดใหม่ปิดตรงนี้-->
 
-    <!--blouses-->
-          <div id="blouses" class="tabcontent">
+      <!--blouses-->
+          <div id="blouses" class="tabcontent"><br>
+
+            <input type="text" name="search" placeholder="Search..">
 
             <div class="w3-row-padding w3-center w3-margin-top">
 
-              <div class="w3-third">
+              <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'alltops')">
+                  <div align="center" font-size="18px">
+                    <h6>A</h6>
+                    <h6>L</h6>
+                    <h6>L</h6>
+                  </div>
+                </button>
+
+                <button class="tablinks" onclick="openCity(event, 'blouses')">
+                  <div align="center">
+                    <h6>B</h6>
+                    <h6>L</h6>
+                    <h6>O</h6>
+                    <h6>U</h6>
+                    <h6>S</h6>
+                    <h6>E</h6>
+                    <h6>S</h6>
+                  </div>
+                </button>
+
+                <button class="tablinks" onclick="openCity(event, 'tanks')">
+                  <div align="center">
+                    <h6>T</h6>
+                    <h6>A</h6>
+                    <h6>N</h6>
+                    <h6>K</h6>
+                    <h6>S</h6>
+                  </div>
+                </button>
+
+                <button class="tablinks" onclick="openCity(event, 'dresses')">
+                  <div align="center">
+                    <h6>D</h6>
+                    <h6>R</h6>
+                    <h6>E</h6>
+                    <h6>S</h6>
+                    <h6>S</h6>
+                    <h6>E</h6>
+                    <h6>S</h6>
+                  </div>
+                </button>
+
+              </div>
+
+              <div class="w3-third"><br>
                 <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
                   <figure class="image is-1by2"></figure>
                   <img src="assets/images/looq/blouse1.png" alt="image-1" style="height: 150px">
                 </div>
               </div>
 
-              <div class="w3-third">
+              <div class="w3-third"><br>
                 <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
                   <figure class="image is-1by2"></figure>
                   <img src="assets/images/looq/blouse2.png" alt="image-1" style="height: 150px">
                 </div>
               </div>
 
-              <div class="w3-third">
+              <div class="w3-third"><br>
                 <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
                   <figure class="image is-1by2"></figure>
                   <img src="assets/images/looq/blouse4.png"alt"image-1" style="height: 150px">
@@ -424,32 +481,32 @@
               <div class="w3-third"><br>
                 <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
                   <figure class="image is-1by2"></figure>
-                  <img src="assets/images/looq/blouse7.png"alt"image-1" style="height: 150px;">
+                  <img src="assets/images/looq/blouse7-2.png"alt"image-1" style="height: 150px">
                 </div>
               </div>
 
-              <div class="w3-third">
+              <div class="w3-third"><br>
                 <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
                   <figure class="image is-1by2"></figure>
                   <img src="assets/images/looq/blouse8.png"alt"image-1" style="height: 150px">
                 </div>
               </div>
 
-              <div class="w3-third">
+              <div class="w3-third"><br>
                 <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
                   <figure class="image is-1by2"></figure>
                   <img src="assets/images/looq/blouse9.jpg"alt"image-1" style="height: 150px">
                 </div>
               </div>
 
-              <div class="w3-third">
+              <div class="w3-third"><br>
                 <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
                   <figure class="image is-1by2"></figure>
                   <img src="assets/images/looq/blouse6.png"alt"image-1" style="height: 150px">
                 </div>
               </div>
 
-            <!-- Pagination -->
+          <!-- Pagination -->
               <div class="w3-center w3-padding-32">
                 <div class="w3-bar">
                   <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
@@ -466,25 +523,73 @@
 
 
         <!--tanks-->
-              <div id="tanks" class="tabcontent">
+              <div id="tanks" class="tabcontent"><br>
+
+                <input type="text" name="search" placeholder="Search..">
 
               		<div class="w3-row-padding w3-center w3-margin-top">
 
-              			<div class="w3-third">
+                    <div class="tab">
+
+                      <button class="tablinks" onclick="openCity(event, 'alltops')">
+                        <div align="center" font-size="18px">
+                          <h6>A</h6>
+                          <h6>L</h6>
+                          <h6>L</h6>
+                        </div>
+                      </button>
+
+                      <button class="tablinks" onclick="openCity(event, 'blouses')">
+                        <div align="center">
+                          <h6>B</h6>
+                          <h6>L</h6>
+                          <h6>O</h6>
+                          <h6>U</h6>
+                          <h6>S</h6>
+                          <h6>E</h6>
+                          <h6>S</h6>
+                        </div>
+                      </button>
+
+                      <button class="tablinks" onclick="openCity(event, 'tanks')">
+                        <div align="center">
+                          <h6>T</h6>
+                          <h6>A</h6>
+                          <h6>N</h6>
+                          <h6>K</h6>
+                          <h6>S</h6>
+                        </div>
+                      </button>
+
+                      <button class="tablinks" onclick="openCity(event, 'dresses')">
+                        <div align="center">
+                          <h6>D</h6>
+                          <h6>R</h6>
+                          <h6>E</h6>
+                          <h6>S</h6>
+                          <h6>S</h6>
+                          <h6>E</h6>
+                          <h6>S</h6>
+                        </div>
+                      </button>
+
+                    </div>
+
+              			<div class="w3-third"><br>
                 			<div class="w3-card-2 w3-padding-top " style="min-height:100px; background-color: #ffffff;">
               					<figure class="image is-1by2"></figure>
               					<img src="assets/images/looq/tank1.jpg"alt"image-1" style="height: 150px">
                 			</div>
               			</div>
 
-              			<div class="w3-third">
+              			<div class="w3-third"><br>
                 			<div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
                   			<figure class="image is-1by2"></figure>
                 				<img src="assets/images/looq/tank2.jpg"alt"image-1" style="height: 150px">
                 			</div>
               			</div>
 
-              			<div class="w3-third">
+              			<div class="w3-third"><br>
                 			<div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
                 				<figure class="image is-1by2"></figure>
               					<img src="assets/images/looq/tank4.png"alt"image-1" style="height: 150px">
@@ -532,8 +637,6 @@
                 				<img src="assets/images/looq/tank9.png"alt"image-1" style="height: 150px">
                 			</div>
               			</div>
-
-
               <!-- Pagination -->
                 	<div class="w3-center w3-padding-32">
                   	<div class="w3-bar">
@@ -545,29 +648,78 @@
               	      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
                   	</div>
                 	</div>
+
                 </div> <!--เพิ่มบรรทัดนี้มาด้วย-->
             </div> <!--ที่เปิดใหม่ปิดตรงนี้-->
 
-                <!--dreses-->
-                      <div id="dresses" class="tabcontent">
+            <!--dreses-->
+                      <div id="dresses" class="tabcontent"><br>
+
+                        <input type="text" name="search" placeholder="Search..">
 
                       		<div class="w3-row-padding w3-center w3-margin-top">
 
-                            <div class="w3-third">
+                            <div class="tab">
+
+                              <button class="tablinks" onclick="openCity(event, 'alltops')">
+                                <div align="center" font-size="18px">
+                                  <h6>A</h6>
+                                  <h6>L</h6>
+                                  <h6>L</h6>
+                                </div>
+                              </button>
+
+                              <button class="tablinks" onclick="openCity(event, 'blouses')">
+                                <div align="center">
+                                  <h6>B</h6>
+                                  <h6>L</h6>
+                                  <h6>O</h6>
+                                  <h6>U</h6>
+                                  <h6>S</h6>
+                                  <h6>E</h6>
+                                  <h6>S</h6>
+                                </div>
+                              </button>
+
+                              <button class="tablinks" onclick="openCity(event, 'tanks')">
+                                <div align="center">
+                                  <h6>T</h6>
+                                  <h6>A</h6>
+                                  <h6>N</h6>
+                                  <h6>K</h6>
+                                  <h6>S</h6>
+                                </div>
+                              </button>
+
+                              <button class="tablinks" onclick="openCity(event, 'dresses')">
+                                <div align="center">
+                                  <h6>D</h6>
+                                  <h6>R</h6>
+                                  <h6>E</h6>
+                                  <h6>S</h6>
+                                  <h6>S</h6>
+                                  <h6>E</h6>
+                                  <h6>S</h6>
+                                </div>
+                              </button>
+
+                            </div>
+
+                            <div class="w3-third"><br>
                               <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
                                 <figure class="image is-1by2"></figure>
                                 <img src="assets/images/looq/dress1.jpg"alt"image-1" style="height: 150px">
                               </div>
                             </div>
 
-                            <div class="w3-third">
+                            <div class="w3-third"><br>
                               <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
                                 <figure class="image is-1by2"></figure>
                                 <img src="/assets/images/looq/dress2.png"alt"image-1" style="height: 150px">
                               </div>
                             </div>
 
-                            <div class="w3-third">
+                            <div class="w3-third"><br>
                               <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
                                 <figure class="image is-1by2"></figure>
                                 <img src="assets/images/looq/dress3.png"alt"image-1" style="height: 150px">
@@ -615,7 +767,6 @@
                                 <img src="assets/images/looq/top2.jpg"alt"image-1" style="height: 150px">
                               </div>
                             </div>
-
                       <!-- Pagination -->
                         	<div class="w3-center w3-padding-32">
                           	<div class="w3-bar">
@@ -632,74 +783,72 @@
           </div> <!--ที่เปิดใหม่ปิดตรงนี้-->
 
 
-        <!--pants-->
-
-            <div class="tab">
-              <button class="tablinks" onclick="openCity(event, 'allbuttoms')">
-                <div align="center">
-                  <h6>A</h6>
-                  <h6>L</h6>
-                  <h6>L</h6>
-                </div>
-                <!--<img src="/assets/images/buttons/button 2.png">-->
-              </button>
-
-              <button class="tablinks" onclick="openCity(event, 'pants')">
-                <div align="center">
-                  <h6>P</h6>
-                  <h6>A</h6>
-                  <h6>N</h6>
-                  <h6>T</h6>
-                  <h6>S</h6>
-                </div>
-                <!--<img src="/assets/images/buttons/button 2.png">-->
-              </button>
-
-              <button class="tablinks" onclick="openCity(event, 'shorts')">
-                <div align="center">
-                  <h6>S</h6>
-                  <h6>H</h6>
-                  <h6>O</h6>
-                  <h6>R</h6>
-                  <h6>T</h6>
-                  <h6>S</h6>
-                </div>
-                <!--<img src="/assets/images/buttons/button 2.png">-->
-              </button>
-
-              <button class="tablinks" onclick="openCity(event, 'skirts')">
-                <div align="center">
-                  <h6>S</h6>
-                  <h6>K</h6>
-                  <h6>I</h6>
-                  <h6>R</h6>
-                  <h6>T</h6>
-                  <h6>S</h6>
-                </div>
-                <!--<img src="/assets/images/buttons/button 2.png">-->
-              </button>
-            </div>
-
+<!--pants-->
         <!--all buttoms-->
-              <div id="allbuttoms" class="tabcontent">
+              <div id="allbuttoms" class="tabcontent"><br>
+
+                <input type="text" name="search" placeholder="Search..">
 
                 <div class="w3-row-padding w3-center w3-margin-top">
 
-                  <div class="w3-third">
+                  <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'allbuttoms')">
+                      <div align="center">
+                        <h6>A</h6>
+                        <h6>L</h6>
+                        <h6>L</h6>
+                      </div>
+                    </button>
+
+                    <button class="tablinks" onclick="openCity(event, 'pants')">
+                      <div align="center">
+                        <h6>P</h6>
+                        <h6>A</h6>
+                        <h6>N</h6>
+                        <h6>T</h6>
+                        <h6>S</h6>
+                      </div>
+                    </button>
+
+                    <button class="tablinks" onclick="openCity(event, 'shorts')">
+                      <div align="center">
+                        <h6>S</h6>
+                        <h6>H</h6>
+                        <h6>O</h6>
+                        <h6>R</h6>
+                        <h6>T</h6>
+                        <h6>S</h6>
+                      </div>
+                    </button>
+
+                    <button class="tablinks" onclick="openCity(event, 'skirts')">
+                      <div align="center">
+                        <h6>S</h6>
+                        <h6>K</h6>
+                        <h6>I</h6>
+                        <h6>R</h6>
+                        <h6>T</h6>
+                        <h6>S</h6>
+                      </div>
+                    </button>
+
+                  </div>
+
+                  <div class="w3-third"><br>
                     <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
                       <figure class="image is-1by2"></figure>
                       <img src="assets/images/looq/pant2.png"alt"image-1" style="height: 150px">
                     </div>
                   </div>
 
-                  <div class="w3-third">
+                  <div class="w3-third"><br>
                     <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
                       <figure class="image is-1by2"></figure>
                       <img src="assets/images/looq/pant3.png"alt"image-1" style="height: 150px">
                     </div>
                   </div>
 
-                  <div class="w3-third">
+                  <div class="w3-third"><br>
                     <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
                       <figure class="image is-1by2"></figure>
                       <img src="assets/images/looq/short3.jpg"alt"image-1" style="height: 150px">
@@ -758,29 +907,75 @@
                         <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
                       </div>
                     </div>
+
                 </div> <!--เพิ่มบรรทัดนี้มาด้วย-->
               </div> <!--ที่เปิดใหม่ปิดตรงนี้-->
 
         <!--pants-->
-              <div id="pants" class="tabcontent">
+              <div id="pants" class="tabcontent"><br>
+
+                <input type="text" name="search" placeholder="Search..">
 
                 <div class="w3-row-padding w3-center w3-margin-top">
 
-                  <div class="w3-third">
+                  <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'allbuttoms')">
+                      <div align="center">
+                        <h6>A</h6>
+                        <h6>L</h6>
+                        <h6>L</h6>
+                      </div>
+                    </button>
+
+                    <button class="tablinks" onclick="openCity(event, 'pants')">
+                      <div align="center">
+                        <h6>P</h6>
+                        <h6>A</h6>
+                        <h6>N</h6>
+                        <h6>T</h6>
+                        <h6>S</h6>
+                      </div>
+                    </button>
+
+                    <button class="tablinks" onclick="openCity(event, 'shorts')">
+                      <div align="center">
+                        <h6>S</h6>
+                        <h6>H</h6>
+                        <h6>O</h6>
+                        <h6>R</h6>
+                        <h6>T</h6>
+                        <h6>S</h6>
+                      </div>
+                    </button>
+
+                    <button class="tablinks" onclick="openCity(event, 'skirts')">
+                      <div align="center">
+                        <h6>S</h6>
+                        <h6>K</h6>
+                        <h6>I</h6>
+                        <h6>R</h6>
+                        <h6>T</h6>
+                        <h6>S</h6>
+                      </div>
+                    </button>
+
+                  </div>
+
+                  <div class="w3-third"><br>
                     <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
                       <figure class="image is-1by2"></figure>
                       <img src="assets/images/looq/pant1.png"alt"image-1" style="height: 150px">
                     </div>
                   </div>
 
-                  <div class="w3-third">
+                  <div class="w3-third"><br>
                     <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
                       <figure class="image is-1by2"></figure>
                       <img src="assets/images/looq/pant6.jpg"alt"image-1" style="height: 150px">
                     </div>
                   </div>
 
-                  <div class="w3-third">
+                  <div class="w3-third"><br>
                     <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
                       <figure class="image is-1by2"></figure>
                       <img src="assets/images/looq/pant5.png"alt"image-1" style="height: 150px">
@@ -828,7 +1023,6 @@
                       <img src="assets/images/looq/pant9.jpg"alt"image-1" style="height: 150px">
                     </div>
                   </div>
-
                   <!-- Pagination -->
                     <div class="w3-center w3-padding-32">
                       <div class="w3-bar">
@@ -845,208 +1039,299 @@
               </div> <!--ที่เปิดใหม่ปิดตรงนี้-->
 
               <!--shorts-->
-              <div id="shorts" class="tabcontent">
+              <div id="shorts" class="tabcontent"><br>
 
-              <div class="w3-display-container">
+                <input type="text" name="search" placeholder="Search..">
 
-                <div class="w3-third">
-                  <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
-                    <figure class="image is-1by2"></figure>
-                    <img src="assets/images/looq/short1.jpg"alt"image-1" style="height: 150px">
+                <div class="w3-row-padding w3-center w3-margin-top">
+
+                  <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'allbuttoms')">
+                      <div align="center">
+                        <h6>A</h6>
+                        <h6>L</h6>
+                        <h6>L</h6>
+                      </div>
+                    </button>
+
+                    <button class="tablinks" onclick="openCity(event, 'pants')">
+                      <div align="center">
+                        <h6>P</h6>
+                        <h6>A</h6>
+                        <h6>N</h6>
+                        <h6>T</h6>
+                        <h6>S</h6>
+                      </div>
+                    </button>
+
+                    <button class="tablinks" onclick="openCity(event, 'shorts')">
+                      <div align="center">
+                        <h6>S</h6>
+                        <h6>H</h6>
+                        <h6>O</h6>
+                        <h6>R</h6>
+                        <h6>T</h6>
+                        <h6>S</h6>
+                      </div>
+                    </button>
+
+                    <button class="tablinks" onclick="openCity(event, 'skirts')">
+                      <div align="center">
+                        <h6>S</h6>
+                        <h6>K</h6>
+                        <h6>I</h6>
+                        <h6>R</h6>
+                        <h6>T</h6>
+                        <h6>S</h6>
+                      </div>
+                    </button>
+
                   </div>
-                </div>
 
-                <div class="w3-third">
-                  <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
-                    <figure class="image is-1by2"></figure>
-                    <img src="assets/images/looq/short2.jpg"alt"image-1" style="height: 150px">
+                  <div class="w3-third"><br>
+                    <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                      <figure class="image is-1by2"></figure>
+                      <img src="assets/images/looq/short1.jpg"alt"image-1" style="height: 150px">
+                    </div>
                   </div>
-                </div>
 
-                <div class="w3-third">
-                  <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
-                    <figure class="image is-1by2"></figure>
-                    <img src="assets/images/looq/short3.jpg"alt"image-1" style="height: 150px">
+                  <div class="w3-third"><br>
+                    <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                      <figure class="image is-1by2"></figure>
+                      <img src="assets/images/looq/short2.jpg"alt"image-1" style="height: 150px">
+                    </div>
                   </div>
-                </div>
 
-                <div class="w3-third"><br>
-                  <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
-                    <figure class="image is-1by2"></figure>
-                    <img src="assets/images/looq/short4.jpg"alt"image-1" style="height: 150px">
+                  <div class="w3-third"><br>
+                    <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                      <figure class="image is-1by2"></figure>
+                      <img src="assets/images/looq/short3.jpg"alt"image-1" style="height: 150px">
+                    </div>
                   </div>
-                </div>
 
-                <div class="w3-third"><br>
-                  <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
-                    <figure class="image is-1by2"></figure>
-                    <img src="assets/images/looq/short5.png"alt"image-1" style="height: 150px">
+                  <div class="w3-third"><br>
+                    <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                      <figure class="image is-1by2"></figure>
+                      <img src="assets/images/looq/short4.jpg"alt"image-1" style="height: 150px">
+                    </div>
                   </div>
-                </div>
 
-                <div class="w3-third"><br>
-                  <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
-                    <figure class="image is-1by2"></figure>
-                    <img src="assets/images/looq/short6.png"alt"image-1" style="height: 150px">
+                  <div class="w3-third"><br>
+                    <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                      <figure class="image is-1by2"></figure>
+                      <img src="assets/images/looq/short5.png"alt"image-1" style="height: 150px">
+                    </div>
                   </div>
-                </div>
 
-                <div class="w3-third"><br>
-                  <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
-                    <figure class="image is-1by2"></figure>
-                    <img src="assets/images/looq/short7.png"alt"image-1" style="height: 150px">
+                  <div class="w3-third"><br>
+                    <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                      <figure class="image is-1by2"></figure>
+                      <img src="assets/images/looq/short6.png"alt"image-1" style="height: 150px">
+                    </div>
                   </div>
-                </div>
 
-                <div class="w3-third"><br>
-                  <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
-                    <figure class="image is-1by2"></figure>
-                    <img src="assets/images/looq/bottom1.jpg"alt"image-1" style="height: 150px">
+                  <div class="w3-third"><br>
+                    <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                      <figure class="image is-1by2"></figure>
+                      <img src="assets/images/looq/short6.png"alt"image-1" style="height: 150px">
+                    </div>
                   </div>
-                </div>
 
-                <div class="w3-third"><br>
-                  <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
-                    <figure class="image is-1by2"></figure>
-                    <img src="assets/images/looq/short9.jpg"alt"image-1" style="height: 150px">
+                  <div class="w3-third"><br>
+                    <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                      <figure class="image is-1by2"></figure>
+                      <img src="assets/images/looq/bottom1.jpg"alt"image-1" style="height: 150px">
+                    </div>
                   </div>
-                </div>
 
-                  <!-- Pagination -->
-                    	<div class="w3-center w3-padding-32">
-                      	<div class="w3-bar">
-                        	<a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-                        	<a href="#" class="w3-bar-item w3-black w3-button">1</a>
-                        	<a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-                        	<a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-                  	      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-                  	      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-                      	</div>
-                    	</div>
-                  </div> <!--เพิ่มบรรทัดนี้มาด้วย-->
+                  <div class="w3-third"><br>
+                    <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                      <figure class="image is-1by2"></figure>
+                      <img src="assets/images/looq/short9.jpg"alt"image-1" style="height: 150px">
+                    </div>
+                  </div>
+            <!-- Pagination -->
+                    <div class="w3-center w3-padding-32">
+                      <div class="w3-bar">
+                        <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+                        <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+                        <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+                        <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+                        <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+                        <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+                      </div>
+                    </div>
+
+                </div> <!--เพิ่มบรรทัดนี้มาด้วย-->
               </div> <!--ที่เปิดใหม่ปิดตรงนี้-->
 
               <!--skirts-->
-              <div id="skirts" class="tabcontent">
+              <div id="skirts" class="tabcontent"><br>
 
+                <input type="text" name="search" placeholder="Search..">
 
-              <div class="w3-display-container">
+                  <div class="w3-row-padding w3-center w3-margin-top">
 
-                <div class="w3-third">
-                  <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
-                    <figure class="image is-1by2"></figure>
-                    <img src="/assets/images/looq/skirt1.jpg"alt"image-1" style="height: 150px">
-                  </div>
-                </div>
+                    <div class="tab">
 
-                <div class="w3-third">
-                  <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
-                    <figure class="image is-1by2"></figure>
-                    <img src="/assets/images/looq/skirt2.jpg"alt"image-1" style="height: 150px">
-                  </div>
-                </div>
+                      <button class="tablinks" onclick="openCity(event, 'alltops')">
+                        <div align="center" font-size="18px">
+                          <h6>A</h6>
+                          <h6>L</h6>
+                          <h6>L</h6>
+                        </div>
+                      </button>
 
-                <div class="w3-third">
-                  <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
-                    <figure class="image is-1by2"></figure>
-                    <img src="/assets/images/looq/skirt3.jpg"alt"image-1" style="height: 150px">
-                  </div>
-                </div>
+                      <button class="tablinks" onclick="openCity(event, 'blouses')">
+                        <div align="center">
+                          <h6>B</h6>
+                          <h6>L</h6>
+                          <h6>O</h6>
+                          <h6>U</h6>
+                          <h6>S</h6>
+                          <h6>E</h6>
+                          <h6>S</h6>
+                        </div>
+                      </button>
 
-                <div class="w3-third"><br>
-                  <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
-                    <figure class="image is-1by2"></figure>
-                    <img src="assets/images/looq/skirt4.jpg"alt"image-1" style="height: 150px">
-                  </div>
-                </div>
+                      <button class="tablinks" onclick="openCity(event, 'tanks')">
+                        <div align="center">
+                          <h6>T</h6>
+                          <h6>A</h6>
+                          <h6>N</h6>
+                          <h6>K</h6>
+                          <h6>S</h6>
+                        </div>
+                      </button>
 
-                <div class="w3-third"><br>
-                  <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
-                    <figure class="image is-1by2"></figure>
-                    <img src="assets/images/looq/skirt5.png"alt"image-1" style="height: 150px">
-                  </div>
-                </div>
+                      <button class="tablinks" onclick="openCity(event, 'dresses')">
+                        <div align="center">
+                          <h6>D</h6>
+                          <h6>R</h6>
+                          <h6>E</h6>
+                          <h6>S</h6>
+                          <h6>S</h6>
+                          <h6>E</h6>
+                          <h6>S</h6>
+                        </div>
+                      </button>
 
-                <div class="w3-third"><br>
-                  <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
-                    <figure class="image is-1by2"></figure>
-                    <img src="assets/images/looq/skirt6.png"alt"image-1" style="height: 150px">
-                  </div>
-                </div>
-
-                <div class="w3-third"><br>
-                  <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
-                    <figure class="image is-1by2"></figure>
-                    <img src="assets/images/looq/skirt7.png"alt"image-1" style="height: 150px">
-                  </div>
-                </div>
-
-                <div class="w3-third"><br>
-                  <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
-                    <figure class="image is-1by2"></figure>
-                    <img src="assets/images/looq/skirt8.png"alt"image-1" style="height: 150px">
-                  </div>
-                </div>
-
-                <div class="w3-third"><br>
-                  <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
-                    <figure class="image is-1by2"></figure>
-                    <img src="assets/images/looq/skirt9.png"alt"image-1" style="height: 150px">
-                  </div>
-                </div>
-
-                  <!-- Pagination -->
-                    	<div class="w3-center w3-padding-32">
-                      	<div class="w3-bar">
-                        	<a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-                        	<a href="#" class="w3-bar-item w3-black w3-button">1</a>
-                        	<a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-                        	<a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-                  	      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-                  	      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-                      	</div>
-                    	</div>
-
-                  </div> <!--เพิ่มบรรทัดนี้มาด้วย-->
-              </div> <!--ที่เปิดใหม่ปิดตรงนี้-->
-
-
-            <!--shoes-->
-
-
-                <div class="tab">
-                  <button class="tablinks" onclick="openCity(event, 'allshoes')">
-                    <div align="center">
-                      <h6>S</h6>
-                      <h6>H</h6>
-                      <h6>O</h6>
-                      <h6>E</h6>
-                      <h6>S</h6>
                     </div>
-                    <!--<img src="/assets/images/buttons/button 2.png">-->
-                  </button>
-                </div>
 
-            <!--shoes-->
-                  <div id="allshoes" class="tabcontent">
+                    <div class="w3-third"><br>
+                      <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                        <figure class="image is-1by2"></figure>
+                        <img src="assets/images/looq/skirt1.jpg"alt"image-1" style="height: 150px">
+                      </div>
+                    </div>
+
+                    <div class="w3-third"><br>
+                      <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                        <figure class="image is-1by2"></figure>
+                        <img src="/assets/images/looq/skirt2.jpg"alt"image-1" style="height: 150px">
+                      </div>
+                    </div>
+
+                    <div class="w3-third"><br>
+                      <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                        <figure class="image is-1by2"></figure>
+                        <img src="assets/images/looq/skirt3.jpg"alt"image-1" style="height: 150px">
+                      </div>
+                    </div>
+
+                    <div class="w3-third"><br>
+                      <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                        <figure class="image is-1by2"></figure>
+                        <img src="assets/images/looq/skirt4.jpg"alt"image-1" style="height: 150px">
+                      </div>
+                    </div>
+
+                    <div class="w3-third"><br>
+                      <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                        <figure class="image is-1by2"></figure>
+                        <img src="assets/images/looq/skirt5.png"alt"image-1" style="height: 150px">
+                      </div>
+                    </div>
+
+                    <div class="w3-third"><br>
+                      <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                        <figure class="image is-1by2"></figure>
+                        <img src="assets/images/looq/skirt6.png"alt"image-1" style="height: 150px">
+                      </div>
+                    </div>
+
+                    <div class="w3-third"><br>
+                      <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                        <figure class="image is-1by2"></figure>
+                        <img src="/assets/images/looq/skirt7.png"alt"image-1" style="height: 150px">>
+                      </div>
+                    </div>
+
+                    <div class="w3-third"><br>
+                      <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                        <figure class="image is-1by2"></figure>
+                        <img src="assets/images/looq/skirt8.png"alt"image-1" style="height: 150px">
+                      </div>
+                    </div>
+
+                    <div class="w3-third"><br>
+                      <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                        <figure class="image is-1by2"></figure>
+                        <img src="assets/images/looq/skirt9-1.png"alt"image-1" style="height: 150px">
+                      </div>
+                    </div>
+              <!-- Pagination -->
+                  <div class="w3-center w3-padding-32">
+                    <div class="w3-bar">
+                      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+                      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+                      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+                      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+                      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+                      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+                    </div>
+                  </div>
+
+      </div> <!--เพิ่มบรรทัดนี้มาด้วย-->
+  </div> <!--ที่เปิดใหม่ปิดตรงนี้-->
+
+<!--shoes-->
+                  <div id="allshoes" class="tabcontent"><br>
+
+                    <input type="text" name="search" placeholder="Search..">
 
                     <div class="w3-row-padding w3-center w3-margin-top">
 
-                      <div class="w3-third">
+                      <div class="tab">
+
+                        <button class="tablinks" onclick="openCity(event, 'allshoes')">
+                          <div align="center">
+                            <h6>S</h6>
+                            <h6>H</h6>
+                            <h6>O</h6>
+                            <h6>E</h6>
+                            <h6>S</h6>
+                          </div>
+                          <!--<img src="/assets/images/buttons/button 2.png">-->
+                        </button>
+
+                      </div>
+
+                      <div class="w3-third"><br>
                         <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
                           <figure class="image is-1by2"></figure>
                           <img src="assets/images/looq/shoe1.jpg"alt"image-1" style="height: 150px">
                         </div>
                       </div>
 
-                      <div class="w3-third">
+                      <div class="w3-third"><br>
                         <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
                           <figure class="image is-1by2"></figure>
                           <img src="assets/images/looq/shoe2.jpg"alt"image-1" style="height: 150px">
                         </div>
                       </div>
 
-                      <div class="w3-third">
+                      <div class="w3-third"><br>
                         <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
                           <figure class="image is-1by2"></figure>
                           <img src="assets/images/looq/shoe3.jpg"alt"image-1" style="height: 150px">
@@ -1094,7 +1379,6 @@
                           <img src="assets/images/looq/shoe9.png"alt"image-1" style="height: 150px">
                         </div>
                       </div>
-
                     <!-- Pagination -->
                       <div class="w3-center w3-padding-32">
                         <div class="w3-bar">
@@ -1110,65 +1394,87 @@
                     </div> <!--เพิ่มบรรทัดนี้มาด้วย-->
                   </div> <!--ที่เปิดใหม่ปิดตรงนี้-->
 
-                <!--ass-->
-
-                    <div class="tab">
-
-                      <button class="tablinks" onclick="openCity(event, 'allass')">
-                        <div align="center">
-                          <h6>A</h6>
-                          <h6>C</h6>
-                          <h6>C</h6>
-                          <h6>E</h6>
-                          <h6>S</h6>
-                          <h6>O</h6>
-                          <h6>R</h6>
-                          <h6>I</h6>
-                          <h6>E</h6>
-                          <h6>S</h6>
-                        </div>
-                        <!--<img src="/assets/images/buttons/button 2.png">-->
-                      </button>
-
-                    </div>
+<!--ass-->
 
                 <!--all-->
-                    <div id="allass" class="tabcontent">
+                    <div id="allass" class="tabcontent"><br>
+
+                      <input type="text" name="search" placeholder="Search..">
 
                       <div class="w3-row-padding w3-center w3-margin-top">
 
-                        <div class="w3-third">
-                          <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
-                            <figure class="image is-1by2"></figure>
-                            <img src="assets/images/looq/bag1.jpg"alt"image-1" style="height: 150px">
-                          </div>
+                        <div class="tab">
+
+                          <button class="tablinks" onclick="openCity(event, 'allass')">
+                            <div align="center">
+                              <h6>A</h6>
+                              <h6>C</h6>
+                              <h6>C</h6>
+                              <h6>E</h6>
+                              <h6>S</h6>
+                              <h6>O</h6>
+                              <h6>R</h6>
+                              <h6>I</h6>
+                              <h6>E</h6>
+                              <h6>S</h6>
+                            </div>
+                          </button>
+
                         </div>
 
-                        <div class="w3-third">
+                        <div class="w3-third"><br>
                           <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
                             <figure class="image is-1by2"></figure>
-                            <img src="assets/images/looq/bag2.jpg"alt"image-1" style="height: 150px">
-                          </div>
-                        </div>
-
-                        <div class="w3-third">
-                          <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
-                            <figure class="image is-1by2"></figure>
-                            <img src="assets/images/looq/bag3.jpg"alt"image-1" style="height: 150px">
+                            <img src="assets/images/looq/aecc1.png"alt"image-1" style="height: 150px">
                           </div>
                         </div>
 
                         <div class="w3-third"><br>
                           <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
                             <figure class="image is-1by2"></figure>
-                            <img src="assets/images/looq/bag4.jpg"alt"image-1" style="height: 150px">
+                            <img src="assets/images/looq/aecc2.jpg"alt"image-1" style="height: 150px">
                           </div>
                         </div>
 
                         <div class="w3-third"><br>
                           <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
                             <figure class="image is-1by2"></figure>
-                            <img src="assets/images/looq/bag5.jpg"alt"image-1" style="height: 150px">
+                            <img src="assets/images/looq/aecc3.png"alt"image-1" style="height: 150px">
+                          </div>
+                        </div>
+
+                        <div class="w3-third"><br>
+                          <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                            <figure class="image is-1by2"></figure>
+                            <img src="assets/images/looq/bag3-3.png"alt"image-1" style="height: 150px">
+                          </div>
+                        </div>
+
+                        <div class="w3-third"><br>
+                          <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                            <figure class="image is-1by2"></figure>
+                            <img src="assets/images/looq/erring1.png"alt"image-1" style="height: 150px">
+                          </div>
+                        </div>
+
+                        <div class="w3-third"><br>
+                          <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                            <figure class="image is-1by2"></figure>
+                            <img src="assets/images/looq/erring5.png"alt"image-1" style="height: 150px">
+                          </div>
+                        </div>
+
+                        <div class="w3-third"><br>
+                          <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                            <figure class="image is-1by2"></figure>
+                            <img src="assets/images/looq/erring8.png"alt"image-1" style="height: 150px">
+                          </div>
+                        </div>
+
+                        <div class="w3-third"><br>
+                          <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                            <figure class="image is-1by2"></figure>
+                            <img src="assets/images/looq/bag4-1.png"alt"image-1" style="height: 150px">
                           </div>
                         </div>
 
@@ -1178,28 +1484,6 @@
                             <img src="assets/images/looq/bag6.png"alt"image-1" style="height: 150px">
                           </div>
                         </div>
-
-                        <div class="w3-third"><br>
-                          <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
-                            <figure class="image is-1by2"></figure>
-                            <img src="assets/images/looq/bag7.png"alt"image-1" style="height: 150px">
-                          </div>
-                        </div>
-
-                        <div class="w3-third"><br>
-                          <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
-                            <figure class="image is-1by2"></figure>
-                            <img src="assets/images/looq/bag8.png"alt"image-1" style="height: 150px">
-                          </div>
-                        </div>
-
-                        <div class="w3-third"><br>
-                          <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
-                            <figure class="image is-1by2"></figure>
-                            <img src="assets/images/looq/bag9.png"alt"image-1" style="height: 150px">
-                          </div>
-                        </div>
-
                         <!-- Pagination -->
                           <div class="w3-center w3-padding-32">
                             <div class="w3-bar">
@@ -1214,12 +1498,6 @@
 
                         </div> <!--เพิ่มบรรทัดนี้มาด้วย-->
                       </div> <!--ที่เปิดใหม่ปิดตรงนี้-->
-
-                        </div>
-                    </div>
-
-
-
 
   </body>
 </html>

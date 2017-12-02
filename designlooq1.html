@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Design LOOQ</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chonburi">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="header.css">
+</head>
+
+<body>
+  <!-- background -->
+  <main>
+    	<style>
+    		html {
+    			background: url(/assets/images/home/BG.png) no-repeat center center fixed;
+    			-webkit-background-size: cover;
+    			-moz-background-size: cover;
+    			-o-background-size: cover;
+    			background-size: cover;
+        }
+
+        body {color: #000000;}
+        a:link {color: #f09488;}
+        a:hover {color: #ed7263;}
+
+        .img-container { position: relative; }
+
+        .img-container .tops {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 3;
+        }
+        .img-container .bottoms {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 2;
+        }                
+        .img-container .modelbg {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 1;
+        }
+
+        .clear:hover {
+          cursor:pointer;
+        }
+
+        /*tab*/
+        /* Style the tab */
+        div.tab {
+          float: right;
+          background-color: #976f6c; /*สีพื้นหลังปุ่ม*/
+        }
+
+        /*button*/
+        /* Style the buttons inside the tab// text*/
+        div.tab button {
+          display: block;
+          background-color: inherit;
+          color:black;
+          /*padding: 22px 16px*/
+          width: 100%;
+          border: none;
+          outline: none;
+          text-align: left;
+          cursor: pointer;
+          transition: 0.3s;
+          font-size: 18px;
+        }
+
+        /* Change background color of buttons on hover */
+        div.tab button:hover {
+          background-color: #976f6c; /*สีตอนวาง*/
+        }
+
+        /* Create an active/current "tab button" class */
+        div.tab button.active {
+          background-color: #d1ada9; /*สีก่อนคลิก*/
+        }
+
+        /*content*/
+        /* Style the tab content */
+        .tabcontent {
+          float: right;
+          padding: 0px 12px;
+          border: 1px solid #d1ada9;
+          width: 70%;
+          border-left: none;
+          height: 300px;
+        }
+        /* Style the tab content */
+        .tabcontent {
+          display: none;
+          border: 1px solid #976f6c;
+          border-top: none;
+        }
+        /*ปรับขนาด bg content*/
+        .tabcontent {
+          background-image: url('/assets/images/buttons/content 2.png');
+          width: 500px;
+          height: 796px;
+        }
+
+        /*ในส่วนของติ่น*/
+        .w3-sidebar a {
+          font-family: "Roboto", sans-serif, 18px;
+        }
+        /*body,h1,h2, h3,h4,h5,h6,*/
+        .w3-wide {
+          font-family: "Montserrat", sans-serif, 18px;
+        }
+        
+        /*ส่วนนี้สำหรับใส่โค้ดสีก่อนคลิก*/
+        /*color link*/
+        a:link {
+          color: #d1aba6;
+        }
+        /*ส่วนนี้สำหรับ link จะเปลี่ยนเป็นอีกสีหนึ่งเมื่อเอาเมาส์ไปวาง*/
+        a:hover {
+          color: #d1aba6;
+        }
+        /*ส่วนนี้สำหรับ เมื่อคลิกแล้วจะเปลี่ยนเป็นอีกสีหนึ่ง*/
+        a:visited {
+          color: #d1aba6;
+        }
+
+        /*slide*/
+        /* Page content */
+        .main {
+          margin-left: 200px; /* Same as the width of the sidenav */
+        }
+        /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+        #main {
+          transition: margin-left .5s;
+          padding: 20px;
+        }
+        
+        /*เอฟเฟค*/
+        @-webkit-keyframes fadeEffect {
+          from {opacity: 0;}
+          to {opacity: 1;}
+        }
+
+        @keyframes fadeEffect {
+          from {opacity: 0;}
+          to {opacity: 1;}
+        }
+
+        .sidenav {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          right: 0;
+          background-color: #111;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+          float: right;
+        }
+        /*in tab*/
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 18px;
+            margin-left: 50px;
+        }
+
+        @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 18px;}
+          .sidenav a {font-size: 18px;}
+        }
+      </style>
+  </main>
+ 	  
+  <header>
+    <div class="head" style="z-index: 999;">
+      <div class="head1" style="display: flex;">
+        <div class="dropdown is-hoverable" style="padding-left: 5px; padding-top: 6px; height:auto; width: auto">
+          <div class="dropdown-trigger" style="padding-top: .3rem; padding-left: 5px">
+            <img src="assets/images/home/Hamburger1.png" style="width: 3rem; height: auto;">
+            <!-- <span class="icon is-small">
+              <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </span> -->
+          </div>
+          <div class="dropdown-menu" id="dropdown-menu2" role="menu">
+            <div class="dropdown-content">
+              <a href="#" class="dropdown-item">LOOQ</a>
+              <hr style="margin: 0">
+              <a href="#" class="dropdown-item">Album</a>
+              <hr style="margin: 0">
+              <a href="#" class="dropdown-item">Clothes</a>
+              <hr style="margin: 0">
+              <a href="#" class="dropdown-item">Contact Us</a>
+            </div>
+          </div>
+        </div>
+        <a href="#"><img src="assets/images/home/closet1.png" style="width: 3rem; height: auto; padding-top: .4rem; padding-left: 5px;" 
+          onmouseover="this.src='assets/images/home/closet2.png';"
+          onmouseout="this.src='assets/images/home/closet1.png';"></a>
+      </div>
+
+      <!-- เพิ่มช่องว่างให้ logo อยู่กลาง -->
+      <div class="head2"></div>
+
+      <div class="head3" style="padding-top: 5.5px;">
+        <a href="index.html"><img class="logo" src="assets/images/home/Logo2.png" height="60px" width="235px"></a>
+      </div>
+      <div class="head4">
+        <nav class="breadcrumb is-small is-right" aria-label="breadcrumbs" style="font-size: 1vw">
+          <ul>
+            <li><a href="#" onclick="document.getElementById('id01').style.display='block'" >Log in</a></li>
+            <li><a href="register.html">Sign up</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- pop up log in -->
+      <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:500px; background-image: url(assets/images/home/BG.png); background-size: 100% 100%">
+        <div class="w3-card-4">
+          <div class="w3-container w3-block w3-theme-l3 w3-xxlarge w3-card" style="background-image: url(assets/images/home/nav-tab.png); background-size: 100% 100%">
+            <h1 style="font-family: Chonburi; font-size: 2rem;">Log in</h1>
+          </div>
+
+          <div class="w3-center">
+            <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close">×</span>
+          </div>
+
+          <form class="w3-container" action="/action_page.php">
+            <div class="w3-section">
+              <label><b>Username</b></label>
+              <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usename" required>
+                <label><b>Password</b></label>
+              <input class="w3-input w3-border" type="text" placeholder="Enter Password" name="psw" required>
+              <span class="w3-left w3-padding w3-large"><a href="#">Help! I forgot my password </a></span>
+            </div>
+            <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Login</button>
+
+            <div class="w3-center">
+              <label>or just</label>
+            </div>
+
+            <button class="w3-button w3-block w3-indigo w3-section w3-padding" type="submit">Login with Facebook</button>
+            <span class="w3-modal-content w3-padding w3-large w3-transparent ">Don't have an account? <a href="#">Sign up</a></span>
+          </form>
+          <br>
+        </div>
+        </div>
+      </div>
+
+    <h1 class="model color" style="font-family: Chonburi; padding-top: 5rem; padding-left: 45px;font-size: 2.5vw;padding-bottom: 1px">DESIGN LOOQ</h1>
+    <div style="display: flex; width: 100%">
+      <div class="img-container" style="width: 34%; margin-left: 55px">
+                
+      <!--เสื้อ กางเกง ตัวหุ่น อยู่นี่ละจ้าา-->      
+        <img id="tops" class="tops" src="" alt="">
+        <img id="bottoms" class="bottoms" src="" alt="">
+        <img class="modelbg" src="assets/images/model/modelN0.png" alt="">
+      </div>
+      <!-- รุ่น demo -->
+      <!-- <div class="menu" style="width: 66%; padding-left: 45px; padding-top: 40px;">
+        <p>*Demo รอแท็บเมนู</p>
+        <p class="clear" onclick="document.getElementById('tops').src=''">เคลียร์บน</p><br>
+        <a onclick="document.getElementById('tops').src='assets/images/clothes/model/model01.png'"><img src="assets/images/clothes/menu/menu01.png" style="height: 250px;"></a>
+        <a onclick="document.getElementById('tops').src='assets/images/clothes/model/model02.png'"><img src="assets/images/clothes/menu/menu02.png" style="height: 250px;"></a>
+        <a onclick="document.getElementById('tops').src='assets/images/clothes/model/model18.png'"><img src="assets/images/clothes/menu/menu18.png" style="height: 250px;"></a>
+        <br>
+        <p class="clear" onclick="document.getElementById('bottoms').src=''">เคลียร์ล่าง</p><br>
+        <a onclick="document.getElementById('bottoms').src='assets/images/clothes/model/model04.png'"><img src="assets/images/clothes/menu/menu04.png" style="height: 250px;"></a>
+        <a onclick="document.getElementById('bottoms').src='assets/images/clothes/model/model06.png'"><img src="assets/images/clothes/menu/menu06.png" style="height: 250px;"></a>
+        <a onclick="document.getElementById('bottoms').src='assets/images/clothes/model/model09.png'"><img src="assets/images/clothes/menu/menu09.png" style="height: 250px;"></a>
+      </div> -->
+
+      <div class="menu" style="width: 66%; padding-right: 100px; padding-top: 40px;">
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'alltops')">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;
+              <img src="/assets/images/buttons/shirt.png" alt=""><br>
+            </span>
+          </button>
+
+          <button class="tablinks" onclick="openCity(event, 'allbuttoms')">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;
+              <img src="/assets/images/buttons/pants.png" alt=""><br>
+            </span>
+          </button>
+
+          <button class="tablinks" onclick="openCity(event, 'allshoes')">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;
+              <img src="/assets/images/buttons/shoes.png" alt=""><br>
+            </span>
+          </button>
+
+          <button class="tablinks" onclick="openCity(event, 'allass')">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;
+              <img src="/assets/images/buttons/ass.png" alt=""><br>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--shirt-->
+
+
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'alltops')">
+            <div align="center" font-size="18px">
+              <h6>A</h6>
+              <h6>L</h6>
+              <h6>L</h6>
+            </div>
+            <!--<img src="/assets/images/buttons/button 2.png">-->
+          </button>
+
+          <button class="tablinks" onclick="openCity(event, 'blouses')">
+            <div align="center">
+              <h6>B</h6>
+              <h6>L</h6>
+              <h6>O</h6>
+              <h6>U</h6>
+              <h6>S</h6>
+              <h6>E</h6>
+              <h6>S</h6>
+            </div>
+            <!--<img src="/assets/images/buttons/button 2.png">-->
+          </button>
+
+          <button class="tablinks" onclick="openCity(event, 'tanks')">
+            <div align="center">
+              <h6>T</h6>
+              <h6>A</h6>
+              <h6>N</h6>
+              <h6>K</h6>
+              <h6>S</h6>
+            </div>
+            <!--<img src="/assets/images/buttons/button 2.png">-->
+          </button>
+
+          <button class="tablinks" onclick="openCity(event, 'dresses')">
+            <div align="center">
+              <h6>D</h6>
+              <h6>R</h6>
+              <h6>E</h6>
+              <h6>S</h6>
+              <h6>S</h6>
+              <h6>E</h6>
+              <h6>S</h6>
+            </div>
+            <!--<img src="/assets/images/buttons/button 2.png">-->
+          </button>
+        </div>
+
+    <!--all tops-->
+          <div id="alltops" class="tabcontent">
+
+            <div class="w3-row-padding w3-center w3-margin-top">
+
+              <div class="w3-third">
+                <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                  <figure class="image is-1by2"></figure>
+                  <a onclick="document.getElementById('tops').src='assets/images/clothes/model/model01.png'">
+                    <img src="assets/images/clothes/menu/menu01.png" alt="image-1" style="height: 150px">
+                  </a>
+                </div>
+              </div>
+
+              <div class="w3-third">
+                <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                  <figure class="image is-1by2"></figure>
+                  <a onclick="document.getElementById('tops').src='assets/images/clothes/model/model02.png'">
+                    <img src="assets/images/clothes/menu/menu02.png" alt="image-1" style="height: 150px">
+                  </a>
+                </div>
+              </div>
+
+              <div class="w3-third">
+                <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                  <figure class="image is-1by2"></figure>
+                  <img src="assets/images/looq/tank1.jpg" alt="image-1" style="height: 150px">
+                </div>
+              </div>
+
+              <div class="w3-third"><br>
+                <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                  <figure class="image is-1by2"></figure>
+                  <img src="assets/images/looq/tank2.jpg"alt"image-1" style="height: 150px">
+                </div>
+              </div>
+
+              <div class="w3-third"><br>
+                <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                  <figure class="image is-1by2"></figure>
+                  <img src="assets/images/looq/tank3.jpg"alt"image-1" style="height: 150px">
+                </div>
+              </div>
+
+              <div class="w3-third"><br>
+                <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                  <figure class="image is-1by2"></figure>
+                  <img src="assets/images/looq/blouse3.png"alt"image-1" style="height: 150px">
+                </div>
+              </div>
+
+              <div class="w3-third"><br>
+                <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                  <figure class="image is-1by2"></figure>
+                  <img src="assets/images/looq/tank4.png"alt"image-1" style="height: 150px">
+                </div>
+              </div>
+
+              <div class="w3-third"><br>
+                <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                  <figure class="image is-1by2"></figure>
+                  <img src="assets/images/looq/top1.jpg" alt="image-1" style="height: 150px">
+                </div>
+              </div>
+
+              <div class="w3-third"><br>
+                <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                  <figure class="image is-1by2"></figure>
+                  <img src="assets/images/looq/tank5.png" alt="image-1" style="height: 150px">
+                </div>
+              </div>
+
+            <!-- Pagination -->
+              <div class="w3-center w3-padding-32">
+                <div class="w3-bar">
+                  <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+                  <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+                  <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+                  <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+                  <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+                  <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+                </div>
+              </div>
+
+            </div> <!--เพิ่มบรรทัดนี้มาด้วย-->
+          </div> <!--ที่เปิดใหม่ปิดตรงนี้-->
+        
+    <div class="column has-text-centered" style="padding-top: 15%">   
+      <a class="button is-light" href="#" style="color: #ffffff; width: 90px; background-color: #976f6c;">DONE</a>
+    </div>       
+    <center>
+      <div style="width: 300px;margin-bottom: 100px">
+        <p class="has-text-centered" style="font-size: 1rem;">By clicking on 'Done' above, you confirm that you're finished.</p>
+      </div>
+    </center>   
+   
+
+
+
+
+
+        
+        
+  <footer class="footer" style="background-image: url(assets/images/home/%E0%B8%A5%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%87.png);background-repeat: round;width: 100%;height: 328px;" >
+    <div class="columns has-text-centered" style="height: 84px;padding-top: 25px;font-size: 1.7vw">
+      <div class="column" style="font-family: Arial">
+        <a href="#" style="color: white"><strong>OUR WEBSITE</strong></a>
+      </div>
+      <div class="column" style="font-family: Arial">
+        <a href="#" style="color: white"><strong>CUSTOMER CARE</strong></a>
+      </div>
+      <div class="column" style="font-family: Arial">
+        <a href="#" style="color: white"><strong>ACCOUNTS</strong></a>
+      </div>
+      <div class="column" style="font-family: Arial">
+        <a href="#" style="color: white"><strong>CONTACT US</strong></a>
+      </div>
+    </div>
+    <div class="columns has-text-centered" style="height: 30px; padding-top: 110px">
+      <div class="column">
+        <p style="font-family: Chonburi;color: #ffffff;font-size: 1.4vw">2017 LOOQ & STYLE all rights reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript">
+      function openCity(evt, cityName) {
+      // Declare all variables
+        var i, tabcontent, tablinks;
+
+      // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+
+      // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      /* Set the width of the side navigation to 0 */
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+
+      // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+      }
+  </script>
+        
+</body>
+</html>

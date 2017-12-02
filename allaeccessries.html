@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>All Aeccessries</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chonburi">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+<!-- css ทำตรงนี้-->
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+  // Get all "navbar-burger" elements
+      var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach(function ($el) {
+    $el.addEventListener('click', function () {
+
+        // Get the target from the "data-target" attribute
+      var target = $el.dataset.target;
+      var $target = document.getElementById(target);
+
+        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+    $el.classList.toggle('is-active');
+    $target.classList.toggle('is-active');
+
+        });
+      });
+    }
+  });
+  </script>
+
+</head>
+
+  <body> <!--ลบคลาสตรงนี้ออก-->
+
+    <main>
+
+      <style>
+
+        html {
+           background: url(/assets/images/home/BG.png) no-repeat center center fixed;
+           -webkit-background-size: cover;
+           -moz-background-size: cover;
+           -o-background-size: cover;
+           background-size: cover;
+        }
+
+        body {color: #000000;}
+        a:link {color: #f09488;}
+        a:hover {color: #ed7263;}
+
+        .w3-sidebar a {font-family: "Roboto", sans-serif}
+        body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+        /*ส่วนนี้สำหรับใส่โค้ดสีก่อนคลิก*/
+      a:link {
+        color: #d1aba6;
+      }
+
+  /*ส่วนนี้สำหรับ link จะเปลี่ยนเป็นอีกสีหนึ่งเมื่อเอาเมาส์ไปวาง*/
+      a:hover {
+        color: #d1aba6;
+      }
+
+  /*ส่วนนี้สำหรับ เมื่อคลิกแล้วจะเปลี่ยนเป็นอีกสีหนึ่ง*/
+      a:visited {
+        color: #d1aba6;
+      }
+      </style>
+
+    </main>
+
+    <header>
+    <div class="head" style="z-index: 999;">
+      <div class="head1" style="display: flex;">
+        <div class="dropdown is-hoverable" style="padding-left: 5px; padding-top: 6px; height:auto; width: auto">
+          <div class="dropdown-trigger" style="padding-top: .3rem; padding-left: 5px">
+            <img src="assets/images/home/Hamburger1.png" style="width: 3rem; height: auto;">
+            <!-- <span class="icon is-small">
+              <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </span> -->
+          </div>
+          <div class="dropdown-menu" id="dropdown-menu2" role="menu">
+            <div class="dropdown-content">
+              <a href="#" class="dropdown-item">LOOQ</a>
+              <hr style="margin: 0">
+              <a href="tagfinal.html" class="dropdown-item">Album</a>
+              <hr style="margin: 0">
+              <a href="looq.html" class="dropdown-item">Clothes</a>
+              <hr style="margin: 0">
+              <a href="contact-us.html" class="dropdown-item">Contact Us</a>
+            </div>
+          </div>
+        </div>
+        <a href="model.html"><img src="assets/images/home/closet1.png" style="width: 3rem; height: auto; padding-top: .4rem; padding-left: 5px;" 
+          onmouseover="this.src='assets/images/home/closet2.png';"
+          onmouseout="this.src='assets/images/home/closet1.png';"></a>
+      </div>
+
+      <!-- เพิ่มช่องว่างให้ logo อยู่กลาง -->
+      <div class="head2"></div>
+
+      <div class="head3" style="padding-top: 5.5px;">
+        <a href="index.html"><img class="logo" src="assets/images/home/Logo2.png" height="60px" width="235px"></a>
+      </div>
+      <div class="head4">
+        <nav class="breadcrumb is-small is-right" aria-label="breadcrumbs" style="font-size: 1vw">
+          <ul>
+            <li><a href="#" onclick="document.getElementById('id01').style.display='block'" >Log in</a></li>
+            <li><a href="register.html">Sign up</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- pop up log in -->
+    <div id="id01" class="w3-modal">
+      <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:500px; background-image: url(assets/images/home/BG.png); background-size: 100% 100%">
+      <div class="w3-card-4">
+        <div class="w3-container w3-block w3-theme-l3 w3-xxlarge w3-card" style="background-image: url(assets/images/home/nav-tab.png); background-size: 100% 100%">
+          <h1 style="font-family: Chonburi; font-size: 2rem;">Log in</h1>
+        </div>
+
+        <div class="w3-center">
+          <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close">×</span>
+        </div>
+
+        <form class="w3-container" action="/action_page.php">
+          <div class="w3-section">
+            <label><b>Username</b></label>
+            <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usename" required>
+              <label><b>Password</b></label>
+            <input class="w3-input w3-border" type="text" placeholder="Enter Password" name="psw" required>
+            <span class="w3-left w3-padding w3-large"><a href="#">Help! I forgot my password </a></span>
+          </div>
+          <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Login</button>
+
+          <div class="w3-center">
+            <label>or just</label>
+          </div>
+
+          <button class="w3-button w3-block w3-indigo w3-section w3-padding" type="submit">Login with Facebook</button>
+          <span class="w3-modal-content w3-padding w3-large w3-transparent ">Don't have an account? <a href="#">Sign up</a></span>
+        </form>
+        <br>
+      </div>
+      </div>
+    </div>
+  </header>
+    <br><br> <!--แก้สถานการณ์เฉพาะหน้าไปก่อน-->
+    <div class="w3-content" style="max-width:1200px"> <!-- มา div class="w3-content" style="max-width:1200px" ตรงนัเแทน body-->
+
+    <div class="w3-padding-32">
+      <div class="w3-container">
+        <div class="w3-border">
+<!--แก้ตรงนี้ ทำให้อยู่บรรทัดเดียวกัน-->
+          <button class="w3-button w3-black w3-card-4">
+            <a href="/looq.html">ALL</a>
+          </button>
+<!--ถึงตรงนี้-->
+          <li class="w3-dropdown-hover">
+            <button class="w3-button w3-white">
+              <a href="/all tops.html">Tops <i class="fa fa-caret-down w3-margin-left"></i></a>
+                <div class="w3-dropdown-content w3-white w3-card-4">
+                  <a href="/blouse.html">Blouses</a><br>
+                  <a href="/tanks1.html">Tanks</a><br>
+                </div>
+            </button>
+          </li></ul>
+
+
+          <li class="w3-dropdown-hover">
+            <button class="w3-button w3-white  ">
+              <a href="/allbottoms.html">Bottoms <i class="fa fa-caret-down w3-margin-left"></i></a>
+                <div class="w3-dropdown-content w3-white w3-card-4">
+                  <a href="/pants.html">Pants</a><br>
+                  <a href="/shorts.html">Shorts</a><br>
+                  <a href="/skirts.html">Skirts</a><br>
+              </div>
+            </button>
+          </li></ul>
+
+          <button class="w3-button w3-white w3-hide-small">
+            <a href="Dresses.html">Dresses</a>
+          </button>
+
+          <button class="w3-button w3-white w3-hide-small">
+            <a href="Shoes.html">Shoes</a>
+          </button>
+
+          <li class="w3-dropdown-hover">
+            <button class="w3-button w3-white"><a href="/allaeccessries.html">Accessories <i class="fa fa-caret-down w3-margin-left"></i></a>
+              <div class="w3-dropdown-content w3-white w3-card-4">
+                <a href="earring.html">Earrings</a><br>
+                <a href="/Bags.html">Bags</a><br>
+                <a href="/socks.html">Socks</a><br>
+              </div>
+            </button>
+        </li></ul>
+
+        </div>
+      </div>
+    </div>
+
+<div class="w3-row-padding w3-center w3-margin-top">
+<div class="w3-third">
+  <figure class="image is-1by2"></figure>
+  <div class="w3-card-2 w3-padding-top" style="min-height:400px; background-color: #ffffff;">
+<img src="assets/images/looq/aecc1.png"alt"image-1" style="height: 400px">
+  <p><a href="https://www.pomelofashion.com/th/th/jewelry/13868-goya-circular-collar-necklace---gold.html" target="_blank">Goya Circular Collar Necklace - Gold</a></p>
+  <p>240 <i class="fa fa-btc" aria-hidden="true"></i></p>
+  </div>
+</div>
+
+<div class="w3-third">
+  <div class="w3-card-2 w3-padding-top" style="min-height:400px; background-color: #ffffff;">
+    <figure class="image is-1by2"></figure>
+  <img src="assets/images/looq/aecc2.jpg"alt"image-1" style="height: 400px">
+ <p><a href="https://www.pomelofashion.com/global/jewelry/15533-tori-star-hoop-earrings.html" target="_blank">Tori Star Hoop Earrings</a></p>
+  <p>240 <i class="fa fa-btc" aria-hidden="true"></i></p>
+  </div>
+</div>
+
+<div class="w3-third">
+  <div class="w3-card-2 w3-padding-top" style="min-height:400px; background-color: #ffffff;">
+  <figure class="image is-1by2"></figure>
+<img src="assets/images/looq/aecc3.png"alt"image-1" style="height: 400px">
+<p><a href="https://www.pomelofashion.com/global/sunglasses/15502-jamiya-tinted-lens-aviator-sunglasses.html" target="_blank">Jamiyo Tinted Lens Aviotor Sungiasses</a></p>
+<p>340 <i class="fa fa-btc" aria-hidden="true"></i></p>
+  </div>
+</div>
+
+<div class="w3-third"><br>
+  <div class="w3-card-2 w3-padding-top" style="min-height:400px; background-color: #ffffff;">
+ <figure class="image is-1by2"></figure>
+  <img src="assets/images/looq/bag5.jpg"alt"image-1" style="height: 400px">
+<p><a href="https://www.oandb.store/all-bags/vency-bag-greedy-black.html" target="_blank"> Vency Bag Greedy Black</a></p>
+  <p>1,808 <i class="fa fa-btc" aria-hidden="true"></i></p>
+  </div>
+</div>
+
+<div class="w3-third"><br>
+  <div class="w3-card-2 w3-padding-top" style="min-height:400px; background-color: #ffffff;">
+  <figure class="image is-1by2"></figure>
+<img src="assets/images/looq/erring1.png"alt"image-1" style="height: 400px">
+<p><a href="https://www.pomelofashion.com/th/en/jewelry/15521-choko-star-dangle-earrings.html" target="_blank">Choko Star Dangle EarringsP</a></p>
+<p>190 <i class="fa fa-btc" aria-hidden="true"></i></p>
+  </div>
+</div>
+
+<div class="w3-third"><br>
+  <div class="w3-card-2 w3-padding-top" style="min-height:400px; background-color: #ffffff;">
+  <figure class="image is-1by2"></figure>
+<img src="assets/images/looq/erring5.png"alt"image-1" style="height: 400px">
+<p><a href="https://www.pomelofashion.com/th/en/jewelry/15535-lei-star-tassle-earring.html" target="_blank">Lei Star Tassle Earring</a></p>
+  <p>340 <i class="fa fa-btc" aria-hidden="true"></i></p>
+  </div>
+</div>
+
+<div class="w3-third"><br>
+  <div class="w3-card-2 w3-padding-top" style="min-height:400px; background-color: #ffffff;">
+  <figure class="image is-1by2"></figure>
+  <img src="assets/images/looq/erring8.png"alt"image-1" style="height: 400px">
+<p><a href="https://www.pomelofashion.com/th/en/jewelry/15529-jin-circular-drop-earrings.html" target="_blank">Jin Circular Drop Earrings</a></p>
+  <p>190 <i class="fa fa-btc" aria-hidden="true"></i></p>
+  </div>
+</div>
+
+<div class="w3-third"><br>
+  <div class="w3-card-2 w3-padding-top" style="min-height:400px; background-color: #ffffff;">
+  <figure class="image is-1by2"></figure>
+<img src="assets/images/looq/bag1.jpg"alt"image-1" style="height: 400px">
+<p><a href="https://www.oandb.store/grace-clutch-bag-in-yellow-mustard.html" target="_blank"> GRACE CLUTCH BAG IN YELLOW MUSTARD</a></p>
+<p >1,701 <i class="fa fa-btc" aria-hidden="true"></i></p>
+  </div>
+</div>
+
+<div class="w3-third"><br>
+  <div class="w3-card-2 w3-padding-top" style="min-height:400px; background-color: #ffffff;">
+  <figure class="image is-1by2"></figure>
+  <img src="assets/images/looq/bag6.png"alt"image-1" style="height: 400px">
+<p><a href="https://www.pomelofashion.com/th/en/bags/15296-chowa-star-keychain.html" target="_blank">Chowa Star Keychain</a></p>
+  <p>690 <i class="fa fa-btc" aria-hidden="true"></i></p>
+  </div>
+</div>
+
+
+  <div class="w3-container w3-text-grey" id="jeans"><br>
+    <p>9 items</p>
+  </div>
+
+
+
+
+<!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+</div> <!--เพิ่มบรรทัดนี้มาด้วย-->
+  </div> <!--ที่เปิดใหม่ปิดตรงนี้-->
+
+      <footer class="footer" style="background-image: url(assets/images/home/%E0%B8%A5%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%87.png);background-repeat: round;width: 100%;height: 328px" >
+<div class="columns has-text-centered" style="height: 84px;padding-top: 25px;font-size: 1.7vw">
+  <div class="column" style="font-family: Arial">
+      <a href="aboutus.html" style="color: white"><strong>OUR WEBSITE</strong></a>
+      
+  </div>
+  <div class="column" style="font-family: Arial">
+      <a href="customer-care.html" style="color: white"><strong>CUSTOMER CARE</strong></a>
+  </div>
+  <div class="column" style="font-family: Arial">
+       <a href="personal.html" style="color: white"><strong>ACCOUNTS</strong></a>
+  </div>
+  <div class="column" style="font-family: Arial">
+      <a href="contact-us.html" style="color: white"><strong>CONTACT US</strong></a>
+  </div>
+
+</div>
+<div class="columns has-text-centered" style="height: 30px; padding-top: 110px">
+  <div class="column">
+      <p style="font-family: Chonburi;color: #ffffff;font-size: 1.4vw">2017 LOOQ & STYLE all rights reserved</p>
+  </div>
+            </div>
+</footer>
+
+</body>
+</html>
