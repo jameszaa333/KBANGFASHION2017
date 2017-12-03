@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> Color Model </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chonburi"> 
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+
+
+<body>
+  <main>
+    <style>
+      html {
+         background: url(/assets/images/home/BG.png) no-repeat center center fixed;
+         -webkit-background-size: cover;
+         -moz-background-size: cover;
+         -o-background-size: cover;
+         background-size: cover;
+      }
+
+      body {color: #000000;}
+      a:link {color: #f09488;}
+      a:hover {color: #ed7263;}
+        
+        .model { position: relative; }
+
+        .model .skin {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 3;
+
+        }
+        .model .shadow {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 2;
+        }                
+
+        .title {
+          width: 20%;
+          height: 20%;
+          margin-left: 2.5%;
+          margin-top: 6%;
+
+
+        }
+
+        .img-container .modelbg {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 1;
+        }
+        .pull-left {float:left;}
+
+
+    </style>
+  </main>
+
+  <header>
+    <div class="head" style="z-index: 999;">
+      <div class="head1" style="display: flex;">
+        <div class="dropdown is-hoverable" style="padding-left: 5px; padding-top: 6px; height:auto; width: auto">
+          <div class="dropdown-trigger" style="padding-top: .3rem; padding-left: 5px">
+            <img src="assets/images/home/Hamburger1.png" style="width: 3rem; height: auto;">
+            <!-- <span class="icon is-small">
+              <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </span> -->
+          </div>
+          <div class="dropdown-menu" id="dropdown-menu2" role="menu">
+            <div class="dropdown-content">
+              <a href="index.html" class="dropdown-item">LOOQ</a>
+              <hr style="margin: 0">
+              <a href="tagfinal.html" class="dropdown-item">Album</a>
+              <hr style="margin: 0">
+              <a href="looq.html" class="dropdown-item">Clothes</a>
+              <hr style="margin: 0">
+              <a href="contact-us.html" class="dropdown-item">Contact Us</a>
+            </div>
+          </div>
+        </div>
+        <a href="model.html"><img src="assets/images/home/closet1.png" style="width: 3rem; height: auto; padding-top: .4rem; padding-left: 5px;" 
+          onmouseover="this.src='assets/images/home/closet2.png';"
+          onmouseout="this.src='assets/images/home/closet1.png';"></a>
+      </div>
+
+      <!-- เพิ่มช่องว่างให้ logo อยู่กลาง -->
+      <div class="head2"></div>
+
+      <div class="head3" style="padding-top: 5.5px;">
+        <a href="index.html"><img class="logo" src="assets/images/home/Logo2.png" height="60px" width="235px"></a>
+      </div>
+      <div class="head4">
+        <nav class="breadcrumb is-small is-right" aria-label="breadcrumbs" style="font-size: 1vw">
+          <ul>
+            <li><a href="#" onclick="document.getElementById('id01').style.display='block'" >Log in</a></li>
+            <li><a href="register.html">Sign up</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- pop up log in -->
+    <div id="id01" class="w3-modal">
+      <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:500px; background-image: url(assets/images/home/BG.png); background-size: 100% 100%">
+      <div class="w3-card-4">
+        <div class="w3-container w3-block w3-theme-l3 w3-xxlarge w3-card" style="background-image: url(assets/images/home/nav-tab.png); background-size: 100% 100%">
+          <h1 style="font-family: Chonburi; font-size: 2rem;">Log in</h1>
+        </div>
+
+        <div class="w3-center">
+          <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close">×</span>
+        </div>
+
+        <form class="w3-container" action="/action_page.php">
+          <div class="w3-section">
+            <label><b>Username</b></label>
+            <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usename" required>
+              <label><b>Password</b></label>
+            <input class="w3-input w3-border" type="text" placeholder="Enter Password" name="psw" required>
+            <span class="w3-left w3-padding w3-large"><a href="#">Help! I forgot my password </a></span>
+          </div>
+          <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Login</button>
+
+          <div class="w3-center">
+            <label>or just</label>
+          </div>
+
+          <button class="w3-button w3-block w3-indigo w3-section w3-padding" type="submit">Login with Facebook</button>
+          <span class="w3-modal-content w3-padding w3-large w3-transparent ">Don't have an account? <a href="#">Sign up</a></span>
+        </form>
+        <br>
+      </div>
+      </div>
+    </div>
+
+
+  <!-- เนื้อหา -->
+    <section class="content"> 
+      
+      <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img id="Create model" style="width: 20rem;" class="title" src="/assets/images/model/modelcolor3.png" alt="Create Model"></div>
+      <div class="model" style="text-align: center;margin-left: 35rem;width: 20rem; height: auto;">
+      <img id="model skin" class="skin" src="/assets/images/model/modelN0.png" alt="Create Model">
+      <img id="model shadow" class="shadow" src="assets/images/model/shadow1.png" alt="Shadow Model">
+      </div>
+      <!-- <div class="shadow" style="text-align: center; z-index: 2;">
+        <img id="the_pic" class="center fit" src="/assets/images/model/shadow.png" alt="CREATE MODEL" >
+      </div> -->
+
+
+      <div class="pull-left" style="font-family: Chonburi; font-size: 20px; color: #a3837f; padding-left: 360px; padding-top: 47%; text-align: center;">SKIN COLOR </div>
+      <div style="text-align: center;padding-top: 47%; padding-right: 500px;">
+          <button onclick="document.getElementById('model skin').src='assets/images/model/modelN0.png'" style="height: 2rem; width: 2rem; background-color: #f6f6f6; border: none; border-radius:50%" ></button>
+          <button onclick="document.getElementById('model skin').src='assets/images/model/modelN1.png'" style="height: 2rem; width: 2rem; background-color: #ffdbac; border: none; border-radius:50%" ></button>
+          <button onclick="document.getElementById('model skin').src='assets/images/model/modelN2.png'" style="height: 2rem; width: 2rem; background-color: #e0ac69; border: none; border-radius:50%" ></button>
+          <button onclick="document.getElementById('model skin').src='assets/images/model/modelN3.png'" style="height: 2rem; width: 2rem; background-color: #c68642; border: none; border-radius:50%" ></button>
+          <button onclick="document.getElementById('model skin').src='assets/images/model/modelN4.png'" style="height: 2rem; width: 2rem; background-color: #8d5524; border: none; border-radius:50%" ></button>
+
+          <!-- กดเลือกสีเหมือนกันแต่เป็นรูป -->
+          <!-- <a onclick="document.getElementById('model skin').src='assets/images/model/modelN0.png'"><img src="assets/images/model/N0.png" style="height: 45px;"></a>
+          <a onclick="document.getElementById('model skin').src='assets/images/model/modelN1.png'"><img src="assets/images/model/N1.png" style="height: 45px;"></a>
+          <a onclick="document.getElementById('model skin').src='assets/images/model/modelN2.png'"><img src="assets/images/model/N2.png" style="height: 45px;"></a>
+          <a onclick="document.getElementById('model skin').src='assets/images/model/modelN3.png'"><img src="assets/images/model/N3.png" style="height: 45px;"></a>
+          <a onclick="document.getElementById('model skin').src='assets/images/model/modelN4.png'"><img src="assets/images/model/N4.png" style="height: 45px;"></a> -->
+      </div>
+
+
+<!-- style="width: auto; height: 60rem;">-->
+          <center>
+          <div style="padding-top: 2rem;">  
+            <a class="button is-light" href="testimage2.html" style="color: #ffffff;width: 120px;background-color: #976f6c; : 20px">NEXT</a> 
+          </div>
+        </center>
+    </section>
+
+  <!-- ท้าย -->
+              <footer class="footer" style="background-image: url(assets/images/home/%E0%B8%A5%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%87.png);background-repeat: round;width: 100%;height: 328px" >
+<div class="columns has-text-centered" style="height: 84px;padding-top: 25px;font-size: 1.7vw">
+  <div class="column" style="font-family: Arial">
+      <a href="aboutus.html" style="color: white"><strong>OUR WEBSITE</strong></a>
+      
+  </div>
+  <div class="column" style="font-family: Arial">
+      <a href="customer-care.html" style="color: white"><strong>CUSTOMER CARE</strong></a>
+  </div>
+  <div class="column" style="font-family: Arial">
+       <a href="personal.html" style="color: white"><strong>ACCOUNTS</strong></a>
+  </div>
+  <div class="column" style="font-family: Arial">
+      <a href="contact-us.html" style="color: white"><strong>CONTACT US</strong></a>
+  </div>
+
+</div>
+<div class="columns has-text-centered" style="height: 30px; padding-top: 110px">
+  <div class="column">
+      <p style="font-family: Chonburi;color: #ffffff;font-size: 1.4vw">2017 LOOQ & STYLE all rights reserved</p>
+  </div>
+            </div>
+</footer>
+
+</body>
+</html>
+ 
