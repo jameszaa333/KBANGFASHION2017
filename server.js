@@ -8,6 +8,7 @@ const ourwebsiteController = require('./controllers/ourwebsite.controller')
 const contactusController = require('./controllers/contactus.controller')
 const termofuseController = require('./controllers/termofuse.controller')
 const allclothesController = require('./controllers/allclothes.controller')
+const bagsController = require('./controllers/bags.controller')
 
 const testController = require('./controllers/test.controller')
 
@@ -18,6 +19,7 @@ app.get('/our-website', ourwebsiteController.index)
 app.get('/contact-us', contactusController.index)
 app.get('/terms-of-use', termofuseController.index)
 app.get('/all-clothes', allclothesController.index)
+app.get('/bags', bagsController.index)
 
 app.get('/test', testController.index)
 
