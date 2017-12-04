@@ -41,10 +41,11 @@
         .model { position: relative; }
 
         .model .skin {
-          position: absolute;
+          position: relative;
           top: 0;
           left: 0;
           z-index: 3;
+
 
         }
         .model .shadow {
@@ -68,6 +69,18 @@
           z-index: 1;
         }
         .pull-left {float:left;}
+
+        .NEXT {
+    border-radius: 5px;
+    background: #976f6c;
+    padding: 4px;
+    width: 130px;
+    height: 30px;  
+    display: block;
+    margin: 0 auto;
+
+
+}
 
     </style>
  
@@ -199,13 +212,11 @@
       <img id="model shadow" class="shadow" style="width: 20rem;" src="assets/images/model/shadow1.png" alt="Shadow Model">
       </div>
 
-    
-
 <!--color button-->
       
-      <div class="pull-left" style=" margin: auto; padding-top: 22rem; padding-left: 20rem; font-family: Chonburi; font-size: 20px; color: #a3837f;">SKIN COLOR </div>
+      <div class="pull-left" style=" margin: auto; padding-top: 22rem; padding-left: 23rem; font-family: Chonburi; font-size: 20px; color: #a3837f;">SKIN COLOR </div>
       
-      <div style="text-align: center;padding-top: 22rem; padding-right: 30rem;">
+      <div style="text-align: center;padding-top: 22rem; padding-right: 32rem; ">
           <button onclick="document.getElementById('model skin').src='assets/images/model/modelN0.png'" style="height: 2rem; width: 2rem; background-color: #f6f6f6; border: none; border-radius:50%" ></button>
           <button onclick="document.getElementById('model skin').src='assets/images/model/modelN1.png'" style="height: 2rem; width: 2rem; background-color: #ffdbac; border: none; border-radius:50%" ></button>
           <button onclick="document.getElementById('model skin').src='assets/images/model/modelN2.png'" style="height: 2rem; width: 2rem; background-color: #e0ac69; border: none; border-radius:50%" ></button>
@@ -218,15 +229,12 @@
           <a onclick="document.getElementById('model skin').src='assets/images/model/modelN2.png'"><img src="assets/images/model/N2.png" style="height: 45px;"></a>
           <a onclick="document.getElementById('model skin').src='assets/images/model/modelN3.png'"><img src="assets/images/model/N3.png" style="height: 45px;"></a>
           <a onclick="document.getElementById('model skin').src='assets/images/model/modelN4.png'"><img src="assets/images/model/N4.png" style="height: 45px;"></a> -->
-      
-        
-      </div>
-
-      <div style="padding-top: 65px;padding-bottom: 30px">  <a class="button is-light" href="testimage2.html" style="color: #ffffff;width: 120px;background-color: #976f6c;margin-right: 20px">NEXT</a> 
-      </div>
-
+          </div>
 </section>
 
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 2rem; "> 
+<a href="testimage2.html" class="NEXT" style="color: #ffffff">NEXT</a>
+</div>
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-16" style="background-color: #f5f5f5;color: grey;font-size: 11px;padding-left: 30px">
