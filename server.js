@@ -5,14 +5,15 @@ const app = express()
 
 const homeController = require('./controllers/home.controller')
 const aboutusController = require('./controllers/aboutus.controller')
+const testController = require('./controllers/test.controller')
 
 app.set('view engine', 'twig')
 
-app.get('/', function(req, res) {
-	res.send('Back-end มาแล้วจ้า')
-})
+app.get('/', homeController.index)
 
-app.get('/aboutus', aboutusController.index)
+app.get('/about-us', aboutusController.index)
+
+app.get('/test', testController.index)
 
 app.use('/assets', express.static(__dirname + '/static/assets', {
 	maxAge: 86400000
