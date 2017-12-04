@@ -21,6 +21,7 @@ const pantsController = require('./controllers/pants.controller')
 const skirtsController = require('./controllers/skirts.controller')
 const socksController = require('./controllers/socks.controller')
 const shortsController = require('./controllers/shorts.controller')
+const shoesController = require('./controllers/shoes.controller')
 
 
 app.get('/', homeController.index)
@@ -39,6 +40,7 @@ app.get('/pants', pantsController.index)
 app.get('/skirts', skirtsController.index)
 app.get('/socks', socksController.index)
 app.get('/shorts', shortsController.index)
+app.get('/shoes', shoesController.index)
 
 
 
