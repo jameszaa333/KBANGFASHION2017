@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>....</title>
+
+<script type="text/javascript">
+// jQuery Document
+var main = function() {
+/* Push the body and the nav over by 285px over */
+$('#share').click(function() {
+ $('.menu').animate({
+	 right: "0px"
+ }, 200);
+
+ $('body').animate({
+	 right: "285px"
+ }, 200);
+});
+
+/* Then push them back */
+$('html').click(function() {
+ $('.menu').animate({
+	 right: "-285px"
+ }, 200);
+
+ $('body').animate({
+	 right: "0px"
+ }, 200);
+});
+};
+
+
+$(document).ready(main);
+</script>
+
+<style media="screen">
+.menu {
+background-color: #373737;
+right: -285px;
+height: 100%;
+position: fixed;
+width: 285px;
+}
+</style>
+	</head>
+	<body>
+		<div class="menu">
+
+    </div>
+
+        <div id="header">
+        <div id="main">
+            <a href="minecraft.html"><img src="my_logo.png"></a>
+        </div>
+        <div id="share">
+            <img name="menu" src="my_menu.png">
+        </div>
+        </div>
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script type="text/javascript" src="main.js">
+
+        </script>
+	</body>
+</html>

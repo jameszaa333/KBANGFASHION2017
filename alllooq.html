@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>Clothes</title>
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <script src="js/modernizr.custom.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chonburi">
+</head>    
+    
+<body class="demo-1" onload="" style="color:black;background-color: #f0f0f0">
+  <style>
+        body {color: #000000;}
+        a:link {
+          color: #f09488;
+          -webkit-transition: all 0.5s ease;
+          -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+        }
+        a:hover {
+          color: #ed7263;
+          -webkit-transition: all 0.5s ease;
+          -moz-transition: all 0.5s ease;
+          -o-transition: all 0.5s ease;
+          text-shadow: 0.1em 0.1em 0.2em #ccc; 
+        }
+        .w3-content a{
+          color: #e3a49c;
+        }
+        .w3-content a:hover{
+          color: #f8b2a9;
+        }
+  </style>
+
+  <div id="ip-container" class="ip-container">
+  <!-- initial header -->         
+  <!-- main content -->
+  <div id="loader"></div>
+  <div class="w3-animate-top" id="Contentt">
+  <!-- Side Navigation -->
+      <nav class="w3-sidebar w3-bar-block w3-card animated slideInLeft w3-center" style="display:none;z-index: 7;top:0;" id="mySidebar">
+        <img style="width: 25%;height: auto;min-width: 200px;margin-bottom: 30px;margin-top: 100px" src="assets/images/home/Logo4.png">
+        <a href="model.html" class="w3-bar-item w3-button w3-hide-large w3-hide-medium w3-hover-red" style="font-size: ;color: lightgrey;font-family: Chonburi">Create LOOQ <img src="assets/images/home/closet3.png" style="width: 32px;height: 29px;"> </a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-red" style="font-size: ;color: lightgrey">LOOQ</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-red" style="font-size: ;color: lightgrey">Album</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-red" style="font-size: ;color: lightgrey">Clothes</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-red" style="font-size: ;color: lightgrey">Contact Us</a>
+        <button class="w3-bar-item w3-button" onclick="w3_close()" style="margin-top: 30px;color: #d7b3af">Close <i class="fa fa-remove"></i></button>
+      </nav>
+
+  <header class="headerr w3-container w3-padding" style="background-image: url();background-repeat: no-repeat;background-size: 100% 100%;position: fixed;z-index: 5;width: 100%;display: flex;background-color: #e7c6c2;top:0">
+      <div style="width: 25%;height: 30px">  
+        <a href="#" onclick="w3_open()" class="fa fa-bars w3-xlarge w3-transparent" style="margin-left: 8px;margin-right: 6px;text-decoration: none;color: white!important"></a> 
+        <div class="w3-dropdown-hover w3-transparent"><a class="w3-hide-small" href="model.html"><img class="fa w3-xlarge w3-transparent" src="assets/images/home/closet1.png" style="width: 32px;height: 29px;margin-top: 2px;" onmouseover="this.src='assets/images/home/closet4.png';"
+          onmouseout="this.src='assets/images/home/closet1.png';"></a>
+          <div class="w3-dropdown-content w3-bar-block w3-border jshadow w3-animate-opacity" style="width:250px">
+            <div class="w3-container">
+              <p>Create a Looq, Submit your Looq now!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="width: 50%;height: 34px;text-align: center;"><a href="index.html" onclick="myFunction2()" class="w3-xlarge w3-transparent"><img style="height: auto;width: 35%;min-height: 25px;min-width: 175px" src="assets/images/home/Logo2.png"></a></div>
+      <div style="width: 25%;height: 30px;text-align: right">
+        <div class="w3-dropdown-hover w3-transparent" >
+          <img style="width: 15px;height: 15PX;" src="assets/images/home/arrowdown.png"> 
+          <div class="w3-dropdown-content w3-bar-block w3-border jshadow" style="right:0;margin-top: 0px;color: gray">
+            <a href="#" class="w3-bar-item w3-button" onclick="document.getElementById('id01').style.display='block'"><i class="material-icons">person</i>   Login</a>
+            <a href="#" class="w3-bar-item w3-button" onclick="document.getElementById('id02').style.display='block'"><i class="material-icons">person</i>   Register</a>
+          </div>
+        </div>
+      </div> 
+  </header>
+
+  <!--LOG-IN MODAL    -->
+      <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:500px; background-image: url(assets/images/home/BG.png); background-size: 100% 100%">
+          <div class="w3-card-4">
+            <div class="w3-container w3-block w3-theme-l3 w3-xxlarge w3-card" style="background-image: url(assets/images/home/nav-tab.png); background-size: 100% 100%">
+              <h1 style="font-family: Chonburi; font-size: 2rem;">Log in</h1>
+            </div>
+
+            <div class="w3-center">
+              <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close">×</span>
+            </div>
+
+            <form class="w3-container" action="/action_page.php">
+              <div class="w3-section" style="display: grid">
+                <label><b>Username</b></label>
+                <input class="w3-input w3-border w3-margin-bottom w3-round" type="text" placeholder="Enter Username" name="usename" required style="width: 100%">
+                <label><b>Password</b></label>
+                <input class="w3-input w3-border w3-round" type="text" placeholder="Enter Password" name="psw" required style="width: 100%">
+                <span class="w3-left w3-padding w3-large"><a href="#" style="font-size: 12px">Help! I forgot my password </a></span>
+              </div>
+              <button class="w3-button w3-block w3-section w3-padding w3-round" type="submit" style="background-color: #976f6c;color: white">Login</button>
+
+              <div class="w3-center">
+                <label>or just</label>
+              </div>
+
+              <button class="w3-button w3-block w3-indigo w3-section w3-padding w3-round" type="submit">Login with Facebook</button>
+              <span class="w3-modal-content w3-padding w3-transparent style="font-size: 10px>Don't have an account? <a href="#" style="color: #976f6c" onclick="document.getElementById('id01').style.display='none';document.getElementById('id02').style.display='block'">Sign up</a></span>
+            </form>
+            <br>
+          </div>
+        </div>
+      </div>
+
+  <!--LOG-IN MODAL-->
+      <div id="id02" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:500px; background-image: url(assets/images/home/BG.png); background-size: 100% 100%">
+          <div class="w3-card-4">
+            <div class="w3-container w3-block w3-theme-l3 w3-xxlarge w3-card" style="background-image: url(assets/images/home/nav-tab.png); background-size: 100% 100%">
+              <h1 style="font-family: Chonburi; font-size: 2rem;">Register</h1>
+            </div>
+
+            <div class="w3-center">
+              <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close">×</span>
+            </div>
+
+            <form class="w3-container" action="/action_page.php">
+              <div class="w3-section" style="display: grid">
+                <label><b>Username</b></label>
+                <input class="w3-input w3-border w3-round w3-margin-bottom" type="text" placeholder="Enter Username" name="usename" required style="width: 100%">
+                <label><b>Password</b></label>
+                <input class="w3-input w3-border w3-round w3-margin-bottom" type="text" placeholder="Enter Password" name="psw" required style="width: 100%">
+                <label><b>Confirm Password</b></label>
+                <input class="w3-input w3-border w3-round w3-margin-bottom" type="text" placeholder="Confirm Password" name="conpsw" required style="width: 100%">
+                <label><b>Email</b></label>
+                <input class="w3-input w3-border w3-round w3-margin-bottom" type="text" placeholder="Email" name="mail" required style="width: 100%">
+                <label><b>Confirm Email</b></label>
+                <input class="w3-input w3-border w3-round" style="margin-top: 14px;width: 100%" type="text" placeholder="Confirm Email" name="conmail" required>
+                <span class="w3-left w3-padding w3-large"><a href="#" style="font-size: 12px"> </a></span>
+              </div>
+              <button class="w3-button w3-block w3-section w3-padding w3-round" type="submit" style="background-color: #976f6c;color: white">Register</button>
+
+              <div>
+                <label style="color:black;font-size:13px">By clicking on 'Sign Up' above, you confirm that you accept the <a href="termsofuse.html" target="_blank" style="color: #976f6c"> Terms of Use</a></label>
+              </div>
+            </form>
+            <br>
+          </div>
+        </div>
+      </div>
+
+
+    <div class="w3-content"  style="max-width:1200px; padding-top: 50px;" >
+      <div class="w3-padding-32">
+        <div class="w3-container">
+          <div class="w3-border" style="background-color: #fff;">
+            <button class="w3-button w3-white ">
+              <a href="/looq.html">All</a>
+            </button>
+            <li class="w3-dropdown-hover">
+              <button class="w3-button w3-white">
+                <a href="/alltops.html">Tops <i class="fa fa-caret-down w3-margin-left"></i></a>
+                  <div class="w3-dropdown-content w3-white w3-card-4">
+                    <a href="/blouse.html">Blouses</a><br>
+                    <a href="/tanks1.html">Tanks</a><br>
+                  </div>
+              </button>
+            </li>
+            <li class="w3-dropdown-hover">
+              <button class="w3-button w3-white  ">
+                <a href="/allbottoms.html">Bottoms <i class="fa fa-caret-down w3-margin-left"></i></a>
+                  <div class="w3-dropdown-content w3-white w3-card-4">
+                    <a href="/pants.html">Pants</a><br>
+                    <a href="/shorts.html">Shorts</a><br>
+                    <a href="/skirts.html">Skirts</a><br>
+                </div>
+              </button>
+            </li>
+            <button class="w3-button w3-white w3-hide-small">
+              <a href="Dresses.html">Dresses</a>
+            </button>
+            <button class="w3-button w3-white w3-hide-small">
+              <a href="Shoes.html">Shoes</a>
+            </button>
+            <li class="w3-dropdown-hover">
+              <button class="w3-button w3-white"><a href="allaeccessries.html">Accessories <i class="fa fa-caret-down w3-margin-left"></i></a>
+                <div class="w3-dropdown-content w3-white w3-card-4">
+                  <a href="earring.html">Earrings</a><br>
+                  <a href="/Bags.html">Bags</a><br>
+                  <a href="/socks.html">Socks</a><br>
+                </div>
+              </button>
+            </li>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-row-padding w3-center w3-margin-top" style="font-size: 14px;">
+        <div class="w3-quarter">
+          <figure class="image is-1by2"></figure>
+          <div class="w3-card-2 w3-padding-top " style="min-height:300px; background-color: #ffffff;">
+            <img src="assets/images/looq/top1.jpg"alt"image-1" style="height: 250px">
+            <p><a href="https://milin.com/shop/fauna-top/" target="_blank">Milin Fauna</a></p>
+            <big>5,057 ฿</big>
+            <br><br><br>
+          </div>
+        </div>
+
+        <div class="w3-quarter">
+          <div class="w3-card-2 w3-padding-top" style="min-height:300px; background-color: #ffffff;">
+            <figure class="image is-1by2"></figure>
+            <img src="assets/images/looq/top2.jpg"alt"image-1" style="height: 250px">
+            <p><a href="https://milin.com/shop/fortuna-dress/" target="_blank">Milin Fauna Dress</a></p>
+            <big>2,450 ฿</big>
+            <br><br><br>
+          </div>
+        </div>
+
+        <div class="w3-quarter">
+          <div class="w3-card-2 w3-padding-top" style="min-height:300px; background-color: #ffffff;">
+            <figure class="image is-1by2"></figure>
+            <img src="assets/images/looq/aecc3.png"alt"image-1" style="height: 250px">
+            <p><a href="https://www.pomelofashion.com/global/sunglasses/15502-jamiya-tinted-lens-aviator-sunglasses.html" target="_blank">Jamiyo Tinted Lens Aviotor Sungiasses</a></p>
+            <big>340 ฿</big>
+            <br><br><br>
+          </div>
+        </div>
+
+        <div class="w3-quarter">
+          <div class="w3-card-2 w3-padding-top" style="min-height:300px; background-color: #ffffff;">
+            <figure class="image is-1by2"></figure>
+            <img src="assets/images/looq/bottom1.jpg"alt"image-1" style="height: 250px">
+            <p><a href="https://milin.com/shop/one-night-shorts/" target="_blank">Milin One Night Shorts</a></p>
+            <big>1,190 ฿</big>
+            <br><br><br>
+          </div>
+        </div>
+
+        <div class="w3-quarter">
+          <div class="w3-card-2 w3-padding-top" style="min-height:300px; background-color: #ffffff;">
+            <figure class="image is-1by2"></figure>
+            <img src="assets/images/looq/aecc1.png"alt"image-1" style="height: 250px">
+            <p><a href="https://www.pomelofashion.com/th/th/jewelry/13868-goya-circular-collar-necklace---gold.html" target="_blank">Goya Circular Collar Necklace - Gold</a></p>
+            <big>240 ฿</big>
+            <br><br><br>
+          </div>
+        </div>
+
+        <div class="w3-quarter">
+          <div class="w3-card-2 w3-padding-top" style="min-height:300px; background-color: #ffffff;">
+            <figure class="image is-1by2"></figure>
+            <img src="assets/images/looq/aecc2.jpg"alt"image-1" style="height: 250px">
+            <p><a href="https://www.pomelofashion.com/global/jewelry/15533-tori-star-hoop-earrings.html" target="_blank">Tori Star Hoop Earrings</a></p>
+            <big>240 ฿</big>
+            <br><br><br>
+          </div>
+        </div>
+
+        <div class="w3-quarter">
+          <div class="w3-card-2 w3-padding-top" style="min-height:300px; background-color: #ffffff;">
+            <figure class="image is-1by2"></figure>
+            <img src="assets/images/looq/shoes1.jpg"alt"image-1" style="height: 250px">
+            <p><a href="https://www.pomelofashion.com/th/th/shoes/15551-serenity-high-heels---beige.html" target="_blank">Serenity High Heels Beige</a></p>
+            <big>2,790 ฿</big>
+            <br><br><br>
+          </div>
+        </div>
+
+        <div class="w3-quarter">
+          <div class="w3-card-2 w3-padding-top" style="min-height:300px; background-color: #ffffff;">
+            <figure class="image is-1by2"></figure>
+            <img src="assets/images/looq/bottom2.png"alt"image-1" style="height: 250px">
+            <p><a href="https://milin.com/shop/polgara-pants/" target="_blank">Polgara Pants</a></p>
+            <big>3,380 ฿</big>
+            <br><br><br>
+          </div>
+        </div>
+
+        <div class="w3-quarter">
+          <div class="w3-card-2 w3-padding-top" style="min-height:300px; background-color: #ffffff;">
+            <figure class="image is-1by2"></figure>
+            <img src="assets/images/looq/sock1.jpg"alt"image-1" style="height: 250px">
+            <p><a href="https://www.pomelofashion.com/th/en/misc/15483-vera-knee-length-socks---pink.html" target="_blank">Vera Knee Length Socks - Pink</a></p>
+            <big>190 ฿</big>
+            <br><br><br>
+          </div>
+        </div>
+
+        <div class="w3-quarter">
+          <div class="w3-card-2 w3-padding-top" style="min-height:300px; background-color: #ffffff;">
+            <figure class="image is-1by2" ></figure>
+            <img src="assets/images/looq/bag4.jpg"alt"image-1" style="height: 250px">
+            <p><a href="https://www.oandb.store/all-bags/grace-clutch-bag-in-french-blue.html" target="_blank">Grace Clutch Bag In French Blue</a></p>
+            <big>1,890 ฿</big>
+            <br><br><br>
+          </div>
+        </div>
+
+        <div class="w3-quarter">
+          <div class="w3-card-2 w3-padding-top" style="min-height:300px; background-color: #ffffff;">
+            <figure class="image is-1by2"></figure>
+            <img src="assets/images/looq/tank10.png"alt"image-1" style="height: 250px">
+            <p><a href="https://www.pomelofashion.com/th/en/tops/14987-reesa-cut-out-shoulder-blouse---pink.html" target="_blank">Reesa Cut Out Shoulder Blouse - Pink</a></p>
+            <big>590 ฿</big>
+            <br><br><br>
+          </div>
+        </div>
+
+        <div class="w3-quarter">
+          <div class="w3-card-2 w3-padding-top" style="min-height:300px; background-color: #ffffff;">
+            <figure class="image is-1by2"></figure>
+            <img src="assets/images/looq/blouse14.png"alt"image-1" style="height:250px ">
+            <p><a href="https://www.pomelofashion.com/th/en/tops/15002-gracelynn-one-shoulder-floral-top.html" target="_blank">Gracelynn One Shoulder Floral Top</a></p>
+            <big>690 ฿</big>
+            <br><br><br>
+          </div>
+        </div>
+
+        <div class="w3-container w3-text-grey" id="jeans"><br>
+          <p>12 items</p>
+        </div>
+
+      <!-- Pagination -->
+        <div class="w3-center w3-padding-32">
+          <div class="w3-bar">
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+            <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <footer class="w3-container w3-padding-16" style="background-color: #f5f5f5;color: grey;font-size: 11px;padding-left: 30px">
+    <div class="w3-row">
+      <div class="w3-third w3-container ">
+        <p><b>Powered by KBANG</b></p>
+        <p>© 2017 LOOQ & STYLE All rights reserved &nbsp;&nbsp;<a href="#">Term of Use</a></p>
+      </div>
+      <div class="w3-third w3-container ">
+      </div>
+      <div class="w3-third w3-container w3-hide-small" style="text-align: right"><br><br>
+        <a href="#">Our Website</a>&nbsp;&nbsp;<a href="#">Customer Care</a>&nbsp;&nbsp;<a href="#">Contact Us</a>
+      </div>
+      <div class="w3-third w3-container w3-hide-large w3-hide-medium" style="">
+        <a href="#">Our Website</a>&nbsp;&nbsp;<a href="#">Customer Care</a>&nbsp;&nbsp;<a href="#">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+  </div>
+  </div>
+
+  <script src="js/modernizr.custom.js"></script>
+  <script src="js/classie.js"></script>
+  <script src="js/pathLoader.js"></script>
+  <script src="js/main.js"></script>
+  <script>     
+    //เนวิเกชั่นมาเป็นแถบ
+    function w3_open() {
+        var x = document.getElementById("mySidebar");
+        x.style.width = "100%";
+        x.style.fontSize = "20px";
+        x.style.paddingTop = "10%";
+        x.style.display = "block";
+    }
+    //ฟังก์ชั่นปิดหน้ต่าง            
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+    }
+  </script>
+</body>
+</html>
