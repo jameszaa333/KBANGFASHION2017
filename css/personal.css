@@ -4,8 +4,6 @@ div.tab {
     border-bottom: 1px solid;
     border-bottom-color: #976f6c;
    /* margin-top: 8%;*/
-    margin-right: 10%;
-    margin-left: 10%;
 }
 
 /* Style the buttons inside the tab */
@@ -38,8 +36,6 @@ div.tab button.active {
     display: none;
 
     border: 0px solid #ccc;
-    margin-right: 10%;
-    margin-left: 10%;
     margin-bottom: 2%;
 }
 
