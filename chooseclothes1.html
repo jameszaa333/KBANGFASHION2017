@@ -8,18 +8,19 @@
   	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
 
+
     <script type="text/javascript">
         function openCity(evt, cityName) {
-// Declare all variables
+  // Declare all variables
         var i, tabcontent, tablinks;
 
-// Get all elements with class="tabcontent" and hide them
+  // Get all elements with class="tabcontent" and hide them
         tabcontent = document.getElementsByClassName("tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
           tabcontent[i].style.display = "none";
         }
 
-// Get all elements with class="tablinks" and remove the class "active"
+  // Get all elements with class="tablinks" and remove the class "active"
         tablinks = document.getElementsByClassName("tablinks");
         for (i = 0; i < tablinks.length; i++) {
             tablinks[i].className = tablinks[i].className.replace(" active", "");
@@ -34,251 +35,228 @@
         document.getElementById("mySidenav").style.width = "0";
       }
 
-// Show the current tab, and add an "active" class to the button that opened the tab
+  // Show the current tab, and add an "active" class to the button that opened the tab
         document.getElementById(cityName).style.display = "block";
         evt.currentTarget.className += " active";
-
-
-        $(function () {
-        $(".tabout").click(function () {
-          if ($(this).next(".tablinks").css("right") != "0px")
-            $(this).next(".tablinks").animate({
-              left: 0
-            }, 1000);
-          else
-            $(this).next(".tablinks").animate({
-              left: -250
-            }, 1000);
-        });
-      });
-
-    }
+      }
 
 
     </script>
+</head>
 
-    <style>
+  <body>
+    <main>
+      <style>
+/*tab*/
 /* Style the tab */
-            div.tab {
-              float: right;
-              background-color: #976f6c; /*สีพื้นหลังปุ่ม*/
-              position:fixed;
-              top:25%;
-              left:57%;
-              margin-left:-100px;
-              margin-top:-50px;
-            }
-
-/* Style the buttons inside the tab// text*/
-            div.tab button {
-              display: block;
-              background-color: inherit;
-              color:black;
-              /*padding: 22px 16px*/
-              width: 100%;
-              border: none;
-              outline: none;
-              text-align: left;
-              cursor: pointer;
-              transition: 0.3s;
-              font-size: 18px;
-            }
-
-/* Change background color of buttons on hover */
-            div.tab button:hover {
-              background-color: #d1ada9; /*สีตอนวาง*/
-            }
-
-/* Create an active/current "tab button" class */
-            div.tab button.active {
-              background-color: #d1ada9; /*สีหลังคลิก*/
-            }
-
-            div.tabout {
-              background-color: none; /*สีพื้นหลังปุ่ม*/
-              position:fixed;
-              top:25%;
-              left:85%;
-              margin-left:-100px;
-              margin-top:-50px;
-            }
-
-/* Style the buttons inside the tab// text*/
-            div.tabout button {
-              display: block;
-              background-color: inherit;
-              color:none;
-              /*padding: 22px 16px*/
-              width: 100%;
-              border: none;
-              outline: none;
-              text-align: left;
-              cursor: pointer;
-              transition: 0.3s;
-              font-size: 18px;
-            }
-
-/* Style the tab content */
-              .tabcontent {
+              div.tab {
+                float: right;
+                background-color: #976f6c; /*สีพื้นหลังปุ่ม*/
                 position:fixed;
-                margin-left:-100px;
-                margin-top:-50px;
-                padding: 0px 12px;
-                border: 1px solid #d1ada9;
-                width: 70%;
-                border-left: none;
-                height: 300px;
                 top:25%;
-                left:58%;
+                left:57%;
                 margin-left:-100px;
                 margin-top:-50px;
               }
+/*button*/
+/* Style the buttons inside the tab// text*/
+              div.tab button {
+                display: block;
+                background-color: inherit;
+                color:black;
+                /*padding: 22px 16px*/
+                width: 100%;
+                border: none;
+                outline: none;
+                text-align: left;
+                cursor: pointer;
+                transition: 0.3s;
+                font-size: 18px;
+              }
+/* Change background color of buttons on hover */
+              div.tab button:hover {
+                background-color: #d1ada9; /*สีตอนวาง*/
+              }
+/* Create an active/current "tab button" class */
+              div.tab button.active {
+                background-color: #d1ada9; /*สีหลังคลิก*/
+              }
+              div.tabout {
+                background-color: none; /*สีพื้นหลังปุ่ม*/
+                position:fixed;
+                top:25%;
+                left:85%;
+                margin-left:-100px;
+                margin-top:-50px;
+              }
+/*button*/
+/* Style the buttons inside the tab// text*/
+              div.tabout button {
+                display: block;
+                background-color: inherit;
+                color:none;
+                /*padding: 22px 16px*/
+                width: 100%;
+                border: none;
+                outline: none;
+                text-align: left;
+                cursor: pointer;
+                transition: 0.3s;
+                font-size: 18px;
+              }
+
+/*content*/
 /* Style the tab content */
-              .tabcontent {
-                display: none;
-                border: 1px solid #976f6c;
-                border-top: none;
-                line-height: 13pt;
-              }
+                .tabcontent {
+                  position:fixed;
+                  margin-left:-100px;
+                  margin-top:-50px;
+                  padding: 0px 12px;
+                  border: 1px solid #d1ada9;
+                  width: 70%;
+                  border-left: none;
+                  height: 300px;
+                  top:25%;
+                  left:58%;
+                  margin-left:-100px;
+                  margin-top:-50px;
+                }
+  /* Style the tab content */
+                .tabcontent {
+                  display: none;
+                  border: 1px solid #976f6c;
+                  border-top: none;
+                  line-height: 13pt;
+                }
 /*ปรับขนาด bg content*/
-              .tabcontent {
-                background-image: url('/assets/images/buttons/content 2.png');
-                width: 500px;
-                height: 642px;
-              }
+                .tabcontent {
+                  background-image: url('/assets/images/buttons/content 2.png');
+                  width: 500px;
+                  height: 642px;
+                }
 /*ในส่วนของติ่น*/
-              .w3-sidebar a {
-                font-family: "Roboto", sans-serif, 18px;
-              }
+                .w3-sidebar a {
+                  font-family: "Roboto", sans-serif, 18px;
+                }
 
-              .w3-wide {
-                font-family: "Montserrat", sans-serif, 18px;
-              }
-
+                .w3-wide {
+                  font-family: "Montserrat", sans-serif, 18px;
+                }
 /*ส่วนนี้สำหรับใส่โค้ดสีก่อนคลิก*/
 /*colou link*/
-            a:link {
-              color: #d1aba6;
-            }
-
+              a:link {
+                color: #d1aba6;
+              }
 /*ส่วนนี้สำหรับ link จะเปลี่ยนเป็นอีกสีหนึ่งเมื่อเอาเมาส์ไปวาง*/
-            a:hover {
-              color: #d1aba6;
-            }
-
+              a:hover {
+                color: #d1aba6;
+              }
 /*ส่วนนี้สำหรับ เมื่อคลิกแล้วจะเปลี่ยนเป็นอีกสีหนึ่ง*/
-            a:visited {
-              color: #d1aba6;
-            }
-
+              a:visited {
+                color: #d1aba6;
+              }
 /*slide*/
 /* Page content */
             .main {
               margin-left: 200px; /* Same as the width of the sidenav */
             }
-
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-          #main {
-            transition: margin-left .5s;
-            padding: 20px;
-          }
-
+            #main {
+              transition: margin-left .5s;
+              padding: 20px;
+            }
 /*เอฟเฟค*/
-              @-webkit-keyframes fadeEffect {
-                from {opacity: 0;}
-                to {opacity: 1;}
+                @-webkit-keyframes fadeEffect {
+                  from {opacity: 0;}
+                  to {opacity: 1;}
+                }
+
+                @keyframes fadeEffect {
+                  from {opacity: 0;}
+                  to {opacity: 1;}
+                }
+
+                .sidenav {
+                  height: 100%;
+                  width: 0;
+                  position: fixed;
+                  z-index: 1;
+                  top: 0;
+                  right: 0;
+                  background-color: #111;
+                  overflow-x: hidden;
+                  transition: 0.5s;
+                  padding-top: 60px;
+                  float: right;
+                }
+/*in tab*/
+              .sidenav a {
+                  padding: 8px 8px 8px 32px;
+                  text-decoration: none;
+                  font-size: 18px;
+                  color: #818181;
+                  display: block;
+                  transition: 0.3s;
               }
 
-              @keyframes fadeEffect {
-                from {opacity: 0;}
-                to {opacity: 1;}
+              .sidenav a:hover {
+                  color: #f1f1f1;
               }
 
-              .sidenav {
-                height: 100%;
-                width: 0;
-                position: fixed;
-                z-index: 1;
-                top: 0;
-                right: 0;
-                background-color: #111;
-                overflow-x: hidden;
-                transition: 0.5s;
-                padding-top: 60px;
+              .sidenav .closebtn {
+                  position: absolute;
+                  top: 0;
+                  right: 25px;
+                  font-size: 18px;
+                  margin-left: 50px;
+              }
+
+              @media screen and (max-height: 450px) {
+                .sidenav {padding-top: 18px;}
+                .sidenav a {font-size: 18px;}
+              }
+
+              input[type=text] {
+                width: 130px;
+                -webkit-transition: width 0.4s ease-in-out;
+                transition: width 0.4s ease-in-out;
                 float: right;
               }
-/*in tab*/
-            .sidenav a {
-                padding: 8px 8px 8px 32px;
-                text-decoration: none;
-                font-size: 18px;
-                color: #818181;
-                display: block;
-                transition: 0.3s;
-            }
-
-            .sidenav a:hover {
-                color: #f1f1f1;
-            }
-
-            .sidenav .closebtn {
-                position: absolute;
-                top: 0;
-                right: 25px;
-                font-size: 18px;
-                margin-left: 50px;
-            }
-
-            @media screen and (max-height: 450px) {
-              .sidenav {padding-top: 18px;}
-              .sidenav a {font-size: 18px;}
-            }
-
-            input[type=text] {
-              width: 130px;
-              -webkit-transition: width 0.4s ease-in-out;
-              transition: width 0.4s ease-in-out;
-              float: right;
-            }
 
 /* When the input field gets focus, change its width to 100% */
-          input[type=text]:focus {
-            width: 130px;
-          }
+            input[type=text]:focus {
+              width: 130px;
+            }
 
-    </style>
-</head>
+      </style>
+    </main>
 
-  <body>
 
-<!--tab-->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
     <div class="tabout">
 
-    <button class="tablinks" onclick="openCity(event, 'alltops'), openNav()">
+    <button onclick="openCity(event, 'alltops'), openNav()">
         <img src="/assets/images/buttons/shirt.png" alt=""><br>
     </button>
 
-    <button class="tablinks" onclick="openCity(event, 'allbuttoms'), openNav()">
+    <button onclick="openCity(event, 'allbuttoms'), openNav()">
         <img src="/assets/images/buttons/pants.png" alt=""><br>
     </button>
 
-    <button class="tablinks" onclick="openCity(event, 'allshoes'), openNav()">
+    <button onclick="openCity(event, 'allshoes'), openNav()">
         <img src="/assets/images/buttons/shoes.png" alt=""><br>
     </button>
 
-    <button class="tablinks" onclick="openCity(event, 'allass'), openNav()">
+    <button onclick="openCity(event, 'allass'), openNav()">
         <img src="/assets/images/buttons/ass.png" alt=""><br>
     </button>
 
     </div>
-
-
-
 <!--shirt-->
-<!--all tops-->
-          <div id="alltops" class="tabcontent"><br>
+
+    <!--all tops-->
+          <div id="alltops" class="tabcontent"><br><br>
 
             <input type="text" name="search" placeholder="Search..">
 
@@ -286,7 +264,7 @@
 
               <div class="tab">
                 <button class="tablinks" onclick="openCity(event, 'alltops')">
-                  <div align="center" font-size="18px">
+                  <div align="center">
                     <h6>A</h6>
                     <h6>L</h6>
                     <h6>L</h6>
@@ -328,13 +306,137 @@
                 </button>
               </div>
 
+              <div class="w3-row-padding w3-center w3-margin-top">
+
+                <div class="w3-quarter">
+                  <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                    <figure class="image is-1by2"></figure>
+                    <img src="assets/images/looq/blouse1.png"alt"image-1" style="height: 100px">
+                    <br>
+                    <br>
+                  </div>
+                </div>
+
+              <div class="w3-quarter">
+                <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                  <figure class="image is-1by2"></figure>
+                  <img src="assets/images/looq/blouse2.png"alt"image-1" style="height: 100px">
+                  <br>
+                  <br>
+                </div>
+              </div>
+
+              <div class="w3-quarter">
+                <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                  <figure class="image is-1by2"></figure>
+                  <img src="assets/images/looq/tank1.jpg"alt"image-1" style="height: 100px">
+                  <br>
+                  <br>
+                </div>
+              </div>
+
+              <div class="w3-quarter">
+                <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                 <figure class="image is-1by2"></figure>
+                 <img src="assets/images/looq/tank2.jpg"alt"image-1" style="height: 100px">
+                 <br>
+                 <br>
+                </div>
+              </div>
+
+              <div class="w3-quarter">
+                <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                  <figure class="image is-1by2"></figure>
+                  <img src="assets/images/looq/tank3.jpg"alt"image-1" style="height: 100px">
+                  <br>
+                  <br>
+                </div>
+              </div>
+
+              <div class="w3-quarter">
+                <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                  <figure class="image is-1by2"></figure>
+                  <img src="assets/images/looq/blouse3.png"alt"image-1" style="height: 100px">
+                  <br>
+                  <br>
+                </div>
+              </div>
+
+              <div class="w3-quarter">
+                <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                  <figure class="image is-1by2"></figure>
+                  <img src="assets/images/looq/tank4.png"alt"image-1" style="height: 100px">
+                  <br>
+                  <br>
+                </div>
+              </div>
+
+              <div class="w3-quarter">
+                <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                  <figure class="image is-1by2"></figure>
+                  <img src="assets/images/looq/top1.jpg"alt"image-1" style="height: 100px">
+                  <br>
+                  <br>
+                </div>
+              </div>
+
+
+              <div class="w3-quarter">
+                <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                  <figure class="image is-1by2"></figure>
+                  <img src="assets/images/looq/tank5.png"alt"image-1" style="height: 100px">
+                  <br>
+                  <br>
+                </div>
+              </div>
+
+              <div class="w3-quarter">
+                <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                  <figure class="image is-1by2"></figure>
+                  <img src="assets/images/looq/blouse8.png"alt"image-1" style="height: 100px">
+                  <br>
+                  <br>
+                </div>
+              </div>
+
+
+              <div class="w3-quarter">
+                <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                  <figure class="image is-1by2"></figure>
+                  <img src="assets/images/looq/blouse4.png"alt"image-1" style="height: 100px">
+                  <br>
+                  <br>
+                </div>
+              </div>
+
+              <div class="w3-quarter">
+                <div class="w3-card-2 w3-padding-top" style="min-height:100px; background-color: #ffffff;">
+                <figure class="image is-1by2"></figure>
+                  <img src="assets/images/looq/tank10.png"alt"image-1" style="height: 100px">
+                  <br>
+                  <br>
+                </div>
+              </div>
+
+<!-- Pagination -->
+                <div class="w3-center w3-padding-32">
+                  <div class="w3-bar"><br><br>
+                    <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+                    <a href="allbottoms.html" class="w3-bar-item w3-black w3-button">1</a>
+                    <a href="Dresses.html" class="w3-bar-item w3-button w3-hover-black">2</a>
+                    <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+                    <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+                    <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+                  </div>
+                </div>
 
             </div>
           </div>
+        </div>
 
 
 
-<!--blouses-->
+      <!--blouses-->
           <div id="blouses" class="tabcontent"><br>
 
             <input type="text" name="search" placeholder="Search..">
@@ -384,14 +486,13 @@
                   </div>
                 </button>
               </div>
-
-
             </div>
           </div>
 
 
 
-<!--tanks-->
+
+        <!--tanks-->
           <div id="tanks" class="tabcontent"><br>
 
             <input type="text" name="search" placeholder="Search..">
@@ -442,14 +543,10 @@
                   </div>
                 </button>
               </div>
-
-
             </div>
           </div>
 
-
-
-  <!--dreses-->
+            <!--dreses-->
         <div id="dresses" class="tabcontent"><br>
 
           <input type="text" name="search" placeholder="Search..">
@@ -485,8 +582,7 @@
                     <h6>K</h6>
                     <h6>S</h6>
                   </div>
-                </button>
-
+                </b
                 <button class="tablinks" onclick="openCity(event, 'dresses')">
                   <div align="center">
                     <h6>D</h6>
@@ -499,15 +595,14 @@
                   </div>
                 </button>
               </div>
-
-
             </div>
           </div>
 
 
 
-<!--buttoms-->
-<!--all buttoms-->
+
+<!--pants-->
+        <!--all buttoms-->
           <div id="allbuttoms" class="tabcontent"><br>
 
             <input type="text" name="search" placeholder="Search..">
@@ -555,14 +650,10 @@
                   </div>
                 </button>
               </div>
-
-
             </div> <!--เพิ่มบรรทัดนี้มาด้วย-->
           </div> <!--ที่เปิดใหม่ปิดตรงนี้-->
 
-
-
-<!--pants-->
+        <!--pants-->
           <div id="pants" class="tabcontent"><br>
 
             <input type="text" name="search" placeholder="Search..">
@@ -611,13 +702,10 @@
                 </button>
               </div>
 
-
             </div> <!--เพิ่มบรรทัดนี้มาด้วย-->
           </div> <!--ที่เปิดใหม่ปิดตรงนี้-->
 
-
-
-<!--shorts-->
+              <!--shorts-->
           <div id="shorts" class="tabcontent"><br>
 
             <input type="text" name="search" placeholder="Search..">
@@ -665,124 +753,126 @@
                   </div>
                 </button>
               </div>
-
-
             </div> <!--เพิ่มบรรทัดนี้มาด้วย-->
           </div> <!--ที่เปิดใหม่ปิดตรงนี้-->
 
+              <!--skirts-->
+              <div id="skirts" class="tabcontent"><br>
 
+                <input type="text" name="search" placeholder="Search..">
 
-<!--skirts-->
-        <div id="skirts" class="tabcontent"><br>
+                  <div class="w3-row-padding w3-center w3-margin-top">
 
-          <input type="text" name="search" placeholder="Search..">
+                    <div class="tab">
 
-            <div class="w3-row-padding w3-center w3-margin-top">
+                      <button class="tablinks" onclick="openCity(event, 'alltops')">
+                        <div align="center" font-size="18px">
+                          <h6>A</h6>
+                          <h6>L</h6>
+                          <h6>L</h6>
+                        </div>
+                      </button>
 
-              <div class="tab">
+                      <button class="tablinks" onclick="openCity(event, 'blouses')">
+                        <div align="center">
+                          <h6>B</h6>
+                          <h6>L</h6>
+                          <h6>O</h6>
+                          <h6>U</h6>
+                          <h6>S</h6>
+                          <h6>E</h6>
+                          <h6>S</h6>
+                        </div>
+                      </button>
 
-                <button class="tablinks" onclick="openCity(event, 'alltops')">
-                  <div align="center" font-size="18px">
-                    <h6>A</h6>
-                    <h6>L</h6>
-                    <h6>L</h6>
-                  </di</button>
+                      <button class="tablinks" onclick="openCity(event, 'tanks')">
+                        <div align="center">
+                          <h6>T</h6>
+                          <h6>A</h6>
+                          <h6>N</h6>
+                          <h6>K</h6>
+                          <h6>S</h6>
+                        </div>
+                      </button>
 
-                  <button class="tablinks" onclick="openCity(event, 'blouses')">
-                    <div align="center">
-                      <h6>B</h6>
-                      <h6>L</h6>
-                      <h6>O</h6>
-                      <h6>U</h6>
-                      <h6>S</h6>
-                      <h6>E</h6>
-                      <h6>S</h6>
+                      <button class="tablinks" onclick="openCity(event, 'dresses')">
+                        <div align="center">
+                          <h6>D</h6>
+                          <h6>R</h6>
+                          <h6>E</h6>
+                          <h6>S</h6>
+                          <h6>S</h6>
+                          <h6>E</h6>
+                          <h6>S</h6>
+                        </div>
+                      </button>
+
                     </div>
-                  </button>
-
-                  <button class="tablinks" onclick="openCity(event, 'tanks')">
-                    <div align="center">
-                      <h6>T</h6>
-                      <h6>A</h6>
-                      <h6>N</h6>
-                      <h6>K</h6>
-                      <h6>S</h6>
-                    </div>
-                  </button>
-
-                  <button class="tablinks" onclick="openCity(event, 'dresses')">
-                    <div align="center">
-                      <h6>D</h6>
-                      <h6>R</h6>
-                      <h6>E</h6>
-                      <h6>S</h6>
-                      <h6>S</h6>
-                      <h6>E</h6>
-                      <h6>S</h6>
-                    </div>
-                  </button>
-                </div>
 
 
-              </div>
-            </div>
 
-
+      </div> <!--เพิ่มบรรทัดนี้มาด้วย-->
+  </div> <!--ที่เปิดใหม่ปิดตรงนี้-->
 
 <!--shoes-->
-          <div id="allshoes" class="tabcontent"><br>
+                  <div id="allshoes" class="tabcontent"><br>
 
-            <input type="text" name="search" placeholder="Search..">
+                    <input type="text" name="search" placeholder="Search..">
 
-            <div class="w3-row-padding w3-center w3-margin-top">
-              <div class="tab">
-                <button class="tablinks" onclick="openCity(event, 'allshoes')">
-                  <div align="center">
-                    <h6>S</h6>
-                    <h6>H</h6>
-                    <h6>O</h6>
-                    <h6>E</h6>
-                    <h6>S</h6>
-                  </div>
-                </button>
-              </div>
+                    <div class="w3-row-padding w3-center w3-margin-top">
+
+                      <div class="tab">
+
+                        <button class="tablinks" onclick="openCity(event, 'allshoes')">
+                          <div align="center">
+                            <h6>S</h6>
+                            <h6>H</h6>
+                            <h6>O</h6>
+                            <h6>E</h6>
+                            <h6>S</h6>
+                          </div>
+                          <!--<img src="/assets/images/buttons/button 2.png">-->
+                        </button>
+
+                      </div>
 
 
-            </div> <!--เพิ่มบรรทัดนี้มาด้วย-->
-          </div> <!--ที่เปิดใหม่ปิดตรงนี้-->
 
-
+                    </div> <!--เพิ่มบรรทัดนี้มาด้วย-->
+                  </div> <!--ที่เปิดใหม่ปิดตรงนี้-->
 
 <!--ass-->
-<!--all-->
-          <div id="allass" class="tabcontent"><br>
 
-            <input type="text" name="search" placeholder="Search..">
+                <!--all-->
+                    <div id="allass" class="tabcontent"><br>
 
-            <div class="w3-row-padding w3-center w3-margin-top">
+                      <input type="text" name="search" placeholder="Search..">
 
-              <div class="tab">
-                <button class="tablinks" onclick="openCity(event, 'allass')">
-                  <div align="center">
-                    <h6>A</h6>
-                    <h6>C</h6>
-                    <h6>C</h6>
-                    <h6>E</h6>
-                    <h6>S</h6>
-                    <h6>O</h6>
-                    <h6>R</h6>
-                    <h6>I</h6>
-                    <h6>E</h6>
-                    <h6>S</h6>
-                  </div>
-                </button>
-              </div>
+                      <div class="w3-row-padding w3-center w3-margin-top">
 
-              
-            </div> <!--เพิ่มบรรทัดนี้มาด้วย-->
-          </div> <!--ที่เปิดใหม่ปิดตรงนี้-->
+                        <div class="tab">
+
+                          <button class="tablinks" onclick="openCity(event, 'allass')">
+                            <div align="center">
+                              <h6>A</h6>
+                              <h6>C</h6>
+                              <h6>C</h6>
+                              <h6>E</h6>
+                              <h6>S</h6>
+                              <h6>O</h6>
+                              <h6>R</h6>
+                              <h6>I</h6>
+                              <h6>E</h6>
+                              <h6>S</h6>
+                            </div>
+                          </button>
+
+                        </div>
 
 
+
+                        </div> <!--เพิ่มบรรทัดนี้มาด้วย-->
+                      </div> <!--ที่เปิดใหม่ปิดตรงนี้-->
 
   </body>
 </html>
