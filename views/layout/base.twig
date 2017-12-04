@@ -9,6 +9,7 @@
 
 	<link rel="stylesheet" type="text/css" href="css/demo.css" />
     <link rel="stylesheet" type="text/css" href="css/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
@@ -20,8 +21,25 @@
 </head>
 <body class="demo-1" onload="" style="color:#000000; background-color: #f0f0f0;">
 
-	{% block content %}
-	{% endblock %}
+	<style>
+          a:link {
+            text-decoration:none;
+          	color: #f09488 !important;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+          }
+          a:hover {
+            text-decoration:none;
+          	color: #ed7263 !important;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            text-shadow: 0.1em 0.1em 0.2em #ccc; 
+          }
+	</style>
+
+	{% block style %} {% endblock %}
 
 	<div id="ip-container" class="ip-container">
 	<!-- initial header -->         
@@ -30,18 +48,18 @@
 	<div class="w3-animate-top" id="Contentt">
 	<!-- Side Navigation -->
 	    <nav class="w3-sidebar w3-bar-block w3-card animated slideInLeft w3-center" style="display:none;z-index: 7;top:0;" id="mySidebar">
-	        <img style="width: 25%;height: auto;min-width: 200px;margin-bottom: 30px;margin-top: 100px" src="assets/images/home/Logo4.png">
+	        <img style="width: 25%;height: auto;min-width: 200px; max-width:225px;margin-bottom: 30px;margin-top: 100px" src="assets/images/home/Logo4.png">
 	        <a href="model.html" class="w3-bar-item w3-button w3-hide-large w3-hide-medium w3-hover-red" style="font-size: ;color: lightgrey;font-family: Chonburi">Create LOOQ <img src="assets/images/home/closet3.png" style="width: 32px;height: 29px;"> </a>
-	        <a href="#" class="w3-bar-item w3-button w3-hover-red" style="font-size: ;color: lightgrey">LOOQ</a>
-	        <a href="#" class="w3-bar-item w3-button w3-hover-red" style="font-size: ;color: lightgrey">Album</a>
-	        <a href="#" class="w3-bar-item w3-button w3-hover-red" style="font-size: ;color: lightgrey">Clothes</a>
-	        <a href="#" class="w3-bar-item w3-button w3-hover-red" style="font-size: ;color: lightgrey">Contact Us</a>
+	        <a href="/all-looq" class="w3-bar-item w3-button w3-hover-red" style="font-size: ;color: lightgrey">LOOQ</a>
+	        <a href="/album-index" class="w3-bar-item w3-button w3-hover-red" style="font-size: ;color: lightgrey">Album</a>
+	        <a href="/all-clothes" class="w3-bar-item w3-button w3-hover-red" style="font-size: ;color: lightgrey">Clothes</a>
+	        <a href="/contact-us" class="w3-bar-item w3-button w3-hover-red" style="font-size: ;color: lightgrey">Contact Us</a>
 	        <button class="w3-bar-item w3-button" onclick="w3_close()" style="margin-top: 30px;color: #d7b3af">Close <i class="fa fa-remove"></i></button>
 	    </nav>
 
 	<header class="headerr w3-container w3-padding" style="background-image: url();background-repeat: no-repeat;background-size: 100% 100%;position: fixed;z-index: 5;width: 100%;display: flex;background-color: #e7c6c2;top:0">
 	    <div style="width: 25%;height: 30px">  
-	        <a href="#" onclick="w3_open()" class="fa fa-bars w3-xlarge w3-transparent" style="margin-left: 8px;margin-right: 6px;text-decoration: none;color: white!important"></a> 
+	        <a onclick="w3_open()" class="fa fa-bars w3-xlarge w3-transparent" style="margin-left: 8px;margin-right: 6px;text-decoration: none;color: white!important"></a> 
 	        <div class="w3-dropdown-hover w3-transparent"><a class="w3-hide-small" href="model.html"><img class="fa w3-xlarge w3-transparent" src="assets/images/home/closet1.png" style="width: 32px;height: 29px;margin-top: 2px;" onmouseover="this.src='assets/images/home/closet4.png';"
 	          onmouseout="this.src='assets/images/home/closet1.png';"></a>
 	          <div class="w3-dropdown-content w3-bar-block w3-border jshadow w3-animate-opacity" style="width:250px">
@@ -57,8 +75,8 @@
 	        <div class="w3-dropdown-hover w3-transparent" >
 	          <img style="width: 15px;height: 15PX;" src="assets/images/home/arrowdown.png"> 
 	          <div class="w3-dropdown-content w3-bar-block w3-border jshadow" style="right:0;margin-top: 0px;color: gray">
-	            <a href="#!" class="w3-bar-item w3-button" onclick="document.getElementById('id01').style.display='block'"><i class="material-icons">person</i>   Login</a>
-	            <a href="#!" class="w3-bar-item w3-button" onclick="document.getElementById('id02').style.display='block'"><i class="material-icons">person</i>   Register</a>
+	            <a class="w3-bar-item w3-button" onclick="document.getElementById('id01').style.display='block'"><i class="material-icons">person</i>   Login</a>
+	            <a class="w3-bar-item w3-button" onclick="document.getElementById('id02').style.display='block'"><i class="material-icons">person</i>   Register</a>
 	          </div>
 	        </div>
 	    </div> 
@@ -135,22 +153,21 @@
 	        </div>
 	    </div>
 
-	{% block content %}
-	{% endblock %}
+	{% block content %} {% endblock %}
 
 	<footer class="w3-container w3-padding-16" style="background-color: #f5f5f5;color: grey;font-size: 11px;padding-left: 30px">
 	    <div class="w3-row">
 	      <div class="w3-third w3-container ">
 	        <p><b>Powered by KBANG</b></p>
-	        <p>© 2017 LOOQ & STYLE All rights reserved &nbsp;&nbsp;<a href="#">Term of Use</a></p>
+	        <p>© 2017 LOOQ & STYLE All rights reserved &nbsp;&nbsp;<a href="/terms-of-use" target="_blank">Term of Use</a></p>
 	      </div>
 	      <div class="w3-third w3-container ">
 	      </div>
 	      <div class="w3-third w3-container w3-hide-small" style="text-align: right"><br><br>
-	        <a href="#">Our Website</a>&nbsp;&nbsp;<a href="#">Customer Care</a>&nbsp;&nbsp;<a href="#">Contact Us</a>
+	        <a href="/our-website">Our Website</a>&nbsp;&nbsp;<a href="/customer-care">Customer Care</a>&nbsp;&nbsp;<a href="/contact-us">Contact Us</a>
 	      </div>
 	      <div class="w3-third w3-container w3-hide-large w3-hide-medium" style="">
-	        <a href="#">Our Website</a>&nbsp;&nbsp;<a href="#">Customer Care</a>&nbsp;&nbsp;<a href="#">Contact Us</a>
+	        <a href="/our-website">Our Website</a>&nbsp;&nbsp;<a href="/customer-care">Customer Care</a>&nbsp;&nbsp;<a href="/contact-us">Contact Us</a>
 	      </div>
 	    </div>
 	</footer>

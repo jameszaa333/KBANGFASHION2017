@@ -1,0 +1,99 @@
+{% extends 'layout/base.twig' %}
+
+{% block title %} <title>Our website</title> {% endblock %}
+
+{% block stylesheet %} {% endblock %}
+
+{% block style %}
+
+	<style>
+        .topic {
+          filter: alpha(opacity=100);
+          opacity:1.0;
+          -webkit-transition:0.7s;
+          -moz-transition:0.7s;
+          -o-transition:0.7s;
+        }
+        .topic:hover {
+          filter: alpha(opacity=70);
+          opacity:.8;
+          cursor: text;
+        }
+
+        .img-container img {
+          filter: alpha(opacity=100);
+          opacity:1.0;
+          -webkit-transition:0.7s;
+          -moz-transition:0.7s;
+          -o-transition:0.7s;
+          border-radius: 0px 0px 0px 0px
+        }
+        .img-container img:hover {
+          filter: alpha(opacity=70);
+          opacity:.8;
+          border-radius: 20px 20px 20px 20px;
+          -webkit-transition: 0.9s
+          -moz-transition:0.9s;
+        }
+
+        .img-container {
+          position: relative;
+          width: 45%;
+          height: auto;
+          margin-left: 12%; 
+        }
+
+        .img-container {
+          position: relative;
+          width: 45%;
+          height: auto;
+          margin-left: 7%; 
+        }
+
+        .shadow {
+          -webkit-box-shadow: 5px 5px 5px #ccc;
+          -moz-box-shadow: 5px 5px 5px #ccc;
+          box-shadow: 5px 5px 5px #ccc;
+        }
+    </style>
+
+{% endblock %}
+
+{% block content %} 
+
+	<div style="width: 100%; height: 100%; display: flex; padding-top: 85px">        
+	    <div class="img-container">
+	        <img class="shadow" src="assets/images/content/pic1.jpg" onmouseover="this.src='assets/images/content/pic5.jpg'" onmouseout="this.src='assets/images/content/pic1.jpg'" style="width: 90%;">
+	    </div>
+	        
+	    <div style="width: 55%; height: auto; background-color: transparent; margin-right: 50px;padding-left: 2%;">
+	        <div class="topic">
+	          <strong class="Introduction" style="color: #976f6c; font-size: 22px; font-family: Chonburi;">About Us</strong>
+	        </div>
+	        <br>
+	        <p style="font-size: 14px; color: #424242;">
+	          ▽ LOOQ & STYLE เว็บไซต์ห้องเเต่งตัวจําลองที่จะช่วยให้การเลือกสรรเสื้อผ้าของสาวๆเป็นเรื่อง
+	          ง่ายขึ้น ช่วยในการตัดสินใจซื้อเสื้อผ้าหรือเเม้เเต่ลดเวลาในการเเต่งตัวของสาวๆลงได้ ช่วยในการวางเเผนการเเต่งตัวในโอกาสต่างๆปฏิเสธไม่ได้เลยว่าในยุคปัจจุบัน การสั่งซื้อออนไลน์ได้รับความนิยมเป็นอย่างมากในหมู่สาวๆนักช้อปทั้งหลาย ซึ่งในเเอพลิเคชั่นหรือเว็บสั่งซื้อออนไลน์ต่างๆก็มีของมากมายให้เลือกจับจ่าย ทั้งของใช้ต่างๆ เครื่องสําอาง เครื่องประดับโดยเฉพาะเสื้อผ้า เพราะความสะดวกเเละรวดเร็วในการสั่งซื้อ ไม่จําเป็นจะต้องขับรถไปเองให้เปลืองน้ํามันหรือนั่งรถโดยสารไปให้เสียเวลา เเค่กดเข้าเเอพเลือกสินค้าที่ชอบเเล้วสั่งซื้อ นอนรอสวยๆไม่นานของที่ต้องการก็ถูกส่งมาให้ถึงมือเเต่ข้อเสียที่นับว่าเป็นปัญหาใหญ่ที่ทําให้สาวๆต้องคิดเเล้วคิดอีกตัดสินใจซื้อไม่ได้สักที ก็คือพวกเธอไม่สามารถลองสวมใส่เสื้อผ้าได้ ซื้อมาก็กลัวใส่เเล้วไม่สวยเหมือนนางเเบบ กลัวเสียเงินเปล่าสุดท้ายกลายเป็นว่านั่งเลือกเป็นชั่วโมงก็ยังตัดสินใจไม่ได้สักทีเว็บไซต์ LOOQ & STYLE ห้องเเต่งตัวจําลองที่จะช่วยลดปัญหาด้านการตัดสินใจซื้อเสื้อผ้า เครื่องประดับออนไลน์ เพราะเราเล็งเห็นถึงปัญหาชวนหนักใจข้อนี้ เว็บไซต์ของเราจึงมีฟังก์ชั่นเลือกสีหุ่นเพื่อให้สามารถเลือกเสื้อผ้าที่เหมาะกับสีผิว สามารถเเมทซ์เสื้อผ้าได้ตามความต้องการ พร้อมเเฮชเเท็กต่างๆที่จะเเบ่งการเเต่งตัวสไตล์ต่างๆไว้เพื่อให้ง่ายต่อการค้นหา อีกทั้งผู้ใช้สามารถเข้าไปยังหน้าหลักของเว็บไซต์เพื่อดูสไตล์การเเต่งตัวของยูสเซอร์ (User) อื่นได้ พร้อมทั้งอัพเดตเทรนด์ใหม่ตลอดเวลา เพื่อไม่ให้ตกเทรนด์
+	        </p>
+	        <br>
+	        <div class="topic">
+	          <strong class="Introduction" style="color: #976f6c; font-size: 22px; font-family: Chonburi;">Developers</strong>
+	        </div>
+	        <br>
+	        <p style="font-size: 14px; color: #424242; padding-bottom: 13%;">
+	          ▽ KBANG<br>
+	          กานต์ทิตา รัดรอดกิจ 59080500202 <br>
+	          ชุติมา ใจรักมิตรแท้ 59080500214 <br>
+	          พิชชาพร เลิศอริยศักดิ์ชัย 59080500242 <br>
+	          วรรณิกา โชครัตน์ประภา 59080500248 <br>
+	          สุธีกานต์ แก้วแสง 59080500257 <br>
+	          สุภนิจ แดงประเสิรฐ 59080500258 <br>
+	          สุรยุทธ สุขศรี 59080500260 <br>
+	          ณัฏฐา ฤทธิมาก 59080500282 <br>
+	          นันท์ชพร มีบุญล้ำ 59080500287 <br>
+	          ณัฐฏนิชา แฟงสม 59080500311
+	        </p>
+	    </div>
+	</div>
+
+{% endblock %}

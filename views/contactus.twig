@@ -1,0 +1,120 @@
+{% extends 'layout/base.twig' %}
+
+{% block title %} <title>Contact us</title> {% endblock %}
+
+{% block stylesheet %} {% endblock %}
+
+{% block style %} 
+
+	<style>
+        .topic {
+          filter: alpha(opacity=100);
+          opacity:1.0;
+          -webkit-transition:0.7s;
+          -moz-transition:0.7s;
+          -o-transition:0.7s;
+        }
+        .topic:hover {
+          filter: alpha(opacity=70);
+          opacity:.8;
+          cursor: text;
+        }
+        .img-container img {
+          -webkit-transition:0.7s;
+          -moz-transition:0.7s;
+          -o-transition:0.7s;
+
+          filter: alpha(opacity=70);
+          opacity:.8;
+
+          transform:rotate(0deg);
+          -webkit-transition: all 0.5s ease !important;
+          -moz-transition: all 0.5s ease;
+          -o-transition: all 0.5s ease;
+        }
+        .img-container img:hover {
+          filter: alpha(opacity=100);
+          opacity:1.0;
+
+          transform: rotate(360deg);
+          -webkit-transform: rotate(360deg);
+          -moz-transform: rotate(360deg);
+          -o-transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+        }
+        
+
+        .img-container {
+          position: relative;
+          width: 45%;
+          height: auto;
+          margin-left: 12%;
+          padding-bottom: 3%;
+        }
+
+        .shadow {
+          -webkit-box-shadow: 5px 5px 5px #ccc;
+          -moz-box-shadow: 5px 5px 5px #ccc;
+          box-shadow: 5px 5px 5px #ccc;
+        }
+    </style>
+
+{% endblock %}
+
+{% block content %} 
+
+	<div style="width: 100%; height: 100%; display: flex; padding-top: 85px">        
+	    <div class="img-container">
+	        <img class="shadow" src="assets/images/member/59080500202.jpg" style="border-radius: 100%; width: 150px; margin: 5px">
+	        <img class="shadow" src="assets/images/member/l.png" style="border-radius: 100%; width: 150px; margin: 5px">
+	        <img class="shadow" src="assets/images/member/59080500214.jpg" style="border-radius: 100%; width: 150px; margin: 5px"><br>
+	        <img class="shadow" src="assets/images/member/59080500242.jpg" style="border-radius: 100%; width: 150px; margin: 5px">
+	        <img class="shadow" src="assets/images/member/59080500248.jpg" style="border-radius: 100%; width: 150px; margin: 5px">
+	        <img class="shadow" src="assets/images/member/59080500257.jpg" style="border-radius: 100%; width: 150px; margin: 5px"><br>
+	        <img class="shadow" src="assets/images/member/59080500258.jpg" style="border-radius: 100%; width: 150px; margin: 5px">
+	        <img class="shadow" src="assets/images/member/s.png" style="border-radius: 100%; width: 150px; margin: 5px">
+	        <img class="shadow" src="assets/images/member/59080500260.jpg" style="border-radius: 100%; width: 150px; margin: 5px"><br>
+	        <img class="shadow" src="assets/images/member/59080500282.jpg" style="border-radius: 100%; width: 150px; margin: 5px">
+	        <img class="shadow" src="assets/images/member/59080500287.jpg" style="border-radius: 100%; width: 150px; margin: 5px">
+	        <img class="shadow" src="assets/images/member/59080500311.jpg" style="border-radius: 100%; width: 150px; margin: 5px">  
+	    </div>
+	        
+	    <div style="width: 55%; height: auto;background-color: transparent; margin-right: 50px;padding-left: 40px">
+	        <div class="topic">
+	          <strong class="Introduction" style="color: #976f6c; padding-left: 10%; font-size: 22px; font-family: Chonburi;">Contact Us</strong>
+	        </div>
+	        <br>
+	        <p style="font-size: 14px;color: #424242;padding-left: 10%">
+	          ▽ Website<br>
+	          <a href="/">www.looqnstyle.com</a><br><br>
+	          ▽ Email<br>
+	          <a href="mailto:info@looqnstyle.com">info@looqnstyle.com</a><br><br> 
+	          ▽ Contact Us<br>
+	          Tel. 081-421-1111<br>
+	          Fax. 084-421-1111<br><br>
+	          ▽ Operating Hours<br>
+	          Monday-Saturday: 8:00am–12:00am<br>
+	          Sunday: 9:00am–12:00am
+	        </p>
+	        <br>
+	        <div class="topic">
+	          <strong class="Introduction" style="color: #976f6c; padding-left: 10%; font-size: 22px; font-family: Chonburi;">Developers</strong>
+	        </div>
+	        <br>
+	        <p style="font-size: 14px; color: #424242; padding-left: 10%;">
+	          ▽ KBANG<br>
+	          กานต์ทิตา รัดรอดกิจ 59080500202 <br>
+	          ชุติมา ใจรักมิตรแท้ 59080500214 <br>
+	          พิชชาพร เลิศอริยศักดิ์ชัย 59080500242 <br>
+	          วรรณิกา โชครัตน์ประภา 59080500248 <br>
+	          สุธีกานต์ แก้วแสง 59080500257 <br>
+	          สุภนิจ แดงประเสิรฐ 59080500258 <br>
+	          สุรยุทธ สุขศรี 59080500260 <br>
+	          ณัฏฐา ฤทธิมาก 59080500282 <br>
+	          นันท์ชพร มีบุญล้ำ 59080500287 <br>
+	          ณัฐฏนิชา แฟงสม 59080500311
+	        </p>
+	    </div>
+	</div>
+
+{% endblock %}

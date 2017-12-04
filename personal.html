@@ -1,562 +1,385 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Personal profile</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chonburi">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="header.css">
-</head>
-<body>
-  <!-- background -->
-  <main>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>LOOQ & STYLE</title>
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/personal.css" />
+    <script src="js/modernizr.custom.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/w3.css">
+
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+        
+        <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        
+        <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chonburi">
+        
+  </head>
     <style>
-    	html {
-    			background: url(/assets/images/home/BG.png) no-repeat center center fixed;
-    			-webkit-background-size: cover;
-    			-moz-background-size: cover;
-    			-o-background-size: cover;
-    			background-size: cover;
-    	}
-
-      body {color: #000000;}
-      a:link {color: #f09488;}
-      a:hover {color: #ed7263;}
-
-      .profile-picture:hover {
-        -webkit-transition: all 1s ease;
-        -moz-transition: all 1s ease;
-        -o-transition: all 1s ease;
-        -ms-transition: all 1s ease;
-        transition: all 1s ease;
-        border-radius: 50%;
-      }
+/*
+        .headerr .scrolled {
+            background-image: url(assets/images/home/nav-tab.png)!important;
+        }
+*/
     </style>
-  </main>
+    
+<body class="demo-1" onload="" style="color:black;background-color: #f0f0f0">
+<div id="ip-container" class="ip-container">
+<!-- initial header -->
+            
+<!-- main content -->
+<div id="loader"></div>
+<div class="w3-animate-top" id="Contentt">
+    
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-card animated slideInLeft w3-center" style="display:none;z-index: 7;top:0" id="mySidebar">
+  <img style="width: 25%;height: auto;min-width: 200px;margin-bottom: 30px;" src="assets/images/home/Logo4.png">
+  <a href="model.html" class="w3-bar-item w3-button w3-hide-large w3-hide-medium w3-hover-red" style="font-size: ;color: lightgrey;font-family: Chonburi">Create LOOQ <img src="assets/images/home/closet3.png" style="width: 32px;height: 29px;"> </a>
+  <a href="#" class="w3-bar-item w3-button w3-hover-red" style="font-size: ;color: lightgrey">LOOQ</a>
+  <a href="#" class="w3-bar-item w3-button w3-hover-red" style="font-size: ;color: lightgrey">Album</a>
+  <a href="#" class="w3-bar-item w3-button w3-hover-red" style="font-size: ;color: lightgrey">Clothes</a>
+  <a href="#" class="w3-bar-item w3-button w3-hover-red" style="font-size: ;color: lightgrey">Contact Us</a>
+  <button class="w3-bar-item w3-button" onclick="w3_close()" style="margin-top: 30px;color: #d7b3af">Close <i class="fa fa-remove"></i></button>
+</nav>
 
- 	<header>
-    <div class="head" style="z-index: 999;">
-      <div class="head1" style="display: flex;">
-        <div class="dropdown is-hoverable" style="padding-left: 5px; padding-top: 6px; height:auto; width: auto">
-          <div class="dropdown-trigger" style="padding-top: .3rem; padding-left: 5px">
-            <img src="assets/images/home/Hamburger1.png" style="width: 3rem; height: auto;">
-            <!-- <span class="icon is-small">
-              <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </span> -->
-          </div>
-          <div class="dropdown-menu" id="dropdown-menu2" role="menu">
-            <div class="dropdown-content">
-              <a href="#" class="dropdown-item">LOOQ</a>
-              <hr style="margin: 0">
-              <a href="tagfinal.html" class="dropdown-item">Album</a>
-              <hr style="margin: 0">
-              <a href="looq.html" class="dropdown-item">Clothes</a>
-              <hr style="margin: 0">
-              <a href="contact-us.html" class="dropdown-item">Contact Us</a>
-            </div>
-          </div>
-        </div>
-        <a href="#"><img src="assets/images/home/closet1.png" style="width: 3rem; height: auto; padding-top: .4rem; padding-left: 5px;" 
-          onmouseover="this.src='assets/images/home/closet2.png';"
+<!-- Header -->
+<header class="headerr w3-container w3-padding" style="background-image: url();background-repeat: no-repeat;background-size: 100% 100%;position: fixed;z-index: 5;width: 100%;display: flex;background-color: #e7c6c2;top:0">
+<div style="width: 25%;height: 30px">  
+<a href="#" onclick="w3_open()" class="fa fa-bars w3-xlarge w3-transparent" style="margin-left: 8px;margin-right: 6px;text-decoration: none;color: white!important"></a> 
+  <div class="w3-dropdown-hover w3-transparent"><a class="w3-hide-small" href="model.html"><img class="fa w3-xlarge w3-transparent" src="assets/images/home/closet1.png" style="width: 32px;height: 29px;margin-top: 2px;" onmouseover="this.src='assets/images/home/closet4.png';"
           onmouseout="this.src='assets/images/home/closet1.png';"></a>
-      </div>
-
-      <!-- เพิ่มช่องว่างให้ logo อยู่กลาง -->
-      <div class="head2"></div>
-
-      <div class="head3" style="padding-top: 5.5px;">
-        <a href="index.html"><img class="logo" src="assets/images/home/Logo2.png" height="60px" width="235px"></a>
-      </div>
-      <div class="head4">
-        <nav class="breadcrumb is-small is-right" aria-label="breadcrumbs" style="font-size: 1vw">
-          <ul>
-            <li><a href="#" onclick="document.getElementById('id01').style.display='block'" >Log in</a></li>
-            <li><a href="register.html">Sign up</a></li>
-          </ul>
-        </nav>
-      </div>
+      <div class="w3-dropdown-content w3-bar-block w3-border jshadow w3-animate-opacity" style="width:250px">
+    <div class="w3-container">
+      <p>Create a Looq, Submit your Looq now!</p>
     </div>
-  </header>
+  </div>
+    </div>
+            </div>
+    <div style="width: 50%;height: 34px;text-align: center;"><a href="index.html" onclick="myFunction2()" class="w3-xlarge w3-transparent"><img style="height: auto;width: 35%;min-height: 25px;min-width: 175px" src="assets/images/home/Logo2.png"></a></div>
+    <div style="width: 25%;height: 30px;text-align: right">
+      <div class="w3-dropdown-hover w3-transparent" >
+        <img style="width: 15px;height: 15PX;" src="assets/images/home/arrowdown.png"> 
+    <div class="w3-dropdown-content w3-bar-block w3-border jshadow" style="right:0;margin-top: 0px;color: gray">
+      <a href="#" class="w3-bar-item w3-button" onclick="document.getElementById('id01').style.display='block'"><i class="material-icons">person</i>   Login</a>
+      <a href="#" class="w3-bar-item w3-button" onclick="document.getElementById('id02').style.display='block'"><i class="material-icons">person</i>   Register</a>
+    </div>
+  </div>
+    
+    </div>
+</header>
 
-  <!-- pop up log in -->
+<!--LOG-IN MODAL    -->
       <div id="id01" class="w3-modal">
         <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:500px; background-image: url(assets/images/home/BG.png); background-size: 100% 100%">
-        <div class="w3-card-4">
-          <div class="w3-container w3-block w3-theme-l3 w3-xxlarge w3-card" style="background-image: url(assets/images/home/nav-tab.png); background-size: 100% 100%">
-            <h1 style="font-family: Chonburi; font-size: 2rem;">Log in</h1>
-          </div>
-
-          <div class="w3-center">
-            <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close">×</span>
-          </div>
-
-          <form class="w3-container" action="/action_page.php">
-            <div class="w3-section">
-              <label><b>Username</b></label>
-              <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usename" required>
-                <label><b>Password</b></label>
-              <input class="w3-input w3-border" type="text" placeholder="Enter Password" name="psw" required>
-              <span class="w3-left w3-padding w3-large"><a href="#">Help! I forgot my password </a></span>
+          <div class="w3-card-4">
+            <div class="w3-container w3-block w3-theme-l3 w3-xxlarge w3-card" style="background-image: url(assets/images/home/nav-tab.png); background-size: 100% 100%">
+              <h1 style="font-family: Chonburi; font-size: 2rem;">Log in</h1>
             </div>
-            <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Login</button>
 
             <div class="w3-center">
-              <label>or just</label>
+              <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close">×</span>
             </div>
 
-            <button class="w3-button w3-block w3-indigo w3-section w3-padding" type="submit">Login with Facebook</button>
-            <span class="w3-modal-content w3-padding w3-large w3-transparent ">Don't have an account? <a href="#">Sign up</a></span>
-          </form>
-          <br>
-        </div>
-        </div>
-      </div>
-        
+            <form class="w3-container" action="/action_page.php">
+              <div class="w3-section" style="display: grid">
+                <label><b>Username</b></label>
+                <input class="w3-input w3-border w3-margin-bottom w3-round" type="text" placeholder="Enter Username" name="usename" required style="width: 100%">
+                <label><b>Password</b></label>
+                <input class="w3-input w3-border w3-round" type="text" placeholder="Enter Password" name="psw" required style="width: 100%">
+                <span class="w3-left w3-padding w3-large"><a href="#" style="font-size: 12px">Help! I forgot my password </a></span>
+              </div>
+              <button class="w3-button w3-block w3-section w3-padding w3-round" type="submit" style="background-color: #976f6c;color: white">Login</button>
 
-        
-<!--ในส่วนของ CONTENT นั้น-->
-     <!--tabsด้านบน-->
+              <div class="w3-center">
+                <label>or just</label>
+              </div>
 
-       <div class="container" style="margin-top: 100px;">
-       <div class="columns">
-        <div class="column">
-              
-        <img class="profile-picture" src="/assets/images/profile/Minnie.jpg" alt="profile-picture" width="75%">
-        
-          <div style="position:absolute; top:8px; left:16px; font-size:18px">
-            <a>
-          <i class="large material-icons" style="color: #caa7a7;">camera_alt</i>
-          </a>
-          </div>
-        
-        
-       
-        </div>
-         
-          <div class="column has-text-left is-10" style="padding-top: 30px; font-family: Mitr; color: #976f6c;font-size: 1.5rem;">
-          PERSONAL INFO
+              <button class="w3-button w3-block w3-indigo w3-section w3-padding w3-round" type="submit">Login with Facebook</button>
+              <span class="w3-modal-content w3-padding w3-transparent style="font-size: 10px>Don't have an account? <a href="#" style="color: #976f6c" onclick="document.getElementById('id01').style.display='none';document.getElementById('id02').style.display='block'">Sign up</a></span>
+            </form>
+            <br>
           </div>
         </div>
-        <br>
       </div>
-        
-        <!--tabs-->
-        <style>
-        
-            .tabs a {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-bottom-color: #ffffff;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  color: #caa7a7;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: -1px;
-  padding: 0.5em 1em;
-  vertical-align: top;
+
+  <!--LOG-IN MODAL-->
+      <div id="id02" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:500px; background-image: url(assets/images/home/BG.png); background-size: 100% 100%">
+          <div class="w3-card-4">
+            <div class="w3-container w3-block w3-theme-l3 w3-xxlarge w3-card" style="background-image: url(assets/images/home/nav-tab.png); background-size: 100% 100%">
+              <h1 style="font-family: Chonburi; font-size: 2rem;">Register</h1>
+            </div>
+
+            <div class="w3-center">
+              <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close">×</span>
+            </div>
+
+            <form class="w3-container" action="/action_page.php">
+              <div class="w3-section" style="display: grid">
+                <label><b>Username</b></label>
+                <input class="w3-input w3-border w3-round w3-margin-bottom" type="text" placeholder="Enter Username" name="usename" required style="width: 100%">
+                <label><b>Password</b></label>
+                <input class="w3-input w3-border w3-round w3-margin-bottom" type="text" placeholder="Enter Password" name="psw" required style="width: 100%">
+                <label><b>Confirm Password</b></label>
+                <input class="w3-input w3-border w3-round w3-margin-bottom" type="text" placeholder="Confirm Password" name="conpsw" required style="width: 100%">
+                <label><b>Email</b></label>
+                <input class="w3-input w3-border w3-round w3-margin-bottom" type="text" placeholder="Email" name="mail" required style="width: 100%">
+                <label><b>Confirm Email</b></label>
+                <input class="w3-input w3-border w3-round" style="margin-top: 14px;width: 100%" type="text" placeholder="Confirm Email" name="conmail" required>
+                <span class="w3-left w3-padding w3-large"><a href="#" style="font-size: 12px"> </a></span>
+              </div>
+              <button class="w3-button w3-block w3-section w3-padding w3-round" type="submit" style="background-color: #976f6c;color: white">Register</button>
+
+              <div>
+                <label style="color:black;font-size:13px">By clicking on 'Sign Up' above, you confirm that you accept the <a href="termsofuse.html" target="_blank" style="color: #976f6c"> Terms of Use</a></label>
+              </div>
+            </form>
+            <br>
+          </div>
+        </div>
+      </div>
+
+
+    
+<!--CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT     -->
+
+<style>
+
+.fa {
+    font-size: 1.5em;
+    cursor: pointer;
+    user-select: none;
+    color: #976f6c;
 }
 
-.tabs a:hover {
-  border-bottom-color: #ffffff;
-  color: #976f6c;
+.fa:hover {
+  color: #c0a7a5;
+  
 }
 
-.tabs li {
-  display: block;
-}
+</style>
+    
 
-.tabs li.is-active a {
-  border-bottom-color: #ffffff;
-  color: #ffffff;
-}
-
-.tabs ul {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-bottom-color: #976f6c;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.tabs ul.is-left {
-  padding-right: 0.75em;
-}
-
-.tabs ul.is-center {
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-left: 0.75em;
-  padding-right: 0.75em;
-}
-
-.tabs ul.is-right {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  padding-left: 0.75em;
-}
-
-.tabs .icon:first-child {
-  margin-right: 0.5em;
-}
-
-.tabs .icon:last-child {
-  margin-left: 0.5em;
-}
-
-.tabs.is-centered ul {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.tabs.is-right ul {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.tabs.is-boxed a {
-  border: 1px solid rgba(207, 81, 81, 0);
-  border-radius: 3px 3px 0 0;
-}
-
-.tabs.is-boxed a:hover {
-  background-color: #ffe8e8;
-  border-bottom-color: #ffffff;
-}
-
-.tabs.is-boxed li.is-active a {
-  background-color: #976f6c;
-  border-color: #ffffff;
-  border-bottom-color: transparent !important;
-}
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  transition: .5s ease;
-}
-
-.image-popup {
-  white-space: nowrap; 
-  position: absolute;
-  overflow: hidden;
-  width:100%;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-
-.text {
-  white-space: nowrap; 
-  color: white;
-  font-size: 1.2rem;
-  font-family: chonburi;
-  position: absolute;
-  overflow: hidden;
-  top: 90%;
-  left: 70%;
-  transform: translate(-30%, -30%);
-  -ms-transform: translate(-30%, -30%);
-}
-
-.container:hover .overlay {
-  height: 100%;
-}
-.change:hover {
-  color: #ffe8e8;}
-
-.fa-heart-like {
-  color: #ff4d4d;
-}
-
-            </style>
-
-          <script>
-          function myFunction(x) {
-    x.classList.toggle("fa-heart-like");
-}
-          </script>
-
-        <div class="container">
-    <div class="tabs is-boxed is-medium" style="font-family: Chonburi">
-    <ul>
-      <li class="is-active">
-        <a>
-        <span>Liked</span>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <span>My Looq</span>
-      </a>
-    </li>
-  </ul>
-  </div>
+<!--picture-->
+  <div class="w3-row w3-display-container" style="padding-top: 70px;margin-right: 10%;margin-left: 10%;">
+    <img class="w3-col w3-circle" src="/assets/images/profile/Minnie.jpg" alt="profile-picture" style="width:150px">
+    <a href="#"><i class="fa fa-camera"></i></a>
+    <br>
+    <p class="w3-col" style="font-size: 1.5em;padding-top: 10px;padding-left: 5%;color: #976f6c;width:300px">Personal profile</p>
 </div>
-</div>
-<!-- <i onclick="myFunction(this)" class="change"><i class="material-icons has-text-right" style="">favorite</i></i> -->
-  <!--ช่วงที่ถูกใจ-->
-  <div class="w3-panel" style="padding-top: 20px;padding-bottom: 60px;">
-<div class="container" style="">
-    <div class="columns is-multiline"> 
-    <div class="column is-one-third">     
-    <div class="card">
-      <div class="card-image">
-              
-                <figure class="image"><!--ratio ภาพเป็น2:3-->
-                  <!-- <i onclick="myFunction(this)" class="change"><i class="material-icons has-text-right" style="">favorite</i></i> -->
-                  <img src="/assets/images/model/modelN0.png" alt="looq1">
-                </figure>
-                <div class="overlay">
-                  <div class="image-popup">
-                  <img src="/assets/images/profile/bar.png" alt="" width="100%">
-                </div>
-                <a href="#">
-                <div class="text">
-                  STYLE / ...........
-                </div>
-              </a>
-              </div>
-                
-              </div>
-            </div>
-            </div>
-          <div class="column is-one-third">     
-    <div class="card">
-      <div class="card-image">
-              
-                <figure class="image"><!--ratio ภาพเป็น2:3-->
-                  <!-- <i onclick="myFunction(this)" class="change"><i class="material-icons has-text-right" style="">favorite</i></i> -->
-                  <img src="/assets/images/model/modelN0.png" alt="looq1">
-                </figure>
-                <div class="overlay">
-                  <div class="image-popup">
-                  <img src="/assets/images/profile/bar.png" alt="" width="100%">
-                </div>
-                <a href="#">
-                <div class="text">
-                  STYLE / ...........
-                </div>
-              </a>
-              </div>
-                
-              </div>
-            </div>
-            </div><div class="column is-one-third">     
-    <div class="card">
-      <div class="card-image">
-              
-                <figure class="image"><!--ratio ภาพเป็น2:3-->
-                  <!-- <i onclick="myFunction(this)" class="change"><i class="material-icons has-text-right" style="">favorite</i></i> -->
-                  <img src="/assets/images/model/modelN0.png" alt="looq1">
-                </figure>
-                <div class="overlay">
-                  <div class="image-popup">
-                  <img src="/assets/images/profile/bar.png" alt="" width="100%">
-                </div>
-                <a href="#">
-                <div class="text">
-                  STYLE / ...........
-                </div>
-              </a>
-              </div>
-                
-              </div>
-            </div>
-            </div><div class="column is-one-third">     
-    <div class="card">
-      <div class="card-image">
-              
-                <figure class="image"><!--ratio ภาพเป็น2:3-->
-                  <!-- <i onclick="myFunction(this)" class="change"><i class="material-icons has-text-right" style="">favorite</i></i> -->
-                  <img src="/assets/images/model/modelN0.png" alt="looq1">
-                </figure>
-                <div class="overlay">
-                  <div class="image-popup">
-                  <img src="/assets/images/profile/bar.png" alt="" width="100%">
-                </div>
-                <a href="#">
-                <div class="text">
-                  STYLE / ...........
-                </div>
-              </a>
-              </div>
-                
-              </div>
-            </div>
-            </div><div class="column is-one-third">     
-    <div class="card">
-      <div class="card-image">
-              
-                <figure class="image"><!--ratio ภาพเป็น2:3-->
-                  <!-- <i onclick="myFunction(this)" class="change"><i class="material-icons has-text-right" style="">favorite</i></i> -->
-                  <img src="/assets/images/model/modelN0.png" alt="looq1">
-                </figure>
-                <div class="overlay">
-                  <div class="image-popup">
-                  <img src="/assets/images/profile/bar.png" alt="" width="100%">
-                </div>
-                <a href="#">
-                <div class="text">
-                  STYLE / ...........
-                </div>
-              </a>
-              </div>
-                
-              </div>
-            </div>
-            </div><div class="column is-one-third">     
-    <div class="card">
-      <div class="card-image">
-              
-                <figure class="image"><!--ratio ภาพเป็น2:3-->
-                  <!-- <i onclick="myFunction(this)" class="change"><i class="material-icons has-text-right" style="">favorite</i></i> -->
-                  <img src="/assets/images/model/modelN0.png" alt="looq1">
-                </figure>
-                <div class="overlay">
-                  <div class="image-popup">
-                  <img src="/assets/images/profile/bar.png" alt="" width="100%">
-                </div>
-                <a href="#">
-                <div class="text">
-                  STYLE / ...........
-                </div>
-              </a>
-              </div>
-                
-              </div>
-            </div>
-            </div><div class="column is-one-third">     
-    <div class="card">
-      <div class="card-image">
-              
-                <figure class="image"><!--ratio ภาพเป็น2:3-->
-                  <!-- <i onclick="myFunction(this)" class="change"><i class="material-icons has-text-right" style="">favorite</i></i> -->
-                  <img src="/assets/images/model/modelN0.png" alt="looq1">
-                </figure>
-                <div class="overlay">
-                  <div class="image-popup">
-                  <img src="/assets/images/profile/bar.png" alt="" width="100%">
-                </div>
-                <a href="#">
-                <div class="text">
-                  STYLE / ...........
-                </div>
-              </a>
-              </div>
-                
-              </div>
-            </div>
-            </div><div class="column is-one-third">     
-    <div class="card">
-      <div class="card-image">
-              
-                <figure class="image"><!--ratio ภาพเป็น2:3-->
-                  <!-- <i onclick="myFunction(this)" class="change"><i class="material-icons has-text-right" style="">favorite</i></i> -->
-                  <img src="/assets/images/model/modelN0.png" alt="looq1">
-                </figure>
-                <div class="overlay">
-                  <div class="image-popup">
-                  <img src="/assets/images/profile/bar.png" alt="" width="100%">
-                </div>
-                <a href="#">
-                <div class="text">
-                  STYLE / ...........
-                </div>
-              </a>
-              </div>
-                
-              </div>
-            </div>
-            </div><div class="column is-one-third">     
-    <div class="card">
-      <div class="card-image">
-              
-                <figure class="image"><!--ratio ภาพเป็น2:3-->
-                  <!-- <i onclick="myFunction(this)" class="change"><i class="material-icons has-text-right" style="">favorite</i></i> -->
-                  <img src="/assets/images/model/modelN0.png" alt="looq1">
-                </figure>
-                <div class="overlay">
-                  <div class="image-popup">
-                  <img src="/assets/images/profile/bar.png" alt="" width="100%">
-                </div>
-                <a href="#">
-                <div class="text">
-                  STYLE / ...........
-                </div>
-              </a>
-              </div>
-                
-              </div>
-            </div>
-            </div>
-          
-              </div>
 
+<br>
+<!--tabs-->
+<div class="w3-row" style="">
+<div class="tab">
+  <button class="tablinks w3-quarter" onclick="openCity(event, 'Mylooq')" id="defaultOpen">My Looq</button>
+</div>
+
+<!--tab liked-->
+
+<div id="Mylooq" class="tabcontent">
+  <div class="w3-row-padding" style="margin-top: 5%;">
+    <div class="w3-quarter" style="padding-bottom: 20px;">
+      <div class="w3-card-4 container w3-quarter" style="width:100%;">
+        <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
+          <div class="overlay">
+            <div class="image-popup">
+              <img src="/assets/images/profile/bar.png" alt="" width="100%">
+            </div>
+            <a href="#">
+              <div class="image-popup" style="padding-left: 60%">
+                STYLE / ...........
+              </div>
+            </a>
+          </div>
+      </div>
     </div>
-    </div>
-
-
-        
-<!--ในส่วนของ CONTENT นั้น-->
-   
-
-              <footer class="footer" style="background-image: url(assets/images/home/%E0%B8%A5%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%87.png);background-repeat: round;width: 100%;height: 328px" >
-<div class="columns has-text-centered" style="height: 84px;padding-top: 25px;font-size: 1.7vw">
-  <div class="column" style="font-family: Arial">
-      <a href="aboutus.html" style="color: white"><strong>OUR WEBSITE</strong></a>
-      
-  </div>
-  <div class="column" style="font-family: Arial">
-      <a href="customer-care.html" style="color: white"><strong>CUSTOMER CARE</strong></a>
-  </div>
-  <div class="column" style="font-family: Arial">
-       <a href="personal.html" style="color: white"><strong>ACCOUNTS</strong></a>
-  </div>
-  <div class="column" style="font-family: Arial">
-      <a href="contact-us.html" style="color: white"><strong>CONTACT US</strong></a>
-  </div>
-
-</div>
-<div class="columns has-text-centered" style="height: 30px; padding-top: 110px">
-  <div class="column">
-      <p style="font-family: Chonburi;color: #ffffff;font-size: 1.4vw">2017 LOOQ & STYLE all rights reserved</p>
-  </div>
+    <div class="w3-quarter" style="padding-bottom: 20px;">
+      <div class="w3-card-4 container w3-quarter" style="width:100%">
+        <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
+          <div class="overlay">
+            <div class="image-popup">
+              <img src="/assets/images/profile/bar.png" alt="" width="100%">
             </div>
+            <a href="#">
+              <div class="image-popup" style="padding-left: 60%">
+                STYLE / ...........
+              </div>
+            </a>
+          </div>
+      </div>
+    </div>
+    <div class="w3-quarter" style="padding-bottom: 20px;">
+      <div class="w3-card-4 container w3-quarter" style="width:100%">
+        <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
+          <div class="overlay">
+            <div class="image-popup">
+              <img src="/assets/images/profile/bar.png" alt="" width="100%">
+            </div>
+            <a href="#">
+              <div class="image-popup" style="padding-left: 60%">
+                STYLE / ...........
+              </div>
+            </a>
+          </div>
+      </div>
+    </div>
+    <div class="w3-quarter" style="padding-bottom: 20px;">
+      <div class="w3-card-4 container w3-quarter" style="width:100%">
+        <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
+          <div class="overlay">
+            <div class="image-popup">
+              <img src="/assets/images/profile/bar.png" alt="" width="100%">
+            </div>
+            <a href="#">
+              <div class="image-popup" style="padding-left: 60%">
+                STYLE / ...........
+              </div>
+            </a>
+          </div>
+      </div>
+    </div>
+    <div class="w3-quarter" style="padding-bottom: 20px;">
+      <div class="w3-card-4 container w3-quarter" style="width:100%">
+        <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
+          <div class="overlay">
+            <div class="image-popup">
+              <img src="/assets/images/profile/bar.png" alt="" width="100%">
+            </div>
+            <a href="#">
+              <div class="image-popup" style="padding-left: 60%">
+                STYLE / ...........
+              </div>
+            </a>
+          </div>
+      </div>
+    </div>
+    <div class="w3-quarter" style="padding-bottom: 20px;">
+      <div class="w3-card-4 container w3-quarter" style="width:100%">
+        <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
+          <div class="overlay">
+            <div class="image-popup">
+              <img src="/assets/images/profile/bar.png" alt="" width="100%">
+            </div>
+            <a href="#">
+              <div class="image-popup" style="padding-left: 60%">
+                STYLE / ...........
+              </div>
+            </a>
+          </div>
+      </div>
+    </div>
+    <div class="w3-quarter" style="padding-bottom: 20px;">
+      <div class="w3-card-4 container w3-quarter" style="width:100%">
+        <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
+          <div class="overlay">
+            <div class="image-popup">
+              <img src="/assets/images/profile/bar.png" alt="" width="100%">
+            </div>
+            <a href="#">
+              <div class="image-popup" style="padding-left: 60%">
+                STYLE / ...........
+              </div>
+            </a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>       
+
+    
+<!--CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT     -->
+    
+<!-- Footer -->
+<footer class="w3-container w3-padding-16" style="background-color: #f5f5f5;color: grey;font-size: 11px;padding-left: 30px">
+        <div class="w3-row">
+            <div class="w3-quarter w3-container ">
+            <p><b>Powered by KBANG</b></p>
+            <p>© 2017 LOOQ & STYLE All rights reserved &nbsp;&nbsp;<a href="#">Term of Use</a></p>
+            </div>
+            <div class="w3-quarter w3-container ">
+  
+            </div>
+            <div class="w3-quarter w3-container w3-hide-small" style="text-align: right"><br><br>
+                <a href="#">Our Website</a>&nbsp;&nbsp;<a href="#">Customer Care</a>&nbsp;&nbsp;<a href="#">Contact Us</a>
+            </div>
+            <div class="w3-quarter w3-container w3-hide-large w3-hide-medium" style="">
+                <a href="#">Our Website</a>&nbsp;&nbsp;<a href="#">Customer Care</a>&nbsp;&nbsp;<a href="#">Contact Us</a>
+            </div>
+        </div>
 </footer>
-        
-    </body>
+    </div>
+</div>
+<!-- /container -->
+            
+<script src="js/classie.js"></script>
+<script src="js/pathLoader.js"></script>
+<script src="js/main.js"></script>
+
+<script>     
+//เนวิเกชั่นมาเป็นแถบ
+function w3_open() {
+    var x = document.getElementById("mySidebar");
+    x.style.width = "100%";
+    x.style.fontSize = "20px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
+}
+//ฟังก์ชั่นปิดหน้ต่าง            
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+
+/*ของตรงtab*/ 
+
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+//กดหัวใจ
+function myFunction(x) {
+    x.classList.toggle("fa-heart-o");
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+<!--
+<script>
+var headerr = document.getElementsByClassName('headerr')[0];
+
+window.addEventListener('scroll', function() {
+
+  if (document.body.scrollTop > 0) {
+    headerr.classList.add('scrolled');
+  }
+    
+
+});  
+            </script>
+-->
+
+  </body>
 </html>

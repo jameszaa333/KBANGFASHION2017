@@ -10,130 +10,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body onload="myFunction()">
-  <main>
-    <style>
-      html {
-      background: url(/assets/images/home/BG.png) no-repeat center center fixed; 
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      }
-      body {color: #000000;}
-      a:link {color: #f09488;}
-      a:hover {color: #ed7263;}
 
-      /* jssor slider loading skin spin css */
-      .jssorl-009-spin img {
-        animation-name: jssorl-009-spin;
-        animation-duration: 1.6s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-      }
-
-      @keyframes jssorl-009-spin {
-        from {
-          transform: rotate(0deg);
-        }
-
-        to {
-          transform: rotate(360deg);
-        }
-      }
-
-
-      .jssorb051 .i {position:absolute;cursor:pointer;}
-      .jssorb051 .i .b {fill:#fff;fill-opacity:0.5;}
-      .jssorb051 .i:hover .b {fill-opacity:.7;}
-      .jssorb051 .iav .b {fill-opacity: 1;}
-      .jssorb051 .i.idn {opacity:.3;}
-
-      .jssora051 {display:block;position:absolute;cursor:pointer;}
-      .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
-      .jssora051:hover {opacity:.8;}
-      .jssora051.jssora051dn {opacity:.5;}
-      .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
-        
-      .button.is-danger.is-active {
-        -webkit-box-shadow: 0 0 0 0.125em rgba(160, 112, 112, 0.8);
-        box-shadow: 0 0 0 0.125em rgba(160, 112, 112, 0.8);
-      }
-
-      /* ล็อคไม่ให้เลื่อนหน้าจอได้ */
-      body.loading {
-        overflow: hidden;
-        max-height: 100%;
-      }
-      /* overlay */
-      .preloading {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 9999;
-        width: 100%;
-        height: 100%;
-        background: no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        -webkit-animation-duration: 10s;
-        animation-duration: 10s;
-        -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;
-      }
-
-      @-webkit-keyframes fadeOut {
-        0% {opacity: 1;}
-        100% {opacity: 0;}
-      }
-
-      @keyframes fadeOut {
-        0% {opacity: 1;}
-        100% {opacity: 0;}
-      }
-
-      .fadeOut {
-        -webkit-animation-name: fadeOut;
-        animation-name: fadeOut;
-      }
-
-      .middle {
-        float: left;
-        width: 100%;
-        height: 100%;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .page {
-        -webkit-animation-duration: 5s;
-        animation-duration: 5s;
-        -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;
-      }
-
-      @-webkit-keyframes fadeIn {
-        0% {opacity: 0;}
-        100% {opacity: 1;}
-      }
-
-      @keyframes fadeIn {
-        0% {opacity: 0;}
-        100% {opacity: 1;}
-      }
-
-      .fadeIn {
-        -webkit-animation-name: fadeIn;
-        animation-name: fadeIn;
-      }
-    </style>
-    </style>
-  </main>
 
   <div id="loading" class="preloading fadeOut">
     <div class="middle">
@@ -163,7 +40,7 @@
             </div>
           </div>
         </div>
-        <a href="model.html"><img src="assets/images/home/closet1.png" style="width: 3rem; height: auto; padding-top: .4rem; padding-left: 5px;" 
+        <a href="model.html"><img src="assets/images/home/closet1.png" style="width: 3rem; height: auto; padding-top: .4rem; padding-left: 5px;"
           onmouseover="this.src='assets/images/home/closet2.png';"
           onmouseout="this.src='assets/images/home/closet1.png';"></a>
       </div>
@@ -216,7 +93,7 @@
       </div>
     </div>
   </header>
-    
+
   <content id="content" class="page fadeIn" style="padding: 0px; margin: 0px; font-family: arial,helvetica,sans-serif,verdana,'Open Sans'; display: none;">
     <div id="jssor_1" style="position:relative;margin:0 auto;top:100px;left:0px;width:1600.5px;height:850px;visibility:hidden;">
         <!-- Loading Screen -->
@@ -259,9 +136,9 @@
           </svg>
       </div>
     </div>
-      
+
     <div style="width: 100%;height: auto;margin-top: 150px; display: flex">
-      <p style="margin-left: 60px;font-family: Chonburi;font-size: 30px"><a style="color: #424242">LOOQ</a> / <a href="/albumindex.html" style="color: gray">Albums </a> </p> 
+      <p style="margin-left: 60px;font-family: Chonburi;font-size: 30px"><a style="color: #424242">LOOQ</a> / <a href="/albumindex.html" style="color: gray">Albums </a> </p>
       <div class="dropdown is-right is-hoverable" style="padding-left: 5px; padding-top: 6px; height:auto; width: auto;margin-left: 750PX">
         <div class="dropdown-trigger" style="padding-top: .5rem;">
             <button class="button is-danger" aria-haspopup="true" aria-controls="dropdown-menu2" style="background-color: white;color: darkgray;width: 140px">
@@ -280,7 +157,7 @@
         </div>
       </div>
     </div>
-    
+
     <!-- #endregion Jssor Slider End -->
     <div class="container"  style=" margin-bottom: 130px;top:50px;" > <!--ต้องปรับเพิ่มbottomเพื่อเพิ่มระยะห่างระหว่างกรอบกับฟูดเตอร์-->
 
@@ -288,7 +165,7 @@
         <a href="#" class="column is-one-third">
           <div class="card">
             <div class="card-image">
-              <figure class="image is-1by1" style="position: relative">     
+              <figure class="image is-1by1" style="position: relative">
                 <img src="assets/images/clothes/mock%20up.png" alt="image-1" style="">
               </figure>
             </div>
@@ -368,7 +245,7 @@
         </a>
       </div>
 
-      <CENTER>    
+      <CENTER>
         <div class="w3-center w3-padding-32">
           <div class="w3-bar">
             <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
@@ -387,7 +264,7 @@
     <div class="columns has-text-centered" style="height: 84px;padding-top: 25px;font-size: 1.7vw">
       <div class="column" style="font-family: Arial">
           <a href="aboutus.html" style="color: white"><strong>OUR WEBSITE</strong></a>
-          
+
       </div>
       <div class="column" style="font-family: Arial">
           <a href="customer-care.html" style="color: white"><strong>CUSTOMER CARE</strong></a>
