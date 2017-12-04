@@ -1,0 +1,207 @@
+{% extends 'layout/base.twig' %}
+
+{% block title %} <title>Clothes » Accessories</title> {% endblock %}
+
+{% block stylesheet %} {% endblock %}
+
+{% block style %}
+
+	<style>
+        .w3-content a{
+          color: #976f6c !important;
+        }
+        .w3-content a:hover{
+          color: #f8b2a9 !important;
+        }
+        .w3-content img {
+          filter: alpha(opacity=100);
+          opacity:1.0;
+          -webkit-transition:0.7s;
+          -moz-transition:0.7s;
+          -o-transition:0.7s;
+        }
+        .w3-content img:hover {
+          filter: alpha(opacity=70);
+          opacity:.7;
+        }
+  </style>
+
+{% endblock %}
+
+{% block content %}
+
+	<div class="w3-content"  style="max-width:1200px; padding-top: 50px;" >
+      <div class="w3-padding-32">
+        <div class="w3-container">
+          <div class="w3-border" style="background-color: #fff;">
+            <button class="w3-button w3-white ">
+              <a href="all-clothes">All</a>
+            </button>
+            <li class="w3-dropdown-hover">
+              <button class="w3-button w3-white">
+                <a href="all-tops">Tops <i class="fa fa-caret-down w3-margin-left"></i></a>
+                  <div class="w3-dropdown-content w3-white w3-card-4">
+                    <a href="blouses">Blouses</a><br>
+                    <a href="tanks">Tanks</a><br>
+                  </div>
+              </button>
+            </li>
+            <li class="w3-dropdown-hover">
+              <button class="w3-button w3-white">
+                <a href="all-bottoms">Bottoms <i class="fa fa-caret-down w3-margin-left"></i></a>
+                  <div class="w3-dropdown-content w3-white w3-card-4">
+                    <a href="pants">Pants</a><br>
+                    <a href="shorts">Shorts</a><br>
+                    <a href="skirts">Skirts</a><br>
+                </div>
+              </button>
+            </li>
+            <button class="w3-button w3-white w3-hide-small">
+              <a href="dresses">Dresses</a>
+            </button>
+            <button class="w3-button w3-white w3-hide-small">
+              <a href="shoes">Shoes</a>
+            </button>
+            <li class="w3-dropdown-hover">
+              <button class="w3-button w3-white"><a href="all-accessories">Accessories<i class="fa fa-caret-down w3-margin-left"></i></a>
+                <div class="w3-dropdown-content w3-white w3-card-4">
+                  <a href="bags">Bags</a><br>
+                  <a href="socks">Socks</a><br>
+                </div>
+              </button>
+            </li>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-row-padding w3-center w3-margin-top" style="font-size: 14px;">
+        <div class="w3-quarter">
+          <figure class="image is-1by2"></figure>
+          <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+            <img src="assets/images/looq/aecc1.png" alt="image-1" style="height: 250px"><br><br>
+            <p><a href="https://www.pomelofashion.com/th/th/jewelry/13868-goya-circular-collar-necklace---gold.html" target="_blank">Goya Circular Collar Necklace - Gold</a></p>
+            <big>240 ฿</big>
+            <br>
+          </div><br>
+        </div>
+
+        <div class="w3-quarter">
+          <figure class="image is-1by2"></figure>
+          <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+            <img src="assets/images/looq/aecc2.jpg" alt="image-1" style="height: 250px"><br><br>
+            <p><a href="https://www.pomelofashion.com/global/jewelry/15533-tori-star-hoop-earrings.html" target="_blank">Tori Star Hoop Earrings</a></p>
+            <big>240 ฿</big>
+            <br>
+          </div><br>
+        </div>
+
+        <div class="w3-quarter">
+          <figure class="image is-1by2"></figure>
+          <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+            <img src="assets/images/looq/aecc3.png" alt="image-1" style="height: 250px"><br><br>
+            <p><a href="https://www.pomelofashion.com/global/sunglasses/15502-jamiya-tinted-lens-aviator-sunglasses.html" target="_blank">Jamiyo Tinted Lens Aviotor Sungiasses</a></p>
+            <big>340 ฿</big>
+            <br>
+          </div><br>
+        </div>
+
+        <div class="w3-quarter">
+          <figure class="image is-1by2"></figure>
+          <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+            <img src="assets/images/looq/bag5.jpg" alt="image-1" style="height: 250px"><br><br>
+            <p><a href="https://www.oandb.store/all-bags/vency-bag-greedy-black.html" target="_blank">Vency Bag Greedy Black</a></p>
+            <big>1,690 ฿</big>
+            <br>
+          </div><br>
+        </div>
+
+        <div class="w3-quarter">
+          <figure class="image is-1by2"></figure>
+          <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+            <img src="assets/images/looq/erring1.png" alt="image-1" style="height: 250px"><br><br>
+            <p><a href="https://www.pomelofashion.com/th/en/jewelry/15521-choko-star-dangle-earrings.html" target="_blank">Choko Star Dangle EarringsP</a></p>
+            <big>190 ฿</big>
+            <br>
+          </div><br>
+        </div>
+
+        <div class="w3-quarter">
+          <figure class="image is-1by2"></figure>
+          <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+            <img src="assets/images/looq/erring5.png" alt="image-1" style="height: 250px"><br><br>
+            <p><a href="https://www.pomelofashion.com/th/en/jewelry/15535-lei-star-tassle-earring.html" target="_blank">Lei Star Tassle Earring</a></p>
+            <big>340 ฿</big>
+            <br>
+          </div><br>
+        </div>
+
+        <div class="w3-quarter">
+          <figure class="image is-1by2"></figure>
+          <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+            <img src="assets/images/looq/erring8.png" alt="image-1" style="height: 250px"><br><br>
+            <p><a href="https://www.pomelofashion.com/th/en/jewelry/15529-jin-circular-drop-earrings.html" target="_blank">Jin Circular Drop Earrings</a></p>
+            <big>190 ฿</big>
+            <br>
+          </div><br>
+        </div>
+
+        <div class="w3-quarter">
+          <figure class="image is-1by2"></figure>
+          <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+            <img src="assets/images/looq/bag1.jpg" alt="image-1" style="height: 250px"><br><br>
+            <p><a href="https://www.oandb.store/grace-clutch-bag-in-yellow-mustard.html" target="_blank">GRACE CLUTCH BAG IN YELLOW MUSTARD</a></p>
+            <big>1,701 ฿</big>
+            <br>
+          </div><br>
+        </div>
+
+        <div class="w3-quarter">
+          <figure class="image is-1by2"></figure>
+          <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+            <img src="assets/images/looq/bag6.png" alt="image-1" style="height: 250px"><br><br>
+            <p><a href="https://www.pomelofashion.com/th/en/bags/15296-chowa-star-keychain.html" target="_blank">Chowa Star Keychain</a></p>
+            <big>690 ฿</big>
+            <br>
+          </div><br>
+        </div>
+
+        <div class="w3-quarter">
+          <figure class="image is-1by2"></figure>
+          <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+        
+          </div><br>
+        </div>
+
+        <div class="w3-quarter">
+          <figure class="image is-1by2"></figure>
+          <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+        
+          </div><br>
+        </div>
+
+        <div class="w3-quarter">
+          <figure class="image is-1by2"></figure>
+          <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+        
+          </div><br>
+        </div>
+
+        <div class="w3-container w3-text-grey" id="jeans" style="text-align: center;"><br>
+          <p>9 items</p>
+        </div>
+
+      <!-- Pagination -->
+        <div class="w3-center w3-padding-32" style="text-align: center;">
+          <div class="w3-bar">
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+            <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+{% endblock %}

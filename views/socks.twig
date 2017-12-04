@@ -1,0 +1,213 @@
+{% extends 'layout/base.twig' %}
+
+{% block title %} <title>Clothes » Accessories » Socks</title> {% endblock %}
+
+{% block stylesheet %} {% endblock %}
+
+{% block style %}
+
+	<style>
+        .w3-content a{
+          color: #976f6c !important;
+        }
+        .w3-content a:hover{
+          color: #f8b2a9 !important;
+        }
+        .w3-content img {
+          filter: alpha(opacity=100);
+          opacity:1.0;
+          -webkit-transition:0.7s;
+          -moz-transition:0.7s;
+          -o-transition:0.7s;
+        }
+        .w3-content img:hover {
+          filter: alpha(opacity=70);
+          opacity:.7;
+        }
+  </style>
+
+{% endblock %}
+
+{% block content %}
+
+	<div class="w3-content"  style="max-width:1200px; padding-top: 50px;" >
+      <div class="w3-padding-32">
+        <div class="w3-container">
+          <div class="w3-border" style="background-color: #fff;">
+            <button class="w3-button w3-white ">
+              <a href="all-clothes">All</a>
+            </button>
+            <li class="w3-dropdown-hover">
+              <button class="w3-button w3-white">
+                <a href="all-tops">Tops <i class="fa fa-caret-down w3-margin-left"></i></a>
+                  <div class="w3-dropdown-content w3-white w3-card-4">
+                    <a href="blouses">Blouses</a><br>
+                    <a href="tanks">Tanks</a><br>
+                  </div>
+              </button>
+            </li>
+            <li class="w3-dropdown-hover">
+              <button class="w3-button w3-white">
+                <a href="all-bottoms">Bottoms <i class="fa fa-caret-down w3-margin-left"></i></a>
+                  <div class="w3-dropdown-content w3-white w3-card-4">
+                    <a href="pants">Pants</a><br>
+                    <a href="shorts">Shorts</a><br>
+                    <a href="skirts">Skirts</a><br>
+                </div>
+              </button>
+            </li>
+            <button class="w3-button w3-white w3-hide-small">
+              <a href="dresses">Dresses</a>
+            </button>
+            <button class="w3-button w3-white w3-hide-small">
+              <a href="shoes">Shoes</a>
+            </button>
+            <li class="w3-dropdown-hover">
+              <button class="w3-button w3-white"><a href="all-accessories">Accessories<i class="fa fa-caret-down w3-margin-left"></i></a>
+                <div class="w3-dropdown-content w3-white w3-card-4">
+                  <a href="bags">Bags</a><br>
+                  <a href="socks">Socks</a><br>
+                </div>
+              </button>
+            </li>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-row-padding w3-center w3-margin-top" style="font-size: 14px;">
+        <div class="w3-quarter">
+          <figure class="image is-1by2"></figure>
+          <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+            <img src="assets/images/looq/sock1.jpg" alt="image-1" style="height: 250px"><br><br>
+            <p><a href="https://www.pomelofashion.com/th/en/misc/15483-vera-knee-length-socks---pink.html" target="_blank">Vera Knee Length Socks - Pink</a></p>
+            <big>190 ฿</big>
+            <br>
+          </div><br>
+        </div>
+
+        <div class="w3-quarter">
+          <figure class="image is-1by2"></figure>
+          <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+            <img src="assets/images/looq/sock2.png" alt="image-1" style="height: 250px"><br><br>
+            <p><a href="https://www.pomelofashion.com/th/en/misc/15483-vera-knee-length-socks---black.html" target="_blank">Vera Knee Length Socks - Black</a></p>
+            <big>190 ฿</big>
+            <br>
+          </div><br>
+        </div>
+
+        <div class="w3-quarter">
+          <figure class="image is-1by2"></figure>
+          <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+            <img src="assets/images/looq/sock3.png" alt="image-1" style="height: 250px"><br><br>
+            <p><a href="https://www.pomelofashion.com/th/en/misc/15495-seiji-glitter-ankle-socks---black.html" target="_blank">Seiji Glitter Ankle Socks - Black</a></p>
+            <big>190 ฿</big>
+            <br>
+          </div><br>
+        </div>
+
+        <div class="w3-quarter">
+          <figure class="image is-1by2"></figure>
+          <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+            <img src="assets/images/looq/sock4.png" alt="image-1" style="height: 250px"><br><br>
+            <p><a href="https://www.pomelofashion.com/th/en/misc/15491-hulin-glitter-mid-calf-socks---blue.html" target="_blank">Hulin Glitter Mid-Calf Socks - Blue</a></p>
+            <big>190 ฿</big>
+            <br>
+          </div><br>
+        </div>
+
+        <div class="w3-quarter">
+          <figure class="image is-1by2"></figure>
+          <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+            <img src="assets/images/looq/sock5.png" alt="image-1" style="height: 250px"><br><br>
+            <p><a href="https://www.pomelofashion.com/th/en/misc/15494-seiji-glitter-ankle-socks---silver.html" target="_blank">Seiji Glitter Ankle Socks - Silver</a></p>
+            <big>190 ฿</big>
+            <br>
+          </div><br>
+        </div>
+
+        <div class="w3-quarter">
+          <figure class="image is-1by2"></figure>
+          <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+            <img src="assets/images/looq/sock6.png" alt="image-1" style="height: 250px"><br><br>
+            <p><a href="https://www.pomelofashion.com/th/en/misc/15492-hulin-glitter-mid-calf-socks---purple.html" target="_blank">Hulin Glitter Mid-Calf Socks - Purple</a></p>
+            <big>190 ฿</big>
+            <br>
+          </div><br>
+        </div>
+
+        <div class="w3-quarter">
+          <figure class="image is-1by2"></figure>
+          <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+            <img src="assets/images/looq/sock7.png" alt="image-1" style="height: 250px"><br><br>
+            <p><a href="https://www.pomelofashion.com/th/en/misc/15496-seiji-glitter-ankle-socks---pink.html" target="_blank">Seiji Glitter Ankle Socks - Pink</a></p>
+            <big>190 ฿</big>
+            <br>
+          </div><br>
+        </div>
+
+        <div class="w3-quarter">
+          <figure class="image is-1by2"></figure>
+          <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+            <img src="assets/images/looq/sock8.png" alt="image-1" style="height: 250px"><br><br>
+            <p><a href="https://www.pomelofashion.com/th/en/misc/15487-kimiko-mid-calf-socks---gold.html" target="_blank">EKimiko Mid Calf Socks - Gold</a></p>
+            <big>190 ฿</big>
+            <br>
+          </div><br>
+        </div>
+
+        <div class="w3-quarter">
+          <figure class="image is-1by2"></figure>
+          <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+            <img src="assets/images/looq/sock9.png" alt="image-1" style="height: 250px"><br><br>
+            <p><a href="https://www.pomelofashion.com/th/en/misc/15484-vera-knee-length-socks---beige-gold.html" target="_blank">Vera Knee Length Socks - Beige Gold</a></p>
+            <big>190 ฿</big>
+            <br>
+          </div><br>
+        </div>
+
+        <div class="w3-quarter">
+          <figure class="image is-1by2"></figure>
+          <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+            <img src="assets/images/looq/sock11.png" alt="image-1" style="height: 250px"><br><br>
+            <p><a href="https://www.pomelofashion.com/th/en/misc/15490-hulin-glitter-mid-calf-socks---silver.html" target="_blank">Hulin Glitter Mid Calf Socks - Silver</a></p>
+            <big>190 ฿</big>
+            <br>
+          </div><br>
+        </div>
+
+        <div class="w3-quarter">
+          <figure class="image is-1by2"></figure>
+          <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+            <img src="assets/images/looq/sock12.png" alt="image-1" style="height: 250px;"><br><br>
+            <p><a href="https://www.pomelofashion.com/th/en/misc/15493-hulin-glitter-mid-calf-socks---black.html" target="_blank">Hulin Glitter Mid Calf Socks - Black</a></p>
+            <big>190 ฿</big>
+            <br>
+          </div><br>
+        </div>
+
+        <div class="w3-quarter">
+          <figure class="image is-1by2"></figure>
+          <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+        
+          </div><br>
+        </div>
+
+        <div class="w3-container w3-text-grey" id="jeans" style="text-align: center;"><br>
+          <p>11 items</p>
+        </div>
+
+      <!-- Pagination -->
+        <div class="w3-center w3-padding-32" style="text-align: center;">
+          <div class="w3-bar">
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+            <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+{% endblock %}
