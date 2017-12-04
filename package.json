@@ -11,6 +11,6 @@
     "twig": "^1.10.5"
   },
   "scripts": {
-    "dev": "node -e js,twig server.js"
+    "dev": "nodemon -e js,twig server.js"
   }
 }
