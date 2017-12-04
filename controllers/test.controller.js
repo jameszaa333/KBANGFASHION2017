@@ -1,3 +1,3 @@
 exports.index = function(req, res) {
-	res.render('home.twig')
+	res.render('test.twig')
 }
