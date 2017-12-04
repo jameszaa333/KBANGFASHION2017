@@ -68,8 +68,10 @@
 
 <body class="demo-1" onload="myFunction()" style="color:black;background-color: transparent">
     
+<!--  Animation ที่คลิกตู้เสื้อผ้า  -->
     <nav class="w3-sidebar w3-bar-block animated slideInLeft w3-center" style="display: none;z-index: 6;background-color: #f1f1f1" id="mySidebar3"></nav>
     <nav class="w3-sidebar w3-bar-block animated slideInRight w3-center" style="display: none;z-index: 6;right: 0;background-color: #f1f1f1" id="mySidebar4"></nav>
+<!--  Animation ที่คลิกตู้เสื้อผ้า  -->
     
 <div id="ip-container" class="ip-container">
 <!-- initial header -->
@@ -196,8 +198,13 @@ c-24 -65 -68 -169 -98 -231 -88 -182 -198 -277 -379 -329 -50 -14 -120 -17
 <header class="headerr w3-container w3-padding" style="background-image: url();background-repeat: no-repeat;background-size: 100% 100%;position: fixed;z-index: 5;width: 100%;display: flex;background-color: #e7c6c2;top:0">
 <div style="width: 25%;height: 30px">
 <a href="#" onclick="w3_open()" class="fa fa-bars w3-xlarge w3-transparent" style="margin-left: 8px;margin-right: 6px;text-decoration: none;color: white!important"></a>
-  <div class="w3-dropdown-hover w3-transparent"><a class="w3-hide-small target" onclick="w4_open()" href="model.html"><img class="fa w3-xlarge w3-transparent" src="assets/images/home/closet1.png" style="width: 32px;height: 29px;margin-top: 2px;" onmouseover="this.src='assets/images/home/closet4.png';"
+  <div class="w3-dropdown-hover w3-transparent">
+      
+<!--Animation หลังคลิกตู้เสื้อผ้า-->      
+      <a class="w3-hide-small target" onclick="w4_open()" href="model.html"><img class="fa w3-xlarge w3-transparent" src="assets/images/home/closet1.png" style="width: 32px;height: 29px;margin-top: 2px;" onmouseover="this.src='assets/images/home/closet4.png';"
           onmouseout="this.src='assets/images/home/closet1.png';"></a>
+<!--Animation หลังคลิกตู้เสื้อผ้า-->
+      
       <div class="w3-dropdown-content w3-bar-block w3-border jshadow w3-animate-opacity" style="width:250px">
     <div class="w3-container">
       <p>Create a Looq, Submit your Looq now!</p>
@@ -589,8 +596,9 @@ jQuery(document).ready(function ($) {
 });
 
 </script>
-<script>
 
+<!--Animation หลังคลิกตู้เสื้อผ้า-->
+<script>
 function w4_open() {
     var x = document.getElementById("mySidebar3");
     x.style.width = "50%";
@@ -617,7 +625,7 @@ $(".target").click(function () {
 });
 
     </script>
-
+<!--Animation หลังคลิกตู้เสื้อผ้า-->
 
 
 
