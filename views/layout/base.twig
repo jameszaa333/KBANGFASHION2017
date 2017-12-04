@@ -33,12 +33,11 @@
             -webkit-transition: all 0.5s ease;
             -moz-transition: all 0.5s ease;
             -o-transition: all 0.5s ease;
-            text-shadow: 0.1em 0.1em 0.2em #999; 
+            text-shadow: 0.1em 0.1em 0.2em #ccc; 
           }
 	</style>
 
-	{% block style %}
-	{% endblock %}
+	{% block style %} {% endblock %}
 
 	<div id="ip-container" class="ip-container">
 	<!-- initial header -->         
@@ -152,8 +151,7 @@
 	        </div>
 	    </div>
 
-	{% block content %}
-	{% endblock %}
+	{% block content %} {% endblock %}
 
 	<footer class="w3-container w3-padding-16" style="background-color: #f5f5f5;color: grey;font-size: 11px;padding-left: 30px">
 	    <div class="w3-row">

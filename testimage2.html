@@ -18,16 +18,21 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mitr">
 </head>
 
-<body class="demo-1" onload="">
-  <!-- background -->
-    <main>
-    	<style>
-        body {
-          color: #000000;
-          background-color: #f0f0f0;
-        }
-        a:link {color: #f09488;}
-        a:hover {color: #ed7263;}
+<body class="demo-1" onload="" style="color: #000000; background-color: #f0f0f0;">
+    <style>
+         a:link {
+           color: #f09488;
+           -webkit-transition: all 0.5s ease;
+           -moz-transition: all 0.5s ease;
+           -o-transition: all 0.5s ease;
+         }
+         a:hover {
+           color: #ed7263;
+           -webkit-transition: all 0.5s ease;
+           -moz-transition: all 0.5s ease;
+           -o-transition: all 0.5s ease;
+           text-shadow: 0.1em 0.1em 0.2em #999; 
+         }
 
         .img-container { position: relative; }
 
@@ -49,6 +54,44 @@
           left: 0;
           z-index: 1;
         }
+        .topic {
+          filter: alpha(opacity=100);
+          opacity:1.0;
+          -webkit-transition:0.7s;
+          -moz-transition:0.7s;
+          -o-transition:0.7s;
+        }
+        .topic:hover {
+            filter: alpha(opacity=70);
+            opacity:.8;
+            cursor: text;
+        }
+        .button {
+          border: solid 1px #999;
+
+          -webkit-transition:0.7s;
+          -moz-transition:0.7s;
+          -o-transition:0.7s;
+
+          filter: alpha(opacity=100);
+          opacity:1.0;
+
+          -webkit-transition: all 0.5s ease;
+          -moz-transition: all 0.5s ease;
+          -o-transition: all 0.5s ease;
+        }
+
+        .button:hover {
+          filter: alpha(opacity=70);
+          opacity:.8;
+
+          -webkit-transition: all 0.5s ease;
+          -moz-transition: all 0.5s ease;
+          -o-transition: all 0.5s ease;
+          box-shadow: 0.1em 0.1em 0.2em #999;
+          text-shadow: none;
+        }
+
       /*tab*/
       /* Style the tab */
         div.tab {
@@ -220,7 +263,6 @@
           width: 130px;
         }
       </style>
-    </main>
  	
   <div id="ip-container" class="ip-container">
   <!-- initial header -->         
@@ -329,12 +371,14 @@
                 <label style="color:black;font-size:13px">By clicking on 'Sign Up' above, you confirm that you accept the <a href="termsofuse.html" target="_blank" style="color: #976f6c"> Terms of Use</a></label>
               </div>
             </form>
-            <br>
+            <br> 
           </div>
         </div>
       </div>
 
-    <h1 class="model color" style="font-family: Chonburi; padding-top: 5rem; padding-left: 45px;font-size: 2.5vw;">DESIGN LOOQ</h1>
+    <div class="topic" style="padding-top: 80px; width: 100%;">
+      <p class="model color" style="font-family: Chonburi; font-size: 34px; color: #654b49; padding-left: 5%">DESIGN LOOQ</p>
+    </div>
     <div style="display: flex; width: 100%">
       <div class="img-container" style="width: 35%; margin-left: 3%">
                 
