@@ -1,3 +1,3 @@
 exports.index = function(req, res) {
-	res.render('about-us.twig')
+	res.render('allclothes.twig')
 }
