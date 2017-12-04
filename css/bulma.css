@@ -18,7 +18,7 @@ text-size-adjust:100%}article,aside,figure,footer,header,hgroup,section
 -apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans",
 "Helvetica Neue",Helvetica,Arial,sans-serif}code,pre{-moz-osx-font-smoothing:auto;
 -webkit-font-smoothing:auto;font-family:monospace}body{color:#4a4a4a;font-size:1rem;
-font-weight:400;line-height:1.5}a{color:#00d1b2;cursor:pointer;text-decoration:none}
+font-weight:400;line-height:1.5}a{color:currentColor;cursor:pointer;text-decoration:none}
 a strong{color:currentColor}a:hover{color:#363636}code{background-color:#f5f5f5;
 color:#ff3860;font-size:.875em;font-weight:400;padding:.25em .5em .25em}
 hr{background-color:#dbdbdb;border:none;display:block;height:1px;margin:1.5rem 0}
