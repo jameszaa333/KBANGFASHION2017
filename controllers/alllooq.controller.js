@@ -1,3 +1,3 @@
 exports.index = function(req, res) {
-	res.render('termsofuse.twig')
+	res.render('alllooq.twig')
 }
