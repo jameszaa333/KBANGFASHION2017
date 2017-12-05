@@ -40,9 +40,6 @@
       -moz-transition:0.7s;
       -o-transition:0.7s;
       border-radius: 0px 0px 0px 0px;
-      -webkit-box-shadow: 3px 3px 3px #ccc;
-      -moz-box-shadow: 3px 3px 3px #ccc;
-      box-shadow: 3px 3px 3px #ccc;
     }
     .content img:hover {
       filter: alpha(opacity=70);
@@ -51,6 +48,12 @@
       -webkit-transition: 0.9s
       -moz-transition:0.9s;
       
+    }
+    .content a{
+      color: #976f6c !important;
+    }
+    .content a:hover{
+      color: #f8b2a9 !important;
     }
   </style>
     
@@ -75,28 +78,28 @@
 
 <!-- Header -->
 <header class="headerr w3-container w3-padding" style="background-image: url();background-repeat: no-repeat;background-size: 100% 100%;position: fixed;z-index: 5;width: 100%;display: flex;background-color: #e7c6c2;top:0">
-<div style="width: 25%;height: 30px">  
-<a href="#" onclick="w3_open()" class="fa fa-bars w3-xlarge w3-transparent" style="margin-left: 8px;margin-right: 6px;text-decoration: none;color: white!important"></a> 
-  <div class="w3-dropdown-hover w3-transparent"><a class="w3-hide-small" href="model.html"><img class="fa w3-xlarge w3-transparent" src="assets/images/home/closet1.png" style="width: 32px;height: 29px;margin-top: 2px;" onmouseover="this.src='assets/images/home/closet4.png';"
-          onmouseout="this.src='assets/images/home/closet1.png';"></a>
-      <div class="w3-dropdown-content w3-bar-block w3-border jshadow w3-animate-opacity" style="width:250px">
-    <div class="w3-container">
-      <p>Create a Looq, Submit your Looq now!</p>
+  <div style="width: 25%;height: 30px">  
+  <a href="#" onclick="w3_open()" class="fa fa-bars w3-xlarge w3-transparent" style="margin-left: 8px;margin-right: 6px;text-decoration: none;color: white!important"></a> 
+    <div class="w3-dropdown-hover w3-transparent"><a class="w3-hide-small" href="model.html"><img class="fa w3-xlarge w3-transparent" src="assets/images/home/closet1.png" style="width: 32px;height: 29px;margin-top: 2px;" onmouseover="this.src='assets/images/home/closet4.png';"
+            onmouseout="this.src='assets/images/home/closet1.png';"></a>
+        <div class="w3-dropdown-content w3-bar-block w3-border jshadow w3-animate-opacity" style="width:250px">
+      <div class="w3-container">
+        <p>Create a Looq, Submit your Looq now!</p>
+      </div>
     </div>
-  </div>
+      </div>
+              </div>
+      <div style="width: 50%;height: 34px;text-align: center;"><a href="index.html" onclick="myFunction2()" class="w3-xlarge w3-transparent"><img style="height: auto;width: 35%;min-height: 25px;min-width: 175px" src="assets/images/home/Logo2.png"></a></div>
+      <div style="width: 25%;height: 30px;text-align: right">
+        <div class="w3-dropdown-hover w3-transparent" >
+          <img style="width: 15px;height: 15PX;" src="assets/images/home/arrowdown.png"> 
+      <div class="w3-dropdown-content w3-bar-block w3-border jshadow" style="right:0;margin-top: 0px;color: gray">
+        <a href="#" class="w3-bar-item w3-button" onclick="document.getElementById('id01').style.display='block'"><i class="material-icons">person</i>   Login</a>
+        <a href="#" class="w3-bar-item w3-button" onclick="document.getElementById('id02').style.display='block'"><i class="material-icons">person</i>   Register</a>
+      </div>
     </div>
-            </div>
-    <div style="width: 50%;height: 34px;text-align: center;"><a href="index.html" onclick="myFunction2()" class="w3-xlarge w3-transparent"><img style="height: auto;width: 35%;min-height: 25px;min-width: 175px" src="assets/images/home/Logo2.png"></a></div>
-    <div style="width: 25%;height: 30px;text-align: right">
-      <div class="w3-dropdown-hover w3-transparent" >
-        <img style="width: 15px;height: 15PX;" src="assets/images/home/arrowdown.png"> 
-    <div class="w3-dropdown-content w3-bar-block w3-border jshadow" style="right:0;margin-top: 0px;color: gray">
-      <a href="#" class="w3-bar-item w3-button" onclick="document.getElementById('id01').style.display='block'"><i class="material-icons">person</i>   Login</a>
-      <a href="#" class="w3-bar-item w3-button" onclick="document.getElementById('id02').style.display='block'"><i class="material-icons">person</i>   Register</a>
-    </div>
-  </div>
-    
-    </div>
+      
+      </div>
 </header>
 
 <!--LOG-IN MODAL    -->
@@ -170,297 +173,186 @@
         </div>
       </div> 
 
+
+  <!--text headder-->
   <div class="content">
     <!--text headder-->
-    <div class="topic" style="padding-top: 80px; width: 100%; display: flex;">
-        <p style="font-family: Chonburi; font-size: 2.5vw; color: #464646; padding-left: 5%">SPRING / SUMMER 2018</p>
+    <div class="topic" style="padding-top: 85px; width: 100%; display: flex; margin-bottom: 3%">
+        <p style="font-family: Chonburi; font-size: 2.5vw; color: #464646; padding-left: 6%">NEW COLLECTION </p>
     </div>
-    <!--img-->
-    <div style="text-align: center; width: 100%; margin-bottom: 3%; margin-top: 3%">
-        <img class="tops" src="assets/images/content/SPRING-SUMMER 2018/summer.jpg" style="width: 65%;">
-    </div>
-    <!--text-->
-    <center>
-      <div style="width: 80%; text-align: left; margin-bottom: 4%;">
-          <p class="card-text" style="padding-left: 3%;padding-right: 2%;font-size: 1.1vw">
-            <font style="font-family: Chonburi;color: #976f6c">
-              &nbsp; &nbsp; &nbsp;Fashion Week Spring/Summer 2018
-            </font>
-            ของ 4 เมืองหลวงแห่งแฟชั่นได้ปิดม่านลงเป็นที่เรียบร้อย เชื่อว่าบนหน้าฟีดของสาวแฟชั่นทุกคนคงล้นไปด้วยข้อมูลรันเวย์รีพอร์ตสตรีทสไตล์สุดปัง และเหล่าเซเลบริตี้ชื่อก้องโลกที่มารวมตัวกัน ณ ฟรอนต์โรว์ของแบรนด์ระดับโลก เยอะแยะไปหมดจนจับต้นชนปลายไม่ถูกเลยใช่ไหมล่ะ <br>&nbsp; &nbsp;&nbsp;เราจึงจัดการย่อยและรวบเทรนด์ที่น่าจับตามอง ถ้าชาว LOOQ&STYLE ที่กลัวช้าและไม่อยากพลาด เรามาดูบทสรุปของเทรนด์ Spring/Summer 2018 ไปพร้อม ๆ กันเลยค่า!
-          </p>
-      </div>
-    </center>
-    <!--1-->
-    <!--name-->
-    <center>
-      <p class="topic" style="font-family: Chonburi; font-size: 2.5vw; color: #976f6c;">Denim Duty</p>
-    </center>
-    <div style="margin: 3% 6% 3% 6%; width: 100%; display: flex;">
-      <div class="w3-col" style="width: 45%; padding-left: 4%; padding-bottom: 5%">
-        <img class="card-img-top" src="assets/images/content/SPRING-SUMMER 2018/1-Trend-Denim.jpg" width="81%" height="auto" style="text-align: center;">
-      </div>
-      <!--text card right-->
-      <div style="text-align: left; width: 65%; padding-top: 5%; margin-left: -3%">
-        <p class="card-text-top" style="padding-right: 30%;font-size: 1.1vw;">
-          &nbsp; &nbsp; &nbsp;<b>แม้ว่าเดนิมจะเป็นเทรนด์ที่กลับมาทุกซีซั่น</b>
-            แต่คราวนี้เหล่าดีไซเนอร์ขอเสนอซิลูเอตที่ดูเรียบเก๋และคลาสสิก สามารถนำกลับมาใส่ได้เรื่อย ๆ
-        </p>
-      </div>
-    </div>
-    <!--2-->
-    <!--name-->
-    <center>
-      <p class="topic" style="font-family: Chonburi; font-size: 2.5vw; color: #976f6c;">Asymmetrical Drape Dress</p>
-    </center>
-    <div style="margin: 3% 6% 3% 6%; width: 100%; display: flex;">
-      <div class="w3-col" style="width: 45%; padding-left: 4%; padding-bottom: 5%">
-        <img class="card-img-top" src="assets/images/content/SPRING-SUMMER 2018/2-Trend-Drape-Dress.jpg" width="81%" height="auto" style="text-align: center;">
-      </div>
-      <!--text card right-->
-      <div style="text-align: left; width: 65%; padding-top: 5%; margin-left: -3%">
-        <p class="card-text-top" style="padding-right: 30%;font-size: 1.1vw;">
-          &nbsp; &nbsp; &nbsp;<b>ขอบอกเลยว่า</b>
-            เดรสทรงนี้ได้เข้าไปอยู่ใน wishlist ของสาว ๆ ทุกคน LOOQ&STYLE ขอ                  คอนเฟิร์มว่าเดรปเดรสจะกลายเป็นไอเท็มฮอตฮิตในปีหน้าแน่นอนค่า
-        </p>
-      </div>
-    </div>
-    <!--3-->
-    <!--name-->
-    <center>
-      <p class="topic" style="font-family: Chonburi; font-size: 2.5vw; color: #976f6c;">Fancy Fringes</p>
-    </center>
-    <div style="margin: 3% 6% 3% 6%; width: 100%; display: flex;">
-      <div class="w3-col" style="width: 45%; padding-left: 4%; padding-bottom: 5%">
-        <img class="card-img-top" src="assets/images/content/SPRING-SUMMER 2018/3-Trend-Fringes.jpg" width="81%" height="auto" style="text-align: center;">
-      </div>
-      <!--text card right-->
-      <div style="text-align: left; width: 65%; padding-top: 5%; margin-left: -3%">
-        <p class="card-text-top" style="padding-right: 30%;font-size: 1.1vw;">
-          &nbsp; &nbsp; &nbsp;<b>ใครจะไปคิดว่าดีเทลฟริ้นจ์แบบ ‘70s</b>
-            จะกลับมาปังบนรันเวย์อีกครั้ง แถมคราวนี้ยังดูหรูหรายิ่งขึ้นด้วยสีเมทัลลิกแบบปัง ๆ กันไปเลย
-        </p>
-      </div>
-    </div>
-    <!--4-->
-    <!--name-->
-    <center>
-      <p class="topic" style="font-family: Chonburi; font-size: 2.5vw; color: #976f6c;">Glitz and Glam</p>
-    </center>
-    <div style="margin: 3% 6% 3% 6%; width: 100%; display: flex;">
-      <div class="w3-col" style="width: 45%; padding-left: 4%; padding-bottom: 5%">
-        <img class="card-img-top" src="assets/images/content/SPRING-SUMMER 2018/4-Trend-Glitz-and-Glam.jpg" width="81%" height="auto" style="text-align: center;">
-      </div>
-      <!--text card right-->
-      <div style="text-align: left; width: 65%; padding-top: 5%; margin-left: -3%">
-        <p class="card-text-top" style="padding-right: 30%;font-size: 1.1vw;">
-          &nbsp; &nbsp; &nbsp;<b>A little party never killed nobody</b>
-            การคัมแบ็กครั้งใหญ่ของความหรูหราของขนนก ดีเทลปักเลื่อมระยิบระยับ และผ้าซาติน ทำเอาแฟชั่นนิสต้าทุกคนกดเข้าแอพ KiraKira+ แล้วยกมือถือขึ้นมาถ่ายรูปกันแทบไม่ทัน!
-        </p>
-      </div>
-    </div>
-    <!--5-->
-    <!--name-->
-    <center>
-      <p class="topic" style="font-family: Chonburi; font-size: 2.5vw; color: #976f6c;">Luxe Jacquard</p>
-    </center>
-    <div style="margin: 3% 6% 3% 6%; width: 100%; display: flex;">
-      <div class="w3-col" style="width: 45%; padding-left: 4%; padding-bottom: 5%">
-        <img class="card-img-top" src="assets/images/content/SPRING-SUMMER 2018/5-Trend-Jacquard.jpg" width="81%" height="auto" style="text-align: center;">
-      </div>
-      <!--text card right-->
-      <div style="text-align: left; width: 65%; padding-top: 5%; margin-left: -3%">
-        <p class="card-text-top" style="padding-right: 30%;font-size: 1.1vw;">
-          &nbsp; &nbsp; &nbsp;<b>ผ้าแจ็กการ์ดสุดหรู</b>
-            จากยุควิคตอเรียนถูกนำมารังสรรค์ให้เป็นไอเท็ม statement บนซิลูเอตที่สวมง่ายมากขึ้น เหมาะกับการ MIX & MATCH ในซีซั่นหน้า
-        </p>
-      </div>
-    </div>
-    <!--6-->
-    <!--name-->
-    <center>
-      <p class="topic" style="font-family: Chonburi; font-size: 2.5vw; color: #976f6c;">Logomania</p>
-    </center>
-    <div style="margin: 3% 6% 3% 6%; width: 100%; display: flex;">
-      <div class="w3-col" style="width: 45%; padding-left: 4%; padding-bottom: 5%">
-        <img class="card-img-top" src="assets/images/content/SPRING-SUMMER 2018/6-Trend-Logomania.jpg" width="81%" height="auto" style="text-align: center;">
-      </div>
-      <!--text card right-->
-      <div style="text-align: left; width: 65%; padding-top: 5%; margin-left: -3%">
-        <p class="card-text-top" style="padding-right: 30%;font-size: 1.1vw;">
-          &nbsp; &nbsp; &nbsp;<b>การนำเสนอโลโก้แบรนด์</b>
-            แบบโดดเด่นสะดุดตายังคงดำเนินต่อไป แถมคราวนี้ยังมีโมโนแกรมมาช่วยเสริมอีกแรง อย่าง Gucci ที่มีทีเด็ดเป็นลูกไม้โมโนแกรมสุดเปรี้ยว ขอบอกว่าสวยจนแฟชั่นนิสต้าต้องกรีดร้อง! 
-        </p>
-      </div>
-    </div>
-    <!--7-->
-    <!--name-->
-    <center>
-      <p class="topic" style="font-family: Chonburi; font-size: 2.5vw; color: #976f6c;">Modernised Metallic</p>
-    </center>
-    <div style="margin: 3% 6% 3% 6%; width: 100%; display: flex;">
-      <div class="w3-col" style="width: 45%; padding-left: 4%; padding-bottom: 5%">
-        <img class="card-img-top" src="assets/images/content/SPRING-SUMMER 2018/7-Trend-Metallic.jpg" width="81%" height="auto" style="text-align: center;">
-      </div>
-      <!--text card right-->
-      <div style="text-align: left; width: 65%; padding-top: 5%; margin-left: -3%">
-        <p class="card-text-top" style="padding-right: 30%;font-size: 1.1vw;">
-          &nbsp; &nbsp; &nbsp;<b>เพิ่มความว้าว</b>
-            ให้กับลุคด้วยไอเท็มสีเมทัลลิกที่มีตั้งแต่กางเกง เดรส และ แจ็คเก็ตที่ซิลูเอตคล่องตัว เหมาะกับสาวยุคใหม่อย่างเรา
-        </p>
-      </div>
-    </div>
-    <!--8-->
-    <!--name-->
-    <center>
-      <p class="topic" style="font-family: Chonburi; font-size: 2.5vw; color: #976f6c;">Parka Chic</p>
-    </center>
-    <div style="margin: 3% 6% 3% 6%; width: 100%; display: flex;">
-      <div class="w3-col" style="width: 45%; padding-left: 4%; padding-bottom: 5%">
-        <img class="card-img-top" src="assets/images/content/SPRING-SUMMER 2018/8-Trend-Parka.jpg" width="81%" height="auto" style="text-align: center;">
-      </div>
-      <!--text card right-->
-      <div style="text-align: left; width: 65%; padding-top: 5%; margin-left: -3%">
-        <p class="card-text-top" style="padding-right: 30%;font-size: 1.1vw;">
-          &nbsp; &nbsp; &nbsp;<b>เทรนด์ sporty luxe</b>
-            ยังคงมาแรงโดยเฉพาะเเจ็คเก็ตปาร์ก้าที่เหมาะแก่การคอมพลีตลุคเท่ ๆ ในช่วงฤดูร้อน
-        </p>
-      </div>
-    </div>
-    <!--9-->
-    <!--name-->
-    <center>
-      <p class="topic" style="font-family: Chonburi; font-size: 2.5vw; color: #976f6c;">Pastel Suit</p>
-    </center>
-    <div style="margin: 3% 6% 3% 6%; width: 100%; display: flex;">
-      <div class="w3-col" style="width: 45%; padding-left: 4%; padding-bottom: 5%">
-        <img class="card-img-top" src="assets/images/content/SPRING-SUMMER 2018/9-Trend-Pastel-suit.jpg" width="81%" height="auto" style="text-align: center;">
-      </div>
-      <!--text card right-->
-      <div style="text-align: left; width: 65%; padding-top: 5%; margin-left: -3%">
-        <p class="card-text-top" style="padding-right: 30%;font-size: 1.1vw;">
-          &nbsp; &nbsp; &nbsp;<b>ทุกอย่างดูซอฟต์เมื่อเป็นสีพาสเทล</b>
-            สูททรงมาสคิวลีนก็เช่นกัน ปีหน้าเราคงได้เห็นเหล่าแฟชั่นนิสต้าสวมสูทสีหวานเกลื่อนแฟชั่นวีคแน่นอนค่า! 
-        </p>
-      </div>
-    </div>
-    <!--10-->
-    <!--name-->
-    <center>
-      <p class="topic" style="font-family: Chonburi; font-size: 2.5vw; color: #976f6c;">Plaid Play</p>
-    </center>
-    <div style="margin: 3% 6% 3% 6%; width: 100%; display: flex;">
-      <div class="w3-col" style="width: 45%; padding-left: 4%; padding-bottom: 5%">
-        <img class="card-img-top" src="assets/images/content/SPRING-SUMMER 2018/10-Trend-Plaid.jpg" width="81%" height="auto" style="text-align: center;">
-      </div>
-      <!--text card right-->
-      <div style="text-align: left; width: 65%; padding-top: 5%; margin-left: -3%">
-        <p class="card-text-top" style="padding-right: 30%;font-size: 1.1vw;">
-          &nbsp; &nbsp; &nbsp;<b>ลายตารางสุดคลาสสิก</b>
-            ถูกแปลงโฉมให้ดูสนุกสนานและโมเดิร์นขึ้น มีทั้งรูปแบบ เทรนด์โค้ท แจ็คเก็ตและเดรสทรงต่างๆ 
-        </p>
-      </div>
-    </div>
-    <!--11-->
-    <!--name-->
-    <center>
-      <p class="topic" style="font-family: Chonburi; font-size: 2.5vw; color: #976f6c;">Plastic Fantastic</p>
-    </center>
-    <div style="margin: 3% 6% 3% 6%; width: 100%; display: flex;">
-      <div class="w3-col" style="width: 45%; padding-left: 4%; padding-bottom: 5%">
-        <img class="card-img-top" src="assets/images/content/SPRING-SUMMER 2018/11-Trend-Plastic.jpg" width="81%" height="auto" style="text-align: center;">
-      </div>
-      <!--text card right-->
-      <div style="text-align: left; width: 65%; padding-top: 5%; margin-left: -3%">
-        <p class="card-text-top" style="padding-right: 30%;font-size: 1.1vw;">
-          &nbsp; &nbsp; &nbsp;<b>ซีซั่นนี้</b>
-            วัสดุทนทานอย่างพลาสติกก็มาแรงไม่แพ้ใคร ใจจริง ๆ อยากให้มีไอเท็มกันฝนชิค ๆ วางจำหน่ายตอนนี้เลยเพราะมันช่างเหมาะกับอากาศอึมครึมช่วงนี้มากเลยค่าสาว ๆ 
-        </p>
-      </div>
-    </div>
-    <!--12-->
-    <!--name-->
-    <center>
-      <p class="topic" style="font-family: Chonburi; font-size: 2.5vw; color: #976f6c;">Reconstructed Polo</p>
-    </center>
-    <div style="margin: 3% 6% 3% 6%; width: 100%; display: flex;">
-      <div class="w3-col" style="width: 45%; padding-left: 4%; padding-bottom: 5%">
-        <img class="card-img-top" src="assets/images/content/SPRING-SUMMER 2018/12-Trend-Polo.jpg" width="81%" height="auto" style="text-align: center;">
-      </div>
-      <!--text card right-->
-      <div style="text-align: left; width: 65%; padding-top: 5%; margin-left: -3%">
-        <p class="card-text-top" style="padding-right: 30%;font-size: 1.1vw;">
-          &nbsp; &nbsp; &nbsp;<b>เสื้อโปโลตัวเก่าของคุณพ่อ</b>
-            ถูกนำมาปัดฝุ่นและปรับเปลี่ยนรูปทรงให้ดูเก๋และเพิ่มลูกเล่นด้วยการใช้สีสันที่ตัดกัน ดูแนวสุด ๆ ไปเลยค่า!
-        </p>
-      </div>
-    </div>
-    <!--13-->
-    <!--name-->
-    <center>
-      <p class="topic" style="font-family: Chonburi; font-size: 2.5vw; color: #976f6c;">Sheer factor</p>
-    </center>
-    <div style="margin: 3% 6% 3% 6%; width: 100%; display: flex;">
-      <div class="w3-col" style="width: 45%; padding-left: 4%; padding-bottom: 5%">
-        <img class="card-img-top" src="assets/images/content/SPRING-SUMMER 2018/13-Trend-Sheer-factor.jpg" width="81%" height="auto" style="text-align: center;">
-      </div>
-      <!--text card right-->
-      <div style="text-align: left; width: 65%; padding-top: 5%; margin-left: -3%">
-        <p class="card-text-top" style="padding-right: 30%;font-size: 1.1vw;">
-          &nbsp; &nbsp; &nbsp;<b>เสื้อผ้าซีทรูและฤดูร้อนถือเป็นของคู่กัน</b>
-            แต่ซีซั่นนี้โดดเด่นด้วยการเลเยอร์ชิ้นซีทรูลายซ้อนลายทำให้ Total Look ดูเฟรชมากขึ้น โมเดิร์นกันไปเลย!
-        </p>
-      </div>
-    </div>
-    <!--14-->
-    <!--name-->
-    <center>
-      <p class="topic" style="font-family: Chonburi; font-size: 2.5vw; color: #976f6c;">New Gen of Slip Dress</p>
-    </center>
-    <div style="margin: 3% 6% 3% 6%; width: 100%; display: flex;">
-      <div class="w3-col" style="width: 45%; padding-left: 4%; padding-bottom: 5%">
-        <img class="card-img-top" src="assets/images/content/SPRING-SUMMER 2018/14-Trend-Slip-Dress.jpg" width="81%" height="auto" style="text-align: center;">
-      </div>
-      <!--text card right-->
-      <div style="text-align: left; width: 65%; padding-top: 5%; margin-left: -3%">
-        <p class="card-text-top" style="padding-right: 30%;font-size: 1.1vw;">
-          &nbsp; &nbsp; &nbsp;<b>ไอเท็มคลาสสิก</b>
-            อย่างสลิปเดรสถูกแต่งแต้มด้วยเลื่อมและคริสตัลวิบวับให้ดูหรูหรายิ่งกว่าเดิม บอกได้คำเดียวว่าปัง! 
-        </p>
-      </div>
-    </div>
-    <!--15-->
-    <!--name-->
-    <center>
-      <p class="topic" style="font-family: Chonburi; font-size: 2.5vw; color: #976f6c;">Trench Coat Galore</p>
-    </center>
-    <div style="margin: 3% 6% 3% 6%; width: 100%; display: flex;">
-      <div class="w3-col" style="width: 45%; padding-left: 4%; padding-bottom: 5%">
-        <img class="card-img-top" src="assets/images/content/SPRING-SUMMER 2018/15-Trend-Trench-coat.jpg" width="81%" height="auto" style="text-align: center;">
-      </div>
-      <!--text card right-->
-      <div style="text-align: left; width: 65%; padding-top: 5%; margin-left: -3%">
-        <p class="card-text-top" style="padding-right: 30%;font-size: 1.1vw;">
-          &nbsp; &nbsp; &nbsp;<b>ณ จุด ๆ นี้เราขอมอบมง</b>
-            ให้เทรนด์โค้ทเป็นไอเท็มประจำฤดูกาลไปเลย เพราะนอกจากจากเห็น  เทรนด์โค้ทอยู่บนทุกรันเวย์แล้ว ทุกคนยังดีไซน์ไอเท็มชิ้นนี้ให้ดูแตกต่างและน่าสนใจตามแบบฉบับของแต่ละแบรนด์อีกด้วย 
-        </p>
-      </div>
-    </div>
- 
-  <!--text-->
-    <center>
-      <div style="width: 80%; text-align: left; margin-bottom: 5%; margin-top: -4%">
-          <p class="card-text" style="padding-left: 5%;padding-right: 4%;font-size: 1.1vw">
-            &nbsp; &nbsp;&nbsp;จบกันไปแล้วนะคะสำหรับ <font style="font-family: Chonburi;color: #bf8f00">
-            Fashion Week Spring/Summer 2018
-            </font> บอกได้คำเดียวว่าแฟชั่นเซ็ตนี้ สาวยุค 4.0 อย่างเราต้องห้ามพลาดที่จะ<br>
-            MIX & MATCH เสื้อผ้าให้ดูสุดเก๋ สุดปังก่อนใคร <br>
-            &nbsp; &nbsp;&nbsp;ถ้าหากสาว ๆ ยังสนุกกับแฟชั่นเทรนด์นี้อยากจะลอง MIX & MATCH ชุดในแบบของตัวเอง ก็อย่าลืมแวะเวียนมาลองแมทช์ชุดกับเรา <font style="font-family: Chonburi;color: #976f6c">
-            LOOQ&STYLE</font> นะคะ
-          </p>
-      </div>
-    </center>
-  </div>
 
+    <!--text-->
+    <p class="card-text" style="padding-left: 10%;font-size: 1.1vw; padding-bottom: 0.5%">
+          รายละเอียดชุดใหม่ที่เพิ่มใน
+      <font style="font-family: Chonburi;color: #976f6c">
+            LOOQ&STYLE
+      </font> ประจำช่วงเดือน ก.ย. – ธ.ค.
+    </p>
+
+  <!--TOPS-->
+    <p class="topic card-text" style="font-family: Chonburi; padding-left: 6%; font-size: 1.3vw; color: #976f6c; margin-bottom: -1.5%">
+      <u>TOPS</u>
+    </p>
+    <div class="w3-content" style="max-width:1200px;" >
+      <div class="w3-row-padding w3-center w3-margin-top" style="font-size: 14px;">
+          <div class="w3-quarter">
+            <figure class="image is-1by2"></figure>
+            <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+              <img src="assets/images/content/spring/c1.png" alt="image-1" style="height: 250px">
+              <p><a href="https://www.pradithofficial.com/p/310-lavender-top/" target="_blank">LAVENDER TOP</a></p>
+              <p>Brand : Pradith</p> 
+              <big>2,500 ฿</big>
+              <br><br><br>
+            </div><br>
+          </div>
+
+          <div class="w3-quarter">
+            <figure class="image is-1by2"></figure>
+            <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+              <img src="assets/images/content/spring/c2.jpg" alt="image-1" style="height: 250px">
+              <p><a href="https://milin.com/shop/taylor-top/" target="_blank">TAYLOR TOP</a></p>
+              <p>Brand : Milin</p> 
+              <big>1,370 ฿</big>
+              <br><br><br>
+            </div><br>
+          </div>
+
+          <div class="w3-quarter">
+            <figure class="image is-1by2"></figure>
+            <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+              <img src="assets/images/content/spring/c3.png" alt="image-1" style="height: 250px">
+              <p><a href="https://www.pomelofashion.com/th/en/tops/14763-preeya-choker-collar-tank-top.html" target="_blank">Preeya Choker Collar Tank Top</a></p>
+              <p>Brand : Pomelo</p> 
+              <big>790 ฿</big>
+              <br><br><br>
+            </div><br>
+          </div>
+
+          <div class="w3-quarter">
+            <figure class="image is-1by2"></figure>
+            <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+              <img src="assets/images/content/spring/c4.png" alt="image-1" style="height: 250px">
+              <p><a href="https://www.pomelofashion.com/th/en/tops/14438-mai-one-shoulder-ruffle-top---red.html" target="_blank">Mai One Shoulder Ruffle Top - Red</a></p>
+              <p>Brand : Pomelo</p> 
+              <big>693 ฿</big>
+              <br><br><br>
+            </div><br>
+          </div>
+      </div>
+    </div>
+  
+
+<!--BOTTOMS -->
+  <p class="topic card-text" style="font-family: Chonburi; padding-left: 6%; font-size: 1.3vw; color: #976f6c; margin-bottom: -1.5%">
+      <u>BOTTOMS</u>
+    </p>
+    <div class="w3-content" style="max-width:1200px;" >
+      <div class="w3-row-padding w3-center w3-margin-top" style="font-size: 14px;">
+          <div class="w3-quarter">
+            <figure class="image is-1by2"></figure>
+            <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+              <img src="assets/images/content/spring/c5.jpg" alt="image-1" style="height: 250px">
+              <p><a href="https://www.pradithofficial.com/p/314-lavender-mini-skirt/" target="_blank">LAVENDER MINI SKIRT</a></p>
+              <p>Brand : Pradith</p> 
+              <big>2,500 ฿</big>
+              <br><br><br>
+            </div><br>
+          </div>
+
+          <div class="w3-quarter">
+            <figure class="image is-1by2"></figure>
+            <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+              <img src="assets/images/content/spring/c6.jpg" alt="image-1" style="height: 250px">
+              <p><a href="https://milin.com/shop/tundra-shorts/" target="_blank">TUNDRA SHORTS</a></p>
+              <p>Brand : Milin</p> 
+              <big>3,425 ฿</big>
+              <br><br><br>
+            </div><br>
+          </div>
+      </div>
+    </div>
+
+  <!--DRESS-->
+    <p class="topic card-text" style="font-family: Chonburi; padding-left: 6%; font-size: 1.3vw; color: #976f6c; margin-bottom: -1.5%">
+      <u>DRESS</u>
+    </p>
+    <div class="w3-content" style="max-width:1200px;" >
+      <div class="w3-row-padding w3-center w3-margin-top" style="font-size: 14px;">
+          <div class="w3-quarter">
+            <figure class="image is-1by2"></figure>
+            <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+              <img src="assets/images/content/spring/c7.png" alt="image-1" style="height: 250px">
+              <p><a href="http://shop.asavagroup.com/product/aad-326" target="_blank">AT THE BALLET aad-326</a></p>
+              <p>Brand : Asava</p> 
+              <big>9,292 ฿</big>
+              <br><br><br>
+            </div><br>
+          </div>
+      </div>
+    </div>
+
+  <!--SHOES-->
+    <p class="topic card-text" style="font-family: Chonburi; padding-left: 6%; font-size: 1.3vw; color: #976f6c; margin-bottom: -1.5%">
+      <u>SHOES</u>
+    </p>
+    <div class="w3-content" style="max-width:1200px;" >
+      <div class="w3-row-padding w3-center w3-margin-top" style="font-size: 14px;">
+          <div class="w3-quarter">
+            <figure class="image is-1by2"></figure>
+            <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+              <img src="assets/images/content/spring/c8.png" alt="image-1" style="height: 250px">
+              <p><a href="https://www.pomelofashion.com/th/en/shoes/15540-be-mine-high-heels.html" target="_blank">Be Mine High Heels</a></p>
+              <p>Brand : Pomelo</p> 
+              <big>2,290 ฿</big>
+              <br><br><br>
+            </div><br>
+          </div>
+
+          <div class="w3-quarter">
+            <figure class="image is-1by2"></figure>
+            <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+              <img src="assets/images/content/spring/c9.jpg" alt="image-1" style="height: 250px">
+              <p><a href="https://www.pomelofashion.com/th/en/shoes/15551-serenity-high-heels---beige.html" target="_blank">Serenity High Heels - Beige</a></p>
+              <p>Brand : Pomelo</p> 
+              <big>2,790 ฿</big>
+              <br><br><br>
+            </div><br>
+          </div>
+      </div>
+    </div>
+
+  <!--BAGS-->
+    <p class="topic card-text" style="font-family: Chonburi; padding-left: 6%; font-size: 1.3vw; color: #976f6c; margin-bottom: -1.5%">
+      <u>BAGS</u>
+    </p>
+    <div class="w3-content" style="max-width:1200px;" >
+      <div class="w3-row-padding w3-center w3-margin-top" style="font-size: 14px;">
+          <div class="w3-quarter">
+            <figure class="image is-1by2"></figure>
+            <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+              <img src="assets/images/content/spring/c10.jpg" alt="image-1" style="height: 250px">
+              <p><a href="https://www.oandb.store/grace-clutch-bag-in-yellow-mustard.html" target="_blank" target="_blank">GRACE CLUTCH BAG <br>IN YELLOW MUSTARD</a></p>
+              <p>Brand : O&B</p> 
+              <big>1,701 ฿</big>
+              <br><br>
+            </div><br>
+          </div>
+
+          <div class="w3-quarter">
+            <figure class="image is-1by2"></figure>
+            <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+              <img src="assets/images/content/spring/c11.jpg" alt="image-1" style="height: 250px">
+              <p><a href="https://www.oandb.store/all-bags/grace-clutch-bag-in-french-blue.html" target="_blank">GRACE CLUTCH BAG <br>IN FRENCH BLUE</a><br></p>
+              <p>Brand : O&B</p> 
+              <big>1,701 ฿</big>
+              <br><br>
+            </div><br>
+          </div>
+      </div>
+    </div>
+    <br>
+  </div>
+    
 <!-- Footer -->
 <footer class="w3-container w3-padding-16" style="background-color: #f5f5f5;color: grey;font-size: 11px;padding-left: 30px">
         <div class="w3-row">
@@ -479,7 +371,7 @@
             </div>
         </div>
 </footer>
-</div>
+    </div>
 </div>
 <!-- /container -->
             
