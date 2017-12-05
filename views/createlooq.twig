@@ -1,4 +1,4 @@
-{% extends 'layout/base.twig' %}
+{% extends 'layout/baseanimate.twig' %}
 
 {% block title %} <title>Album</title> {% endblock %}
 
@@ -6,7 +6,7 @@
 
 {% block style %}
 
-	<style>
+  <style>
         .model { position: relative; }
         .model .skin {
           position: absolute;
@@ -217,7 +217,7 @@
 
       function showPage() {
         document.getElementById("loader").style.display = "none";
-        document.getElementById("Contentt").style.display = "block";
+        document.getElementById("Content").style.display = "block";
       }
     </script>
 
