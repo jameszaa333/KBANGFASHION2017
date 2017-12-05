@@ -28,6 +28,8 @@ const newcollectionController = require('./controllers/newcollection.controller'
 const customercareController = require('./controllers/customercare.controller')
 const myaccountController = require('./controllers/myaccount.controller')
 const albumsController = require('./controllers/albums.controller')
+const albumsindexController = require('./controllers/albumsindex.controller')
+const indexController = require('./controllers/index.controller')
 
 
 app.get('/', homeController.index)
@@ -52,7 +54,9 @@ app.get('/spring-summer-2018', springsummerController.index)
 app.get('/new-collection', newcollectionController.index)
 app.get('/customer-care', customercareController.index)
 app.get('/my-account', myaccountController.index)
-app.get('/albums-index', albumsController.index)
+app.get('/albums', albumsController.index)
+app.get('/albums-index', albumsindexController.index)
+app.get('/index', indexController.index)
 
 
 

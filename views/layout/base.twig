@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chonburi">
-	<script src="js/modernizr.custom.js"></script>
 	
     {% block stylesheet %} {% endblock %}
 </head>
@@ -24,14 +23,14 @@
 	<style>
           a:link {
             text-decoration:none;
-          	color: #f09488 !important;
+          	color: #f09488;
             -webkit-transition: all 0.5s ease;
             -moz-transition: all 0.5s ease;
             -o-transition: all 0.5s ease;
           }
           a:hover {
             text-decoration:none;
-          	color: #ed7263 !important;
+          	color: #ed7263;
             -webkit-transition: all 0.5s ease;
             -moz-transition: all 0.5s ease;
             -o-transition: all 0.5s ease;
@@ -63,12 +62,15 @@
 
 	{% block style %} {% endblock %}
 
+	<div id="ip-container" class="ip-container">
+
+	{% block content1 %} {% endblock %}
+
 	<!--  Animation ที่คลิกตู้เสื้อผ้า  -->
     <nav class="w3-sidebar w3-bar-block animated slideInLeft w3-center" style="display: none;z-index: 8;background-color: #f1f1f1" id="mySidebar3"></nav>
     <nav class="w3-sidebar w3-bar-block animated slideInRight w3-center" style="display: none;z-index: 8;right: 0;background-color: #f1f1f1" id="mySidebar4"></nav>
 	<!--  Animation ที่คลิกตู้เสื้อผ้า  -->
-
-	<div id="ip-container" class="ip-container">
+	
 	<!-- initial header -->         
 	<!-- main content -->
 	<div id="loader"></div>
@@ -99,7 +101,7 @@
 	        </div>
 	    </div>
 
-	    <div style="width: 50%;height: 34px;text-align: center;"><a href="index.html" onclick="myFunction2()" class="w3-xlarge w3-transparent"><img style="height: auto;width: 35%;min-height: 25px;min-width: 175px;max-width: 232px" src="assets/images/home/Logo2.png"></a></div>
+	    <div style="width: 50%;height: 34px;text-align: center;"><a href="index" onclick="myFunction2()" class="w3-xlarge w3-transparent"><img style="height: auto;width: 35%;min-height: 25px;min-width: 175px;max-width: 232px" src="assets/images/home/Logo2.png"></a></div>
 	    <div style="width: 25%;height: 30px;text-align: right">
 	        <div class="w3-dropdown-hover w3-transparent" >
 	          <img style="width: 15px;height: 15PX;" src="assets/images/home/arrowdown.png"> 
@@ -171,7 +173,7 @@
 	        </div>
 	    </div>
 
-	{% block content %} {% endblock %}
+	{% block content2 %} {% endblock %}
 
 	<footer class="w3-container w3-padding-16" style="background-color: #f5f5f5;color: grey;font-size: 11px;padding-left: 30px">
 	    <div class="w3-row">
