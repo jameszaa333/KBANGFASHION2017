@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chonburi">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bulma.css">
 	</head>
   
     <style>
@@ -301,6 +301,7 @@ CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT
     </div>
 		<div class="w3-hide-small" style="background-color: transparent;width: 100%;height: 500px;" ></div>
 		<div class="w3-hide-large w3-hide-medium" style="background-color: transparent;width: 100%;height: 250px;" ></div> -->
+<!--
 <div class="w3-hide-small" style="width: 100%;height: 500px;background-color: gray;padding-top: 100px;background-image: url(assets/images/home/head1.png);position: fixed;z-index: -1"></div>
     
     <div class="w3-hide-large w3-hide-medium" style="width: 100%;height: 250px;background-color: gray;padding-top: 100px;background-image: url(assets/images/home/head1mobile.png);position: fixed;z-index: -1;text-align: center">
@@ -308,19 +309,19 @@ CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT
     
     <div class="w3-hide-small" style="background-color: transparent;width: 100%;height: 500px;" ></div>
 <div class="w3-hide-large w3-hide-medium" style="background-color: transparent;width: 100%;height: 250px;" ></div>  
+-->
     
 
     <div style="background-color: transparent"></div>
 <div style="background-color: #f0f0f0;width: 100%;height: 100%">
-<!--        <div class="w3-content"  style="max-width:1200px; padding-top: 70px;" >-->
-<div id="jssor_1" style="position:relative;margin:0 auto;top:100px;left:0px;width:1600.5px;height:850px;visibility:hidden;">
+<div id="jssor_1" style="position:relative;margin:0 auto;top:100px;left:0px;width:1600.5px;height:500px;visibility:hidden;">
 		<!-- Loading Screen -->
 	<div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
 				<img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="assets/images/Carousel/spin.svg" />
 	</div>
-	<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1600.5px;height:850px;overflow:hidden;">
+	<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1600.5px;height:500px;overflow:hidden;">
 		<div>
-				<a href="#"><img data-u="image" src="assets/images/content/thumbnail/tn4.png" /></a>
+				<a href="#"><img data-u="image" src="assets/images/home/head1.png" /></a>
 		</div>
 		<div>
 				<a href="/content-1.html"><img data-u="image" src="assets/images/content/thumbnail/tn2.png" /></a>
@@ -356,8 +357,8 @@ CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT
 
 
 
-<div style="width: 100%;height: auto;margin-top: 150px; display: flex;margin-right: 10%;margin-left: 10%;">
-	<p style="margin-left: 60px;font-family: Chonburi;font-size: 30px"><a style="color: #424242">LOOQ</a> / <a href="/albumindex.html" style="color: gray">Albums </a> </p>
+<div style="width: 100%;height: auto;margin-top: 150px; display: flex;margin-right: 10%;">
+	<p style="margin-left: 15px;font-family: Chonburi;font-size: 30px"><a style="color: #424242">LOOQ</a> / <a href="/albumindex.html" style="color: gray">Albums </a> </p>
 	<div class="dropdown is-right is-hoverable" style="padding-left: 5px; padding-top: 6px; height:auto; width: auto;margin-left: 750PX">
 		<!-- <div class="dropdown-trigger" style="padding-top: .5rem;">
 				<button class="button is-danger" aria-haspopup="true" aria-controls="dropdown-menu2" style="background-color: white;color: darkgray;width: 140px">
@@ -378,7 +379,7 @@ CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT
 </div>
 
 <!-- #endregion Jssor Slider End -->
-<div class="w3-row-padding" style="margin-top: 5%;margin-left: 10%;margin-right: 10%;">
+<div class="w3-row-padding" style="margin-top: 5%;">
     <div class="w3-quarter" style="padding-bottom: 20px;">
       <div class="w3-card-4 container w3-quarter" style="width:100%;">
         <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
@@ -593,9 +594,9 @@ CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT
             </div>
         </div>
 </footer>
-<!--    </div>-->
     </div>
-</div>
+    </div>
+
 <!-- /container -->
 
 <script src="js/classie.js"></script>
@@ -657,7 +658,7 @@ jQuery(document).ready(function ($) {
 
 		/*#region responsive code begin*/
 
-		var MAX_WIDTH = 1144.5;
+		var MAX_WIDTH = 1644.5;
 
 		function ScaleSlider() {
 				var containerElement = jssor_1_slider.$Elmt.parentNode;
