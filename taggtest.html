@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>LOOQ & STYLE</title>
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+
+		<script src="js/modernizr.custom.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/w3.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+        <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chonburi">
+
+	</head>
+
+  <style>
+/*
+      .headerr .scrolled {
+          background-image: url(assets/images/home/nav-tab.png)!important;
+      }
+*/
+      .image { 
+        position: relative; 
+        width: 100%; /* for IE 6 */
+        height:100%;
+      }
+      h2 {
+        position: absolute;
+        top: 35%;
+        left: 0;
+        width: 100%
+      }
+      .topic {
+        filter: alpha(opacity=100);
+        opacity:1.0;
+        -webkit-transition:0.7s;
+        -moz-transition:0.7s;
+        -o-transition:0.7s;
+      }
+      .topic:hover {
+          filter: alpha(opacity=70);
+          opacity:.8;
+          cursor: text;
+      }
+      .w3-content a {
+        color: #e3a49c;
+      }
+      .w3-content a:hover {
+        color: #f8b2a9;
+      }
+      .w3-hover-gray {
+        -webkit-transition:0.7s;
+        -moz-transition:0.7s;
+        -o-transition:0.7s;
+
+        -webkit-filter: grayscale(1);
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        filter: url(desaturate.svg#greyscale);
+        filter: gray;
+        filter: grayscale(70%);
+      }
+      .w3-hover-gray:hover {
+        -webkit-filter: grayscale(0);
+        -webkit-filter: grayscale(0);
+        -moz-filter: grayscale(0);
+        filter: none;
+        filter: grayscale(0);
+      }
+  </style>
+
+<body class="demo-1" onload="" style="color:black;background-color: transparent">
+<div id="ip-container" class="ip-container">
+<!-- initial header -->
+
+<!-- main content -->
+<div id="loader"></div>
+<div class="w3-animate-top" id="Contentt">
+
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-card animated slideInLeft w3-center" style="display:none;z-index: 7" id="mySidebar">
+<img style="width: 25%;height: auto;min-width: 200px;margin-bottom: 30px;margin-top: 100px" src="assets/images/home/Logo4.png">
+<a href="model.html" class="w3-bar-item w3-button w3-hide-large w3-hide-medium w3-hover-red" style="font-size: ;color: lightgrey;font-family: Chonburi">Create LOOQ <img src="assets/images/home/closet3.png" style="width: 32px;height: 29px;"> </a>
+<a href="#" class="w3-bar-item w3-button w3-hover-red" style="font-size: ;color: lightgrey">LOOQ</a>
+<a href="#" class="w3-bar-item w3-button w3-hover-red" style="font-size: ;color: lightgrey">Album</a>
+<a href="#" class="w3-bar-item w3-button w3-hover-red" style="font-size: ;color: lightgrey">Clothes</a>
+<a href="#" class="w3-bar-item w3-button w3-hover-red" style="font-size: ;color: lightgrey">Contact Us</a>
+<button class="w3-bar-item w3-button" onclick="w3_close()" style="margin-top: 30px;color: #d7b3af">Close <i class="fa fa-remove"></i></button>
+</nav>
+
+<!-- Header -->
+<header class="headerr w3-container w3-padding" style="background-image: url();background-repeat: no-repeat;background-size: 100% 100%;position: fixed;z-index: 5;width: 100%;display: flex;background-color: #e7c6c2;top:0">
+<div style="width: 25%;height: 30px">
+<a href="#" onclick="w3_open()" class="fa fa-bars w3-xlarge w3-transparent" style="margin-left: 8px;margin-right: 6px;text-decoration: none;color: white!important"></a>
+<div class="w3-dropdown-hover w3-transparent"><a class="w3-hide-small" href="model.html"><img class="fa w3-xlarge w3-transparent" src="assets/images/home/closet1.png" style="width: 32px;height: 29px;margin-top: 2px;" onmouseover="this.src='assets/images/home/closet4.png';"
+        onmouseout="this.src='assets/images/home/closet1.png';"></a>
+    <div class="w3-dropdown-content w3-bar-block w3-border jshadow w3-animate-opacity" style="width:250px">
+  <div class="w3-container">
+    <p>Create a Looq, Submit your Looq now!</p>
+  </div>
+</div>
+  </div>
+          </div>
+  <div style="width: 50%;height: 34px;text-align: center;"><a href="index.html" onclick="myFunction2()" class="w3-xlarge w3-transparent"><img style="height: auto;width: 35%;min-height: 25px;min-width: 175px" src="assets/images/home/Logo2.png"></a></div>
+  <div style="width: 25%;height: 30px;text-align: right">
+    <div class="w3-dropdown-hover w3-transparent" >
+      <img style="width: 15px;height: 15PX;" src="assets/images/home/arrowdown.png">
+  <div class="w3-dropdown-content w3-bar-block w3-border jshadow" style="right:0;margin-top: 0px;color: gray">
+    <a href="#" class="w3-bar-item w3-button" onclick="document.getElementById('id01').style.display='block'"><i class="material-icons">person</i>   Login</a>
+    <a href="#" class="w3-bar-item w3-button" onclick="document.getElementById('id02').style.display='block'"><i class="material-icons">person</i>   Register</a>
+  </div>
+</div>
+
+  </div>
+</header>
+
+<!--LOG-IN MODAL    -->
+    <div id="id01" class="w3-modal">
+      <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:500px; background-image: url(assets/images/home/BG.png); background-size: 100% 100%">
+      <div class="w3-card-4">
+        <div class="w3-container w3-block w3-theme-l3 w3-xxlarge w3-card" style="background-image: url(assets/images/home/nav-tab.png); background-size: 100% 100%">
+          <h1 style="font-family: Chonburi; font-size: 2rem;">Log in</h1>
+        </div>
+
+        <div class="w3-center">
+          <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close">×</span>
+        </div>
+
+        <form class="w3-container" action="/action_page.php">
+          <div class="w3-section">
+            <label><b>Username</b></label>
+            <input class="w3-input w3-border w3-margin-bottom w3-round" type="text" placeholder="Enter Username" name="usename" required>
+              <label><b>Password</b></label>
+            <input class="w3-input w3-border w3-round" type="text" placeholder="Enter Password" name="psw" required>
+            <span class="w3-left w3-padding w3-large"><a href="#" style="font-size: 12px">Help! I forgot my password </a></span>
+          </div>
+          <button class="w3-button w3-block w3-section w3-padding w3-round" type="submit" style="background-color: #976f6c;color: white">Login</button>
+
+          <div class="w3-center">
+            <label>or just</label>
+          </div>
+
+          <button class="w3-button w3-block w3-indigo w3-section w3-padding w3-round" type="submit">Login with Facebook</button>
+          <span class="w3-modal-content w3-padding w3-transparent style="font-size: 10px>Don't have an account? <a href="#" style="color: #976f6c" onclick="document.getElementById('id01').style.display='none';document.getElementById('id02').style.display='block'">Sign up</a></span>
+        </form>
+        <br>
+      </div>
+      </div>
+    </div>
+<!--LOG-IN MODAL-->
+    <div id="id02" class="w3-modal">
+      <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:500px; background-image: url(assets/images/home/BG.png); background-size: 100% 100%">
+      <div class="w3-card-4">
+        <div class="w3-container w3-block w3-theme-l3 w3-xxlarge w3-card" style="background-image: url(assets/images/home/nav-tab.png); background-size: 100% 100%">
+          <h1 style="font-family: Chonburi; font-size: 2rem;">Register</h1>
+        </div>
+
+        <div class="w3-center">
+          <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close">×</span>
+        </div>
+
+        <form class="w3-container" action="/action_page.php">
+          <div class="w3-section">
+            <label><b>Username</b></label>
+            <input class="w3-input w3-border w3-round w3-margin-bottom" type="text" placeholder="Enter Username" name="usename" required>
+              <label><b>Password</b></label>
+            <input class="w3-input w3-border w3-round w3-margin-bottom" type="text" placeholder="Enter Password" name="psw" required>
+              <label><b>Confirm Password</b></label>
+            <input class="w3-input w3-border w3-round w3-margin-bottom" type="text" placeholder="Confirm Password" name="conpsw" required>
+              <label><b>Email</b></label>
+            <input class="w3-input w3-border w3-round w3-margin-bottom" type="text" placeholder="Email" name="mail" required>
+              <label><b>Confirm Email</b></label>
+            <input class="w3-input w3-border w3-round" style="margin-top: 14px" type="text" placeholder="Confirm Email" name="conmail" required>
+
+            <span class="w3-left w3-padding w3-large"><a href="#" style="font-size: 12px"> </a></span>
+          </div>
+          <button class="w3-button w3-block w3-section w3-padding w3-round" type="submit" style="background-color: #976f6c;color: white">Register</button>
+
+          <div class="">
+            <label style="color:black;font-size:13px">By clicking on 'Sign Up' above, you confirm that you accept the <a href="termsofuse.html" target="_blank" style="color: #976f6c"> Terms of Use</a></label>
+          </div>
+        </form>
+        <br>
+      </div>
+      </div>
+    </div>
+
+<body>
+<main>
+<style>
+html {
+background: url(/assets/images/home/BG.png) no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+body {color: #000000;} /*
+a:link {color: #f09488;} /*สีลิงค์ทั้งหมดในเว็บ*/
+a:hover {color: #ed7263;} /*สีลิงค์เวลาเอาเม้าท์ไปชี้ทั้งหมดในเว็บ*/
+
+.image {
+   position: relative;
+   width: 100%; /* for IE 6 */
+}
+
+h2 {
+   position: absolute;
+   top: 150px;
+   left: 0;
+   width: 100%;
+}
+
+</style>
+<body style="padding:0px; margin:0px;font-family:arial,helvetica,sans-serif,verdana,'Open Sans'">
+
+    <!-- #region Jssor Slider Begin -->
+    <!-- Generator: Jssor Slider Maker -->
+    <!-- Source: https://www.jssor.com -->
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="js/jssor.slider-26.5.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:800,$Opacity:2}
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $Align: 0,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 1644.5;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        });
+    </script>
+    <style>
+        /* jssor slider loading skin spin css */
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+
+        .jssorb051 .i {position:absolute;cursor:pointer;}
+        .jssorb051 .i .b {fill:#fff;fill-opacity:0.5;}
+        .jssorb051 .i:hover .b {fill-opacity:.7;}
+        .jssorb051 .iav .b {fill-opacity: 1;}
+        .jssorb051 .i.idn {opacity:.3;}
+
+        .jssora051 {display:block;position:absolute;cursor:pointer;}
+        .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+        .jssora051:hover {opacity:.8;}
+        .jssora051.jssora051dn {opacity:.5;}
+        .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+
+            .button.is-danger.is-active {
+              -webkit-box-shadow: 0 0 0 0.125em rgba(160, 112, 112, 0.8);
+              box-shadow: 0 0 0 0.125em rgba(160, 112, 112, 0.8);
+              }
+    </style>
+
+
+		<div style="background-color: transparent"></div>
+<div style="background-color: #f0f0f0;width: 100%;height: 100%">
+<div id="jssor_1" style="position:relative;margin:0 auto;top:49px;left:0px;width:1600.5px;height:500px;visibility:hidden;">
+		<!-- Loading Screen -->
+	<div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+				<img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="assets/images/Carousel/spin.svg" />
+	</div>
+	<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1600.5px;height:500px;overflow:hidden;">
+		<div>
+				<a href="#"><img data-u="image" src="assets/images/home/car1.png" /></a>
+		</div>
+		<div>
+				<a href="/content-1.html"><img data-u="image" src="assets/images/home/car2.png" /></a>
+		</div>
+		<div>
+				<a href="/content-1.html"><img data-u="image" src="assets/images/home/car3.png" /></a>
+		</div>
+		<div>
+				<a href="/content-1.html"><img data-u="image" src="assets/images/home/car4.png" /></a>
+		</div>
+	</div>
+	<div data-u="navigator" class="jssorb051" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+		<div data-u="prototype" class="i" style="width:16px;height:16px;">
+				<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+					<circle class="b" cx="8000" cy="8000" r="5800"></circle>
+				</svg>
+		</div>
+	</div>
+
+	<!-- Arrow Navigator -->
+	<div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+			<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+				<polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+			</svg>
+	</div>
+	<div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+			<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+					<polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+			</svg>
+	</div>
+</div>
+
+    <div style="width: 100%;height: auto;margin-top: 150px; display: flex">
+        <p style="margin-left: 60px;font-family: Chonburi;font-size: 30px"><a href="/index3.html" style="color: gray" >LOOQ</a> / <a href="/taggtest.html" style="color: #424242">Albums </a> </p>
+
+               <!-- <div class="dropdown is-right is-hoverable" style="padding-left: 5px; padding-top: 6px; height:auto; width: auto;margin-left: 750PX">
+         <div class="dropdown-trigger" style="padding-top: .5rem;">
+            <button class="button is-danger" aria-haspopup="true" aria-controls="dropdown-menu2" style="background-color: white;color: darkgray;width: 140px">
+           <span>Most Popular</span>
+           <span class="icon is-small">
+             <i class="fa fa-angle-down" aria-hidden="true"></i>
+           </span>
+             </button>
+         </div>
+         <div class="dropdown-menu" id="dropdown-menu2" role="menu">
+           <div class="dropdown-content">
+             <a href="#" class="dropdown-item">Latest</a>
+             <hr style="margin: 0">
+             <a href="#" class="dropdown-item">We picked</a>
+
+           </div>
+         </div>
+       </div> -->
+
+</div>
+
+
+    <!-- #endregion Jssor Slider End -->
+    <div class="container"  style=" margin-bottom: 130px;top:50px;" > <!--ต้องปรับเพิ่มbottomเพื่อเพิ่มระยะห่างระหว่างกรอบกับฟูดเตอร์-->
+
+      <!--tag-->
+      <div class="w3-row-padding w3-center w3-margin-top" style="padding: 0 7% 0 7%">
+      <!--1-->
+        <div class="w3-third" style="padding-left: 2%;padding-right: 2%; margin-bottom: 2%">
+          <figure class="image is-1by2"></figure>
+            <div class="w3-card-2 w3-padding-top " style="width: 100%;background-color: #976f6c;">
+              <a href="#">
+                <div class="image">
+                  <img src="/assets/images/tag/sum11.png" alt="image-1" style="width: 100%;" class="w3-grayscale-max w3-hover-gray" style="width:100%"> 
+                  <h2 style="font-family: Chonburi;color: #ffffff;">#SUMMER</h2>
+                </div>
+              </a>
+            </div>
+        </div>
+        <!--2-->
+        <div class="w3-third" style="padding-left: 2%;padding-right: 2%;margin-bottom: 2%">
+          <figure class="image is-1by2"></figure>
+            <div class="w3-card-2 w3-padding-top " style="width: 100%;background-color: #976f6c;">
+              <a href="#">
+                <div class="image">
+                  <img src="/assets/images/tag/sum22.png" alt="image-1" style="width: 100%;" class="w3-grayscale-max w3-hover-gray" style="width:100%"> 
+                  <h2 style="font-family: Chonburi;color: #ffffff;">#WINTER</h2>
+                </div>
+              </a>
+            </div>
+        </div>
+        <!--3-->
+        <div class="w3-third" style="padding-left: 2%;padding-right: 2%;margin-bottom: 2%">
+          <figure class="image is-1by2"></figure>
+            <div class="w3-card-2 w3-padding-top " style="width: 100%;background-color: #976f6c;">
+              <a href="#">
+                <div class="image">
+                  <img src="/assets/images/tag/sum33.png" alt="image-1" style="width: 100%;" class="w3-grayscale-max w3-hover-gray" style="width:100%">  
+                  <h2 style="font-family: Chonburi;color: #ffffff;">#SPRING</h2>
+                </div>
+              </a>
+            </div>
+        </div>
+        <!--4-->
+        <div class="w3-third" style="padding-left: 2%;padding-right: 2%;margin-bottom: 2%">
+          <figure class="image is-1by2"></figure>
+            <div class="w3-card-2 w3-padding-top " style="width: 100%;background-color: #976f6c;">
+              <a href="#">
+                <div class="image">
+                  <img src="/assets/images/tag/sum1.png" alt="image-1" style="width: 100%;" class="w3-grayscale-max w3-hover-gray" style="width:100%">
+                  <h2 style="font-family: Chonburi;color: #ffffff;">#CASUAL</h2>
+                </div>
+              </a>
+            </div>
+        </div>
+        <!--5-->
+        <div class="w3-third" style="padding-left: 2%;padding-right: 2%;margin-bottom: 2%">
+          <figure class="image is-1by2"></figure>
+            <div class="w3-card-2 w3-padding-top " style="width: 100%;background-color: #976f6c;">
+              <a href="#">
+                <div class="image">
+                  <img src="/assets/images/tag/sum55.png" alt="image-1" style="width: 100%;" class="w3-grayscale-max w3-hover-gray" style="width:100%">
+                  <h2 style="font-family: Chonburi;color: #ffffff;">#VINTAGE</h2>
+                </div>
+              </a>
+            </div>
+        </div>
+        <!--6-->
+        <div class="w3-third" style="padding-left: 2%;padding-right: 2%;margin-bottom: 2%">
+          <figure class="image is-1by2"></figure>
+            <div class="w3-card-2 w3-padding-top " style="width: 100%;background-color: #976f6c;">
+              <a href="#">
+                <div class="image">
+                  <img src="/assets/images/tag/sum3.png" alt="image-1" style="width: 100%;" class="w3-grayscale-max w3-hover-gray" style="width:100%">
+                  <h2 style="font-family: Chonburi;color: #ffffff;">#HIPHOP</h2>
+                </div>
+              </a>
+            </div>
+        </div>
+        <!--7-->
+        <div class="w3-third" style="padding-left: 2%;padding-right: 2%;margin-bottom: 2%">
+          <figure class="image is-1by2"></figure>
+            <div class="w3-card-2 w3-padding-top " style="width: 100%;background-color: #976f6c;">
+              <a href="#">
+                <div class="image">
+                  <img src="/assets/images/tag/sum2.png" alt="image-1" style="width: 100%;" class="w3-grayscale-max w3-hover-gray" style="width:100%">
+                  <h2 style="font-family: Chonburi;color: #ffffff;">#PARTY</h2>
+                </div>
+              </a>
+            </div>
+        </div>
+        <!--8-->
+        <div class="w3-third" style="padding-left: 2%;padding-right: 2%;margin-bottom: 2%">
+          <figure class="image is-1by2"></figure>
+            <div class="w3-card-2 w3-padding-top " style="width: 100%;background-color: #976f6c;">
+              <a href="#">
+                <div class="image">
+                  <img src="/assets/images/tag/sum88.png" alt="image-1" style="width: 100%;" class="w3-grayscale-max w3-hover-gray" style="width:100%"> 
+                  <h2 style="font-family: Chonburi;color: #ffffff;">#CUTE</h2>
+                </div>
+              </a>
+            </div>
+        </div>
+        <!--9-->
+        <div class="w3-third" style="padding-left: 2%;padding-right: 2%;margin-bottom: 5%">
+          <figure class="image is-1by2"></figure>
+            <div class="w3-card-2 w3-padding-top " style="width: 100%;background-color: #976f6c;">
+              <a href="#">
+                <div class="image">
+                  <img src="/assets/images/tag/sum99.png" alt="image-1" style="width: 100%;" class="w3-grayscale-max w3-hover-gray" style="width:100%">
+                  <h2 style="font-family: Chonburi;color: #ffffff;">#SPORT</h2>
+                </div>
+              </a>
+            </div>
+        </div>
+
+
+     </div>
+
+<CENTER>
+
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+        </CENTER>
+   </div>
+        </div>
+
+   <footer class="w3-container w3-padding-16" style="background-color: #f5f5f5;color: grey;font-size: 11px;padding-left: 30px">
+           <div class="w3-row">
+               <div class="w3-third w3-container ">
+               <p><b>Powered by KBANG</b></p>
+               <p>© 2017 LOOQ & STYLE All rights reserved &nbsp;&nbsp;<a href="#">Term of Use</a></p>
+               </div>
+               <div class="w3-third w3-container ">
+
+               </div>
+               <div class="w3-third w3-container w3-hide-small" style="text-align: right"><br><br>
+                   <a href="#">Our Website</a>&nbsp;&nbsp;<a href="#">Customer Care</a>&nbsp;&nbsp;<a href="#">Contact Us</a>
+               </div>
+               <div class="w3-third w3-container w3-hide-large w3-hide-medium" style="">
+                   <a href="#">Our Website</a>&nbsp;&nbsp;<a href="#">Customer Care</a>&nbsp;&nbsp;<a href="#">Contact Us</a>
+               </div>
+           </div>
+   </footer>
+       </div>
+   </div>
+   <!-- /container -->
+
+   <script src="js/classie.js"></script>
+   <script src="js/pathLoader.js"></script>
+   <script src="js/main.js"></script>
+
+   <script>
+   //เนวิเกชั่นมาเป็นแถบ
+   function w3_open() {
+       var x = document.getElementById("mySidebar");
+       x.style.width = "100%";
+       x.style.fontSize = "20px";
+       x.style.paddingTop = "10%";
+       x.style.display = "block";
+   }
+   //ฟังก์ชั่นปิดหน้ต่าง
+   function w3_close() {
+       document.getElementById("mySidebar").style.display = "none";
+   }
+
+
+   </script>
+
+
+   	</body>
+
+  </main>
+    </body>
+</html>

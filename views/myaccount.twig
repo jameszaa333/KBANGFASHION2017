@@ -1,8 +1,13 @@
 {% extends 'layout/base.twig' %}
 
-{% block title %} <title>Clothes » Bottoms</title> {% endblock %}
+{% block title %} <title>My account</title> {% endblock %}
+ 
+{% block stylesheet %}
 
-{% block stylesheet %} {% endblock %}
+  <link rel="stylesheet" type="text/css" href="css/personal.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+{% endblock %}
 
 {% block style %}
 
@@ -53,7 +58,9 @@
 
 {% endblock %}
 
-{% block content %}
+{% block content1 %} {% endblock %}
+
+{% block content2 %}
 
 	  <div class="w3-content"  style="max-width:1200px; padding-top: 85px;" >
       <!--picture-->
@@ -72,7 +79,7 @@
           <div id="Mylooq" class="tabcontent">
             <div class="w3-row-padding" style="margin-top: 3%;">
               <div class="w3-quarter" style="padding-bottom: 20px;">
-                <div class="w3-card-4 container w3-quarter" style="width:100%;background-color: white">
+                <div class="w3-card-4 container w3-quarter" style="width:100%; background-color: #fff;">
                   <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
                   <div class="overlay">
                     <div class="image-popup">
@@ -87,7 +94,7 @@
                 </div>
               </div>
               <div class="w3-quarter" style="padding-bottom: 20px;">
-                <div class="w3-card-4 container w3-quarter" style="width:100%;background-color: white">
+                <div class="w3-card-4 container w3-quarter" style="width:100%; background-color: #fff;">
                   <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
                   <div class="overlay">
                     <div class="image-popup">
@@ -102,7 +109,7 @@
                 </div>
               </div>
               <div class="w3-quarter" style="padding-bottom: 20px;">
-                <div class="w3-card-4 container w3-quarter" style="width:100%;background-color: white">
+                <div class="w3-card-4 container w3-quarter" style="width:100%; background-color: #fff;">
                   <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
                   <div class="overlay">
                     <div class="image-popup">
@@ -117,7 +124,7 @@
                 </div>
               </div>
               <div class="w3-quarter" style="padding-bottom: 20px;">
-                <div class="w3-card-4 container w3-quarter" style="width:100%;background-color: white">
+                <div class="w3-card-4 container w3-quarter" style="width:100%; background-color: #fff;">
                   <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
                   <div class="overlay">
                     <div class="image-popup">
@@ -132,7 +139,7 @@
                 </div>
               </div>
               <div class="w3-quarter" style="padding-bottom: 20px;">
-                <div class="w3-card-4 container w3-quarter" style="width:100%;background-color: white">
+                <div class="w3-card-4 container w3-quarter" style="width:100%; background-color: #fff;">
                   <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
                   <div class="overlay">
                     <div class="image-popup">
@@ -147,7 +154,7 @@
                 </div>
               </div>
               <div class="w3-quarter" style="padding-bottom: 20px;">
-                <div class="w3-card-4 container w3-quarter" style="width:100%;background-color: white">
+                <div class="w3-card-4 container w3-quarter" style="width:100%; background-color: #fff;">
                   <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
                   <div class="overlay">
                     <div class="image-popup">
@@ -162,7 +169,7 @@
                 </div>
               </div>
               <div class="w3-quarter" style="padding-bottom: 20px;">
-                <div class="w3-card-4 container w3-quarter" style="width:100%;background-color: white">
+                <div class="w3-card-4 container w3-quarter" style="width:100%; background-color: #fff;">
                   <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
                   <div class="overlay">
                     <div class="image-popup">
@@ -177,7 +184,7 @@
                 </div>
               </div>
               <div class="w3-quarter" style="padding-bottom: 20px;">
-                <div class="w3-card-4 container w3-quarter" style="width:100%;background-color: white">
+                <div class="w3-card-4 container w3-quarter" style="width:100%; background-color: #fff;">
                   <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
                   <div class="overlay">
                     <div class="image-popup">
@@ -192,7 +199,7 @@
                 </div>
               </div>
               <div class="w3-quarter" style="padding-bottom: 20px;">
-                <div class="w3-card-4 container w3-quarter" style="width:100%;background-color: white">
+                <div class="w3-card-4 container w3-quarter" style="width:100%; background-color: #fff;">
                   <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
                   <div class="overlay">
                     <div class="image-popup">
@@ -206,25 +213,44 @@
                   </div>
                 </div>
               </div>
-              
-              <div class="w3-container w3-text-grey" id="jeans" style="text-align: center;"><br>
-                <p>9 items</p>
-              </div>
+            </div>
 
               <!-- Pagination -->
               <div class="w3-center w3-padding-32" style="text-align: center;">
                 <div class="w3-bar">
-                  <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-                  <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-                  <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-                  <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-                  <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-                  <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+                  <a href="#!" class="w3-bar-item w3-button w3-hover-black">«</a>
+                  <a href="#!" class="w3-bar-item w3-black w3-button">1</a>
+                  <a href="#!" class="w3-bar-item w3-button w3-hover-black">2</a>
+                  <a href="#!" class="w3-bar-item w3-button w3-hover-black">3</a>
+                  <a href="#!" class="w3-bar-item w3-button w3-hover-black">4</a>
+                  <a href="#!" class="w3-bar-item w3-button w3-hover-black">»</a>
                 </div>
               </div>
-            </div>
           </div>
       </div>
-    </div> 
+    </div>
+
+    <script type="text/javascript">
+      function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+      }
+      //กดหัวใจ
+      function myFunction(x) {
+          x.classList.toggle("fa-heart-o");
+      }
+
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+    </script>
 
 {% endblock %}

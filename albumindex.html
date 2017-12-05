@@ -175,11 +175,6 @@ h2 {
 }
 
 </style>
-
-
-
-
-
 <body style="padding:0px; margin:0px;font-family:arial,helvetica,sans-serif,verdana,'Open Sans'">
 
     <!-- #region Jssor Slider Begin -->
@@ -214,7 +209,7 @@ h2 {
 
             /*#region responsive code begin*/
 
-            var MAX_WIDTH = 1144.5;
+            var MAX_WIDTH = 1644.5;
 
             function ScaleSlider() {
                 var containerElement = jssor_1_slider.$Elmt.parentNode;
@@ -278,56 +273,47 @@ h2 {
     </style>
 
 
-    <div class="w3-hide-small" style="width: 100%;height: 500px;background-color: gray;padding-top: 100px;background-image: url(assets/images/home/head1.png);position: fixed;z-index: -1"></div>
+		<div style="background-color: transparent"></div>
+<div style="background-color: #f0f0f0;width: 100%;height: 100%">
+<div id="jssor_1" style="position:relative;margin:0 auto;top:49px;left:0px;width:1600.5px;height:500px;visibility:hidden;">
+		<!-- Loading Screen -->
+	<div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+				<img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="assets/images/Carousel/spin.svg" />
+	</div>
+	<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1600.5px;height:500px;overflow:hidden;">
+		<div>
+				<a href="#"><img data-u="image" src="assets/images/home/car1.png" /></a>
+		</div>
+		<div>
+				<a href="/content-1.html"><img data-u="image" src="assets/images/home/car2.png" /></a>
+		</div>
+		<div>
+				<a href="/content-1.html"><img data-u="image" src="assets/images/home/car3.png" /></a>
+		</div>
+		<div>
+				<a href="/content-1.html"><img data-u="image" src="assets/images/home/car4.png" /></a>
+		</div>
+	</div>
+	<div data-u="navigator" class="jssorb051" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+		<div data-u="prototype" class="i" style="width:16px;height:16px;">
+				<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+					<circle class="b" cx="8000" cy="8000" r="5800"></circle>
+				</svg>
+		</div>
+	</div>
 
-    <div class="w3-hide-large w3-hide-medium" style="width: 100%;height: 250px;background-color: gray;padding-top: 100px;background-image: url(assets/images/home/head1mobile.png);position: fixed;z-index: -1;text-align: center">
-    </div>
-
-    <div class="w3-hide-small" style="background-color: transparent;width: 100%;height: 500px;" ></div>
-<div class="w3-hide-large w3-hide-medium" style="background-color: transparent;width: 100%;height: 250px;" ></div>
-
-    <div style="width: 100%;height: 100%;background-color: #f0f0f0;">
-    <div id="jssor_1" style="position:relative;margin:0 auto;top:100px;left:0px;width:1600.5px;height:850px;visibility:hidden;">
-        <!-- Loading Screen -->
-        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
-            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="assets/images/Carousel/spin.svg" />
-        </div>
-        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1600.5px;height:850px;overflow:hidden;">
-            <div>
-                <a href="#"><img data-u="image" src="assets/images/content/thumbnail/tn4.png" /></a>
-            </div>
-            <div>
-                <a href="/content-1.html"><img data-u="image" src="assets/images/content/thumbnail/tn2.png" /></a>
-            </div>
-            <div>
-                <a href="/content-1.html"><img data-u="image" src="assets/images/content/thumbnail/tn3.png" /></a>
-            </div>
-            <div>
-                <a href="/content-1.html"><img data-u="image" src="assets/images/content/thumbnail/tn5.png" /></a>
-            </div>
-
-        </div>
-        <!-- Bullet Navigator -->
-        <div data-u="navigator" class="jssorb051" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
-            <div data-u="prototype" class="i" style="width:16px;height:16px;">
-                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
-                </svg>
-            </div>
-        </div>
-        <!-- Arrow Navigator -->
-        <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
-            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
-            </svg>
-        </div>
-        <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
-            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
-            </svg>
-        </div>
-    </div>
-
+	<!-- Arrow Navigator -->
+	<div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+			<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+				<polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+			</svg>
+	</div>
+	<div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+			<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+					<polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+			</svg>
+	</div>
+</div>
 
     <div style="width: 100%;height: auto;margin-top: 150px; display: flex">
         <p style="margin-left: 60px;font-family: Chonburi;font-size: 30px"><a href="/index3.html" style="color: #424242" >LOOQ</a> / <a href="/albumindex.html" style="color: gray">Albums </a> </p>
@@ -529,20 +515,6 @@ h2 {
 
    </script>
 
-   <!--
-   <script>
-   var headerr = document.getElementsByClassName('headerr')[0];
-
-   window.addEventListener('scroll', function() {
-
-     if (document.body.scrollTop > 0) {
-       headerr.classList.add('scrolled');
-     }
-
-
-   });
-               </script>
-   -->
 
    	</body>
 
