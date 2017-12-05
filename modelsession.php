@@ -2,20 +2,17 @@
 // Start the session
 session_start();
 ?>
-<!DOCTYPE html>
-<html>
-<body>
 
 <?php
 // Set session variables
-$_SESSION["modelN0"] = "dog";
-$_SESSION["modelN1"] = "cat";
-$_SESSION["modelN2"] = "mouse";
-$_SESSION["modelN3"] = "snake";
-$_SESSION["modelN4"] = "baby";
+$_SESSION["modelN0"] = "/assets/images/model/modelN0.png";
+$_SESSION["modelN1"] = "/assets/images/model/modelN1.png";
+$_SESSION["modelN2"] = "/assets/images/model/modelN2.png";
+$_SESSION["modelN3"] = "/assets/images/model/modelN3.png";
+$_SESSION["modelN4"] = "/assets/images/model/modelN4.png";
 
-echo "Session variables are set.";
+
+
 ?>
 
-</body>
-</html>
+
