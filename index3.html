@@ -6,33 +6,22 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>LOOQ & STYLE</title>
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/personal.css" />
 		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/effect1.css" />
 		<script src="js/modernizr.custom.js"></script>
     <link rel="stylesheet" type="text/css" href="css/w3.css">
 		<link rel="stylesheet" href="css/style.css">
 		<script src="js/modernizr.custom.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/w3.css">
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
-
-        <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-
-        <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
-
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chonburi">
-				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
-				<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chonburi">
-
-				<link rel="stylesheet" href="css/w3.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chonburi">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
 	</head>
+  
     <style>
 		/* jssor slider loading skin spin css */
 		.jssorl-009-spin img {
@@ -66,7 +55,13 @@
 		.jssora051.jssora051ds {opacity:.3;pointer-events:none;}
     </style>
 
-<body class="demo-1" onload="myFunction()" style="color:black">
+<body class="demo-1" onload="myFunction()" style="color:black;background-color: transparent">
+    
+<!--  Animation ที่คลิกตู้เสื้อผ้า  -->
+    <nav class="w3-sidebar w3-bar-block animated slideInLeft w3-center" style="display: none;z-index: 8;background-color: #f1f1f1" id="mySidebar3"></nav>
+    <nav class="w3-sidebar w3-bar-block animated slideInRight w3-center" style="display: none;z-index: 8;right: 0;background-color: #f1f1f1" id="mySidebar4"></nav>
+<!--  Animation ที่คลิกตู้เสื้อผ้า  -->
+    
 <div id="ip-container" class="ip-container">
 <!-- initial header -->
 <header class="ip-header">
@@ -180,7 +175,7 @@ c-24 -65 -68 -169 -98 -231 -88 -182 -198 -277 -379 -329 -50 -14 -120 -17
 <!-- Side Navigation -->
 <nav class="w3-sidebar w3-bar-block w3-card animated slideInLeft w3-center" style="display:none;z-index: 7" id="mySidebar">
   <img style="width: 25%;height: auto;min-width: 200px;margin-bottom: 30px;margin-top: 100px" src="assets/images/home/Logo4.png">
-  <a href="model.html" class="w3-bar-item w3-button w3-hide-large w3-hide-medium w3-hover-red" style="font-size: ;color: lightgrey;font-family: Chonburi">Create LOOQ <img src="assets/images/home/closet3.png" style="width: 32px;height: 29px;"> </a>
+  <a href="model.html" onclick="w4_open()" class="w3-bar-item w3-button w3-hide-large w3-hide-medium w3-hover-red target" style="font-size: ;color: lightgrey;font-family: Chonburi">Create LOOQ <img src="assets/images/home/closet3.png" style="width: 32px;height: 29px;"> </a>
   <a href="#" class="w3-bar-item w3-button w3-hover-red" style="font-size: ;color: lightgrey">LOOQ</a>
   <a href="#" class="w3-bar-item w3-button w3-hover-red" style="font-size: ;color: lightgrey">Album</a>
   <a href="#" class="w3-bar-item w3-button w3-hover-red" style="font-size: ;color: lightgrey">Clothes</a>
@@ -192,8 +187,13 @@ c-24 -65 -68 -169 -98 -231 -88 -182 -198 -277 -379 -329 -50 -14 -120 -17
 <header class="headerr w3-container w3-padding" style="background-image: url();background-repeat: no-repeat;background-size: 100% 100%;position: fixed;z-index: 5;width: 100%;display: flex;background-color: #e7c6c2;top:0">
 <div style="width: 25%;height: 30px">
 <a href="#" onclick="w3_open()" class="fa fa-bars w3-xlarge w3-transparent" style="margin-left: 8px;margin-right: 6px;text-decoration: none;color: white!important"></a>
-  <div class="w3-dropdown-hover w3-transparent"><a class="w3-hide-small" href="model.html"><img class="fa w3-xlarge w3-transparent" src="assets/images/home/closet1.png" style="width: 32px;height: 29px;margin-top: 2px;" onmouseover="this.src='assets/images/home/closet4.png';"
+  <div class="w3-dropdown-hover w3-transparent">
+      
+<!--Animation หลังคลิกตู้เสื้อผ้า-->      
+      <a class="w3-hide-small target" onclick="w4_open()" href="model.html"><img class="fa w3-xlarge w3-transparent" src="assets/images/home/closet1.png" style="width: 32px;height: 29px;margin-top: 2px;" onmouseover="this.src='assets/images/home/closet4.png';"
           onmouseout="this.src='assets/images/home/closet1.png';"></a>
+<!--Animation หลังคลิกตู้เสื้อผ้า-->
+      
       <div class="w3-dropdown-content w3-bar-block w3-border jshadow w3-animate-opacity" style="width:250px">
     <div class="w3-container">
       <p>Create a Looq, Submit your Looq now!</p>
@@ -301,10 +301,18 @@ CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT
     </div>
 		<div class="w3-hide-small" style="background-color: transparent;width: 100%;height: 500px;" ></div>
 		<div class="w3-hide-large w3-hide-medium" style="background-color: transparent;width: 100%;height: 250px;" ></div> -->
-<img src="assets/images/home/head1.png" alt="HTML5 Icon" style="width:100%;height:490px;" >
+<div class="w3-hide-small" style="width: 100%;height: 500px;background-color: gray;padding-top: 100px;background-image: url(assets/images/home/head1.png);position: fixed;z-index: -1"></div>
+    
+    <div class="w3-hide-large w3-hide-medium" style="width: 100%;height: 250px;background-color: gray;padding-top: 100px;background-image: url(assets/images/home/head1mobile.png);position: fixed;z-index: -1;text-align: center">
+    </div>    
+    
+    <div class="w3-hide-small" style="background-color: transparent;width: 100%;height: 500px;" ></div>
+<div class="w3-hide-large w3-hide-medium" style="background-color: transparent;width: 100%;height: 250px;" ></div>  
+    
 
-
-
+    <div style="background-color: transparent"></div>
+<div style="background-color: #f0f0f0;width: 100%;height: 100%">
+<!--        <div class="w3-content"  style="max-width:1200px; padding-top: 70px;" >-->
 <div id="jssor_1" style="position:relative;margin:0 auto;top:100px;left:0px;width:1600.5px;height:850px;visibility:hidden;">
 		<!-- Loading Screen -->
 	<div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
@@ -348,7 +356,7 @@ CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT
 
 
 
-<div style="width: 100%;height: auto;margin-top: 150px; display: flex">
+<div style="width: 100%;height: auto;margin-top: 150px; display: flex;margin-right: 10%;margin-left: 10%;">
 	<p style="margin-left: 60px;font-family: Chonburi;font-size: 30px"><a style="color: #424242">LOOQ</a> / <a href="/albumindex.html" style="color: gray">Albums </a> </p>
 	<div class="dropdown is-right is-hoverable" style="padding-left: 5px; padding-top: 6px; height:auto; width: auto;margin-left: 750PX">
 		<!-- <div class="dropdown-trigger" style="padding-top: .5rem;">
@@ -370,91 +378,188 @@ CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT
 </div>
 
 <!-- #endregion Jssor Slider End -->
-<div class="container"  style=" margin-bottom: 130px;top:50px;" > <!--ต้องปรับเพิ่มbottomเพื่อเพิ่มระยะห่างระหว่างกรอบกับฟูดเตอร์-->
-
-	<div class="columns is-multiline" >
-		<a href="#" class="column is-one-third">
-			<div class="card">
-				<div class="card-image">
-					<figure class="image is-1by1" style="position: relative">
-						<img src="assets/images/clothes/mock%20up.png" alt="image-1" style="">
-					</figure>
-				</div>
-			</div>
-		</a>
-		<a href="#" class="column is-one-third">
-			<div class="card">
-				<div class="card-image">
-					<figure class="image is-1by1">
-						<img src="assets/images/clothes/mock%20up.png" alt="image-1">
-					</figure>
-				</div>
-			</div>
-		</a>
-		<a href="#" class="column is-one-third">
-			<div class="card">
-				<div class="card-image">
-					<figure class="image is-1by1">
-						<img src="assets/images/clothes/mock%20up.png" alt="image-1">
-					</figure>
-				</div>
-			</div>
-		</a>
-		<a href="#" class="column is-one-third">
-			<div class="card">
-				<div class="card-image">
-					<figure class="image is-1by1">
-						<img src="assets/images/clothes/mock%20up.png" alt="image-1">
-					</figure>
-				</div>
-			</div>
-		</a>
-		<a href="#" class="column is-one-third">
-			<div class="card">
-				<div class="card-image">
-					<figure class="image is-1by1">
-						<img src="assets/images/clothes/mock%20up.png" alt="image-1">
-					</figure>
-				</div>
-			</div>
-		</a>
-		<a href="#" class="column is-one-third">
-			<div class="card">
-				<div class="card-image">
-					<figure class="image is-1by1">
-						<img src="assets/images/clothes/mock%20up.png" alt="image-1">
-					</figure>
-				</div>
-			</div>
-		</a>
-		<a href="#" class="column is-one-third">
-			<div class="card">
-				<div class="card-image">
-					<figure class="image is-1by1">
-						<img src="assets/images/clothes/mock%20up.png" alt="image-1">
-					</figure>
-				</div>
-			</div>
-		</a>
-		<a href="#" class="column is-one-third">
-			<div class="card">
-				<div class="card-image">
-					<figure class="image is-1by1">
-						<img src="assets/images/clothes/mock%20up.png" alt="image-1">
-					</figure>
-				</div>
-			</div>
-		</a>
-		<a href="#" class="column is-one-third">
-			<div class="card">
-				<div class="card-image">
-					<figure class="image is-1by1">
-						<img src="assets/images/clothes/mock%20up.png" alt="image-1">
-					</figure>
-				</div>
-			</div>
-		</a>
-	</div>
+<div class="w3-row-padding" style="margin-top: 5%;margin-left: 10%;margin-right: 10%;">
+    <div class="w3-quarter" style="padding-bottom: 20px;">
+      <div class="w3-card-4 container w3-quarter" style="width:100%;">
+        <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
+          <div class="overlay">
+            <div class="image-popup">
+              <img src="/assets/images/profile/bar.png" alt="" width="100%">
+            </div>
+            <a href="#">
+              <div class="image-popup" style="padding-left: 60%">
+                STYLE / ...........
+              </div>
+            </a>
+          </div>
+      </div>
+    </div>
+    <div class="w3-quarter" style="padding-bottom: 20px;">
+      <div class="w3-card-4 container w3-quarter" style="width:100%">
+        <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
+          <div class="overlay">
+            <div class="image-popup">
+              <img src="/assets/images/profile/bar.png" alt="" width="100%">
+            </div>
+            <a href="#">
+              <div class="image-popup" style="padding-left: 60%">
+                STYLE / ...........
+              </div>
+            </a>
+          </div>
+      </div>
+    </div>
+    <div class="w3-quarter" style="padding-bottom: 20px;">
+      <div class="w3-card-4 container w3-quarter" style="width:100%">
+        <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
+          <div class="overlay">
+            <div class="image-popup">
+              <img src="/assets/images/profile/bar.png" alt="" width="100%">
+            </div>
+            <a href="#">
+              <div class="image-popup" style="padding-left: 60%">
+                STYLE / ...........
+              </div>
+            </a>
+          </div>
+      </div>
+    </div>
+    <div class="w3-quarter" style="padding-bottom: 20px;">
+      <div class="w3-card-4 container w3-quarter" style="width:100%">
+        <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
+          <div class="overlay">
+            <div class="image-popup">
+              <img src="/assets/images/profile/bar.png" alt="" width="100%">
+            </div>
+            <a href="#">
+              <div class="image-popup" style="padding-left: 60%">
+                STYLE / ...........
+              </div>
+            </a>
+          </div>
+      </div>
+    </div>
+    <div class="w3-quarter" style="padding-bottom: 20px;">
+      <div class="w3-card-4 container w3-quarter" style="width:100%">
+        <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
+          <div class="overlay">
+            <div class="image-popup">
+              <img src="/assets/images/profile/bar.png" alt="" width="100%">
+            </div>
+            <a href="#">
+              <div class="image-popup" style="padding-left: 60%">
+                STYLE / ...........
+              </div>
+            </a>
+          </div>
+      </div>
+    </div>
+    <div class="w3-quarter" style="padding-bottom: 20px;">
+      <div class="w3-card-4 container w3-quarter" style="width:100%">
+        <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
+          <div class="overlay">
+            <div class="image-popup">
+              <img src="/assets/images/profile/bar.png" alt="" width="100%">
+            </div>
+            <a href="#">
+              <div class="image-popup" style="padding-left: 60%">
+                STYLE / ...........
+              </div>
+            </a>
+          </div>
+      </div>
+    </div>
+    <div class="w3-quarter" style="padding-bottom: 20px;">
+      <div class="w3-card-4 container w3-quarter" style="width:100%">
+        <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
+          <div class="overlay">
+            <div class="image-popup">
+              <img src="/assets/images/profile/bar.png" alt="" width="100%">
+            </div>
+            <a href="#">
+              <div class="image-popup" style="padding-left: 60%">
+                STYLE / ...........
+              </div>
+            </a>
+          </div>
+      </div>
+    </div>
+    <div class="w3-quarter" style="padding-bottom: 20px;">
+      <div class="w3-card-4 container w3-quarter" style="width:100%">
+        <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
+          <div class="overlay">
+            <div class="image-popup">
+              <img src="/assets/images/profile/bar.png" alt="" width="100%">
+            </div>
+            <a href="#">
+              <div class="image-popup" style="padding-left: 60%">
+                STYLE / ...........
+              </div>
+            </a>
+          </div>
+      </div>
+    </div>
+    <div class="w3-quarter" style="padding-bottom: 20px;">
+      <div class="w3-card-4 container w3-quarter" style="width:100%">
+        <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
+          <div class="overlay">
+            <div class="image-popup">
+              <img src="/assets/images/profile/bar.png" alt="" width="100%">
+            </div>
+            <a href="#">
+              <div class="image-popup" style="padding-left: 60%">
+                STYLE / ...........
+              </div>
+            </a>
+          </div>
+      </div>
+    </div>
+    <div class="w3-quarter" style="padding-bottom: 20px;">
+      <div class="w3-card-4 container w3-quarter" style="width:100%">
+        <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
+          <div class="overlay">
+            <div class="image-popup">
+              <img src="/assets/images/profile/bar.png" alt="" width="100%">
+            </div>
+            <a href="#">
+              <div class="image-popup" style="padding-left: 60%">
+                STYLE / ...........
+              </div>
+            </a>
+          </div>
+      </div>
+    </div>
+    <div class="w3-quarter" style="padding-bottom: 20px;">
+      <div class="w3-card-4 container w3-quarter" style="width:100%">
+        <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
+          <div class="overlay">
+            <div class="image-popup">
+              <img src="/assets/images/profile/bar.png" alt="" width="100%">
+            </div>
+            <a href="#">
+              <div class="image-popup" style="padding-left: 60%">
+                STYLE / ...........
+              </div>
+            </a>
+          </div>
+      </div>
+    </div>
+    <div class="w3-quarter" style="padding-bottom: 20px;">
+      <div class="w3-card-4 container w3-quarter" style="width:100%">
+        <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
+          <div class="overlay">
+            <div class="image-popup">
+              <img src="/assets/images/profile/bar.png" alt="" width="100%">
+            </div>
+            <a href="#">
+              <div class="image-popup" style="padding-left: 60%">
+                STYLE / ...........
+              </div>
+            </a>
+          </div>
+      </div>
+    </div>
+  </div>
 
 	<CENTER>
 		<div class="w3-center w3-padding-32">
@@ -488,6 +593,7 @@ CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT
             </div>
         </div>
 </footer>
+<!--    </div>-->
     </div>
 </div>
 <!-- /container -->
@@ -576,15 +682,39 @@ jQuery(document).ready(function ($) {
 		/*#endregion responsive code end*/
 });
 
-
-
-
-
-
 </script>
 
+<!--Animation หลังคลิกตู้เสื้อผ้า-->
+<script>
+function w4_open() {
+    var x = document.getElementById("mySidebar3");
+    x.style.width = "50%";
+    x.style.fontSize = "20px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
+    var x = document.getElementById("mySidebar4");
+    x.style.width = "50%";
+    x.style.fontSize = "20px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
+}
+function w4_close() {
+    document.getElementById("mySidebar3").style.display = "none";
+}
+
+//nongaoy
+$(".target").click(function () {
+    var url = this.href;
+    setTimeout(function () {
+        location.href = url;
+      }, 1300);
+    return false;
+});
+
+    </script>
+<!--Animation หลังคลิกตู้เสื้อผ้า-->
 
 
-        </div>
+
 	</body>
 </html>

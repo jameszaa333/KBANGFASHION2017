@@ -1,0 +1,213 @@
+{% extends 'layout/base.twig' %}
+
+{% block title %} <title>Clothes » Shoes</title> {% endblock %}
+
+{% block stylesheet %} {% endblock %}
+
+{% block style %}
+
+	<style>
+        .w3-content a{
+          color: #976f6c !important;
+        }
+        .w3-content a:hover{
+          color: #f8b2a9 !important;
+        }
+        .w3-content img {
+          filter: alpha(opacity=100);
+          opacity:1.0;
+          -webkit-transition:0.7s;
+          -moz-transition:0.7s;
+          -o-transition:0.7s;
+        }
+        .w3-content img:hover {
+          filter: alpha(opacity=70);
+          opacity:.7;
+        }
+  </style>
+
+{% endblock %}
+
+{% block content %}
+
+	<div class="w3-content"  style="max-width:1200px; padding-top: 50px;" >
+      <div class="w3-padding-32">
+        <div class="w3-container">
+          <div class="w3-border" style="background-color: #fff;">
+            <button class="w3-button w3-white ">
+              <a href="all-clothes">All</a>
+            </button>
+            <li class="w3-dropdown-hover">
+              <button class="w3-button w3-white">
+                <a href="all-tops">Tops <i class="fa fa-caret-down w3-margin-left"></i></a>
+                  <div class="w3-dropdown-content w3-white w3-card-4">
+                    <a href="blouses">Blouses</a><br>
+                    <a href="tanks">Tanks</a><br>
+                  </div>
+              </button>
+            </li>
+            <li class="w3-dropdown-hover">
+              <button class="w3-button w3-white">
+                <a href="all-bottoms">Bottoms <i class="fa fa-caret-down w3-margin-left"></i></a>
+                  <div class="w3-dropdown-content w3-white w3-card-4">
+                    <a href="pants">Pants</a><br>
+                    <a href="shorts">Shorts</a><br>
+                    <a href="skirts">Skirts</a><br>
+                </div>
+              </button>
+            </li>
+            <button class="w3-button w3-white w3-hide-small">
+              <a href="dresses">Dresses</a>
+            </button>
+            <button class="w3-button w3-white w3-hide-small">
+              <a href="shoes">Shoes</a>
+            </button>
+            <li class="w3-dropdown-hover">
+              <button class="w3-button w3-white"><a href="all-accessories">Accessories<i class="fa fa-caret-down w3-margin-left"></i></a>
+                <div class="w3-dropdown-content w3-white w3-card-4">
+                  <a href="bags">Bags</a><br>
+                  <a href="socks">Socks</a><br>
+                </div>
+              </button>
+            </li>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-row-padding w3-center w3-margin-top" style="font-size: 14px;">
+        <div class="w3-quarter">
+          <figure class="image is-1by2"></figure>
+          <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+            <img src="assets/images/looq/shoe1.jpg" alt="image-1" style="height: 250px"><br><br>
+            <p><a href="https://milin.com/shop/wth-high-heels/" target="_blank">Wth High Heels</a></p>
+            <big>1,785 ฿</big>
+            <br>
+          </div><br>
+        </div>
+
+        <div class="w3-quarter">
+          <figure class="image is-1by2"></figure>
+          <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+            <img src="assets/images/looq/shoe2.jpg" alt="image-1" style="height: 250px"><br><br>
+            <p><a href="https://milin.com/shop/phonenix-heels/" target="_blank">Phenix Heels</a></p>
+            <big>4,475 ฿</big>
+            <br>
+          </div><br>
+        </div>
+
+        <div class="w3-quarter">
+          <figure class="image is-1by2"></figure>
+          <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+            <img src="assets/images/looq/shoe3.jpg" alt="image-1" style="height: 250px"><br><br>
+            <p><a href="https://milin.com/shop/mili-high-heels/" target="_blank">Mili High Heels</a></p>
+            <big>7,250 ฿</big>
+            <br>
+          </div><br>
+        </div>
+
+        <div class="w3-quarter">
+          <figure class="image is-1by2"></figure>
+          <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+            <img src="assets/images/looq/shoe4.jpg" alt="image-1" style="height: 250px"><br><br>
+            <p><a href="https://milin.com/shop/mirage-high-heels/" target="_blank">Mirage High Heels</a></p>
+            <big>4,475 ฿</big>
+            <br>
+          </div><br>
+        </div>
+
+        <div class="w3-quarter">
+          <figure class="image is-1by2"></figure>
+          <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+            <img src="assets/images/looq/shoe5.jpg" alt="image-1" style="height: 250px"><br><br>
+            <p><a href="https://milin.com/shop/walk-in-shoes/" target="_blank">Walk In Shoes</a></p>
+            <big>1,590 ฿</big>
+            <br>
+          </div><br>
+        </div>
+
+        <div class="w3-quarter">
+          <figure class="image is-1by2"></figure>
+          <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+            <img src="assets/images/looq/shoe6.png" alt="image-1" style="height: 250px"><br><br>
+            <p><a href="https://www.pomelofashion.com/th/en/shoes/15540-be-mine-high-heels.html" target="_blank">Be Mine High Heels</a></p>
+            <big>2,290 ฿</big>
+            <br>
+          </div><br>
+        </div>
+
+        <div class="w3-quarter">
+          <figure class="image is-1by2"></figure>
+          <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+            <img src="assets/images/looq/shoes1.jpg" alt="image-1" style="height: 250px"><br><br>
+            <p><a href="https://www.pomelofashion.com/th/en/shoes/15551-serenity-high-heels---beige.html" target="_blank">Serenity High Heels - Beige</a></p>
+            <big>2,790 ฿</big>
+            <br>
+          </div><br>
+        </div>
+
+        <div class="w3-quarter">
+          <figure class="image is-1by2"></figure>
+          <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+            <img src="assets/images/looq/shoe8.png" alt="image-1" style="height: 250px"><br><br>
+            <p><a href="http://shop.asavagroup.com/product/aaf-015" target="_blank">Margaux Louise Hemingway - Pink</a></p>
+            <big>4,340 ฿</big>
+            <br>
+          </div><br>
+        </div>
+
+        <div class="w3-quarter">
+          <figure class="image is-1by2"></figure>
+          <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+            <img src="assets/images/looq/shoe9.png" alt="image-1" style="height: 250px"><br><br>
+            <p><a href="http://shop.asavagroup.com/product/aaf-015" target="_blank">Margaux Louise Hemingway - Green</a></p>
+            <big>4,340 ฿</big>
+            <br>
+          </div><br>
+        </div>
+
+        <div class="w3-quarter">
+          <figure class="image is-1by2"></figure>
+          <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+            <img src="assets/images/looq/shoe10.png" alt="image-1" style="height: 250px"><br><br>
+            <p><a href="https://milin.com/shop/girl-power/" target="_blank">Girl-Power</a></p>
+            <big>1,785 ฿</big>
+            <br>
+          </div><br>
+        </div>
+
+        <div class="w3-quarter">
+          <figure class="image is-1by2"></figure>
+          <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+            <img src="assets/images/looq/shoe12.png" alt="image-1" style="height: 250px"><br><br>
+            <p><a href="https://milin.com/shop/latisse-heels/" target="_blank">Latisse-Heels</a></p>
+            <big>6,525 ฿</big>
+            <br>
+          </div><br>
+        </div>
+
+        <div class="w3-quarter">
+          <figure class="image is-1by2"></figure>
+          <div class="w3-card-2 w3-padding-top " style="min-height:350px; background-color: #ffffff;">
+            
+          </div><br>
+        </div>
+
+        <div class="w3-container w3-text-grey" id="jeans" style="text-align: center;"><br>
+          <p>11 items</p>
+        </div>
+
+      <!-- Pagination -->
+        <div class="w3-center w3-padding-32" style="text-align: center;">
+          <div class="w3-bar">
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+            <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+{% endblock %}

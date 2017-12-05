@@ -4,13 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <title>LOOQ & STYLE</title>
+    <title>Personal info</title>
     <link rel="stylesheet" type="text/css" href="css/demo.css" />
     <link rel="stylesheet" type="text/css" href="css/personal.css" />
     <script src="js/modernizr.custom.js"></script>
         <link rel="stylesheet" type="text/css" href="css/w3.css">
-
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
@@ -81,73 +79,73 @@
 </header>
 
 <!--LOG-IN MODAL    -->
-      <div id="id01" class="w3-modal">
+      <div id="id01" class="w3-modal" style="color: black">
         <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:500px; background-image: url(assets/images/home/BG.png); background-size: 100% 100%">
-          <div class="w3-card-4">
-            <div class="w3-container w3-block w3-theme-l3 w3-xxlarge w3-card" style="background-image: url(assets/images/home/nav-tab.png); background-size: 100% 100%">
-              <h1 style="font-family: Chonburi; font-size: 2rem;">Log in</h1>
+        <div class="w3-card-4">
+          <div class="w3-container w3-block w3-theme-l3 w3-xxlarge w3-card" style="background-image: url(assets/images/home/nav-tab.png); background-size: 100% 100%">
+            <h1 style="font-family: Chonburi; font-size: 2rem;color: black">Log in</h1>
+          </div>
+
+          <div class="w3-center">
+            <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close">×</span>
+          </div>
+
+          <form class="w3-container" action="/action_page.php">
+            <div class="w3-section">
+              <label><b>Username</b></label>
+              <input class="w3-input w3-border w3-margin-bottom w3-round" type="text" placeholder="Enter Username" name="usename" required>
+                <label><b>Password</b></label>
+              <input class="w3-input w3-border w3-round" type="text" placeholder="Enter Password" name="psw" required>
+              <span class="w3-left w3-padding w3-large"><a href="#" style="font-size: 12px">Help! I forgot my password </a></span>
             </div>
+            <button class="w3-button w3-block w3-section w3-padding w3-round" type="submit" style="background-color: #976f6c;color: white">Login</button>
 
             <div class="w3-center">
-              <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close">×</span>
+              <label>or just</label>
             </div>
 
-            <form class="w3-container" action="/action_page.php">
-              <div class="w3-section" style="display: grid">
-                <label><b>Username</b></label>
-                <input class="w3-input w3-border w3-margin-bottom w3-round" type="text" placeholder="Enter Username" name="usename" required style="width: 100%">
-                <label><b>Password</b></label>
-                <input class="w3-input w3-border w3-round" type="text" placeholder="Enter Password" name="psw" required style="width: 100%">
-                <span class="w3-left w3-padding w3-large"><a href="#" style="font-size: 12px">Help! I forgot my password </a></span>
-              </div>
-              <button class="w3-button w3-block w3-section w3-padding w3-round" type="submit" style="background-color: #976f6c;color: white">Login</button>
-
-              <div class="w3-center">
-                <label>or just</label>
-              </div>
-
-              <button class="w3-button w3-block w3-indigo w3-section w3-padding w3-round" type="submit">Login with Facebook</button>
-              <span class="w3-modal-content w3-padding w3-transparent style="font-size: 10px>Don't have an account? <a href="#" style="color: #976f6c" onclick="document.getElementById('id01').style.display='none';document.getElementById('id02').style.display='block'">Sign up</a></span>
-            </form>
-            <br>
-          </div>
+            <button class="w3-button w3-block w3-indigo w3-section w3-padding w3-round" type="submit">Login with Facebook</button>
+            <span class="w3-modal-content w3-padding w3-transparent style="font-size: 10px>Don't have an account? <a href="#" style="color: #976f6c" onclick="document.getElementById('id01').style.display='none';document.getElementById('id02').style.display='block'">Sign up</a></span>
+          </form>
+          <br>
+        </div>
         </div>
       </div>
-
-  <!--LOG-IN MODAL-->
-      <div id="id02" class="w3-modal">
+<!--LOG-IN MODAL-->
+      <div id="id02" class="w3-modal" style="color: black">
         <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:500px; background-image: url(assets/images/home/BG.png); background-size: 100% 100%">
-          <div class="w3-card-4">
-            <div class="w3-container w3-block w3-theme-l3 w3-xxlarge w3-card" style="background-image: url(assets/images/home/nav-tab.png); background-size: 100% 100%">
-              <h1 style="font-family: Chonburi; font-size: 2rem;">Register</h1>
-            </div>
-
-            <div class="w3-center">
-              <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close">×</span>
-            </div>
-
-            <form class="w3-container" action="/action_page.php">
-              <div class="w3-section" style="display: grid">
-                <label><b>Username</b></label>
-                <input class="w3-input w3-border w3-round w3-margin-bottom" type="text" placeholder="Enter Username" name="usename" required style="width: 100%">
-                <label><b>Password</b></label>
-                <input class="w3-input w3-border w3-round w3-margin-bottom" type="text" placeholder="Enter Password" name="psw" required style="width: 100%">
-                <label><b>Confirm Password</b></label>
-                <input class="w3-input w3-border w3-round w3-margin-bottom" type="text" placeholder="Confirm Password" name="conpsw" required style="width: 100%">
-                <label><b>Email</b></label>
-                <input class="w3-input w3-border w3-round w3-margin-bottom" type="text" placeholder="Email" name="mail" required style="width: 100%">
-                <label><b>Confirm Email</b></label>
-                <input class="w3-input w3-border w3-round" style="margin-top: 14px;width: 100%" type="text" placeholder="Confirm Email" name="conmail" required>
-                <span class="w3-left w3-padding w3-large"><a href="#" style="font-size: 12px"> </a></span>
-              </div>
-              <button class="w3-button w3-block w3-section w3-padding w3-round" type="submit" style="background-color: #976f6c;color: white">Register</button>
-
-              <div>
-                <label style="color:black;font-size:13px">By clicking on 'Sign Up' above, you confirm that you accept the <a href="termsofuse.html" target="_blank" style="color: #976f6c"> Terms of Use</a></label>
-              </div>
-            </form>
-            <br>
+        <div class="w3-card-4">
+          <div class="w3-container w3-block w3-theme-l3 w3-xxlarge w3-card" style="background-image: url(assets/images/home/nav-tab.png); background-size: 100% 100%">
+            <h1 style="font-family: Chonburi; font-size: 2rem;color: black">Register</h1>
           </div>
+
+          <div class="w3-center">
+            <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close">×</span>
+          </div>
+
+          <form class="w3-container" action="/action_page.php">
+            <div class="w3-section">
+              <label><b>Username</b></label>
+              <input class="w3-input w3-border w3-round w3-margin-bottom" type="text" placeholder="Enter Username" name="usename" required>
+                <label><b>Password</b></label>
+              <input class="w3-input w3-border w3-round w3-margin-bottom" type="text" placeholder="Enter Password" name="psw" required>
+                <label><b>Confirm Password</b></label>
+              <input class="w3-input w3-border w3-round w3-margin-bottom" type="text" placeholder="Confirm Password" name="conpsw" required>
+                <label><b>Email</b></label>
+              <input class="w3-input w3-border w3-round w3-margin-bottom" type="text" placeholder="Email" name="mail" required>
+                <label><b>Confirm Email</b></label>
+              <input class="w3-input w3-border w3-round" style="margin-top: 14px" type="text" placeholder="Confirm Email" name="conmail" required>
+            
+              <span class="w3-left w3-padding w3-large"><a href="#" style="font-size: 12px"> </a></span>
+            </div>
+            <button class="w3-button w3-block w3-section w3-padding w3-round" type="submit" style="background-color: #976f6c;color: white">Register</button>
+
+            <div class="">
+              <label style="color:black;font-size:13px">By clicking on 'Sign Up' above, you confirm that you accept the <a href="terms-of-use.html" target="_blank" style="color: #976f6c"> Terms of Use</a></label>
+            </div>
+          </form>
+          <br>
+        </div>
         </div>
       </div>
 
@@ -171,9 +169,9 @@
 
 </style>
     
-
+    <div class="w3-content"  style="max-width:1200px; padding-top: 70px;" >
 <!--picture-->
-  <div class="w3-row w3-display-container" style="padding-top: 70px;margin-right: 10%;margin-left: 10%;">
+  <div class="w3-row w3-display-container" style="padding-top: 0px;">
     <img class="w3-col w3-circle" src="/assets/images/profile/Minnie.jpg" alt="profile-picture" style="width:150px">
     <a href="#"><i class="fa fa-camera"></i></a>
     <br>
@@ -182,7 +180,7 @@
 
 <br>
 <!--tabs-->
-<div class="w3-row" style="">
+<div class="w3-row" style="padding-bottom: 370px">
 <div class="tab">
   <button class="tablinks w3-quarter" onclick="openCity(event, 'Mylooq')" id="defaultOpen">My Looq</button>
 </div>
@@ -192,7 +190,7 @@
 <div id="Mylooq" class="tabcontent">
   <div class="w3-row-padding" style="margin-top: 5%;">
     <div class="w3-quarter" style="padding-bottom: 20px;">
-      <div class="w3-card-4 container w3-quarter" style="width:100%;">
+      <div class="w3-card-4 container w3-quarter" style="width:100%;background-color: white">
         <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
           <div class="overlay">
             <div class="image-popup">
@@ -207,7 +205,7 @@
       </div>
     </div>
     <div class="w3-quarter" style="padding-bottom: 20px;">
-      <div class="w3-card-4 container w3-quarter" style="width:100%">
+      <div class="w3-card-4 container w3-quarter" style="width:100%;background-color: white">
         <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
           <div class="overlay">
             <div class="image-popup">
@@ -222,7 +220,7 @@
       </div>
     </div>
     <div class="w3-quarter" style="padding-bottom: 20px;">
-      <div class="w3-card-4 container w3-quarter" style="width:100%">
+      <div class="w3-card-4 container w3-quarter" style="width:100%;background-color: white">
         <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
           <div class="overlay">
             <div class="image-popup">
@@ -237,7 +235,7 @@
       </div>
     </div>
     <div class="w3-quarter" style="padding-bottom: 20px;">
-      <div class="w3-card-4 container w3-quarter" style="width:100%">
+      <div class="w3-card-4 container w3-quarter" style="width:100%;background-color: white">
         <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
           <div class="overlay">
             <div class="image-popup">
@@ -252,7 +250,7 @@
       </div>
     </div>
     <div class="w3-quarter" style="padding-bottom: 20px;">
-      <div class="w3-card-4 container w3-quarter" style="width:100%">
+      <div class="w3-card-4 container w3-quarter" style="width:100%;background-color: white">
         <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
           <div class="overlay">
             <div class="image-popup">
@@ -267,7 +265,7 @@
       </div>
     </div>
     <div class="w3-quarter" style="padding-bottom: 20px;">
-      <div class="w3-card-4 container w3-quarter" style="width:100%">
+      <div class="w3-card-4 container w3-quarter" style="width:100%;background-color: white">
         <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
           <div class="overlay">
             <div class="image-popup">
@@ -282,7 +280,7 @@
       </div>
     </div>
     <div class="w3-quarter" style="padding-bottom: 20px;">
-      <div class="w3-card-4 container w3-quarter" style="width:100%">
+      <div class="w3-card-4 container w3-quarter" style="width:100%;background-color: white">
         <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
           <div class="overlay">
             <div class="image-popup">
@@ -299,7 +297,7 @@
   </div>
 </div>
 </div>       
-
+    </div>
     
 <!--CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT     -->
     
