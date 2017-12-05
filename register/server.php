@@ -25,19 +25,19 @@
       if (empty($password_1)) {
         array_push($errors, "Password is required");
       }
-      if (empty($password_2)) {
+      if ($password_1 != $password_2) {
         array_push($errors, "The two password do not match");
       }
 
       //if there are no errors, save user to database
       if (count($errors) == 0) {
-        $password * md5($password_1); //encrypt password before storing in database (security)
+        $password = md5($password_1); //encrypt password before storing in database (security)
         $sql = "INSERT INTO users (username, email, password)
                   VALUES ('$username', '$email', '$password')";
         mysql_query($db, $sql);
-        $_SESSION['username'] = $uername;
-        $_SESSION['seccess'] = 'You are now logged in';
-        header('location: index.html');
+        $_SESSION['username'] = $username;
+        $_SESSION['success'] = "You are now logged in";
+        header('location: index.php');
       }
     }
 
@@ -55,14 +55,14 @@
             array_push($errors, "Password is required");
           }
           if (cout($errors) == 0) {
-            $password = md5($pasword);
+            $password = md5($password);
             $quert = "SELECT * FRON users WHERE username='$username' AND password='$password'";
             $result = mysql_query($db, $query);
             if (mysql_num_rows($result) == 1)
             //log user in
             $_SESSION['username'] = $uername;
             $_SESSION['seccess'] = 'You are now logged in';
-            header('location: index.html');
+            header('location: index.php');
           }else{
             array_push($errors, "wrong username/password combination");
 
@@ -73,7 +73,7 @@
         if (isset($_GET['logout'])) {
           session_destroy();
           unset($_SESSION['username']);
-          header('location: login.html')
+          header('location: index.php')
         }
 
  ?>
