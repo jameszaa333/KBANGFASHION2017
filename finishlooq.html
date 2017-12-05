@@ -7,6 +7,7 @@
   <title>LOOQ & STYLE</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chonburi">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" type="text/css" href="css/demo.css" />
   <link rel="stylesheet" type="text/css" href="css/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -30,6 +31,107 @@
         display: block;
         margin: auto;
       }
+      a:link {
+        color: #f09488;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+      }
+      a:hover {
+        color: #ed7263;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        text-shadow: 0.1em 0.1em 0.2em #999;
+      }
+    .model { position: relative; }
+
+    .model .skin {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 3;
+    }
+    .model .shadow {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+    }
+
+    .img-container .modelbg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    .coloricon a:hover {
+      cursor: pointer;
+    }
+
+    .topic {
+      filter: alpha(opacity=100);
+      opacity:1.0;
+      -webkit-transition:0.7s;
+      -moz-transition:0.7s;
+      -o-transition:0.7s;
+    }
+    .topic:hover {
+        filter: alpha(opacity=70);
+        opacity:.8;
+        cursor: text;
+    }
+
+    .coloricon img {
+      width: 30px;
+      border-radius: 100%;
+      -webkit-box-shadow: 5px 5px 5px #ccc;
+      -moz-box-shadow: 5px 5px 5px #ccc;
+      box-shadow: 5px 5px 5px #ccc;
+
+      -webkit-transition:0.7s;
+      -moz-transition:0.7s;
+      -o-transition:0.7s;
+
+      filter: alpha(opacity=100);
+      opacity:1.0;
+    }
+
+    .coloricon img:hover {
+      filter: alpha(opacity=70);
+      opacity:.8;
+    }
+
+    .button {
+      border: solid 1px #999;
+
+      -webkit-transition:0.7s;
+      -moz-transition:0.7s;
+      -o-transition:0.7s;
+
+      filter: alpha(opacity=100);
+      opacity:1.0;
+
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+    }
+
+    .button:hover {
+      filter: alpha(opacity=70);
+      opacity:.8;
+
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      box-shadow: 0.1em 0.1em 0.2em #999;
+      text-shadow: none;
+    }
+
+
+
+
     </style>
 
 
@@ -204,7 +306,10 @@
               <p>ACCESSORIES : <a href="#">url 4</a></p>
               <p style="color: #976f6c">TOTAL PRICE : .....(Price)</p>
           </div>
-          <div style="padding-top: 65px;padding-bottom: 30px">	<a class="button is-light" href="#" style="color: #ffffff;width: 120px;background-color: #976f6c;margin-right: 20px">DONE</a>	<a class="button is-light" href="#" style="color: #ffffff;width: 150px;background-color: #976f6c">SAVE & DONE</a></div>
+      <div class="column has-text-centered" style="margin-bottom: 1.5%; margin-top: 1%">
+        <a class="button is-light" href="testimage2.html" style="color: #ffffff; width: 90px; background-color: #e7c6c2;margin-bottom: 166px">NEXT</a>
+        <a class="button is-light" href="testimage2.html" style="color: #ffffff; width: 90px; background-color: #e7c6c2;margin-bottom: 166px">SAVE & DONE</a>
+      </div>
       </div>
     </section>
 
