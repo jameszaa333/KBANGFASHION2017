@@ -22,6 +22,9 @@ const skirtsController = require('./controllers/skirts.controller')
 const socksController = require('./controllers/socks.controller')
 const shortsController = require('./controllers/shorts.controller')
 const shoesController = require('./controllers/shoes.controller')
+const winterController = require('./controllers/winter.controller')
+const springsummerController = require('./controllers/springsummer.controller')
+const newcollectionController = require('./controllers/newcollection.controller')
 
 
 app.get('/', homeController.index)
@@ -41,6 +44,9 @@ app.get('/skirts', skirtsController.index)
 app.get('/socks', socksController.index)
 app.get('/shorts', shortsController.index)
 app.get('/shoes', shoesController.index)
+app.get('/winter-is-coming', winterController.index)
+app.get('/spring-summer-2018', springsummerController.index)
+app.get('/new-collection', newcollectionController.index)
 
 
 
