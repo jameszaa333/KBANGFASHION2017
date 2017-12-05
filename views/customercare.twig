@@ -1,0 +1,119 @@
+{% extends 'layout/base.twig' %}
+
+{% block title %} <title>Customer care</title> {% endblock %}
+
+{% block stylesheet %} {% endblock %}
+
+{% block style %} 
+
+	<style>
+	   .topic {
+      filter: alpha(opacity=100);
+      opacity:1.0;
+      -webkit-transition:0.7s;
+      -moz-transition:0.7s;
+      -o-transition:0.7s;
+    }
+    .topic:hover {
+        filter: alpha(opacity=70);
+        opacity:.8;
+        cursor: text;
+    }
+    .content img {
+      filter: alpha(opacity=100);
+      opacity:1.0;
+      -webkit-transition:0.7s;
+      -moz-transition:0.7s;
+      -o-transition:0.7s;
+      border-radius: 0px 0px 0px 0px;
+
+      -webkit-filter: grayscale(1);
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      filter: url(desaturate.svg#greyscale);
+      filter: gray;
+      filter: grayscale(70%);
+    }
+    .content img:hover {
+      filter: alpha(opacity=70);
+      opacity:.8;
+      border-radius: 20px 20px 20px 20px;
+      -webkit-transition: 0.9s
+      -moz-transition:0.9s;
+
+      -webkit-filter: grayscale(0);
+      -webkit-filter: grayscale(0);
+      -moz-filter: grayscale(0);
+      filter: none;
+      filter: grayscale(0);
+    }
+    .shadow, .content img {
+      -webkit-box-shadow: 3px 3px 3px #ccc;
+      -moz-box-shadow: 3px 3px 3px #ccc;
+      box-shadow: 3px 3px 3px #ccc;
+    }
+	</style>
+
+{% endblock %}
+
+
+{% block content %} 
+
+    <div class="content">
+      <div class="topic" style="padding-top: 85px; width: 100%; display: flex; padding-left: 41%;">
+        <p style="font-size: 30px; font-family: Chonburi; color: #464646;">คำถามที่พบบ่อย ( FAQ )</p>
+      </div>
+      <div style="width: 100%; height: 100%; display: flex;">
+        <div class="img-container" style="width: 40%; margin-left: 5%; margin-top:25px;">
+          <img src="assets/images/content/pic3.jpg" style="width: 85%" alt=""><br><br><br>
+          <img src="assets/images/content/pic4.jpg" style="width: 85%" alt="">
+        </div>
+        <div style="width: 60%; height: auto; background-color: transparent; margin-right: 4%">
+          <br><br>
+          <div class="w3-container shadow" style="background-color:#dea2a0; border-radius: 7px">
+            <div class="column"><p style="font-size: 19px; font-family: Mitr Light; color: #fff">▽ ดีไซน์ เเละ คอนเซ็ป ของเว็บคืออะไร?</p>
+              <div class="w3-container">
+                <div class="w3-panel w3-padding-32 w3-center" style="background-color: #fae9e7"><p style="color:#424242; font-size: 14px;">LOOQ & STYLE เเละเว็บไซต์ห้องเเต่งตัวจําลองที่จะช่วยให้การเลือกสรรเสื้อผ้าของสาวๆ เป็นเรื่อง
+                  ง่ายขึ้น ช่วยในการตัดสินใจซื้อเสื้อผ้าหรือเเม้เเต่ลดเวลาในการเเต่งตัวของสาวๆ ลงได้</p></div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="w3-container shadow" style="background-color:#dea2a0; border-radius: 7px">
+            <div class="column"><p style="font-size: 19px; font-family: Mitr Light; color: #fff">▽ เเบรนด์เสื้อผ้าที่เข้าร่วมกับทางเรา</p>
+              <div class="w3-container">
+                <div class="w3-panel w3-padding-32 w3-center" style="background-color: #fae9e7"><p style="color:#424242; font-size: 14px;">ASAVA, PRADITH, O & B, POMELO, MILIN</p></div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="w3-container shadow" style="background-color:#dea2a0; border-radius: 7px">
+            <div class="column"><p style="font-size: 19px; font-family: Mitr Light; color: #fff">▽ อัพเดทบทความเมื่อไหร่?</p>
+              <div class="w3-container">
+                <div class="w3-panel w3-padding-32 w3-center" style="background-color: #fae9e7"><p style="color:#424242; font-size: 14px;">ในส่วนของบทความนั้นทางเราจะมีอัพเดททุกๆ 3 เดือน ตามซีซั่นต่างๆ เเละส่วนของพวกเทรนด์กำลังมาเเเรงตอนนั้น ทางเราจะมีการอัพเดททุกวันจันทร์ในอาทิตย์ที่2 ของเดือนนั้นๆ</p></div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="w3-container shadow" style="background-color:#dea2a0; border-radius: 7px">
+            <div class="column"><p style="font-size: 19px; font-family: Mitr Light; color: #fff">▽ ลองเเต่งตัวในเว็บกับไปเดินเลือกซื้อเองตามร้านเเตกต่างกันไหม?</p>
+              <div class="w3-container">
+                <div class="w3-panel w3-padding-32 w3-center" style="background-color: #fae9e7"><p style="color:#424242; font-size: 14px;">เเเตกต่างกันค่ะ การลองเเต่งตัวกับทางเว็บไซต์ของเรา ลูกค้าจะได้รู้เลยว่าชุดเหมาะกับเราไหม ไม่ต้องเดินเลือกตามร้านให้เมื่อย หรือเสี่ยงกับการที่บางร้านไม่มีการให้ลองสินค้า ทำให้บางครั้ง
+                ที่ซื้อมาอาจจะใส่ไม่ได้ หรือไม่เข้ากับตัวลูกค้าอย่างที่คิดไว้ ดังนั้นเว็บเราจึงตอบโจทย์กับสาวยุดใหม่เป็นอย่างมาก</p></div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="w3-container shadow" style="background-color:#dea2a0; border-radius: 7px">
+            <div class="column"><p style="font-size: 19px; font-family: Mitr Light; color: #fff">▽ ทางเว็บรับการสั่งสินค้าไหมคะ?</p>
+              <div class="w3-container">
+                <div class="w3-panel w3-padding-32 w3-center" style="background-color: #fae9e7"><p style="color:#424242; font-size: 14px;">ทางเว็บเราจะไม่มีการรับออร์เดอร์สินค้าใดๆ นะคะ เว็บไซต์เราเป็นเเเค่ช่องทางการโปรโมเท่านั้น เเต่ถ้าลูกค้าต้องการสินค้าชิ้นไหนทางเว็บไซต์ก็ได้มีการเเปะลิ้งของ
+                สินค้านั้นไว้ให้ใต้สินค้านั้น ลูกค้าสามารถเข้าไปสั่งซื้อได้เองจากเว็บของสินค้านั้นเลยค่ะ</p></div>
+              </div>
+            </div>
+          </div>
+          <br><br><br>
+      </div>
+    </div>
+
+{% endblock %}
