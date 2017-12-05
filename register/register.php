@@ -1,3 +1,4 @@
+<?php include('server.php'); ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -12,30 +13,32 @@
       <h2>Register</h2>
     </div>
 
-    <from metod="post" action="register.php">
+    <form method="post" action="register.php">
+
+      <!--display validation errors here-->
+      <?php include('errors.php'); ?>
 
       <div class="input-group">
-        <lebel>Username</lebel>
-        <input type="text" name="username">
+        <label>Username</label>
+        <input type="text" name="username" value="<?php echo $username; ?>">
       </div>
 
       <div class="input-group">
-        <lebel>Email</lebel>
-        <input type="text" name="email">
+        <label>Email</label>
+        <input type="text" name="email" value="<?php echo $email; ?>">
       </div>
 
       <div class="input-group">
-        <lebel>Password</lebel>
+        <label>Password</label>
         <input type="password" name="password_1">
       </div>
 
       <div class="input-group">
-        <lebel>Confirm Password</lebel>
+        <label>Confirm Password</label>
         <input type="password" name="password_2">
       </div>
 
       <div class="input-group">
-        <lebel>Register</lebel>
         <button type="submit" name="register" class="btn">Register</button>
       </div>
 
@@ -43,7 +46,7 @@
         Already a member?  <a href="login.php">Sign in</a>
       </p>
 
-    </from>
+    </form>
 
   </body>
 </html>

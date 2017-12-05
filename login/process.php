@@ -1,7 +1,7 @@
 <?php
 //get values passe from from in login-php get_included_files
-      $username = $_POST ['user'];
-      $password = $_POST ['pass'];
+      $username = $_POST['user'];
+      $password = $_POST['pass'];
 
 //to prevent mysql injection
       $username = stripcslashes($username);
@@ -10,7 +10,7 @@
       $password = mysql_real_escape_string($password);
 
 // connect to the server and select database
-      mysql_connect("localhost", "root", **);
+      mysql_connect("localhost:8000", "root", "");
       mysql_select_db("login");
 
 // Query the database for user

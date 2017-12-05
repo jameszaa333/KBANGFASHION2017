@@ -4,7 +4,7 @@
 }
 
 body {
-  font-size: 30%;
+  font-size: 120%;
   background: #F8F8FF;
 }
 
@@ -20,9 +20,9 @@ body {
   padding: 20px;
 }
 
-from {
+form {
   width: 30%;
-  margin: 0 px auto;
+  margin: 0px auto;
   padding: 20px;
   border: 1px solid #B0C4DE;
   background: white;
@@ -33,7 +33,7 @@ from {
   margin: 10px 0px 10px 0px;
 }
 
-.input-group lebel {
+.input-group label {
   display: block;
   text-align: left;
   margin: 3px;
@@ -55,4 +55,15 @@ from {
   background: #5F9EA0;
   border: none;
   border-radius: 5px;
+}
+
+.error {
+  width: 92%;
+  margin: 0px auto;
+  padding: 10px;
+  border: 1px solid #a94442;
+  color: #a94442;
+  background: #f2dede;
+  border-radius: 5px;
+  text-align: left;
 }

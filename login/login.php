@@ -8,19 +8,18 @@
 
   <body>
     <div id="frm">
-      <form action="process.php" method="post">
+      <form action="process.php" method="POST">
         <p>
-          <lebel>Username</lebel>
+          <label>Username</label>
           <input type="text" id="user"name="user" />
         </p>
 
         <p>
-          <lebel>Password</lebel>
-          <input type="password" id="pass "name="pass"  />
+          <label>Password</label>
+          <input type="password" id="pass" name="pass"  />
         </p>
-        
+
         <p>
-          <lebel>Password</lebel>
           <input type="submit" id="btn" value="Login"  />
         </p>
 
