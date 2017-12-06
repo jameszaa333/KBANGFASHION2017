@@ -53,11 +53,17 @@
           left: 0;
           z-index: 2;
         }
-        .img-container .accessories {
+        .img-container .glasses {
           position: absolute;
           top: 0;
           left: 0;
           z-index: 3;
+        }
+        .img-container .bags {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 7;
         }
         .img-container .shoes {
           position: absolute;
@@ -418,17 +424,18 @@
 
     <div class="topic" style="padding-top: 85px; width: 100%; margin-bottom:2%">
       <p class="model color" style="font-family: Chonburi; font-size: 30px; color: #464646; padding-left: 6%">DESIGN LOOQ</p>
-      <a onclick="document.getElementById('tops').src=''; document.getElementById('bottoms').src=''; document.getElementById('shoes').src=''; document.getElementById('accessories').src=''"><i class="fa fa-trash-o" aria-hidden="true" title="Clear all" style="padding-left:30%"></i></a>
+      <a onclick="document.getElementById('tops').src=''; document.getElementById('bottoms').src=''; document.getElementById('shoes').src=''; document.getElementById('bags').src=''; document.getElementById('glasses').src='';"><i class="fa fa-trash-o" aria-hidden="true" title="Clear all" style="padding-left:34%;padding-top:1%"></i></a>
     </div>
     <div style="display: flex; width: 100%">
-      <div class="img-container" style="width: 27%; margin-left: 10%;">
+      <div class="img-container" style="width: 27%; margin-left: 10%; margin-top:-3%">
       <!--เสื้อ กางเกง ตัวหุ่น อยู่นี่ละจ้าา-->      
         <img id="tops" class="tops" src="" alt="" style="width: 100%; max-height: 632px; max-width: 311px;">
         <img id="bottoms" class="bottoms" src="" alt="" style="width: 100%; max-height: 632px; max-width: 311px;">
         <img class="modelbg" src="assets/images/model/modelN0.png" alt=""  style="width: 100%; max-height: 632px; max-width: 311px;">
         <img id="shadow" class="shadow" src="assets/images/model/shadow1.png" alt="" style="width: 100%; max-height: 632px; max-width: 311px;">
-        <img id="accessories" class="accessories" src="" alt="" style="width: 100%; max-height: 632px; max-width: 311px;">
+        <img id="glasses" class="accessories" src="" alt="" style="width: 100%; max-height: 632px; max-width: 311px;">
         <img id="shoes" class="shoes" src="" alt="" style="width: 100%; max-height: 632px; max-width: 311px;">
+        <img id="bags" class="shoes" src="" alt="" style="width: 100%; max-height: 632px; max-width: 311px;">
       </div>
 
       <div class="menu" style="width: 63%; padding-left:4%;">
@@ -1519,8 +1526,24 @@
                     <img src="assets/images/clothes/menu/menu76.png" alt="image-1" style="height: 130px">
                   </a>
                 </div>
-              </div><br>
-              <div style="height:430px;">
+              </div>
+              <div class="w3-third menuclothes"><br>
+                <div class="w3-card-2 w3-padding-top">
+                  <figure class="image is-1by2"></figure>
+                  <a onclick="document.getElementById('shoes').src='assets/images/clothes/model/model78.png'">
+                    <img src="assets/images/clothes/menu/menu78.png" alt="image-1" style="height: 130px">
+                  </a>
+                </div>
+              </div>
+              <div class="w3-third menuclothes"><br>
+                <div class="w3-card-2 w3-padding-top">
+                  <figure class="image is-1by2"></figure>
+                  <a onclick="document.getElementById('shoes').src='assets/images/clothes/model/model74.png'">
+                    <img src="assets/images/clothes/menu/menu74.png" alt="image-1" style="height: 130px">
+                  </a>
+                </div>
+              </div>
+              <div style="height:450px;">
               </div>
               <!-- Pagination -->
               <div class="w3-center w3-padding-32">
@@ -1538,26 +1561,27 @@
           </div>
         </div>
 
-        <!--shoes-->
+        <!--accessories-->
         <div class="shirt">
-          <!--all shoes-->
-          <div id="allshoes" class="tabcontent w3-animate-right style-4" style="width: 100%; padding-left:5%; margin-bottom:-65%; margin-top:-5%"><br>
+          <!--bags-->
+          <div id="allass" class="tabcontent w3-animate-right style-4" style="width: 100%; padding-left:5%; margin-bottom:-65%; margin-top:-5%"><br>
             <div style="width: 5%; margin-right:5%">
               <div class="tab">
                 <a class="tablinks" onclick="openCity(event, 'allass')">
                   <div class="tabname" style="background-color:#424242; color:#fff">
+                      B<br>
                       A<br>
-                      L<br>
-                      L<br>
+                      G<br>
+                      S<br>
                   </div>
                 </a>
-              </div>
-              <div class="tab">
-                <a class="tablinks" onclick="openCity(event, 'allshoes')">
-                  <div class="tabname" style="background-color:#424242; color:#fff">
+                <a class="tablinks" onclick="openCity(event, 'glasses')">
+                  <div class="tabname">
+                      G<br>
+                      L<br>
+                      A<br>
                       S<br>
-                      H<br>
-                      O<br>
+                      S<br>
                       E<br>
                       S<br>
                   </div>
@@ -1566,26 +1590,158 @@
             </div>
             <div class="tabclothes" style="width: 85%; margin-left:6%">
               <div style="text-align: right; padding-right: 6%; padding-top: 2%">
-                <a onclick="document.getElementById('shoes').src=''"><i class="fa fa-trash-o" aria-hidden="true" style="width:25px;" title="Clear shoes"></i></a>
-                <a onclick="document.getElementById('shoes').style.display='none'" class="w3-bar-item w3-button w3-hover-black" title="Close"><p style="font-size:16px">x</p></a>
+                <a onclick="document.getElementById('bags').src=''"><i class="fa fa-trash-o" aria-hidden="true" style="width:25px;" title="Clear shoes"></i></a>
+                <a onclick="document.getElementById('allass').style.display='none'" class="w3-bar-item w3-button w3-hover-black" title="Close"><p style="font-size:16px">x</p></a>
               </div>
               <div class="w3-third menuclothes"><br>
                 <div class="w3-card-2 w3-padding-top">
                   <figure class="image is-1by2"></figure>
-                  <a onclick="document.getElementById('shoes').src='assets/images/clothes/model/model73.png'">
-                    <img src="assets/images/clothes/menu/menu73.png" alt="image-1" style="height: 130px">
+                  <a onclick="document.getElementById('bags').src='assets/images/clothes/model/model64.png'">
+                    <img src="assets/images/clothes/menu/menu64.png" alt="image-1" style="height: 130px">
                   </a>
                 </div>
               </div>
               <div class="w3-third menuclothes"><br>
                 <div class="w3-card-2 w3-padding-top">
                   <figure class="image is-1by2"></figure>
-                  <a onclick="document.getElementById('shoes').src='assets/images/clothes/model/model76.png'">
-                    <img src="assets/images/clothes/menu/menu76.png" alt="image-1" style="height: 130px">
+                  <a onclick="document.getElementById('bags').src='assets/images/clothes/model/model65.png'">
+                    <img src="assets/images/clothes/menu/menu65.png" alt="image-1" style="height: 130px">
                   </a>
                 </div>
-              </div><br>
-              <div style="height:430px;">
+              </div>
+              <div class="w3-third menuclothes"><br>
+                <div class="w3-card-2 w3-padding-top">
+                  <figure class="image is-1by2"></figure>
+                  <a onclick="document.getElementById('bags').src='assets/images/clothes/model/model66.png'">
+                    <img src="assets/images/clothes/menu/menu66.png" alt="image-1" style="height: 130px">
+                  </a>
+                </div>
+              </div>
+              <div class="w3-third menuclothes"><br>
+                <div class="w3-card-2 w3-padding-top">
+                  <figure class="image is-1by2"></figure>
+                  <a onclick="document.getElementById('bags').src='assets/images/clothes/model/model67.png'">
+                    <img src="assets/images/clothes/menu/menu67.png" alt="image-1" style="height: 130px">
+                  </a>
+                </div>
+              </div>
+              <div class="w3-third menuclothes"><br>
+                <div class="w3-card-2 w3-padding-top">
+                  <figure class="image is-1by2"></figure>
+                  <a onclick="document.getElementById('bags').src='assets/images/clothes/model/model68.png'">
+                    <img src="assets/images/clothes/menu/menu68.png" alt="image-1" style="height: 130px">
+                  </a>
+                </div>
+              </div>
+              <div class="w3-third menuclothes"><br>
+                <div class="w3-card-2 w3-padding-top">
+                  <figure class="image is-1by2"></figure>
+                  <a onclick="document.getElementById('bags').src='assets/images/clothes/model/model69.png'">
+                    <img src="assets/images/clothes/menu/menu69.png" alt="image-1" style="height: 130px">
+                  </a>
+                </div>
+              </div>
+              <div class="w3-third menuclothes"><br>
+                <div class="w3-card-2 w3-padding-top">
+                  <figure class="image is-1by2"></figure>
+                  <a onclick="document.getElementById('bags').src='assets/images/clothes/model/model70.png'">
+                    <img src="assets/images/clothes/menu/menu70.png" alt="image-1" style="height: 130px">
+                  </a>
+                </div>
+              </div>
+              <div class="w3-third menuclothes"><br>
+                <div class="w3-card-2 w3-padding-top">
+                  <figure class="image is-1by2"></figure>
+                  <a onclick="document.getElementById('bags').src='assets/images/clothes/model/model71.png'">
+                    <img src="assets/images/clothes/menu/menu71.png" alt="image-1" style="height: 130px">
+                  </a>
+                </div>
+              </div>
+              <div class="w3-third menuclothes"><br>
+                <div class="w3-card-2 w3-padding-top">
+                  <figure class="image is-1by2"></figure>
+                  <a onclick="document.getElementById('bags').src='assets/images/clothes/model/model72.png'">
+                    <img src="assets/images/clothes/menu/menu72.png" alt="image-1" style="height: 130px">
+                  </a>
+                </div>
+              </div>
+              <!-- Pagination -->
+              <div class="w3-center w3-padding-32">
+                <div class="w3-bar">
+                  <br><br>
+                  <a href="#!" class="w3-bar-item w3-button w3-hover-black">«</a>
+                  <a href="#!" class="w3-bar-item w3-black w3-button">1</a>
+                  <a href="#!" class="w3-bar-item w3-button w3-hover-black">2</a>
+                  <a href="#!" class="w3-bar-item w3-button w3-hover-black">3</a>
+                  <a href="#!" class="w3-bar-item w3-button w3-hover-black">4</a>
+                  <a href="#!" class="w3-bar-item w3-button w3-hover-black">»</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--glasses-->
+          <div id="glasses" class="tabcontent w3-animate-right style-4" style="width: 100%; padding-left:5%; margin-bottom:-65%; margin-top:-5%"><br>
+            <div style="width: 5%; margin-right:5%">
+              <div class="tab">
+                <a class="tablinks" onclick="openCity(event, 'allass')">
+                  <div class="tabname">
+                      B<br>
+                      A<br>
+                      G<br>
+                      S<br>
+                  </div>
+                </a>
+                <a class="tablinks" onclick="openCity(event, 'glasses')">
+                  <div class="tabname" style="background-color:#424242; color:#fff">
+                      G<br>
+                      L<br>
+                      A<br>
+                      S<br>
+                      S<br>
+                      E<br>
+                      S<br>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="tabclothes" style="width: 85%; margin-left:6%">
+              <div style="text-align: right; padding-right: 6%; padding-top: 2%">
+                <a onclick="document.getElementById('glasses').src=''"><i class="fa fa-trash-o" aria-hidden="true" style="width:25px;" title="Clear shoes"></i></a>
+                <a onclick="document.getElementById('glasses').style.display='none'" class="w3-bar-item w3-button w3-hover-black" title="Close"><p style="font-size:16px">x</p></a>
+              </div>
+              <div class="w3-third menuclothes"><br>
+                <div class="w3-card-2 w3-padding-top">
+                  <figure class="image is-1by2"></figure>
+                  <a onclick="document.getElementById('glasses').src='assets/images/clothes/model/model35.png'">
+                    <img src="assets/images/clothes/menu/menu35.png" alt="image-1" style="height: 130px">
+                  </a>
+                </div>
+              </div>
+              <div class="w3-third menuclothes"><br>
+                <div class="w3-card-2 w3-padding-top">
+                  <figure class="image is-1by2"></figure>
+                  <a onclick="document.getElementById('glasses').src='assets/images/clothes/model/model36.png'">
+                    <img src="assets/images/clothes/menu/menu36.png" alt="image-1" style="height: 130px">
+                  </a>
+                </div>
+              </div>
+              <div class="w3-third menuclothes"><br>
+                <div class="w3-card-2 w3-padding-top">
+                  <figure class="image is-1by2"></figure>
+                  <a onclick="document.getElementById('glasses').src='assets/images/clothes/model/model79.png'">
+                    <img src="assets/images/clothes/menu/menu79.png" alt="image-1" style="height: 130px">
+                  </a>
+                </div>
+              </div>
+              <div class="w3-third menuclothes"><br>
+                <div class="w3-card-2 w3-padding-top">
+                  <figure class="image is-1by2"></figure>
+                  <a onclick="document.getElementById('glasses').src='assets/images/clothes/model/model80.png'">
+                    <img src="assets/images/clothes/menu/menu80.png" alt="image-1" style="height: 130px">
+                  </a>
+                </div>
+              </div>
+              <div style="height:450px;">
               </div>
               <!-- Pagination -->
               <div class="w3-center w3-padding-32">
