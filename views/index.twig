@@ -1,9 +1,9 @@
-{% extends 'layout/base.twig' %}
+{% extends 'layout/baseanimate.twig' %}
 
 {% block title %} <title>LOOQ & STYLE</title> {% endblock %}
 
 {% block stylesheet %}
-
+    
     <link rel="stylesheet" type="text/css" href="css/personal.css" />
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
@@ -176,7 +176,7 @@
 {% block content2 %}
 
   <div style="background-color: transparent"></div>
-  <div style="background-color: #f0f0f0;width: 100%;height: 100%;">
+  <div style="background-color: #f0f0f0;width: 100%;height: 100%;overflow: hidden">
     <div id="jssor_1" style="position:relative;margin:0 auto;top:49px;left:0px;width:1600.5px;height:500px;visibility:hidden;">
     <!-- Loading Screen -->
       <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
@@ -184,7 +184,7 @@
       </div>
       <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1600.5px;height:500px;overflow:hidden;">
         <div>
-          <a><img data-u="image" src="assets/images/home/car1.png" /></a>
+          <a style="cursor:pointer"><img data-u="image" src="assets/images/home/car1.png" /></a>
         </div>
         <div>
           <a href="winter-is-coming"><img data-u="image" src="assets/images/home/car2.png" /></a>
@@ -218,8 +218,9 @@
     </div>
 
     <div style="width: 100%;height: auto;margin-top: 90px; display: flex;margin-left: 8%; margin-right: 10%;">
-      <p class="topic" style="font-family: Chonburi;font-size: 32px; color: #424242">
-        LOOQ<font style="font-size:17px; color:#424242"> / lastest LOOQ from users</font>
+      <p>
+        <font class="topic" style="font-family: Chonburi;font-size: 32px; color: #424242">LOOQ </font>
+        <b><font style="font-size:17px; color:#424242;"> / lastest LOOQ from users</font></b>
       </p>
     </div>
 
@@ -228,7 +229,7 @@
     <div class="w3-row-padding content" style="margin-top: 3%;margin-left: 8%;margin-right: 8%;">
       <div class="w3-third" style="padding-bottom: 20px;">
         <div class="w3-card-1 w3-border container w3-third" style="width:100%;">
-          <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
+          <img src="/assets/images/Finish/finish01.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
             <div class="overlay">
               <div class="image-popup">
                 <img src="/assets/images/profile/bar.png" alt="" width="100%">
@@ -243,7 +244,7 @@
       </div>
       <div class="w3-third" style="padding-bottom: 20px;">
         <div class="w3-card-1 w3-border container w3-third" style="width:100%;">
-          <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
+          <img src="/assets/images/Finish/finish02.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
             <div class="overlay">
               <div class="image-popup">
                 <img src="/assets/images/profile/bar.png" alt="" width="100%">
@@ -258,7 +259,7 @@
       </div>
       <div class="w3-third" style="padding-bottom: 20px;">
         <div class="w3-card-1 w3-border container w3-third" style="width:100%;">
-          <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
+          <img src="/assets/images/Finish/finish03.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
             <div class="overlay">
               <div class="image-popup">
                 <img src="/assets/images/profile/bar.png" alt="" width="100%">
@@ -273,7 +274,7 @@
       </div>
       <div class="w3-third" style="padding-bottom: 20px;">
         <div class="w3-card-1 w3-border container w3-third" style="width:100%;">
-          <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
+          <img src="/assets/images/Finish/finish04.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
             <div class="overlay">
               <div class="image-popup">
                 <img src="/assets/images/profile/bar.png" alt="" width="100%">
@@ -288,7 +289,7 @@
       </div>
       <div class="w3-third" style="padding-bottom: 20px;">
         <div class="w3-card-1 w3-border container w3-third" style="width:100%;">
-          <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
+          <img src="/assets/images/Finish/finish05.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
             <div class="overlay">
               <div class="image-popup">
                 <img src="/assets/images/profile/bar.png" alt="" width="100%">
@@ -303,7 +304,7 @@
       </div>
       <div class="w3-third" style="padding-bottom: 20px;">
         <div class="w3-card-1 w3-border container w3-third" style="width:100%;">
-          <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
+          <img src="/assets/images/Finish/finish06.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
             <div class="overlay">
               <div class="image-popup">
                 <img src="/assets/images/profile/bar.png" alt="" width="100%">
@@ -318,7 +319,7 @@
       </div>
       <div class="w3-third" style="padding-bottom: 20px;">
         <div class="w3-card-1 w3-border container w3-third" style="width:100%;">
-          <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
+          <img src="/assets/images/Finish/finish07.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
             <div class="overlay">
               <div class="image-popup">
                 <img src="/assets/images/profile/bar.png" alt="" width="100%">
@@ -333,7 +334,7 @@
       </div>
       <div class="w3-third" style="padding-bottom: 20px;">
         <div class="w3-card-1 w3-border container w3-third" style="width:100%;">
-          <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
+          <img src="/assets/images/Finish/finish08.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
             <div class="overlay">
               <div class="image-popup">
                 <img src="/assets/images/profile/bar.png" alt="" width="100%">
@@ -348,7 +349,7 @@
       </div>
       <div class="w3-third" style="padding-bottom: 20px;">
         <div class="w3-card-1 w3-border container w3-third" style="width:100%;">
-          <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
+          <img src="/assets/images/Finish/finish09.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
             <div class="overlay">
               <div class="image-popup">
                 <img src="/assets/images/profile/bar.png" alt="" width="100%">
@@ -362,9 +363,8 @@
         </div>
       </div>
 
-      <CENTER>
-        <div class="w3-center w3-padding-16">
-          <div class="w3-bar" style="margin-top:2%">
+        <div class="w3-center w3-padding-32" style="text-align: center;">
+          <div class="w3-bar">
             <a href="#!" class="w3-bar-item w3-button w3-hover-black">«</a>
             <a href="#!" class="w3-bar-item w3-black w3-button">1</a>
             <a href="#!" class="w3-bar-item w3-button w3-hover-black">2</a>
@@ -373,8 +373,8 @@
             <a href="#!" class="w3-bar-item w3-button w3-hover-black">»</a>
           </div>
         </div>
-      </CENTER>
     </div>
+</div>
 
     
     <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>

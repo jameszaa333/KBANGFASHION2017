@@ -394,7 +394,7 @@
       <!--shirt-->
         <div class="shirt w3-animate-right">
         <!--all tops-->
-          <div id="alltops" class="tabcontent" style="width: 100%;height: 100%;padding-bottom: 40px"><br>
+          <div id="alltops" class="tabcontent w3-animate-right style-4" style="width: 100%;height: 100%;padding-bottom: 40px"><br>
             <div style="width: 5%">
               <div class="tab">
                 <a class="tablinks" onclick="openCity(event, 'alltops')">
@@ -438,7 +438,9 @@
               </div>
             </div>
             <div class="tabclothes" style="width: 93%;padding-left: 25px">
-              <input type="text" name="search" placeholder="Search.." style="margin: 2% 2% 0% 2%;"><br><br>
+              <div style="width: 100%; text-align: right; padding-right: 10%; padding-top: 2%">
+                <span onclick="document.getElementById('alltops').style.display='none'" class="w3-bar-item w3-button w3-large " title="Close">X</span>
+              </div>
               <div class="w3-third menuclothes"><br>
                 <div class="w3-card-2 w3-padding-top">
                   <figure class="image is-1by2"></figure>

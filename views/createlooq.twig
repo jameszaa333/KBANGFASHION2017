@@ -1,12 +1,12 @@
-{% extends 'layout/base.twig' %}
+{% extends 'layout/baseanimate.twig' %}
 
-{% block title %} <title>Album</title> {% endblock %}
+{% block title %} <title>Create LOOQ</title> {% endblock %}
 
 {% block stylesheet %} {% endblock %}
 
 {% block style %}
 
-	<style>
+  <style>
         .model { position: relative; }
         .model .skin {
           position: absolute;
@@ -192,7 +192,7 @@
     </div>
 
     <!--color button-->
-    <div style="width: 100%; margin-top: 18%; display: flex;">
+    <div style="width: 100%; margin-top: 270px; display: flex;">
       <div style="width: 45%; text-align: right; font-family: Chonburi; font-size: 18px; color: #976f6c; margin-right: 1%">SKIN COLOR</div>
       <div class="coloricon" style="width: 55%; text-align: left; margin-left: 1%">
           <a onclick="document.getElementById('model skin').src='assets/images/model/modelN0.png'"><img src="assets/images/model/N0.png"></a>
@@ -217,7 +217,7 @@
 
       function showPage() {
         document.getElementById("loader").style.display = "none";
-        document.getElementById("Contentt").style.display = "block";
+        document.getElementById("Content").style.display = "block";
       }
     </script>
 

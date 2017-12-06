@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	{% block title %} {% endblock %}
+
+    <link rel="stylesheet" type="text/css" href="css/w3.css">
+    <link rel="stylesheet" type="text/css" href="css/bulma.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chonburi">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chonburi">
+	
+    {% block stylesheet %} {% endblock %}
+</head>
+<body class="demo-1" onload="myFunction()" style="color:#000000; background-color: #f0f0f0;">
+
+	<style>
+          a:link {
+            text-decoration:none;
+          	color: #f09488;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+          }
+          a:hover {
+            text-decoration:none;
+          	color: #ed7263;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            text-shadow: 0.1em 0.1em 0.2em #ccc; 
+          }
+          .login, .regis {
+	        -webkit-transition:0.7s;
+	        -moz-transition:0.7s;
+	        -o-transition:0.7s;
+
+	        filter: alpha(opacity=100);
+	        opacity:1.0;
+
+	        -webkit-transition: all 0.5s ease;
+	        -moz-transition: all 0.5s ease;
+	        -o-transition: all 0.5s ease;
+	      }
+          .login, .regis:hover {
+          	filter: alpha(opacity=70);
+	        opacity:.8;
+
+	        -webkit-transition: all 0.5s ease;
+	        -moz-transition: all 0.5s ease;
+	        -o-transition: all 0.5s ease;
+	        box-shadow: 0.1em 0.1em 0.2em #999;
+	        text-shadow: none;
+          }
+          .topic {
+		    -webkit-transition: all 0.5s ease;
+		    -moz-transition: all 0.5s ease;
+		    -o-transition: all 0.5s ease;
+		  }
+		  .topic:hover {
+		    -webkit-transition: all 0.5s ease;
+		    -moz-transition: all 0.5s ease;
+		    -o-transition: all 0.5s ease;
+		    text-shadow: 0.1em 0.1em 0.2em #ccc; 
+		  }
+	</style>
+
+	{% block style %} {% endblock %}
+
+	<div id="ip-container" class="ip-container">
+
+	{% block content1 %} {% endblock %}
+
+	<!--  Animation ที่คลิกตู้เสื้อผ้า  -->
+	    <nav class="w3-sidebar w3-bar-block animated slideInLeft w3-center" style="display: none;z-index: 8;background-color: #f1f1f1" id="mySidebar3"></nav>
+	    <nav class="w3-sidebar w3-bar-block animated slideInRight w3-center" style="display: none;z-index: 8;right: 0;background-color: #f1f1f1" id="mySidebar4"></nav>
+	<!--  Animation ที่คลิกตู้เสื้อผ้า  -->
+
+	<!-- initial header -->         
+	<!-- main content -->
+	<div id="loader"></div>
+	<div class="w3-animate-top" id="Contentt">
+	<!-- Side Navigation -->
+	    <nav class="w3-sidebar w3-bar-block w3-card animated slideInLeft w3-center" style="display:none;z-index: 7;top:0;" id="mySidebar">
+	        <img style="width: 25%;height: auto;min-width: 200px; max-width:225px;margin-bottom: 30px;margin-top: 100px" src="assets/images/home/Logo4.png">
+	        <a href="create-looq" class="w3-bar-item w3-button w3-hide-large w3-hide-medium w3-hover-red" style="font-size: ;color: lightgrey;font-family: Chonburi">Create LOOQ <img src="assets/images/home/closet3.png" style="width: 32px;height: 29px;"> </a>
+	        <a href="/all-looq" class="w3-bar-item w3-button w3-hover-red" style="font-size: ;color: lightgrey">LOOQ</a>
+	        <!-- <a href="/album-index" class="w3-bar-item w3-button w3-hover-red" style="font-size: ;color: lightgrey">Album</a> -->
+	        <a href="/all-clothes" class="w3-bar-item w3-button w3-hover-red" style="font-size: ;color: lightgrey">Clothes</a>
+	        <a href="/contact-us" class="w3-bar-item w3-button w3-hover-red" style="font-size: ;color: lightgrey">Contact Us</a>
+	        <button class="w3-bar-item w3-button" onclick="w3_close()" style="margin-top: 30px;color: #d7b3af">Close <i class="fa fa-remove"></i></button>
+	    </nav>
+
+	<header class="headerr w3-container w3-padding" style="background-image: url();background-repeat: no-repeat;background-size: 100% 100%;position: fixed;z-index: 5;width: 100%;display: flex;background-color: #e7c6c2;top:0">
+	    <div style="width: 25%;height: 30px">  
+	        <a onclick="w3_open()" class="fa fa-bars w3-xlarge w3-transparent" style="margin-left: 8px;margin-right: 6px;text-decoration: none;color: white!important; cursor:pointer"></a> 
+	        <div class="w3-dropdown-hover w3-transparent"><a class="w3-hide-small" href="create-looq">
+	        	<!--Animation หลังคลิกตู้เสื้อผ้า-->      
+      			<a class="w3-hide-small target" onclick="w4_open()" href="create-looq"><img class="fa w3-xlarge w3-transparent" src="assets/images/home/closet1.png" style="width: 32px;height: 29px;margin-top: 2px;" onmouseover="this.src='assets/images/home/closet4.png';" onmouseout="this.src='assets/images/home/closet1.png';"></a>
+				<!--Animation หลังคลิกตู้เสื้อผ้า-->
+	          	<div class="w3-dropdown-content w3-bar-block w3-border jshadow w3-animate-opacity" style="width:250px">
+		            <div class="w3-container">
+		              <p>Create a Looq, Submit your Looq now!</p>
+		            </div>
+	          	</div>
+	        </div>
+	    </div>
+
+	    <div style="width: 50%;height: 34px;text-align: center;"><a href="index.html" onclick="myFunction2()" class="w3-xlarge w3-transparent">
+	    	<img style="height: auto;width: 35%;min-height: 25px;min-width: 175px" src="assets/images/home/Logo2.png"></a>
+	   	</div>
+    	<div style="width: 25%;height: 30px;text-align: right">
+      		<img src="/assets/images/profile/Minnie.jpg" class="w3-circle" style="width: 30px;height: 30px;">&nbsp;
+	      	<div class="w3-dropdown-hover w3-transparent" >
+	        	<img style="width: 15px;height: 15PX;" src="assets/images/home/arrowdown.png"> 
+	    		<div class="w3-dropdown-content w3-bar-block w3-border jshadow" style="right:0;margin-top: 0px;width: 170px;">
+	      			<div class="w3-bar-item" onclick="document.getElementById('id01').style.display='block'" style="color: #424242">   Welcome, Minnie Pitchaporn</div>
+	      			<a href="my-account" class="w3-bar-item w3-button" style="color: gray"><i class="material-icons">person</i>   My account</a>
+	      			<a href="#!" class="w3-bar-item w3-button" style="color: gray"><i class="material-icons">person</i>   Log out</a>
+	    		</div>
+  			</div>
+    	</div> 
+	</header>
+
+
+	{% block content2 %} {% endblock %}
+
+	<footer class="w3-container w3-padding-16" style="background-color: #f5f5f5;color: grey;font-size: 11px;padding-left: 30px">
+	    <div class="w3-row">
+	      <div class="w3-third w3-container ">
+	        <p><b>Powered by KBANG</b></p>
+	        <p>© 2017 LOOQ & STYLE All rights reserved &nbsp;&nbsp;<a href="/terms-of-use" target="_blank">Term of Use</a></p>
+	      </div>
+	      <div class="w3-third w3-container ">
+	      </div>
+	      <div class="w3-third w3-container w3-hide-small" style="text-align: right"><br><br>
+	        <a href="/our-website">Our Website</a>&nbsp;&nbsp;<a href="/customer-care">Customer Care</a>&nbsp;&nbsp;<a href="/contact-us">Contact Us</a>
+	      </div>
+	      <div class="w3-third w3-container w3-hide-large w3-hide-medium" style="">
+	        <a href="/our-website">Our Website</a>&nbsp;&nbsp;<a href="/customer-care">Customer Care</a>&nbsp;&nbsp;<a href="/contact-us">Contact Us</a>
+	      </div>
+	    </div>
+	</footer>
+	</div>
+	</div>
+
+	<script src="js/modernizr.custom.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/pathLoader.js"></script>
+	<script src="js/main.js"></script>
+	<script>     
+	    //เนวิเกชั่นมาเป็นแถบ
+	    function w3_open() {
+	        var x = document.getElementById("mySidebar");
+	        x.style.width = "100%";
+	        x.style.fontSize = "20px";
+	        x.style.paddingTop = "10%";
+	        x.style.display = "block";
+	    }
+	    //ฟังก์ชั่นปิดหน้ต่าง            
+	    function w3_close() {
+	        document.getElementById("mySidebar").style.display = "none";
+	    }
+	</script>
+	<script type="text/javascript">
+	    function openCity(evt, cityName) {
+	    // Declare all variables
+	    var i, tabcontent, tablinks;
+
+	    // Get all elements with class="tabcontent" and hide them
+	        tabcontent = document.getElementsByClassName("tabcontent");
+	        for (i = 0; i < tabcontent.length; i++) {
+	          tabcontent[i].style.display = "none";
+	        }
+
+	    // Get all elements with class="tablinks" and remove the class "active"
+	        tablinks = document.getElementsByClassName("tablinks");
+	        for (i = 0; i < tablinks.length; i++) {
+	            tablinks[i].className = tablinks[i].className.replace(" active", "");
+	      }
+
+	      function openNav() {
+	        document.getElementById("mySidenav").style.width = "250px";
+	      }
+
+	    /* Set the width of the side navigation to 0 */
+	      function closeNav() {
+	        document.getElementById("mySidenav").style.width = "0";
+	      }
+
+	    // Show the current tab, and add an "active" class to the button that opened the tab
+	        document.getElementById(cityName).style.display = "block";
+	        evt.currentTarget.className += " active";
+	      }
+
+	      function openNav() {
+	          document.getElementById("mySidenav").style.width = "250px";
+	      }
+
+	        function closeNav() {
+	          document.getElementById("mySidenav").style.width = "0";
+	      }
+	</script>
+
+	<!--Animation หลังคลิกตู้เสื้อผ้า-->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js'></script>
+	<script>
+		function w4_open() {
+		    var x = document.getElementById("mySidebar3");
+		    x.style.width = "50%";
+		    x.style.fontSize = "20px";
+		    x.style.paddingTop = "10%";
+		    x.style.display = "block";
+		    var x = document.getElementById("mySidebar4");
+		    x.style.width = "50%";
+		    x.style.fontSize = "20px";
+		    x.style.paddingTop = "10%";
+		    x.style.display = "block";
+		}
+		function w4_close() {
+		    document.getElementById("mySidebar3").style.display = "none";
+		}
+
+		//nongaoy
+		$(".target").click(function () {
+		    var url = this.href;
+		    setTimeout(function () {
+		        location.href = url;
+		      }, 1300);
+		    return false;
+		});
+    </script>
+	<!--Animation หลังคลิกตู้เสื้อผ้า-->
+
+</body>
+</html>

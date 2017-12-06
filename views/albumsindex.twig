@@ -40,7 +40,7 @@
       .jssora051.jssora051dn {opacity:.5;}
       .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
       .linkindex {
-        color: gray !important;
+      color: gray !important;
       }
 
       .linkindex:hover {
@@ -54,9 +54,28 @@
       h2 {
         position: absolute;
         top: 42%;
-        left: 0;
         width: 100%;
         font-size: 30px;
+      }
+      .content img {
+        -webkit-transition:0.7s;
+        -moz-transition:0.7s;
+        -o-transition:0.7s;
+
+        -webkit-filter: grayscale(1);
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        filter: url(desaturate.svg#greyscale);
+        filter: gray;
+        filter: grayscale(70%);
+      }
+      .content img:hover {
+        -webkit-filter: grayscale(0);
+        -webkit-filter: grayscale(0);
+        -moz-filter: grayscale(0);
+        filter: none;
+        filter: grayscale(0);
+        opacity: 1.0 !important;
       }
     </style>
 
@@ -75,7 +94,7 @@
       </div>
       <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1600.5px;height:500px;overflow:hidden;">
         <div>
-          <a href="index"><img data-u="image" src="assets/images/home/car1.png" /></a>
+          <a style="cursor:pointer"><img data-u="image" src="assets/images/home/car1.png" /></a>
         </div>
         <div>
           <a href="winter-is-coming"><img data-u="image" src="assets/images/home/car2.png" /></a>
@@ -109,7 +128,7 @@
     </div>
 
     <div style="width: 100%;height: auto;margin-top: 90px; display: flex;margin-left: 8%; margin-right: 10%;">
-      <p style="margin-left: 15px;font-family: Chonburi;font-size: 30px"><a class="linkindex" href="albums-index">LOOQ</a> / <a style="color: #424242">Albums</a> </p>
+      <p style="margin-left: 15px;font-family: Chonburi;font-size: 30px"><a class="linkindex" href="index">LOOQ</a> / <a style="color: #424242">Albums</a> </p>
       <div class="dropdown is-right is-hoverable" style="padding-left: 5px; padding-top: 6px; height:auto; width: auto;margin-left: 750PX">
       </div>
     </div>
@@ -118,136 +137,95 @@
     <hr>
     <div class="w3-row-padding content" style="margin-top: 3%;margin-left: 8%;margin-right: 8%;">
       <div class="w3-third" style="padding-bottom: 20px;">
-        <div class="w3-card-1 w3-border container w3-third" style="width:100%;">
-          <a href="#">
+        <div class="w3-card-1 w3-border container w3-third" style="width:100%; text-align:center">
+          <a href="#!">
             <div class="image">
-              <img  src="/assets/images/tag/sum11.png" alt"image-1" style="height: 400px" class="w3-hover-opacity" style="width:100%">
-              <h2 style="font-family: Chonburi;color: #ffffff">#SUMMER</h2>
+              <img src="/assets/images/tag/sum11.png" alt"image-1" style="height: 400px" class="w3-hover-opacity" style="width:100%">
+              <h2 style="font-family: Chonburi;color: #ffffff;">#SUMMER</h2>
             </div>
           </a>  
         </div>
       </div>
-
       <div class="w3-third" style="padding-bottom: 20px;">
-        <div class="w3-card-1 w3-border container w3-third" style="width:100%;">
-          <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
-            <div class="overlay">
-              <div class="image-popup">
-                <img src="/assets/images/profile/bar.png" alt="" width="100%">
-              </div>
-              <a href="#">
-                <div class="image-popup" style="padding-left: 60%">
-                  STYLE / ...........
-                </div>
-              </a>
+        <div class="w3-card-1 w3-border container w3-third" style="width:100%; text-align:center">
+          <a href="#!">
+            <div class="image">
+              <img src="/assets/images/tag/sum22.png" alt"image-1" style="height: 400px" class="w3-hover-opacity" style="width:100%">
+              <h2 style="font-family: Chonburi;color: #ffffff;">#WINTER</h2>
             </div>
+          </a>  
         </div>
       </div>
       <div class="w3-third" style="padding-bottom: 20px;">
-        <div class="w3-card-1 w3-border container w3-third" style="width:100%;">
-          <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
-            <div class="overlay">
-              <div class="image-popup">
-                <img src="/assets/images/profile/bar.png" alt="" width="100%">
-              </div>
-              <a href="#">
-                <div class="image-popup" style="padding-left: 60%">
-                  STYLE / ...........
-                </div>
-              </a>
+        <div class="w3-card-1 w3-border container w3-third" style="width:100%; text-align:center">
+          <a href="#!">
+            <div class="image">
+              <img src="/assets/images/tag/sum33.png" alt"image-1" style="height: 400px" class="w3-hover-opacity" style="width:100%">
+              <h2 style="font-family: Chonburi;color: #ffffff;">#SPRING</h2>
             </div>
+          </a>  
         </div>
       </div>
       <div class="w3-third" style="padding-bottom: 20px;">
-        <div class="w3-card-1 w3-border container w3-third" style="width:100%;">
-          <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
-            <div class="overlay">
-              <div class="image-popup">
-                <img src="/assets/images/profile/bar.png" alt="" width="100%">
-              </div>
-              <a href="#">
-                <div class="image-popup" style="padding-left: 60%">
-                  STYLE / ...........
-                </div>
-              </a>
+        <div class="w3-card-1 w3-border container w3-third" style="width:100%; text-align:center">
+          <a href="#!">
+            <div class="image">
+              <img src="/assets/images/tag/sum1.png" alt"image-1" style="height: 400px" class="w3-hover-opacity" style="width:100%">
+              <h2 style="font-family: Chonburi;color: #ffffff;">#CASUAL</h2>
             </div>
+          </a>  
         </div>
       </div>
       <div class="w3-third" style="padding-bottom: 20px;">
-        <div class="w3-card-1 w3-border container w3-third" style="width:100%;">
-          <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
-            <div class="overlay">
-              <div class="image-popup">
-                <img src="/assets/images/profile/bar.png" alt="" width="100%">
-              </div>
-              <a href="#">
-                <div class="image-popup" style="padding-left: 60%">
-                  STYLE / ...........
-                </div>
-              </a>
+        <div class="w3-card-1 w3-border container w3-third" style="width:100%; text-align:center">
+          <a href="#!">
+            <div class="image">
+              <img src="/assets/images/tag/sum55.png" alt"image-1" style="height: 400px" class="w3-hover-opacity" style="width:100%">
+              <h2 style="font-family: Chonburi;color: #ffffff;">#VINTAGE</h2>
             </div>
+          </a>  
         </div>
       </div>
       <div class="w3-third" style="padding-bottom: 20px;">
-        <div class="w3-card-1 w3-border container w3-third" style="width:100%;">
-          <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
-            <div class="overlay">
-              <div class="image-popup">
-                <img src="/assets/images/profile/bar.png" alt="" width="100%">
-              </div>
-              <a href="#">
-                <div class="image-popup" style="padding-left: 60%">
-                  STYLE / ...........
-                </div>
-              </a>
+        <div class="w3-card-1 w3-border container w3-third" style="width:100%; text-align:center">
+          <a href="#!">
+            <div class="image">
+              <img src="/assets/images/tag/sum3.png" alt"image-1" style="height: 400px" class="w3-hover-opacity" style="width:100%">
+              <h2 style="font-family: Chonburi;color: #ffffff;">#HIPHOP</h2>
             </div>
+          </a>  
         </div>
       </div>
       <div class="w3-third" style="padding-bottom: 20px;">
-        <div class="w3-card-1 w3-border container w3-third" style="width:100%;">
-          <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
-            <div class="overlay">
-              <div class="image-popup">
-                <img src="/assets/images/profile/bar.png" alt="" width="100%">
-              </div>
-              <a href="#">
-                <div class="image-popup" style="padding-left: 60%">
-                  STYLE / ...........
-                </div>
-              </a>
+        <div class="w3-card-1 w3-border container w3-third" style="width:100%; text-align:center">
+          <a href="#!">
+            <div class="image">
+              <img src="/assets/images/tag/sum2.png" alt"image-1" style="height: 400px" class="w3-hover-opacity" style="width:100%">
+              <h2 style="font-family: Chonburi;color: #ffffff;">#PARTY</h2>
             </div>
+          </a>  
         </div>
       </div>
       <div class="w3-third" style="padding-bottom: 20px;">
-        <div class="w3-card-1 w3-border container w3-third" style="width:100%;">
-          <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
-            <div class="overlay">
-              <div class="image-popup">
-                <img src="/assets/images/profile/bar.png" alt="" width="100%">
-              </div>
-              <a href="#">
-                <div class="image-popup" style="padding-left: 60%">
-                  STYLE / ...........
-                </div>
-              </a>
+        <div class="w3-card-1 w3-border container w3-third" style="width:100%; text-align:center">
+          <a href="#!">
+            <div class="image">
+              <img src="/assets/images/tag/sum88.png" alt"image-1" style="height: 400px" class="w3-hover-opacity" style="width:100%">
+              <h2 style="font-family: Chonburi;color: #ffffff;">#CUTE</h2>
             </div>
+          </a>  
         </div>
       </div>
       <div class="w3-third" style="padding-bottom: 20px;">
-        <div class="w3-card-1 w3-border container w3-third" style="width:100%;">
-          <img src="/assets/images/model/modelN0.png" style="width:100%;padding-right: 20%;padding-left: 20%;">
-            <div class="overlay">
-              <div class="image-popup">
-                <img src="/assets/images/profile/bar.png" alt="" width="100%">
-              </div>
-              <a href="#">
-                <div class="image-popup" style="padding-left: 60%">
-                  STYLE / ...........
-                </div>
-              </a>
+        <div class="w3-card-1 w3-border container w3-third" style="width:100%; text-align:center">
+          <a href="#!">
+            <div class="image">
+              <img src="/assets/images/tag/sum99.png" alt"image-1" style="height: 400px" class="w3-hover-opacity" style="width:100%">
+              <h2 style="font-family: Chonburi;color: #ffffff;">#SPORT</h2>
             </div>
+          </a>  
         </div>
-      </div>
+      </div>    
 
       <CENTER>
         <div class="w3-center w3-padding-16">

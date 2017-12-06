@@ -32,6 +32,7 @@ const albumsindexController = require('./controllers/albumsindex.controller')
 const indexController = require('./controllers/index.controller')
 const alllooqController = require('./controllers/alllooq.controller')
 const createlooqController = require('./controllers/createlooq.controller')
+const finishlooqController = require('./controllers/finishlooq.controller')
 
 
 app.get('/', homeController.index)
@@ -61,6 +62,7 @@ app.get('/albums-index', albumsindexController.index)
 app.get('/index', indexController.index)
 app.get('/all-looq', alllooqController.index)
 app.get('/create-looq', createlooqController.index)
+app.get('/finished-looq', finishlooqController.index)
 
 
 
