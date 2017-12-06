@@ -33,6 +33,7 @@ const indexController = require('./controllers/index.controller')
 const alllooqController = require('./controllers/alllooq.controller')
 const createlooqController = require('./controllers/createlooq.controller')
 const finishlooqController = require('./controllers/finishlooq.controller')
+const designlooqController = require('./controllers/designlooq.controller')
 
 
 app.get('/', homeController.index)
@@ -63,7 +64,7 @@ app.get('/index', indexController.index)
 app.get('/all-looq', alllooqController.index)
 app.get('/create-looq', createlooqController.index)
 app.get('/finished-looq', finishlooqController.index)
-
+app.get('/design-looq', designlooqController.index)
 
 
 app.use('/assets', express.static(__dirname + '/static/assets', {
