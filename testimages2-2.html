@@ -382,7 +382,15 @@
     <div class="topic" style="padding-top: 85px; width: 100%;">
       <p class="model color" style="font-family: Chonburi; font-size: 30px; color: #464646; padding-left: 6%">DESIGN LOOQ</p>
     </div>
+<input type='file' id="shirt" onchange="readURL(this);" />
+    <script type="text/javascript">
+		var dataImage = localStorage.getItem('imgData');
+bannerImg = document.getElementById('tableBanner');
+bannerImg.src = "data:image/png;base64," + dataImage;
+    </script>
     <div style="display: flex; width: 100%">
+
+			<img src="" id="tableBanner" />
       <div class="img-container" style="width: 35%; margin-left: 3%">
 
       <!--เสื้อ กางเกง ตัวหุ่น อยู่นี่ละจ้าา-->
@@ -1472,7 +1480,7 @@
       </div>
     </div>
     <div class="column has-text-centered">
-      <a class="button is-light" href="finishlooq.html" style="color: #ffffff; width: 90px; background-color: #e7c6c2;">DONE</a>
+      <a class="button is-light" href="model2.html" style="color: #ffffff; width: 90px; background-color: #e7c6c2;">DONE</a>
     </div>
     <center>
       <div style="width: 300px; margin-bottom: 5%;padding-bottom: 177px">
